@@ -3,6 +3,7 @@ ob_start();
 header('Content-Type: application/json; charset=utf-8');
 
 include "database.php";
+include "handleDecrypt.php";
 
 $response = ['success' => false, 'message' => ''];
 function log_request_data()
@@ -91,6 +92,7 @@ try {
     $id_tipo_arquivo = 0;
     $id_tipo_acao = 0;
     $id_pessoa = 0;
+
 
     $stmt = $conn->prepare("SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ?");
 
@@ -210,53 +212,123 @@ try {
     }
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $uploadDir = '/var/www/html/uploads/';
+        try {
+            // Check if the uploads directory exists
+            function handleFileUploads($fileInputName)
+            {
+                global $fileExtension;
+                global $quantidade_pessoas;
+                global $caminho_arquivo_anonimizado;
+                global $caminho_arquivo_original;
+                global $nome_arquivo;
+                $lockFile = "/var/www/html/php/pasteur.lock";
 
-        if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0777, true);
-        }
+                if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
+                    foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
+                        if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
+                            // Check for lock file, wait if exists
+                            while (file_exists($lockFile)) {
+                                error_log("Waiting for previous instance to finish...");
+                                sleep(10);
+                            }
 
-        function handleFileUploads($fileInputName)
-        {
-            global $uploadDir;
-            global $fileExtension;
-            global $filePath;
-            global $fileName;
+                            // Create the lock file to prevent other instances
+                            file_put_contents($lockFile, '');
 
-            if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
-                foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
-                    if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
-                        $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
-                        $fileExtension = pathinfo($name, PATHINFO_EXTENSION);
-                        $fileName = uniqid(rand(), true) . '.' . $fileExtension; // Generate a random filename
-                        $filePath = $uploadDir . $fileName;
+                            // Handle file upload process
+                            file_put_contents('output.json', '');
 
-                        if (!move_uploaded_file($fileTmpPath, $filePath)) {
-                            throw new Exception('Error moving file "' . htmlspecialchars($fileName) . '" to destination.');
+                            $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
+                            $fileExtension = pathinfo($name, PATHINFO_EXTENSION);
+                            $fileName = uniqid(rand(), true) . '.' . $fileExtension;
+                            $destinationPath = "../imagem/input/" . $fileName;
+
+                            error_log("destinationPath: " . $destinationPath);
+
+
+                            if (!move_uploaded_file($fileTmpPath, $destinationPath)) {
+                                throw new Exception('Error moving uploaded file.');
+                            }
+
+                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
+
+                            $output = [];
+                            $returnVar = 0;
+                            exec($command, $output, $returnVar);
+
+                            if ($returnVar !== 0) {
+                                // Empty the 'imagem/input' folder
+                                $files = glob('../imagem/input/*'); // Get all file names
+                                foreach ($files as $file) {
+                                    if (is_file($file)) {
+                                        unlink($file); // Delete each file
+                                    }
+                                }
+                                unlink($lockFile);
+
+                                error_log("Command failed with error code: $returnVar");
+                                header("HTTP/1.1 500 Internal Server Error");
+                            }
+
+                            $output = file_get_contents('output.json');
+                            if ($output === false) {
+                                error_log("Failed to read output.json");
+                            } else {
+                                $jsonOutput = json_decode($output, true);
+                                error_log(json_encode($jsonOutput));
+                                $quantidade_pessoas = intval($jsonOutput['quantidade_pessoas']);
+                                $caminho_arquivo_anonimizado = $jsonOutput['caminho_arquivo_anonimizado'];
+                                $encryptKey = "tjd3s";
+                                $iv = "tjd3s";
+                                $caminho_arquivo_original = handleDecrypt($jsonOutput['caminho_arquivo_original'], $encryptKey, $iv);
+                                $nome_arquivo = $jsonOutput['nome_arquivo'];
+
+                                if (json_last_error() !== JSON_ERROR_NONE) {
+                                    error_log("JSON Decode Error: " . json_last_error_msg());
+                                    throw new Exception("JSON Decode Error: " . json_last_error_msg());
+                                } else {
+                                    $jsonString = json_encode($jsonOutput);
+                                }
+                            }
+
+                            if ($returnVar !== 0) {
+                                throw new Exception("Error: Python script execution failed.");
+                            } else {
+                                error_log("Python script executed successfully.");
+                            }
+
+                            // Remove the lock file
+                            unlink($lockFile);
+                        } else {
+                            throw new Exception('Error uploading file "' . htmlspecialchars($name) . '": ' . getUploadErrorMessage($_FILES[$fileInputName]['error'][$key]));
                         }
-                    } else {
-                        throw new Exception('Error uploading file "' . htmlspecialchars($name) . '": ' . getUploadErrorMessage($_FILES[$fileInputName]['error'][$key]));
                     }
                 }
             }
-        }
 
-        function getUploadErrorMessage($errorCode)
-        {
-            switch ($errorCode) {
-                case UPLOAD_ERR_INI_SIZE:
-                case UPLOAD_ERR_FORM_SIZE:
-                    return 'File size exceeds the allowed limit.';
-                case UPLOAD_ERR_PARTIAL:
-                    return 'File was only partially uploaded.';
-                case UPLOAD_ERR_NO_FILE:
-                    return 'No file was uploaded.';
-                default:
-                    return 'Unknown upload error.';
+
+
+
+
+            function getUploadErrorMessage($errorCode)
+            {
+                switch ($errorCode) {
+                    case UPLOAD_ERR_INI_SIZE:
+                    case UPLOAD_ERR_FORM_SIZE:
+                        return 'File size exceeds the allowed limit.';
+                    case UPLOAD_ERR_PARTIAL:
+                        return 'File was only partially uploaded.';
+                    case UPLOAD_ERR_NO_FILE:
+                        return 'No file was uploaded.';
+                    default:
+                        return 'Unknown upload error.';
+                }
             }
+            handleFileUploads('files');
+        } catch (Exception $e) {
+            error_log('Caught exception: ' .  $e->getMessage(), "\n");
+            http_response_code(500);
         }
-
-        handleFileUploads('files');
     }
 
     $extensao  = '.' . $fileExtension;
@@ -280,13 +352,13 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
-        throw new Exception('Prepare failed: ' . $conn->error);
+        header("HTTP/1.1 500 Internal Server Error");
     }
 
-    $stmt->bind_param('sis', $fileName, $id_tipo_arquivo, $filePath);
+    $stmt->bind_param('sisis', $nome_arquivo, $id_tipo_arquivo, $caminho_arquivo_original, $quantidade_pessoas, $caminho_arquivo_anonimizado);
 
     if ($stmt->execute()) {
         $id_arquivo = $conn->insert_id;
@@ -333,10 +405,9 @@ try {
         'success' => true,
         'message' => 'Data submitted successfully'
     ];
-
-    echo json_encode($response);
 } catch (Exception $e) {
     $response['message'] = $e->getMessage();
+    header("HTTP/1.1 500 Internal Server Error");
 }
 
 $stmt->close();

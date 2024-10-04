@@ -1,84 +1,5 @@
 <?php
 include "./fetch-suggestions.php";
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-// Configurações do Keycloak
-$clientId = 'tjd3s-app';
-$clientSecret = 'abKFowGWUfzxpPEvHToM0SBwxifKRFnJ';
-$redirectUri = 'http://localhost:8090/index.php';
-$authorizeUrl = 'http://localhost:8080/realms/tjd3s-app-dev/protocol/openid-connect/auth';
-$tokenUrl = 'http://keycloack:8080/realms/tjd3s-app-dev/protocol/openid-connect/token';
-$userInfoUrl = 'http://keycloack:8080/realms/tjd3s-app-dev/protocol/openid-connect/userinfo';
-
-// Se não temos um código de autorização e nem um token de acesso, redireciona para o Keycloak
-if (!isset($_GET['code']) && !isset($_SESSION['access_token'])) {
-    // Gera URL de autorização e redireciona o usuário
-    $authorizationUrl = $authorizeUrl . '?' . http_build_query([
-            'response_type' => 'code',
-            'client_id' => $clientId,
-            'redirect_uri' => $redirectUri,
-            'scope' => 'openid profile email',
-        ]);
-
-    header('Location: ' . $authorizationUrl);
-    exit;
-}
-
-// Troca o código de autorização por um token de acesso
-if (isset($_GET['code'])) {
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_URL, $tokenUrl);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
-        'grant_type' => 'authorization_code',
-        'code' => $_GET['code'],
-        'redirect_uri' => $redirectUri,
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-    ]));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-    $response = curl_exec($ch);
-    $token = json_decode($response, true);
-
-    if (isset($token['access_token'])) {
-        // Armazena o token de acesso na sessão
-        $_SESSION['access_token'] = $token['access_token'];
-    } else {
-        echo '<h3>Erro ao obter token</h3>';
-        echo '<pre>';
-        print_r($response);  // Exibe a resposta completa do Keycloak
-        echo '</pre>';
-        exit;
-    }
-}
-
-// Se o usuário já estiver autenticado (com um token de acesso)
-if (isset($_SESSION['access_token'])) {
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_URL, $userInfoUrl);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'Authorization: Bearer ' . $_SESSION['access_token']
-    ]);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-    $response = curl_exec($ch);
-    $userInfo = json_decode($response, true);
-    echo curl_errno($ch . " - ");
-    echo curl_error($ch);
-    if (isset($userInfo['sub'])) {
-        // Exibe informações do usuário autenticado
-        echo '<h1>Usuário autenticado</h1>';
-        echo '<pre>' . print_r($userInfo, true) . '</pre>';
-    } else {
-        exit('Erro ao obter informações do usuário: ' . $response);
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -100,6 +21,7 @@ if (isset($_SESSION['access_token'])) {
 </head>
 
 <body>
+    <div id="loading"></div>
     <div id="notificationBox" class="notification-box">
         <span class="close" onclick="hideNotification()">&times;</span>
         <p>Deseja abrir a pasta de imagens ou usar a câmera?</p>
