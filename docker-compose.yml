@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  tjd3s-web-app:
+    container_name: tjd3s-web-app
+    build: .
+    ports:
+      - "8090:80"
+    volumes:
+      - .:/var/www/html
+      - ./custom-php.ini:/usr/local/etc/php/conf.d/custom-php.ini
+    networks:
+      - app-network
+
+  papedins_db:
+    container_name: papedins_db
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: papedins_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    volumes:
+      - papedins_db:/var/lib/mysql
+    networks:
+      - app-network
+
+  keycloack:
+    image: quay.io/keycloak/keycloak:21.1
+    command: start-dev
+    ports:
+     - 8080:8080
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    networks:
+          - app-network
+
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   container_name: phpmyadmin
+  #   environment:
+  #     PMA_HOST: papedins_db
+  #     MYSQL_ROOT_PASSWORD: admin
+  #   ports:
+  #     - "8092:80"
+  #   networks:
+  #     - app-network
+
+volumes:
+  papedins_db:
+
+networks:
+  app-network:
+    driver: bridge
