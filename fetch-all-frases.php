@@ -3,6 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include "./php/database.php";
+// Scripto para procurar nome_tipo_acao pelo id_tipo_elemento_sintatico = 14 
+// Vai pegar os phrases para aguardar no Indexed DB
 
 $stmt = $conn->prepare("SELECT nome_tipo_acao FROM tipos_acoes WHERE id_tipo_elemento_sintatico = 14");
 

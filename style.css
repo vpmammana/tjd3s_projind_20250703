@@ -102,13 +102,14 @@ select:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 45.65vh;
+    min-height: 35.65vh;
     width: 55%;
     margin: 0 auto;
     background-color: #fff;
 }
 
-.banner-section .banner-image {
+.banner-section .banner-image,
+.banner-section .banner-image2 {
     height: 100%;
     display: flex;
     align-items: center;
@@ -120,18 +121,31 @@ select:focus {
     margin: 0 auto;
 }
 
-.banner-section .banner-image .banner-image-img img {
+.banner-section .banner-image2 .banner-image-img2 {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.banner-section .banner-image .banner-image-img img,
+.banner-section .banner-image2 .banner-image-img2 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.banner-section .banner-text p,
-.banner-section .banner-text p span {
+.banner-text {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto 2rem auto;
+}
+
+.banner-text p,
+.banner-text p span {
     font-size: 20px;
 }
 
-.banner-section .banner-text p span {
+.banner-text p span {
     font-weight: bold;
     line-height: 2;
 }
@@ -261,6 +275,17 @@ form .submit button:hover {
     background-color: var(--main-bg-color);
     padding: 0.5rem 2rem;
     color: #fff;
+}
+
+.footer .footer-icon {
+    height: 100px;
+    width: 300px;
+}
+
+.footer .footer-icon img {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 /* .image-previews img {
@@ -432,6 +457,20 @@ button {
         display: block;
     }
 
+    .banner-section .banner-image .banner-image-img {
+        height: 400px;
+        width: 600px;
+    }
+
+    .banner-section .banner-image:nth-child(2) {
+        margin-top: -6rem;
+    }
+
+    .banner-text {
+        width: 85%;
+        margin-top: 3rem;
+    }
+
     .foto {
         justify-content: center;
     }
@@ -454,17 +493,17 @@ button {
 
 @media (max-width: 768px) {
     .form-section form .form-atividade .form-atividade-inputs {
-        width: 80%
+        width: 80%;
     }
 
     .form-section .form-evidencias {
-        width: 80%
+        width: 80%;
     }
 
 
     .form-section form .form-atividade .form-atividade-inputs,
     .form-section .form-evidencias {
-        width: 85%
+        width: 85%;
     }
 
     .header {
@@ -492,12 +531,13 @@ button {
         padding: 0.5rem 0;
     }
 
-    .banner-section .banner-image .banner-image-img {
+    /* .banner-section .banner-image .banner-image-img {
         height: 200px;
         width: 600px;
-    }
+    } */
 
-    .banner-section .banner-text {
+
+    .banner-text {
         text-align: center;
     }
 
@@ -525,13 +565,45 @@ button {
 
     .footer {
         padding: 5px 10px;
+        display: block;
+        text-align: center;
     }
 
     .footer h2 {
-        font-size: 14px;
+        display: none;
+    }
+
+    .footer .footer-icon {
+        margin: 0 auto;
     }
 
     .footer .contact span {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* .banner-section .banner-image:nth-child(2) {
+        margin-top: -9rem;
+    } */
+}
+
+@media (max-width: 475px) {
+    .banner-section .banner-image .banner-image-img {
+        height: 200px;
+        width: 600px;
+    }
+
+    .banner-section .banner-image:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .banner-text {
+        margin-top: 2rem;
+    }
+
+    .banner-text p,
+    .banner-text p span {
+        font-size: 16px;
     }
 }

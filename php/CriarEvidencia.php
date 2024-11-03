@@ -57,7 +57,7 @@ try {
     }
 
     curl_close($ch);
-
+    // variables used to capture request data from frontend
     $mapData = json_decode($response, true);
     $nome_usuario = $_POST['nome-usuario'];
     $nomeAtividadeEvento = $_POST['nome-atividade'];
@@ -93,7 +93,7 @@ try {
     $id_tipo_acao = 0;
     $id_pessoa = 0;
 
-
+    // procure o id_chave_pessoa pelo nome_pessoa
     $stmt = $conn->prepare("SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ?");
 
     if ($stmt === false) {
@@ -113,6 +113,7 @@ try {
         $response['message'] = $e->getMessage();
     }
 
+    // procure o id_chave_pais pelo nome_pais
     $stmt = $conn->prepare("SELECT id_chave_pais FROM paises where nome_pais = ?");
     $stmt->bind_param('s', $country);
 
@@ -132,6 +133,7 @@ try {
         $response['message'] = $e->getMessage();
     }
 
+    // procure o id_chave_estado pelo nome_estado
     $stmt = $conn->prepare("SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado =  ?");
     $stmt->bind_param('s', $state);
 
@@ -149,6 +151,7 @@ try {
         echo json_encode(['error' => $error_message]);
     }
 
+    // procureos dados de cidade pelo id_estado e o nome_cidade
     $stmt = $conn->prepare("SELECT * FROM cidades WHERE id_estado =  ? AND nome_cidade = ?");
 
     if ($stmt === false) {
@@ -168,7 +171,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-
+    // insersão de dados de localização com os dados do Mapa e o id_estado, id_cidade e id_pais
     $stmt = $conn->prepare("INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
@@ -183,7 +186,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-
+    // insersão de id_localizacao para a tabela de  enderecos
     $stmt = $conn->prepare("INSERT INTO enderecos (id_localizacao) VALUES (?)");
 
     if ($stmt === false) {
@@ -197,6 +200,8 @@ try {
     } else {
         error_log('Query failed: ' . $e->getMessage());
     }
+
+    // insercão de dados atividades_eventos, data_atividade_evento, hora_atividade_evento  para a tabela de atividades_eventos
     $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento) VALUES (?,?,?)");
 
     if ($stmt === false) {
@@ -213,7 +218,7 @@ try {
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
-            // Check if the uploads directory exists
+            // Verifica se o diretoria de uploads existe
             function handleFileUploads($fileInputName)
             {
                 global $fileExtension;
@@ -226,16 +231,16 @@ try {
                 if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
                     foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
                         if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
-                            // Check for lock file, wait if exists
+                            // Verifica se tem um lockfile que é usado quando tem um arquivo sendo processado.
                             while (file_exists($lockFile)) {
                                 error_log("Waiting for previous instance to finish...");
                                 sleep(10);
                             }
 
-                            // Create the lock file to prevent other instances
+                            // Cria o Lockfile para prevenir outras instancias
                             file_put_contents($lockFile, '');
 
-                            // Handle file upload process
+                            // Gerenciar processo de carregar arquivo o output.json vai pegar os dados de procesamento de imagem
                             file_put_contents('output.json', '');
 
                             $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
@@ -250,6 +255,7 @@ try {
                                 throw new Exception('Error moving uploaded file.');
                             }
 
+                            // Comanda de Python usado para fazer o processamento de imagem
                             $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
 
                             $output = [];
@@ -269,11 +275,12 @@ try {
                                 error_log("Command failed with error code: $returnVar");
                                 header("HTTP/1.1 500 Internal Server Error");
                             }
-
+                            //Pegar os dados de processamento de imagemns
                             $output = file_get_contents('output.json');
                             if ($output === false) {
                                 error_log("Failed to read output.json");
                             } else {
+                                // formatar e configurar os dados de processamneto de imagem
                                 $jsonOutput = json_decode($output, true);
                                 error_log(json_encode($jsonOutput));
                                 $quantidade_pessoas = intval($jsonOutput['quantidade_pessoas']);
@@ -332,6 +339,7 @@ try {
     }
 
     $extensao  = '.' . $fileExtension;
+    // Procure o id_chave_tipo_arquivo pela extensao
     $stmt = $conn->prepare("SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = ?");
 
     if ($stmt === false) {
@@ -352,6 +360,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
+    // Insersão de dados da tabela arquivos
     $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
@@ -366,6 +375,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
+    // Procure o id_chave_tipo_acao de tipos_acoes pelo o nome_tipo_acao
     $stmt = $conn->prepare("SELECT id_chave_tipo_acao FROM tipos_acoes WHERE nome_tipo_acao = ?");
 
     if ($stmt === false) {
@@ -385,7 +395,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-
+    // Insersão de dados de acoes
     $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     if ($stmt === false) {

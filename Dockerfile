@@ -1,5 +1,6 @@
 # Use the official PHP image as a base image
 FROM php:8.1-apache
+USER root
 
 # Install necessary PHP extensions
 RUN docker-php-ext-install mysqli pdo pdo_mysql
@@ -25,11 +26,19 @@ COPY ./php/requirements.txt /tmp/requirements.txt
 # Install required Python packages from requirements.txt
 RUN /var/www/html/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
 
+
 # Copy the current directory contents into the container at /var/www/html
 COPY . /var/www/html/
 
 # Set working directory
 WORKDIR /var/www/html
+
+# Create necessary directories and set permissions
+# Create necessary directories and set permissions
+RUN mkdir -p ./Imagem/cript ./Imagem/input ./Imagem/decrypted ./Imagem/key ./Imagem/lixeira ./Imagem/pasteur1 ./Imagem/pasteur2 && \
+    chmod 777 ./Imagem/cript ./Imagem/input ./Imagem/decrypted ./Imagem/key ./Imagem/lixeira ./Imagem/pasteur1 ./Imagem/pasteur2 && \
+    chmod 777 .
+
 
 # Ensure Apache can use the Python environment in your PHP scripts
 ENV VIRTUAL_ENV=/var/www/html/venv

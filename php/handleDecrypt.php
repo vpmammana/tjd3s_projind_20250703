@@ -1,4 +1,6 @@
 <?php
+
+// Função pata decryptar
 function handleDecrypt($plainText, $key, $iv)
 {
     $cipherMethod = 'AES-256-CBC';

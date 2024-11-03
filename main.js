@@ -1,20 +1,24 @@
 let imagesArray = [];
 let suggestionSelected = "";
 
+// Mostrar um did quando os dados esta sendo carregados
 function showLoading() {
     document.getElementById("loading").style.display = "block";
 
 }
 
+// Esconde o div loading
 function hideLoading() {
     document.getElementById("loading").style.display = "none";
 }
 
+// Pegar o nome do usuaurio do Hash
 function getNomeUsusario(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param) ? urlParams.get(param).replaceAll('_', ' ') : "";
 }
 
+// Pegar nome do usario do Hash e salvar no localstorage na carrega de pagina
 window.addEventListener('load', function () {
     let nomeUsuario = "";
     if (!localStorage.getItem('nome_usuario')) {
@@ -25,6 +29,8 @@ window.addEventListener('load', function () {
     document.getElementById('nome-usuario').innerText = `${nomeUsuario},`;
     localStorage.setItem('nome_usuario', nomeUsuario);
 })
+
+// Configurar a mapa na carrega da pagina
 window.addEventListener('load', function () {
     navigator.geolocation.getCurrentPosition(showPosition2, showError, {
         enableHighAccuracy: true,
@@ -43,6 +49,8 @@ window.addEventListener('load', function () {
         console.log('Error in geolocation');
     }
 });
+
+// Config de Service worker
 if ('serviceWorker' in navigator) {
     const protocol = window.location.protocol;
     const host = window.location.host;
@@ -59,10 +67,12 @@ if ('serviceWorker' in navigator) {
         });
 }
 
+// Verificar se aparelho é Mobile
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
 
+// Ligar Camera
 function openCamera() {
     if (isMobileDevice()) {
         document.getElementById("cameraInput2").click()
@@ -88,6 +98,7 @@ function openCamera() {
 
 }
 
+// Captura imagem de camera
 function captureImage() {
     const video = document.getElementById('cameraStream');
     const canvas = document.getElementById('cameraCanvas');
@@ -114,6 +125,7 @@ function captureImage() {
         });
 }
 
+// Pegar imagem e verificar se o arquivo é imagem
 function addImageToArray(event) {
     const files = event.target.files;
     if (files.length > 0) {
@@ -132,6 +144,7 @@ function addImageToArray(event) {
     }
 }
 
+// Mostrar imagem na tela
 function displayImagePreview(file) {
     const previewContainer = document.getElementById('imagePreviews');
     previewContainer.innerHTML = '';
@@ -148,14 +161,17 @@ function displayImagePreview(file) {
     reader.readAsDataURL(file);
 }
 
+
 function showCustomAlert() {
     document.getElementById('customModal').style.display = 'block';
 }
 
+// Pop-up de Camera/Buscar Imagem
 function closeCustomAlert() {
     document.getElementById('customModal').style.display = 'none';
 }
 
+// Fechar o pop-upde imagem
 function promptUserForAction() {
     document.getElementById('notificationBox').style.display = 'block';
 
@@ -176,7 +192,7 @@ function handleChoice(choice) {
     hideNotification();
 }
 
-
+// Função para gereneciar o IndexedDB para salvar os phrases
 function openDatabase(dbName, version, upgradeCallback) {
     return new Promise((resolve, reject) => {
         const request = indexedDB.open(dbName, version);
@@ -198,6 +214,7 @@ function openDatabase(dbName, version, upgradeCallback) {
     });
 }
 
+// Atualiza o indexeddb
 function upgradePhrasesDB(db) {
     if (!db.objectStoreNames.contains('phrases')) {
         db.createObjectStore('phrases', {
@@ -207,6 +224,7 @@ function upgradePhrasesDB(db) {
     }
 }
 
+// Atualiza o db offline
 function upgradeOfflineDataDB(db) {
     if (!db.objectStoreNames.contains('offlineData')) {
         db.createObjectStore('offlineData', {
@@ -216,6 +234,7 @@ function upgradeOfflineDataDB(db) {
     }
 }
 
+// Armenizar os Phrases no IndexedDB
 function storePhrasesInDB(phrases) {
     openDatabase('PhrasesDB', 1, upgradePhrasesDB).then(db => {
         const transaction = db.transaction(['phrases'], 'readwrite');
@@ -238,6 +257,7 @@ function storePhrasesInDB(phrases) {
     });
 }
 
+// Pegar os phrases do indexeddb basedo no input de usuario
 function getPhrasesFromDB(query) {
     return new Promise((resolve, reject) => {
         openDatabase('PhrasesDB', 1, upgradePhrasesDB).then(db => {
@@ -261,6 +281,7 @@ function getPhrasesFromDB(query) {
     });
 }
 
+// Armenizar dados de formulario offline para o indexeddb
 function storeDataOffline(data) {
     openDatabase('OfflineDataDB', 1, upgradeOfflineDataDB).then(db => {
         const transaction = db.transaction(['offlineData'], 'readwrite');
@@ -296,6 +317,7 @@ function storeDataOffline(data) {
     });
 }
 
+//Syncronizar os dados para o servidor quando estiver online
 function syncDataWithServer() {
     console.log('Back online! Syncing data with server in 10 seconds...');
     showLoading();
@@ -364,7 +386,7 @@ function syncDataWithServer() {
     }, 10000);
 }
 
-
+// Remover os dados de formulario de indexeddb depois de syncronizar com servidor
 function clearOfflineData(db, id) {
     const transaction = db.transaction(['offlineData'], 'readwrite');
     const objectStore = transaction.objectStore('offlineData');
@@ -396,6 +418,7 @@ function removeSyncedDataFromDB(id) {
     });
 }
 
+// Carregar todos os phrases para o IndexedDB
 function loadAllPhrasesIntoIndexedDB() {
     if (navigator.onLine) {
         fetch('/fetch-all-frases.php')
@@ -407,21 +430,25 @@ function loadAllPhrasesIntoIndexedDB() {
     }
 }
 
+// Formatr os palavaras para no ter acentos
 function removerAcentos(str) {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 const stopwords = ['eu', 'nos', 'fui', 'estava', 'eles', 'elas', 'e', 'o', 'a', 'do', 'da', 'em', 'um', 'uma', 'que', 'para', 'com', 'por', 'se', 'de', 'no', 'na'];
 
+
 function getCurrentWord(input) {
     const words = input.split(' ');
     return words[words.length - 1];
 }
 
+// Pegar input do frase digitado 
 function isStopword(word) {
     return stopwords.includes(word);
 }
 
+// Pegar sugestão do input do frase digitado pelo usuario
 function fetchSuggestions() {
     let input = document.getElementById('tipo-atividade').value;
     input = removerAcentos(input.toLowerCase());
@@ -464,13 +491,13 @@ function fetchSuggestions() {
     }
 }
 
-
+// Remover sugestoes
 function clearSuggestions() {
     const container = document.getElementById('suggestions-container');
     container.innerHTML = '';
 }
 
-
+//Mostrar sugestoes
 function displaySuggestions(suggestions) {
     const container = document.getElementById('suggestions-container');
     container.innerHTML = '';
@@ -483,6 +510,8 @@ function displaySuggestions(suggestions) {
         container.appendChild(chip);
     });
 }
+
+// Adicionar os tags de sugestoes
 function addChip(text) {
     suggestionSelected = text;
     const chipsContainer = document.getElementById('chips-container');
@@ -503,18 +532,18 @@ function addChip(text) {
     clearSuggestions();
 }
 
+// Remover os tags da sugestão
 function removeChip(button) {
     const chip = button.parentElement;
     chip.remove();
 
-    // Show the input field if there are no chips
     toggleInputVisibility();
 
-    // Clear and focus the input field
     const input = document.getElementById('tipo-atividade');
-    input.value = ''; // Reset input field
-    input.focus(); // Re-focus the input field
+    input.value = '';
+    input.focus();
 }
+
 
 function toggleInputVisibility() {
     const chipsContainer = document.getElementById('chips-container');
@@ -542,6 +571,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('fileInput').addEventListener('change', function (event) {
     console.log('File input changed:', event.target.files);
 });
+
+// Funçoes para quando mandar os dados de formaulario para o servidor
 document.getElementById('criar-evidencia-form').addEventListener('submit', function (event) {
     event.preventDefault();
     showLoading();

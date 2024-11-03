@@ -47,15 +47,20 @@ include "./fetch-suggestions.php";
                 <img src="/assets/banner-image.svg" alt="banner-image">
             </div>
         </div>
-        <div class="banner-text">
-            <p>
-                <span id="nome-usuario"></span>
-                boas-vindas ao registro de atividades do <span>Programa Nacional de Economia
-                    Popular,
-                    Solidária e Sustentável!</span>
-            </p>
+        <div class="banner-image2">
+            <div class="banner-image-img2">
+                <img src="/assets/logo-formacao.svg" alt="logo-formacao">
+            </div>
         </div>
     </section>
+    <div class="banner-text">
+        <p>
+            <span id="nome-usuario"></span>
+            boas-vindas ao registro de atividades do <span>Programa Nacional de Economia
+                Popular,
+                Solidária e Sustentável!</span>
+        </p>
+    </div>
     <section class="form-section">
         <form id="criar-evidencia-form">
             <div class="form-atividade">
@@ -123,7 +128,7 @@ include "./fetch-suggestions.php";
 
     <div class="footer">
         <div class="footer-icon">
-            <img src="/assets/fundacentro.png" alt="fundacentro">
+            <img src="/assets/footer-logo.png" alt="fundacentro">
         </div>
         <h2>TJD3S</h2>
         <div class="contact">
