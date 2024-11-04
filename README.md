@@ -1,6 +1,6 @@
 # tjd3s-app
 
-The Web app runs on Port 8090, PHP my admin runs on port 8092 using a docker container
+The Web app runs on Port 8090, PHP My Admin runs on port 8092 using a docker container
 Run the commands in quatations in the following order
 
 ## Steps to run:

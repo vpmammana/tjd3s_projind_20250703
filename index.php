@@ -56,9 +56,7 @@ include "./fetch-suggestions.php";
     <div class="banner-text">
         <p>
             <span id="nome-usuario"></span>
-            boas-vindas ao registro de atividades do <span>Programa Nacional de Economia
-                Popular,
-                Solidária e Sustentável!</span>
+            boas-vindas ao registro de atividades!
         </p>
     </div>
     <section class="form-section">
