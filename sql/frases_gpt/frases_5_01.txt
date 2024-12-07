@@ -1,0 +1,84 @@
+coordenei|verbo|passado|encontros locais|locucao_substantiva|plural_masculina|colaborativos|adjetivo|plural_masculino|com agentes|locucao_substantiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+orientei|verbo|passado|iniciativas comunitárias|locucao_substantiva|plural_feminina|cooperativas|adjetivo|plural_feminina|junto a agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+integrei|verbo|passado|esforços coletivos|locucao_substantiva|plural_masculina|para engajamento|locucao_adjetiva|singular_masculina|com agentes|locucao_substantiva|plural_masculina|ativos|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|parcerias locais|locucao_substantiva|plural_feminina|produtivas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+articulei|verbo|passado|ações conjuntas|locucao_substantiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+fortaleci|verbo|passado|redes de cooperação|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|entre agentes|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|5.1
+desenvolvi|verbo|passado|estratégias territoriais|locucao_substantiva|plural_feminina|integradas|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+conduzi|verbo|passado|diálogos comunitários|locucao_substantiva|plural_masculina|direcionados|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+estabeleci|verbo|passado|vínculos colaborativos|locucao_substantiva|plural_masculina|produtivos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+mobilizei|verbo|passado|ações comunitárias|locucao_substantiva|plural_feminina|engajadas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+integrei|verbo|passado|iniciativas solidárias|locucao_substantiva|plural_feminina|inclusivas|adjetivo|plural_feminina|para coordenação|locucao_adjetiva|singular_feminina|com agentes|locucao_substantiva|plural_masculina|5.1
+organizei|verbo|passado|reuniões de cooperação|locucao_substantiva|plural_feminina|ativas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+promovi|verbo|passado|debates regionais|locucao_substantiva|plural_masculina|dinâmicos|adjetivo|plural_masculino|junto a agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|grupos de articulação|locucao_substantiva|plural_masculina|efetivos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+fortaleci|verbo|passado|a integração|locucao_substantiva|singular_feminina|regional|adjetivo|singular_feminina|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+implementei|verbo|passado|programa de articulação|locucao_substantiva|singular_masculino|colaborativo|adjetivo|singular_masculino|para agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+mobilizei|verbo|passado|ações coletivas|locucao_substantiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|entre agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+desenvolvi|verbo|passado|vínculos comunitários|locucao_substantiva|plural_masculina|produtivos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+estabeleci|verbo|passado|parcerias sólidas|locucao_substantiva|plural_feminina|eficazes|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+articulei|verbo|passado|ações regionais|locucao_substantiva|plural_feminina|integradas|adjetivo|plural_feminina|junto a agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+
+organizei|verbo|passado|encontros regionais|locucao_substantiva|plural_masculina|efetivos|adjetivo|plural_masculino|com agentes|locucao_substantiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|ações locais|locucao_substantiva|plural_feminina|colaborativas|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|5.1
+conduzi|verbo|passado|programa de integração|locucao_substantiva|singular_masculino|sustentável|adjetivo|singular_masculino|entre agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+desenvolvi|verbo|passado|esforços colaborativos|locucao_substantiva|plural_masculina|regionais|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+mobilizei|verbo|passado|iniciativas de agentes|locucao_substantiva|plural_feminina|engajados|adjetivo|plural_masculino|nas comunidades|locucao_adjetiva|plural_feminina|territoriais|adjetivo|plural_feminino|5.1
+facilitei|verbo|passado|diálogos coletivos|locucao_substantiva|plural_masculina|direcionados|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|encontros territoriais|locucao_substantiva|plural_masculina|colaborativos|adjetivo|plural_masculino|para agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+promovi|verbo|passado|ações de articulação|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|junto a agentes|locucao_adjetiva|plural_masculina|engajados|adjetivo|plural_masculino|5.1
+integrei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminina|comunitárias|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+coordenador|verbo|passado|debates regionais|locucao_substantiva|plural_masculina|inclusivos|adjetivo|plural_masculino|entre agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+desenvolvi|verbo|passado|ações comunitárias|locucao_substantiva|plural_feminina|direcionadas|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|5.1
+facilitei|verbo|passado|redes de apoio|locucao_substantiva|plural_feminina|territoriais|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+orientei|verbo|passado|projetos colaborativos|locucao_substantiva|plural_masculina|eficazes|adjetivo|plural_masculino|junto a agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+integrei|verbo|passado|redes territoriais|locucao_substantiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+fortaleci|verbo|passado|ações de agentes|locucao_substantiva|plural_feminina|territoriais|adjetivo|plural_feminina|para engajamento|locucao_adjetiva|singular_masculina|local|adjetivo|singular_masculino|5.1
+desenvolvi|verbo|passado|estratégias coletivas|locucao_substantiva|plural_feminina|eficazes|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|grupos de apoio|locucao_substantiva|plural_masculina|colaborativos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+organizei|verbo|passado|ações de integração|locucao_substantiva|plural_feminina|produtivas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_substantiva|singular_masculino|5.1
+coordenei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminina|territoriais|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+mobilizei|verbo|passado|ações regionais|locucao_substantiva|plural_feminina|direcionadas|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+fortaleci|verbo|passado|vínculos locais|locucao_substantiva|plural_masculina|efetivos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+organizei|verbo|passado|ações de articulação|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|junto a agentes|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|5.1
+facilitei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminina|inclusivas|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+integrei|verbo|passado|ações comunitárias|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+mobilizei|verbo|passado|projetos colaborativos|locucao_substantiva|plural_masculina|efetivos|adjetivo|plural_masculino|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+
+fortaleci|verbo|passado|redes de agentes|locucao_substantiva|plural_feminina|comunitários|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+mobilizei|verbo|passado|encontros de agentes|locucao_substantiva|plural_masculina|cooperativos|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+orientei|verbo|passado|encontros de agentes|locucao_substantiva|plural_masculina|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+
+coordenei|verbo|passado|projetos de agentes|locucao_substantiva|plural_masculina|locais|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+integrei|verbo|passado|iniciativas de agentes|locucao_substantiva|plural_feminina|cooperativos|adjetivo|plural_masculino|com participação|locucao_adjetiva|singular_feminina|ativa|adjetivo|singular_feminina|5.1
+mobilizei|verbo|passado|reuniões entre agentes|locucao_substantiva|plural_masculina|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+fortaleci|verbo|passado|redes de agentes|locucao_substantiva|plural_feminina|ativos|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|comunitário|adjetivo|singular_masculino|5.1
+articulei|verbo|passado|ações de agentes|locucao_substantiva|plural_feminina|locais|adjetivo|plural_masculino|para cooperação|locucao_adjetiva|singular_feminina|coletiva|adjetivo|singular_feminina|5.1
+desenvolvi|verbo|passado|programas de apoio|locucao_substantiva|plural_masculina|regionais|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculina|engajados|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|encontros entre agentes|locucao_substantiva|plural_masculina|cooperativos|adjetivo|plural_masculino|para articulação|locucao_adjetiva|singular_feminina|local|adjetivo|singular_feminina|5.1
+organizei|verbo|passado|reuniões com agentes|locucao_substantiva|plural_feminina|comunitários|adjetivo|plural_masculino|em regiões|locucao_adjetiva|plural_feminina|territoriais|adjetivo|plural_feminina|5.1
+facilitei|verbo|passado|oficinas de agentes|locucao_substantiva|plural_feminina|ativos|adjetivo|plural_masculino|para cooperação|locucao_adjetiva|singular_feminina|regional|adjetivo|singular_feminina|5.1
+colaborei|verbo|passado|em iniciativas com agentes|locucao_substantiva|plural_feminina|territoriais|adjetivo|plural_masculino|para apoio|locucao_adjetiva|singular_masculina|local|adjetivo|singular_masculino|5.1
+promovi|verbo|passado|vínculos com agentes|locucao_substantiva|plural_masculina|locais|adjetivo|plural_masculino|para o território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+integrei|verbo|passado|redes comunitárias|locucao_substantiva|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|5.1
+apoiei|verbo|passado|programas territoriais|locucao_substantiva|plural_masculina|para agentes|locucao_adjetiva|plural_masculina|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+fortaleci|verbo|passado|colaboração com agentes|locucao_substantiva|plural_feminina|regionais|adjetivo|plural_masculino|em redes|locucao_adjetiva|plural_feminina|comunitárias|adjetivo|plural_feminina|5.1
+mobilizei|verbo|passado|ações com agentes|locucao_substantiva|plural_feminina|locais|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+conduzi|verbo|passado|encontros de agentes|locucao_substantiva|plural_masculina|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+promovi|verbo|passado|ações locais|locucao_substantiva|plural_feminina|integradas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|no território|locucao_adjetiva|singular_masculino|5.1
+coordenei|verbo|passado|atividades territoriais|locucao_substantiva|plural_feminina|coletivas|adjetivo|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+orientei|verbo|passado|ações de agentes|locucao_substantiva|plural_feminina|locais|adjetivo|plural_masculino|para engajamento|locucao_adjetiva|singular_masculina|coletivo|adjetivo|singular_masculino|5.1
+desenvolvi|verbo|passado|parcerias com agentes|locucao_substantiva|plural_feminina|regionais|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+fortaleci|verbo|passado|ações regionais|locucao_substantiva|plural_feminina|comunitárias|adjetivo|plural_feminina|junto a agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+articulei|verbo|passado|esforços colaborativos|locucao_substantiva|plural_masculina|regionais|adjetivo|plural_masculino|entre agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+integrei|verbo|passado|projetos de agentes|locucao_substantiva|plural_masculina|ativos|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+promovi|verbo|passado|iniciativas coletivas|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|5.1
+coordenei|verbo|passado|encontros regionais|locucao_substantiva|plural_masculina|com agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|5.1
+estruturei|verbo|passado|ações colaborativas|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|engajados|adjetivo|plural_masculino|5.1
+orientei|verbo|passado|projetos comunitários|locucao_substantiva|plural_masculina|locais|adjetivo|plural_masculino|junto a agentes|locucao_adjetiva|plural_masculina|do território|locucao_substantiva|singular_masculino|5.1
+mobilizei|verbo|passado|atividades de agentes|locucao_substantiva|plural_feminina|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_masculino|5.1
+fortaleci|verbo|passado|iniciativas regionais|locucao_substantiva|plural_feminina|com agentes|locucao_adjetiva|plural_masculina|territoriais|adjetivo|plural_masculino|engajados|adjetivo|plural_masculino|5.1
+integrei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|para agentes|locucao_adjetiva|plural_masculina|no território|locucao_adjetiva|singular_masculino|5.1
+coordenei|verbo|passado|projetos de apoio|locucao_substantiva|plural_masculina|coletivos|adjetivo|plural_masculino|para agentes|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|5.1
+estruturei|verbo|passado|ações locais|locucao_substantiva|plural_feminina|de agentes|locucao_adjetiva|plural_masculina|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_masculino|5.1
+
