@@ -1,0 +1,80 @@
+elaborei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+revisei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|sobre o progresso|locucao_adjetiva|singular_masculina|semanal|adjetivo|singular_masculino|6.1
+finalizei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|exclusivo|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminino|6.1
+redigi|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|registrados|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|sistemático|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminino|6.1
+revisei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|organizado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+produzi|verbo|passado|relatório detalhado|locucao_substantiva|singular_masculina|sobre as atividades|locucao_adjetiva|plural_feminina|mensais|adjetivo|plural_feminino|registradas|adjetivo|plural_feminino|6.1
+elaborei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|com descrição|locucao_adjetiva|singular_feminina|semanal|adjetivo|singular_feminina|6.1
+estruturei|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|extenso|adjetivo|singular_masculino|do progresso|locucao_adjetiva|singular_masculina|mensal|adjetivo|singular_masculino|6.1
+
+elaborei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+revisei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|sobre o progresso|locucao_adjetiva|singular_masculina|semanal|adjetivo|singular_masculino|6.1
+finalizei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|exclusivo|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminino|6.1
+redigi|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|registrados|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|sistemático|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminino|6.1
+revisei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|organizado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+produzi|verbo|passado|relatório detalhado|locucao_substantiva|singular_masculina|sobre as atividades|locucao_adjetiva|plural_feminina|mensais|adjetivo|plural_feminino|registradas|adjetivo|plural_feminino|6.1
+elaborei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|com descrição|locucao_adjetiva|singular_feminina|semanal|adjetivo|singular_feminina|6.1
+estruturei|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|extenso|adjetivo|singular_masculino|do progresso|locucao_adjetiva|singular_masculina|mensal|adjetivo|singular_masculino|6.1
+organizei|verbo|passado|documentação diária|locucao_substantiva|singular_feminina|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|relatório descritivo|locucao_substantiva|singular_masculina|das atividades|locucao_adjetiva|plural_feminina|do mês|locucao_adjetiva|singular_masculina|6.1
+elaborei|verbo|passado|documento de atividades|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+preparei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|para registro|locucao_adjetiva|singular_masculina|mensal|adjetivo|singular_masculino|6.1
+finalizei|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|organizado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+redigi|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|sobre atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+elaborei|verbo|passado|documento descritivo|locucao_substantiva|singular_masculina|das atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminino|6.1
+estruturei|verbo|passado|documentação detalhada|locucao_substantiva|singular_feminina|para monitoramento|locucao_adjetiva|singular_masculina|mensal|adjetivo|singular_masculino|6.1
+revisei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+organizei|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|sobre o progresso|locucao_adjetiva|singular_masculina|realizado|adjetivo|singular_masculino|6.1
+estruturei|verbo|passado|documento de progresso|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|documento descritivo|locucao_substantiva|singular_masculina|das atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+revisei|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|para documentação|locucao_adjetiva|singular_feminina|formal|adjetivo|singular_feminina|6.1
+preparei|verbo|passado|relatório detalhado|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+documentei|verbo|passado|progresso semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+produzi|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|documento de progresso|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|das atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminino|6.1
+redigi|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|documento semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|relatório de atividades|locucao_substantiva|singular_feminina|mensal|adjetivo|singular_feminina|detalhado|adjetivo|singular_feminina|6.1
+revisei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+documentei|verbo|passado|atividades mensais|locucao_substantiva|plural_feminina|realizadas|adjetivo|plural_feminina|pelos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+estruturei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+
+revisei|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|de bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|documento mensal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminina|6.1
+revisei|verbo|passado|relatório técnico|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminina|6.1
+revisei|verbo|passado|documento de atividades|locucao_substantiva|singular_feminina|mensal|adjetivo|singular_feminina|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório detalhado|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+revisei|verbo|passado|diário de bordo|locucao_substantiva|singular_masculina|diário|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+revisei|verbo|passado|relatório de acompanhamento|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório técnico|locucao_substantiva|singular_masculina|semanal|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+revisei|verbo|passado|documento mensal|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminina|6.1
+avaliei|verbo|passado|relatório diário|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+revisei|verbo|passado|documento de atividades|locucao_substantiva|singular_feminina|completo|adjetivo|singular_feminina|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório técnico|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|mensais|adjetivo|plural_feminina|6.1
+revisei|verbo|passado|diário semanal|locucao_substantiva|singular_masculina|de atividades|locucao_adjetiva|plural_feminina|realizadas|adjetivo|plural_feminina|6.1
+avaliei|verbo|passado|relatório mensal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+revisei|verbo|passado|relatório de progresso|locucao_substantiva|singular_masculina|mensal|adjetivo|singular_masculina|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|documento semanal|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|documentadas|adjetivo|plural_feminina|6.1
+revisei|verbo|passado|relatório de atividades|locucao_substantiva|singular_feminina|mensal|adjetivo|singular_feminina|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+avaliei|verbo|passado|relatório técnico|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+
+
+
+revisei|verbo|passado|relatório de atividades|locucao_substantiva|singular_feminina|completo|adjetivo|singular_masculina|de bolsistas|locucao_adjetiva|plural_masculina|mensais|adjetivo|plural_feminina|6.1
+analisei|verbo|passado|documento semanal|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|dos participantes|locucao_adjetiva|plural_masculina|atuantes|adjetivo|plural_masculino|6.1
+verifiquei|verbo|passado|registro mensal|locucao_substantiva|singular_masculina|exclusivo|adjetivo|singular_masculino|dos bolsistas|locucao_adjetiva|plural_masculina|ativos|adjetivo|plural_masculino|6.1
+elaborei|verbo|passado|relatório técnico|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculina|dos relatórios|locucao_adjetiva|plural_masculina|mensais|adjetivo|plural_feminina|6.1
+avaliei|verbo|passado|documentação final|locucao_substantiva|singular_feminina|detalhada|adjetivo|singular_feminina|para avaliação|locucao_adjetiva|singular_feminina|geral|adjetivo|singular_feminina|6.1
+revisei|verbo|passado|documento anual|locucao_substantiva|singular_masculina|aprofundado|adjetivo|singular_masculino|de atividades|locucao_adjetiva|plural_feminina|diversas|adjetivo|plural_feminina|6.1
+elaborei|verbo|passado|relatório consolidado|locucao_substantiva|singular_masculina|sistemático|adjetivo|singular_masculino|para revisão|locucao_adjetiva|singular_feminina|final|adjetivo|singular_feminina|6.1
+corrigi|verbo|passado|dados detalhados|locucao_substantiva|plural_masculina|consistentes|adjetivo|plural_masculino|dos registros|locucao_adjetiva|plural_masculina|mensais|adjetivo|plural_feminina|6.1
+redigi|verbo|passado|sumário executivo|locucao_substantiva|singular_masculina|completo|adjetivo|singular_masculino|para revisão|locucao_adjetiva|singular_feminina|final|adjetivo|singular_feminina|6.1
+sistematizei|verbo|passado|informações gerais|locucao_substantiva|plural_feminina|analisadas|adjetivo|plural_feminina|dos relatórios|locucao_adjetiva|plural_masculina|anteriores|adjetivo|plural_masculino|6.1
+

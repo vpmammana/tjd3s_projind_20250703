@@ -1,0 +1,1 @@
+find . -name "frases_*.txt" -exec cat {} \; | awk "NF" | awk 'BEGIN{FS="|"}{print $3; print $6; print $9; print $12; print $15;}' | sort | uniq | awk '{print "INSERT INTO tipos_flexoes (nome_tipo_flexao, acentuada) VALUES (\""$1"\", \"\");"}' > insert_tipos_flexoes.sql
