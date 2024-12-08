@@ -1,4 +1,4 @@
-ngajei|verbo|passado|grupos de produtores|locucao_substantiva|plural_masculina|na criação|locucao_substantiva|singular_feminina|de redes de consumo|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|4.1
+engajei|verbo|passado|grupos de produtores|locucao_substantiva|plural_masculina|na criação|locucao_substantiva|singular_feminina|de redes de consumo|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|4.1
 engajei|verbo|passado|parceiros locais|locucao_substantiva|plural_masculina|na construção|locucao_substantiva|singular_feminina|de redes alimentares|locucao_substantiva|plural_feminina|solidárias|adjetivo|plural_feminina|4.1
 engajei|verbo|passado|associações comunitárias|locucao_substantiva|plural_feminina|na criação|locucao_substantiva|singular_feminina|de redes de serviços|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|4.1
 motivei|verbo|passado|redes comunitárias|locucao_substantiva|plural_feminina|para incentivar|locucao_verbal|infinitivo|o comércio de produtos locais|locucao_substantiva|plural_masculina|solidários|adjetivo|plural_masculino|4.1
@@ -71,7 +71,7 @@ estruturei|verbo|passado|redes de cooperativismo|locucao_substantiva|plural_femi
 mobilizei|verbo|passado|cadeias de consumo sustentável|locucao_substantiva|plural_feminina|para promover|locucao_verbal|infinitivo|a consciência|locucao_substantiva|singular_feminina|comunitária|adjetivo|singular_feminina|4.2
 
 
-ifortaleci|verbo|passado|redes de alimentos orgânicos|locucao_substantiva|plural_feminina|para estimular|locucao_verbal|infinitivo|a segurança alimentar|locucao_substantiva|singular_feminina|regional|adjetivo|singular_feminina|4.2
+fortaleci|verbo|passado|redes de alimentos orgânicos|locucao_substantiva|plural_feminina|para estimular|locucao_verbal|infinitivo|a segurança alimentar|locucao_substantiva|singular_feminina|regional|adjetivo|singular_feminina|4.2
 mobilizei|verbo|passado|cadeias de turismo sustentável|locucao_substantiva|plural_feminina|para promover|locucao_verbal|infinitivo|a valorização cultural|locucao_substantiva|singular_feminina|local|adjetivo|singular_feminina|4.2
 estruturei|verbo|passado|arranjos de economia circular|locucao_substantiva|plural_masculina|com foco em|locucao_adjetiva|infinitivo|produção sustentável|locucao_substantiva|singular_feminina|local|adjetivo|singular_feminina|4.2
 desenvolvi|verbo|passado|redes de bioconstrução|locucao_substantiva|plural_feminina|para incentivar|locucao_verbal|infinitivo|práticas ecológicas|locucao_substantiva|plural_feminina|locais|adjetivo|plural_feminina|4.2

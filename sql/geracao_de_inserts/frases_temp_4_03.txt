@@ -30,7 +30,6 @@ estruturei|verbo|passado|programas de inserção|locucao_substantiva|plural_masc
 apoiei|verbo|passado|ações colaborativas|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|o trabalho autônomo|locucao_substantiva|singular_masculino|no território|locucao_adjetiva|singular_masculino|4.3
 mobilizei|verbo|passado|redes locais|locucao_substantiva|plural_feminino|para expandir|locucao_verbal|infinitivo|o acesso a renda|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.3
 promovi|verbo|passado|estratégias coletivas|locucao_substantiva|plural_feminino|para consolidar|locucao_verbal|infinitivo|o acesso ao trabalho|locucao_substantiva|singular_masculino|no território|locucao_adjetiva|singular_masculino|4.3
-
 desenvolvi|verbo|passado|iniciativas locais|locucao_substantiva|plural_feminino|para expandir|locucao_verbal|infinitivo|as ofertas de trabalho|locucao_substantiva|plural_feminino|autogestionadas|adjetivo|plural_feminino|4.3
 fomentei|verbo|passado|atividades econômicas|locucao_substantiva|plural_feminino|para criar|locucao_verbal|infinitivo|novas vagas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.3
 promovi|verbo|passado|estratégias coletivas|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|a geração de empregos|locucao_substantiva|plural_masculino|sustentáveis|adjetivo|plural_comum|4.3
@@ -69,4 +68,3 @@ desenvolvi|verbo|passado|estratégias locais|locucao_substantiva|plural_feminino
 fomentei|verbo|passado|projetos sustentáveis|locucao_substantiva|plural_masculino|para gerar|locucao_verbal|infinitivo|vagas autogestionadas|locucao_substantiva|plural_feminino|no território|locucao_adjetiva|singular_masculino|4.3
 mobilizei|verbo|passado|atividades coletivas|locucao_substantiva|plural_feminino|para criar|locucao_verbal|infinitivo|novas fontes de trabalho|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.3
 estruturei|verbo|passado|programas de apoio|locucao_substantiva|plural_masculino|para incentivar|locucao_verbal|infinitivo|o emprego solidário|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|4.3
-

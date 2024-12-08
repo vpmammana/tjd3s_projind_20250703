@@ -1,4 +1,3 @@
-
 identifiquei|verbo|passado|redes de iniciativas de agricultura familiar|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|não cadastradas no CADSOL|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|3.2
 identifiquei|verbo|passado|redes de iniciativas de agroecologia|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|sem cadastro no CADSOL|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|3.2
 identifiquei|verbo|passado|redes de iniciativas de agroecologia urbana|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|não incluídas no CADSOL|locucao_adjetiva|singular_masculino|oficial|adjetivo|singular_comum|3.2

@@ -8,7 +8,6 @@ fortaleci|verbo|passado|instrumento formal|locucao_substantiva|singular_masculin
 oficializei|verbo|passado|acordo estratégico|locucao_substantiva|singular_masculino|com setores|locucao_substantiva|plural_masculino|públicos|adjetivo|plural_masculino|visando geração de emprego|locucao_adjetiva|singular_masculino|4.4
 apoiei|verbo|passado|iniciativa conjunta|locucao_substantiva|singular_feminino|em projetos|locucao_adjetiva|plural_masculino|sociais|adjetivo|plural_masculino|para desenvolvimento local|locucao_adjetiva|singular_masculino|4.4
 formalizei|verbo|passado|acordo estável|locucao_substantiva|singular_masculino|com instâncias|locucao_substantiva|plural_feminino|governamentais|adjetivo|plural_comum|para economia solidária|locucao_adjetiva|singular_feminino|4.4
-
 formalizei|verbo|passado|colaboração técnica|locucao_substantiva|singular_feminino|para programas|locucao_adjetiva|plural_masculino|governamentais|adjetivo|plural_comum|em parceria com ONGs locais|locucao_adjetiva|plural_feminino|4.4
 estruturei|verbo|passado|parceria regular|locucao_substantiva|singular_feminino|com órgãos|locucao_substantiva|plural_masculino|públicos|adjetivo|plural_masculino|e cooperativas|locucao_adjetiva|plural_feminino|4.4
 consolidei|verbo|passado|acordo formal|locucao_substantiva|singular_masculino|em programas|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|com ONGs e entidades públicas|locucao_adjetiva|plural_feminino|4.4
@@ -18,7 +17,6 @@ fortaleci|verbo|passado|instrumento formal|locucao_substantiva|singular_masculin
 oficializei|verbo|passado|acordo estratégico|locucao_substantiva|singular_masculino|com cooperativas|locucao_substantiva|plural_feminino|e entidades|locucao_substantiva|plural_feminino|governamentais|adjetivo|plural_comum|4.4
 apoiei|verbo|passado|iniciativa conjunta|locucao_substantiva|singular_feminino|em projetos|locucao_substantiva|plural_masculino|com ONGs|locucao_substantiva|plural_feminino|e setor público|locucao_substantiva|singular_masculino|4.4
 formalizei|verbo|passado|acordo estável|locucao_substantiva|singular_masculino|com instâncias|locucao_substantiva|plural_feminino|governamentais|adjetivo|plural_comum|e cooperativas|locucao_substantiva|plural_feminino|4.4
-
 estabeleci|verbo|passado|ACT|locucao_substantiva|singular_masculino|com ONGs|locucao_substantiva|plural_feminino|para apoio|locucao_adjetiva|singular_masculino|a programas sociais|locucao_adjetiva|plural_masculino|4.4
 formalizei|verbo|passado|convênio estratégico|locucao_substantiva|singular_masculino|com órgãos públicos|locucao_substantiva|plural_masculino|para desenvolvimento|locucao_adjetiva|singular_masculino|territorial|adjetivo|singular_masculino|4.4
 apoiei|verbo|passado|iniciativa de emenda parlamentar|locucao_substantiva|singular_feminino|para financiamento|locucao_adjetiva|singular_masculino|de ONGs|locucao_substantiva|plural_feminino|e cooperativas|locucao_substantiva|plural_feminino|4.4
@@ -52,7 +50,6 @@ apoiei|verbo|passado|emenda colaborativa|locucao_substantiva|singular_feminino|p
 oficializei|verbo|passado|TED estratégico|locucao_substantiva|singular_masculino|para recursos|locucao_adjetiva|plural_masculino|entre entes|locucao_substantiva|plural_masculino|federais|adjetivo|plural_comum|4.4
 estabeleci|verbo|passado|convênio público|locucao_substantiva|singular_masculino|com ONGs|locucao_substantiva|plural_feminino|para desenvolvimento|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|4.4
 coordenei|verbo|passado|ACT|locucao_substantiva|singular_masculino|para desenvolvimento|locucao_adjetiva|singular_masculino|com ONGs|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.4
-
 aprovei|verbo|passado|convênio colaborativo|locucao_substantiva|singular_masculino|com ONGs|locucao_substantiva|plural_feminino|para iniciativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.4
 facilitei|verbo|passado|acordo de parceria|locucao_substantiva|singular_masculino|com cooperativas|locucao_substantiva|plural_feminino|para projetos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|4.4
 articulei|verbo|passado|instrumento de TED|locucao_substantiva|singular_masculino|para desenvolvimento|locucao_adjetiva|singular_masculino|em projetos|locucao_substantiva|plural_masculino|federais|adjetivo|plural_comum|4.4
@@ -82,9 +79,7 @@ coordenei|verbo|passado|ACT colaborativo|locucao_substantiva|singular_masculino|
 estruturei|verbo|passado|acordo de TED|locucao_substantiva|singular_masculino|para recursos|locucao_adjetiva|plural_masculino|entre órgãos|locucao_substantiva|plural_masculino|federais|adjetivo|plural_comum|4.4
 orientei|verbo|passado|emenda colaborativa|locucao_substantiva|singular_feminino|para apoio|locucao_adjetiva|singular_masculino|de iniciativas|locucao_substantiva|plural_feminino|em ONGs|locucao_substantiva|plural_feminino|4.4
 articulei|verbo|passado|acordo técnico|locucao_substantiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|a projetos|locucao_substantiva|plural_masculino|sociais|adjetivo|plural_masculino|4.4
-
 articulei|verbo|passado|convênio de TED|locucao_substantiva|singular_masculino|para transferência|locucao_adjetiva|singular_feminino|entre entes|locucao_substantiva|plural_masculino|federais|adjetivo|plural_comum|4.4
-
 desenvolvi|verbo|passado|critérios específicos|locucao_substantiva|plural_masculino|para emendas|locucao_adjetiva|plural_feminino|em apoio|locucao_adjetiva|singular_masculino|a cooperativas têxteis|locucao_adjetiva|plural_feminino|4.4
 estruturei|verbo|passado|convênio técnico|locucao_substantiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de agricultura familiar|locucao_adjetiva|singular_feminino|4.4
 articulei|verbo|passado|convênio técnico|locucao_substantiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|a projetos|locucao_substantiva|plural_masculino|de economia solidária|locucao_adjetiva|singular_feminino|4.4

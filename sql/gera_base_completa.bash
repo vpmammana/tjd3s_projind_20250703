@@ -1,3 +1,4 @@
+echo "Desenvolvido por Victor Mammana"
 echo "Gerando base de dados completa"
 echo "Limpando arquivos temporarios"
 
@@ -33,14 +34,17 @@ echo "Gerando inserts de frases"
 ./geracao_de_inserts/insert_frases.bash > insert_frases.sql
 
 echo "Criando banco de dados e inserindo dados"
-echo "Criando banco de dados papedins_db"
-mysql -u root -proot papedins_db < cria_banco_mvp.sql
+echo "Criando banco de dados papedins_mvp_db"
+echo "Nome da base foi alterado de papedins_db para papedins_mvp_db para evitar conflitos com a base de dados do servidor specchio (VPM 2024_11_20)"
+mysql -u root -ptoninho13 papedins_mvp_db < cria_banco_mvp.sql
+echo "Inserindo perguntas motivadoras para o preenchimento"
+mysql -u root -ptoninho13 papedins_mvp_db < insert_perguntas.sql 
 echo "Inserindo tipos_resultados"
-mysql -u root -proot papedins_db < insert_resultados.sql 
+mysql -u root -ptoninho13 papedins_mvp_db < insert_resultados.sql 
 echo "Inserindo dados"
-mysql -u root -proot papedins_db < insert_dados.sql 
+mysql -u root -ptoninho13 papedins_mvp_db < insert_dados.sql 
 echo "Inserindo tokens"
-mysql -u root -proot papedins_db < insert_tokens.sql 
+mysql -u root -ptoninho13 papedins_mvp_db < insert_tokens.sql 
 echo "Inserindo frases"
-mysql -u root -proot papedins_db < insert_frases.sql
+mysql -u root -ptoninho13 papedins_mvp_db < insert_frases.sql
 

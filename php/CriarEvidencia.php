@@ -3,7 +3,6 @@ ob_start();
 header('Content-Type: application/json; charset=utf-8');
 
 include "database.php";
-include "handleDecrypt.php";
 
 $response = ['success' => false, 'message' => ''];
 function log_request_data()
@@ -57,7 +56,7 @@ try {
     }
 
     curl_close($ch);
-    // variables used to capture request data from frontend
+
     $mapData = json_decode($response, true);
     $nome_usuario = $_POST['nome-usuario'];
     $nomeAtividadeEvento = $_POST['nome-atividade'];
@@ -93,7 +92,6 @@ try {
     $id_tipo_acao = 0;
     $id_pessoa = 0;
 
-    // procure o id_chave_pessoa pelo nome_pessoa
     $stmt = $conn->prepare("SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ?");
 
     if ($stmt === false) {
@@ -113,7 +111,6 @@ try {
         $response['message'] = $e->getMessage();
     }
 
-    // procure o id_chave_pais pelo nome_pais
     $stmt = $conn->prepare("SELECT id_chave_pais FROM paises where nome_pais = ?");
     $stmt->bind_param('s', $country);
 
@@ -133,7 +130,6 @@ try {
         $response['message'] = $e->getMessage();
     }
 
-    // procure o id_chave_estado pelo nome_estado
     $stmt = $conn->prepare("SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado =  ?");
     $stmt->bind_param('s', $state);
 
@@ -151,7 +147,6 @@ try {
         echo json_encode(['error' => $error_message]);
     }
 
-    // procureos dados de cidade pelo id_estado e o nome_cidade
     $stmt = $conn->prepare("SELECT * FROM cidades WHERE id_estado =  ? AND nome_cidade = ?");
 
     if ($stmt === false) {
@@ -171,7 +166,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    // insersão de dados de localização com os dados do Mapa e o id_estado, id_cidade e id_pais
+
     $stmt = $conn->prepare("INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
@@ -186,7 +181,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    // insersão de id_localizacao para a tabela de  enderecos
+
     $stmt = $conn->prepare("INSERT INTO enderecos (id_localizacao) VALUES (?)");
 
     if ($stmt === false) {
@@ -200,8 +195,6 @@ try {
     } else {
         error_log('Query failed: ' . $e->getMessage());
     }
-
-    // insercão de dados atividades_eventos, data_atividade_evento, hora_atividade_evento  para a tabela de atividades_eventos
     $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento) VALUES (?,?,?)");
 
     if ($stmt === false) {
@@ -217,129 +210,56 @@ try {
     }
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        try {
-            // Verifica se o diretoria de uploads existe
-            function handleFileUploads($fileInputName)
-            {
-                global $fileExtension;
-                global $quantidade_pessoas;
-                global $caminho_arquivo_anonimizado;
-                global $caminho_arquivo_original;
-                global $nome_arquivo;
-                $lockFile = "/var/www/html/php/pasteur.lock";
+        $uploadDir = '/var/www/html/uploads/';
 
-                if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
-                    foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
-                        if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
-                            // Verifica se tem um lockfile que é usado quando tem um arquivo sendo processado.
-                            while (file_exists($lockFile)) {
-                                error_log("Waiting for previous instance to finish...");
-                                sleep(10);
-                            }
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0777, true);
+        }
 
-                            // Cria o Lockfile para prevenir outras instancias
-                            file_put_contents($lockFile, '');
+        function handleFileUploads($fileInputName)
+        {
+            global $uploadDir;
+            global $fileExtension;
+            global $filePath;
+            global $fileName;
 
-                            // Gerenciar processo de carregar arquivo o output.json vai pegar os dados de procesamento de imagem
-                            file_put_contents('output.json', '');
+            if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
+                foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
+                    if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
+                        $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
+                        $fileExtension = pathinfo($name, PATHINFO_EXTENSION);
+                        $fileName = uniqid(rand(), true) . '.' . $fileExtension; // Generate a random filename
+                        $filePath = $uploadDir . $fileName;
 
-                            $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
-                            $fileExtension = pathinfo($name, PATHINFO_EXTENSION);
-                            $fileName = uniqid(rand(), true) . '.' . $fileExtension;
-                            $destinationPath = "../imagem/input/" . $fileName;
-
-                            error_log("destinationPath: " . $destinationPath);
-
-
-                            if (!move_uploaded_file($fileTmpPath, $destinationPath)) {
-                                throw new Exception('Error moving uploaded file.');
-                            }
-
-                            // Comanda de Python usado para fazer o processamento de imagem
-                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
-
-                            $output = [];
-                            $returnVar = 0;
-                            exec($command, $output, $returnVar);
-
-                            if ($returnVar !== 0) {
-                                // Empty the 'imagem/input' folder
-                                $files = glob('../imagem/input/*'); // Get all file names
-                                foreach ($files as $file) {
-                                    if (is_file($file)) {
-                                        unlink($file); // Delete each file
-                                    }
-                                }
-                                unlink($lockFile);
-
-                                error_log("Command failed with error code: $returnVar");
-                                header("HTTP/1.1 500 Internal Server Error");
-                            }
-                            //Pegar os dados de processamento de imagemns
-                            $output = file_get_contents('output.json');
-                            if ($output === false) {
-                                error_log("Failed to read output.json");
-                            } else {
-                                // formatar e configurar os dados de processamneto de imagem
-                                $jsonOutput = json_decode($output, true);
-                                error_log(json_encode($jsonOutput));
-                                $quantidade_pessoas = intval($jsonOutput['quantidade_pessoas']);
-                                $caminho_arquivo_anonimizado = $jsonOutput['caminho_arquivo_anonimizado'];
-                                $encryptKey = "tjd3s";
-                                $iv = "tjd3s";
-                                $caminho_arquivo_original = handleDecrypt($jsonOutput['caminho_arquivo_original'], $encryptKey, $iv);
-                                $nome_arquivo = $jsonOutput['nome_arquivo'];
-
-                                if (json_last_error() !== JSON_ERROR_NONE) {
-                                    error_log("JSON Decode Error: " . json_last_error_msg());
-                                    throw new Exception("JSON Decode Error: " . json_last_error_msg());
-                                } else {
-                                    $jsonString = json_encode($jsonOutput);
-                                }
-                            }
-
-                            if ($returnVar !== 0) {
-                                throw new Exception("Error: Python script execution failed.");
-                            } else {
-                                error_log("Python script executed successfully.");
-                            }
-
-                            // Remove the lock file
-                            unlink($lockFile);
-                        } else {
-                            throw new Exception('Error uploading file "' . htmlspecialchars($name) . '": ' . getUploadErrorMessage($_FILES[$fileInputName]['error'][$key]));
+                        if (!move_uploaded_file($fileTmpPath, $filePath)) {
+                            throw new Exception('Error moving file "' . htmlspecialchars($fileName) . '" to destination.');
                         }
+                    } else {
+                        throw new Exception('Error uploading file "' . htmlspecialchars($name) . '": ' . getUploadErrorMessage($_FILES[$fileInputName]['error'][$key]));
                     }
                 }
             }
-
-
-
-
-
-            function getUploadErrorMessage($errorCode)
-            {
-                switch ($errorCode) {
-                    case UPLOAD_ERR_INI_SIZE:
-                    case UPLOAD_ERR_FORM_SIZE:
-                        return 'File size exceeds the allowed limit.';
-                    case UPLOAD_ERR_PARTIAL:
-                        return 'File was only partially uploaded.';
-                    case UPLOAD_ERR_NO_FILE:
-                        return 'No file was uploaded.';
-                    default:
-                        return 'Unknown upload error.';
-                }
-            }
-            handleFileUploads('files');
-        } catch (Exception $e) {
-            error_log('Caught exception: ' .  $e->getMessage(), "\n");
-            http_response_code(500);
         }
+
+        function getUploadErrorMessage($errorCode)
+        {
+            switch ($errorCode) {
+                case UPLOAD_ERR_INI_SIZE:
+                case UPLOAD_ERR_FORM_SIZE:
+                    return 'File size exceeds the allowed limit.';
+                case UPLOAD_ERR_PARTIAL:
+                    return 'File was only partially uploaded.';
+                case UPLOAD_ERR_NO_FILE:
+                    return 'No file was uploaded.';
+                default:
+                    return 'Unknown upload error.';
+            }
+        }
+
+        handleFileUploads('files');
     }
 
     $extensao  = '.' . $fileExtension;
-    // Procure o id_chave_tipo_arquivo pela extensao
     $stmt = $conn->prepare("SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = ?");
 
     if ($stmt === false) {
@@ -360,14 +280,13 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    // Insersão de dados da tabela arquivos
-    $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original) VALUES (?, ?, ?)");
 
     if ($stmt === false) {
-        header("HTTP/1.1 500 Internal Server Error");
+        throw new Exception('Prepare failed: ' . $conn->error);
     }
 
-    $stmt->bind_param('sisis', $nome_arquivo, $id_tipo_arquivo, $caminho_arquivo_original, $quantidade_pessoas, $caminho_arquivo_anonimizado);
+    $stmt->bind_param('sis', $fileName, $id_tipo_arquivo, $filePath);
 
     if ($stmt->execute()) {
         $id_arquivo = $conn->insert_id;
@@ -375,7 +294,6 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    // Procure o id_chave_tipo_acao de tipos_acoes pelo o nome_tipo_acao
     $stmt = $conn->prepare("SELECT id_chave_tipo_acao FROM tipos_acoes WHERE nome_tipo_acao = ?");
 
     if ($stmt === false) {
@@ -395,7 +313,7 @@ try {
         error_log('Query failed: ' . $e->getMessage());
     }
 
-    // Insersão de dados de acoes
+
     $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     if ($stmt === false) {
@@ -415,9 +333,10 @@ try {
         'success' => true,
         'message' => 'Data submitted successfully'
     ];
+
+    echo json_encode($response);
 } catch (Exception $e) {
     $response['message'] = $e->getMessage();
-    header("HTTP/1.1 500 Internal Server Error");
 }
 
 $stmt->close();

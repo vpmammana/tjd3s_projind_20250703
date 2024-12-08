@@ -44,4 +44,3 @@ mobilizei|verbo|passado|participação jovem|locucao_substantiva|singular_femini
 fortaleci|verbo|passado|vozes juvenis|locucao_substantiva|plural_feminino|expressivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
 apoiei|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|dedicada|adjetivo|singular_feminino|em eventos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
 fomentei|verbo|passado|engajamento juvenil|locucao_substantiva|singular_masculino|sólido|adjetivo|singular_masculino|em fóruns|locucao_adjetiva|plural_masculino|municipais|adjetivo|plural_feminino|5.2
-

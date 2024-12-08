@@ -8,8 +8,6 @@ salvei|verbo|passado|frases descritivas|locucao_substantiva|plural_feminino|na p
 inseri|verbo|passado|dados completos|locucao_substantiva|plural_masculino|no aplicativo|locucao_substantiva|singular_masculino|do projeto|locucao_adjetiva|singular_masculino|para consulta|locucao_substantiva|singular_feminino|1.7
 registrei|verbo|passado|documentos e fotos|locucao_substantiva|plural_masculino|na plataforma|locucao_substantiva|singular_feminino|online|adjetivo|singular_comum|para arquivamento|locucao_substantiva|singular_masculino|1.7
 arquivei|verbo|passado|dados de eventos|locucao_substantiva|plural_masculino|no sistema|locucao_substantiva|singular_masculino|eletrônico|adjetivo|singular_masculino|para monitoramento|locucao_substantiva|singular_masculino|1.7
-
-
 registrei|verbo|passado|dados coletados|locucao_substantiva|plural_masculino|na plataforma|locucao_substantiva|singular_feminino|digital|adjetivo|singular_comum|para órgãos de controle|locucao_substantiva|plural_masculino|1.7
 arquivei|verbo|passado|documentos e fotos|locucao_substantiva|plural_masculino|no sistema|locucao_substantiva|singular_masculino|do projeto|locucao_adjetiva|singular_masculino|para acompanhamento|locucao_substantiva|singular_masculino|1.7
 salvei|verbo|passado|informações diagnósticas|locucao_substantiva|plural_feminino|na plataforma|locucao_substantiva|singular_feminino|centralizada|adjetivo|singular_feminino|para monitoramento externo|locucao_substantiva|singular_masculino|1.7
@@ -30,4 +28,3 @@ registrei|verbo|passado|evidências registradas|locucao_substantiva|plural_femin
 arquivei|verbo|passado|frases e descrições|locucao_substantiva|plural_feminino|no sistema|locucao_substantiva|singular_masculino|centralizado|adjetivo|singular_masculino|para análise institucional|locucao_substantiva|singular_feminino|1.7
 salvei|verbo|passado|dados completos|locucao_substantiva|plural_masculino|na plataforma|locucao_substantiva|singular_feminino|digital|adjetivo|singular_comum|para monitoramento oficial|locucao_substantiva|singular_masculino|1.7
 inseri|verbo|passado|documentação de eventos|locucao_substantiva|plural_feminino|no aplicativo|locucao_substantiva|singular_masculino|do projeto|locucao_adjetiva|singular_masculino|para consulta de controle|locucao_substantiva|singular_feminino|1.7
-

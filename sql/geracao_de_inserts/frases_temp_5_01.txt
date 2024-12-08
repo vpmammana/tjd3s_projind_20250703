@@ -18,7 +18,6 @@ mobilizei|verbo|passado|ações coletivas|locucao_substantiva|plural_feminino|su
 desenvolvi|verbo|passado|vínculos comunitários|locucao_substantiva|plural_masculino|produtivos|adjetivo|plural_masculino|com agentes|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.1
 estabeleci|verbo|passado|parcerias sólidas|locucao_substantiva|plural_feminino|eficazes|adjetivo|plural_comum|com agentes|locucao_adjetiva|plural_masculino|no território|locucao_substantiva|singular_masculino|5.1
 articulei|verbo|passado|ações regionais|locucao_substantiva|plural_feminino|integradas|adjetivo|plural_feminino|junto a agentes|locucao_adjetiva|plural_masculino|territoriais|adjetivo|plural_comum|5.1
-
 organizei|verbo|passado|encontros regionais|locucao_substantiva|plural_masculino|efetivos|adjetivo|plural_masculino|com agentes|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|5.1
 estruturei|verbo|passado|ações locais|locucao_substantiva|plural_feminino|colaborativas|adjetivo|plural_feminino|para agentes|locucao_adjetiva|plural_masculino|ativos|adjetivo|plural_masculino|5.1
 conduzi|verbo|passado|programa de integração|locucao_substantiva|singular_masculino|sustentável|adjetivo|singular_comum|entre agentes|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.1
@@ -44,11 +43,9 @@ organizei|verbo|passado|ações de articulação|locucao_substantiva|plural_femi
 facilitei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminino|inclusivas|adjetivo|plural_feminino|para agentes|locucao_adjetiva|plural_masculino|do território|locucao_substantiva|singular_masculino|5.1
 integrei|verbo|passado|ações comunitárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|com agentes|locucao_adjetiva|plural_masculino|territoriais|adjetivo|plural_comum|5.1
 mobilizei|verbo|passado|projetos colaborativos|locucao_substantiva|plural_masculino|efetivos|adjetivo|plural_masculino|para agentes|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.1
-
 fortaleci|verbo|passado|redes de agentes|locucao_substantiva|plural_feminino|comunitários|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_comum|5.1
 mobilizei|verbo|passado|encontros de agentes|locucao_substantiva|plural_masculino|cooperativos|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_comum|5.1
 orientei|verbo|passado|encontros de agentes|locucao_substantiva|plural_masculino|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_comum|5.1
-
 coordenei|verbo|passado|projetos de agentes|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|5.1
 integrei|verbo|passado|iniciativas de agentes|locucao_substantiva|plural_feminino|cooperativos|adjetivo|plural_masculino|com participação|locucao_adjetiva|singular_feminino|ativa|adjetivo|singular_feminino|5.1
 mobilizei|verbo|passado|reuniões entre agentes|locucao_substantiva|plural_masculino|engajados|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|local|adjetivo|singular_comum|5.1
@@ -81,4 +78,3 @@ fortaleci|verbo|passado|iniciativas regionais|locucao_substantiva|plural_feminin
 integrei|verbo|passado|redes colaborativas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para agentes|locucao_adjetiva|plural_masculino|no território|locucao_adjetiva|singular_masculino|5.1
 coordenei|verbo|passado|projetos de apoio|locucao_substantiva|plural_masculino|coletivos|adjetivo|plural_masculino|para agentes|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.1
 estruturei|verbo|passado|ações locais|locucao_substantiva|plural_feminino|de agentes|locucao_adjetiva|plural_masculino|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|5.1
-

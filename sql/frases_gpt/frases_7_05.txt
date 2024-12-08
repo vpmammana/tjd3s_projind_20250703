@@ -1,4 +1,4 @@
-apresentei|verbo|passado|pesquisa aplicada|locucao_substantiva|singular_feminina|sobre sustentabilidade|locucao_adjetiva|singular_feminina|em evento|locucao_substantiva|singular_masculino|7.5
+apresentei|verbo|passado|pesquisa|substantivo|singular_feminino|aplicada|adjetivo|singular_feminino|sobre sustentabilidade|locucao_adjetiva|singular_feminina|em evento|locucao_substantiva|singular_masculino|7.5
 apresentei|verbo|passado|pesquisa aplicada|locucao_substantiva|singular_feminina|sobre sustentabilidade|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|em seminário|locucao_substantiva|singular_masculino|7.5
 apresentei|verbo|passado|pesquisa sobre agroecologia|locucao_substantiva|singular_feminina|voltada para|locucao_adjetiva|singular_feminina|cooperativas|locucao_substantiva|plural_feminina|no congresso|locucao_substantiva|singular_masculino|7.5
 apresentei|verbo|passado|projeto comunitário|locucao_substantiva|singular_masculino|voltado para|locucao_adjetiva|singular_feminina|sustentabilidade|locucao_substantiva|singular_feminina|em congresso|locucao_substantiva|singular_masculino|7.5
@@ -26,7 +26,7 @@ orientei|verbo|passado|debate comunitário|locucao_substantiva|singular_masculin
 orientei|verbo|passado|mesa temática|locucao_substantiva|singular_feminina|sobre reciclagem|locucao_adjetiva|singular_feminina|no seminário|locucao_substantiva|singular_masculino|regional|adjetivo|singular_masculino|7.5
 orientei|verbo|passado|oficina prática|locucao_substantiva|singular_feminina|voltada para|locucao_adjetiva|singular_feminina|juventude|locucao_substantiva|singular_feminina|em conferência|locucao_substantiva|singular_feminina|7.5
 orientei|verbo|passado|oficina sobre reciclagem|locucao_substantiva|singular_feminina|voltada para|locucao_adjetiva|singular_feminina|sustentabilidade|locucao_substantiva|singular_feminina|em evento|locucao_substantiva|singular_masculino|7.5
-orientei|verbo|passado|oficina técnica|locucao_substantiva|singular_feminina|em conferência|locucao_substantiva|singular_feminina|nacional|adjetivo|singular_feminina|7.5
+orientei|verbo|passado|oficina|substantivo|singular_feminino|técnica|adjetivo|singular_feminina|em conferência|locucao_substantiva|singular_feminina|nacional|adjetivo|singular_feminina|7.5
 orientei|verbo|passado|painel de debates|locucao_substantiva|singular_masculino|sobre finanças|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|em evento|locucao_substantiva|singular_masculino|7.5
 orientei|verbo|passado|sessão formativa|locucao_substantiva|singular_feminina|sobre agroecologia|locucao_adjetiva|singular_feminina|em congresso|locucao_substantiva|singular_masculino|internacional|adjetivo|singular_masculino|7.5
 

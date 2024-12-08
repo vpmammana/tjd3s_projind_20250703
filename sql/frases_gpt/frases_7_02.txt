@@ -9,7 +9,7 @@ apoiei|verbo|passado|estrutura de venda|locucao_substantiva|singular_feminina|ad
 estruturei|verbo|passado|programação de feira|locucao_substantiva|singular_feminina|regional|adjetivo|singular_feminina|para economia solidária|locucao_adjetiva|singular_feminina|local|adjetivo|singular_feminina|7.2
 facilitei|verbo|passado|infraestrutura de feira|locucao_substantiva|singular_feminina|adequada|adjetivo|singular_feminina|para produtos solidários|locucao_adjetiva|plural_masculina|regionais|adjetivo|plural_masculino|7.2
 
-iaprovei|verbo|passado|plano logístico|locucao_substantiva|singular_masculina|estruturado|adjetivo|singular_masculino|para feira|locucao_adjetiva|singular_feminina|local|adjetivo|singular_feminina|7.2
+aprovei|verbo|passado|plano logístico|locucao_substantiva|singular_masculina|estruturado|adjetivo|singular_masculino|para feira|locucao_adjetiva|singular_feminina|local|adjetivo|singular_feminina|7.2
 facilitei|verbo|passado|espaço de exposição|locucao_substantiva|singular_masculina|adequado|adjetivo|singular_masculino|para feiras|locucao_adjetiva|plural_feminina|regionais|adjetivo|plural_feminina|7.2
 organizei|verbo|passado|estrutura de vendas|locucao_substantiva|plural_feminina|para feiras|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.2
 apoiei|verbo|passado|logística detalhada|locucao_substantiva|singular_feminina|adequada|adjetivo|singular_feminina|para feiras|locucao_adjetiva|plural_feminina|locais|adjetivo|plural_feminina|7.2

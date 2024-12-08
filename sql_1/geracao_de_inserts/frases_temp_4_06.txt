@@ -1,0 +1,73 @@
+integrei|verbo|passado|comissão decisória|locucao_substantiva|singular_feminino|de conselheiros|locucao_substantiva|plural_masculino|em cooperativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+integrei|verbo|passado|conselho comunitário|locucao_substantiva|singular_masculino|de cooperativas|locucao_adjetiva|plural_feminino|em redes|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+atuei|verbo|passado|comitê executivo|locucao_substantiva|singular_masculino|como conselheiro|locucao_adjetiva|singular_masculino|em movimentos|locucao_substantiva|plural_masculino|sociais|adjetivo|plural_masculino|4.6
+integrei|verbo|passado|fórum decisório|locucao_substantiva|singular_masculino|de associações|locucao_adjetiva|plural_feminino|em redes|locucao_substantiva|plural_feminino|econômicas|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|plenária geral|locucao_substantiva|singular_feminino|de conselhos|locucao_substantiva|plural_masculino|em cooperativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+integrei|verbo|passado|assembleia decisória|locucao_substantiva|singular_feminino|de associações|locucao_adjetiva|plural_feminino|em redes|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+atuei|verbo|passado|comissão formal|locucao_substantiva|singular_feminino|como conselheiro|locucao_adjetiva|singular_masculino|em cooperativas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+integrei|verbo|passado|comitê estratégico|locucao_substantiva|singular_masculino|de conselhos|locucao_adjetiva|plural_masculino|em associações|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|mesa diretiva|locucao_substantiva|singular_feminino|de redes|locucao_adjetiva|plural_feminino|em cooperativas|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+atuei|verbo|passado|fórum setorial|locucao_substantiva|singular_masculino|de economia|locucao_adjetiva|singular_feminino|solidária|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.6
+
+integrei|verbo|passado|comitê de decisão|locucao_substantiva|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|em redes|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+liderei|verbo|passado|plenária|substantivo|singular_feminino|com representantes|locucao_adjetiva|plural_masculino|em associações|locucao_substantiva|plural_feminino|econômicas|adjetivo|plural_feminino|4.6
+presidi|verbo|passado|comissão estratégica|locucao_substantiva|singular_feminino|de conselhos|locucao_substantiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.6
+coordenei|verbo|passado|assembleia geral|locucao_substantiva|singular_feminino|de cooperativas|locucao_adjetiva|plural_feminino|em redes|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+atuei|verbo|passado|comitê de gestão|locucao_substantiva|singular_masculino|para associações|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|regionais|adjetivo|plural_comum|4.6
+integrei|verbo|passado|conselho comunitário|locucao_substantiva|singular_masculino|para redes|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|popular|adjetivo|singular_comum|4.6
+liderei|verbo|passado|sessão plenária|locucao_substantiva|singular_feminino|com conselheiros|locucao_adjetiva|plural_masculino|de associações|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|comissão de conselho|locucao_substantiva|singular_feminino|em cooperativas|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+integrei|verbo|passado|comitê setorial|locucao_substantiva|singular_masculino|de economia|locucao_adjetiva|singular_feminino|solidária|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.6
+coordenei|verbo|passado|mesa diretiva|locucao_substantiva|singular_feminino|de conselhos|locucao_substantiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+atuei|verbo|passado|assembleia decisória|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+presidi|verbo|passado|conselho deliberativo|locucao_substantiva|singular_masculino|de associações|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|comissão de decisões|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+liderei|verbo|passado|mesa de conselhos|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+presidi|verbo|passado|plenária estratégica|locucao_substantiva|singular_feminino|de conselheiros|locucao_substantiva|plural_masculino|em associações|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|sessão de decisões|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|locais|adjetivo|plural_comum|4.6
+coordenei|verbo|passado|assembleia setorial|locucao_substantiva|singular_feminino|em redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+presidi|verbo|passado|comissão de avaliação|locucao_substantiva|singular_feminino|em associações|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|mesa diretora|locucao_substantiva|singular_feminino|de redes|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+liderei|verbo|passado|conselho de gestão|locucao_substantiva|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|sessão deliberativa|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+atuei|verbo|passado|comissão estratégica|locucao_substantiva|singular_feminino|em conselhos|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|comissão de decisões|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+liderei|verbo|passado|mesa de conselhos|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|solidárias|adjetivo|plural_feminino|4.6
+presidi|verbo|passado|conselho geral|locucao_substantiva|singular_masculino|em cooperativas|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|mesa decisória|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+atuei|verbo|passado|assembleia executiva|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+coordenei|verbo|passado|comitê de governança|locucao_substantiva|singular_masculino|de conselhos|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.6
+presidi|verbo|passado|sessão de deliberação|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|popular|adjetivo|singular_comum|4.6
+liderei|verbo|passado|comissão de planejamento|locucao_substantiva|singular_feminino|em cooperativas|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|comissão de apoio|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+coordenei|verbo|passado|mesa de debates|locucao_substantiva|singular_feminino|em conselhos|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+ 
+presidi|verbo|passado|comissão executiva|locucao_substantiva|singular_feminino|com associações|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|comitê de planejamento|locucao_substantiva|singular_masculino|para redes|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|econômicas|adjetivo|plural_feminino|4.6
+coordenei|verbo|passado|mesa de análise|locucao_substantiva|singular_feminino|para conselhos|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.6
+atuei|verbo|passado|comissão de acompanhamento|locucao_substantiva|singular_feminino|de associações|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+presidi|verbo|passado|assembleia geral|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|comunitário|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|conselho de governança|locucao_substantiva|singular_masculino|de redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|mesa diretora|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|popular|adjetivo|singular_comum|4.6
+coordenei|verbo|passado|sessão plenária|locucao_substantiva|singular_feminino|de conselheiros|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+atuei|verbo|passado|assembleia executiva|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|comissão decisória|locucao_substantiva|singular_feminino|em cooperativas|locucao_adjetiva|plural_feminino|regionais|substantivo|plural_feminino|solidárias|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|conselho executivo|locucao_substantiva|singular_masculino|de redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+coordenei|verbo|passado|mesa diretiva|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|comunitário|adjetivo|singular_masculino|4.6
+presidi|verbo|passado|assembleia de gestão|locucao_substantiva|singular_feminino|em cooperativas|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|comissão de apoio|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+coordenei|verbo|passado|mesa de trabalho|locucao_substantiva|singular_feminino|de conselhos|locucao_adjetiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+presidi|verbo|passado|plenária de conselhos|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|solidárias|adjetivo|plural_feminino|4.6
+integrei|verbo|passado|sessão deliberativa|locucao_substantiva|singular_feminino|em redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+atuei|verbo|passado|comissão estratégica|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+coordenei|verbo|passado|assembleia executiva|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|conselho geral|locucao_substantiva|singular_masculino|de cooperativas|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+integrei|verbo|passado|comitê de planejamento|locucao_substantiva|singular_masculino|de redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|mesa de decisão|locucao_substantiva|singular_feminino|para associações|locucao_adjetiva|plural_feminino|locais|substantivo|plural_comum|econômicas|adjetivo|plural_feminino|4.6
+atuei|verbo|passado|assembleia de apoio|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+coordenei|verbo|passado|sessão de avaliação|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|popular|adjetivo|singular_comum|4.6
+presidi|verbo|passado|comissão de cooperação|locucao_substantiva|singular_feminino|para conselhos|locucao_adjetiva|plural_masculino|locais|substantivo|plural_comum|solidários|adjetivo|plural_masculino|4.6
+integrei|verbo|passado|comissão de análise|locucao_substantiva|singular_feminino|em cooperativas|locucao_adjetiva|plural_feminino|no setor|locucao_substantiva|singular_masculino|econômico|adjetivo|singular_masculino|4.6
+coordenei|verbo|passado|plenária setorial|locucao_substantiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|solidárias|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|4.6
+presidi|verbo|passado|assembleia de conselhos|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjet
+

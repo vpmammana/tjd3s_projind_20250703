@@ -1,15 +1,13 @@
 acompanhei|verbo|passado|processo de registro|locucao_substantiva|singular_masculino|para iniciativas|locucao_substantiva|plural_feminino|junto aos conselhos|locucao_substantiva|plural_masculino|pertinentes|adjetivo|plural_comum|3.4
 monitorei|verbo|passado|etapas de cadastro|locucao_substantiva|plural_feminino|de redes solidárias|locucao_substantiva|plural_feminino|nas instâncias|locucao_substantiva|plural_feminino|responsáveis|adjetivo|plural_comum|3.4
 supervisei|verbo|passado|andamento do registro|locucao_substantiva|singular_masculino|para iniciativas locais|locucao_substantiva|plural_feminino|com os conselhos|locucao_substantiva|plural_masculino|designados|adjetivo|plural_masculino|3.4
-|apoiei|verbo|passado|processo de cadastro|locucao_substantiva|singular_masculino|de redes econômicas|locucao_substantiva|plural_feminino|junto às instâncias|locucao_substantiva|plural_feminino|responsáveis|adjetivo|plural_comum|3.4
+apoiei|verbo|passado|processo de cadastro|locucao_substantiva|singular_masculino|de redes econômicas|locucao_substantiva|plural_feminino|junto às instâncias|locucao_substantiva|plural_feminino|responsáveis|adjetivo|plural_comum|3.4
 monitorei|verbo|passado|fases de registro|locucao_substantiva|plural_feminino|de empreendimentos|locucao_substantiva|plural_masculino|nas instâncias|locucao_substantiva|plural_feminino|específicas|adjetivo|plural_feminino|3.4
 acompanhei|verbo|passado|cadastro de iniciativas|locucao_substantiva|plural_feminino|para o CADSOL|locucao_substantiva|singular_masculino|com os conselhos|locucao_substantiva|plural_masculino|competentes|adjetivo|plural_comum|3.4
 observei|verbo|passado|progresso de registro|locucao_substantiva|singular_masculino|de redes|locucao_substantiva|plural_feminino|nos órgãos|locucao_substantiva|plural_masculino|designados|adjetivo|plural_masculino|3.4
 monitorei|verbo|passado|processo de inscricao|locucao_substantiva|singular_masculino|para empreendimentos|locucao_substantiva|plural_masculino|junto aos conselhos|locucao_substantiva|plural_masculino|designados|adjetivo|plural_masculino|3.4
 acompanhei|verbo|passado|fases de cadastro|locucao_substantiva|plural_feminino|de redes|locucao_substantiva|plural_feminino|nas instâncias|locucao_substantiva|plural_feminino|pertinentes|adjetivo|plural_comum|3.4
 supervisei|verbo|passado|registro de iniciativas|locucao_substantiva|plural_feminino|para o CADSOL|locucao_substantiva|singular_masculino|com os órgãos|locucao_substantiva|plural_masculino|responsáveis|adjetivo|plural_comum|3.4
-
-
 supervisei|verbo|passado|cadastro de redes|locucao_substantiva|plural_feminino|no CADSOL|locucao_substantiva|singular_masculino|junto aos conselhos|locucao_substantiva|plural_masculino|competentes|adjetivo|plural_comum|3.4
 acompanhei|verbo|passado|registro formal|locucao_substantiva|singular_masculino|para redes solidárias|locucao_substantiva|plural_feminino|junto aos órgãos|locucao_substantiva|plural_masculino|designados|adjetivo|plural_masculino|3.4
 monitorei|verbo|passado|andamento de inscrição|locucao_substantiva|singular_feminino|de iniciativas|locucao_substantiva|plural_feminino|nas instâncias|locucao_substantiva|plural_feminino|competentes|adjetivo|plural_comum|3.4
@@ -51,4 +49,3 @@ monitorei|verbo|passado|fases de inscrição|locucao_substantiva|plural_feminino
 acompanhei|verbo|passado|progresso de cadastro|locucao_substantiva|singular_masculino|para redes locais|locucao_substantiva|plural_feminino|nas instâncias|locucao_substantiva|plural_feminino|responsáveis|adjetivo|plural_comum|3.4
 supervisei|verbo|passado|registro de redes|locucao_substantiva|plural_feminino|para o CADSOL|locucao_substantiva|singular_masculino|junto aos conselhos|locucao_substantiva|plural_masculino|pertinentes|adjetivo|plural_comum|3.4
 monitorei|verbo|passado|andamento do cadastro|locucao_substantiva|singular_masculino|de empreendimentos|locucao_substantiva|plural_masculino|nas instâncias|locucao_substantiva|plural_feminino|competentes|adjetivo|plural_comum|3.4
-

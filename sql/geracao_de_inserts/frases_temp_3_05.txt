@@ -8,7 +8,6 @@ comparei|verbo|passado|qualidade de registros|locucao_substantiva|plural_masculi
 analisei|verbo|passado|confiabilidade das informações|locucao_substantiva|plural_feminino|registradas|adjetivo|plural_feminino|no CADSOL|locucao_substantiva|singular_masculino|usando comparativo|locucao_substantiva|singular_masculino|3.5
 verifiquei|verbo|passado|dados armazenados|locucao_substantiva|plural_masculino|no CADSOL|locucao_substantiva|singular_masculino|com relação|locucao_substantiva|singular_feminino|a dados levantados|locucao_substantiva|plural_masculino|3.5
 examinei|verbo|passado|registros disponíveis|locucao_substantiva|plural_masculino|no CADSOL|locucao_substantiva|singular_masculino|contra dados|locucao_substantiva|plural_masculino|do território|locucao_adjetiva|singular_masculino|3.5
-
 verifiquei|verbo|passado|informações registradas|locucao_substantiva|plural_feminino|no CADSOL|locucao_substantiva|singular_masculino|contra dados|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|3.5
 comparei|verbo|passado|cadastros disponíveis|locucao_substantiva|plural_masculino|no CADSOL|locucao_substantiva|singular_masculino|com levantamentos|locucao_substantiva|plural_masculino|realizados|adjetivo|plural_masculino|3.5
 avaliei|verbo|passado|confiabilidade dos dados|locucao_substantiva|plural_masculino|no CADSOL|locucao_substantiva|singular_masculino|usando informações|locucao_substantiva|plural_feminino|territoriais|adjetivo|plural_comum|3.5
@@ -52,4 +51,3 @@ examinei|verbo|passado|qualidade de dados|locucao_substantiva|plural_masculino|r
 avaliei|verbo|passado|precisão dos cadastros|locucao_substantiva|plural_masculino|para iniciativas|locucao_substantiva|plural_feminino|no CADSOL|locucao_adjetiva|singular_masculino|usando levantamento|locucao_substantiva|singular_masculino|3.5
 analisei|verbo|passado|qualidade dos registros|locucao_substantiva|plural_masculino|de redes|locucao_substantiva|plural_feminino|no CADSOL|locucao_adjetiva|singular_masculino|em comparação|locucao_substantiva|singular_feminino|3.5
 comparei|verbo|passado|informações registradas|locucao_substantiva|plural_feminino|no CADSOL|locucao_substantiva|singular_masculino|com levantamento|locucao_substantiva|singular_masculino|obtido|adjetivo|singular_masculino|3.5
-

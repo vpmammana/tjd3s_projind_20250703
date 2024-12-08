@@ -27,7 +27,7 @@ organizei|verbo|passado|logística necessária|locucao_substantiva|singular_femi
 supervisionei|verbo|passado|estruturação de seminário|locucao_substantiva|singular_masculina|regional|adjetivo|singular_masculino|para economia solidária|locucao_adjetiva|singular_feminina|7.1
 facilitei|verbo|passado|planejamento técnico|locucao_substantiva|singular_masculina|detalhado|adjetivo|singular_masculino|para congressos|locucao_adjetiva|plural_masculina|solidários|adjetivo|plural_masculino|7.1
 apoiei|verbo|passado|detalhamento do evento|locucao_substantiva|singular_masculina|estratégico|adjetivo|singular_masculino|para seminário|locucao_adjetiva|singular_masculina|regional|adjetivo|singular_masculino|7.1
-coordenei|verbo|passado|infraestrutura de congressos|locucao_substantiva|plural_masculina|adequada|adjetivo|singular_feminina|para a economia solidária|locucao_adjetiva|singular_feminina|7.1
+coordenei|verbo|passado|infraestrutura|substantivo|singular_feminino|de congressos|locucao_adjetiva|plural_masculina|adequada|adjetivo|singular_feminina|para a economia solidária|locucao_adjetiva|singular_feminina|7.1
 desenvolvi|verbo|passado|estratégia organizacional|locucao_substantiva|singular_feminina|completa|adjetivo|singular_feminina|para seminários|locucao_adjetiva|plural_masculina|nacionais|adjetivo|plural_masculino|7.1
 estruturei|verbo|passado|sessão temática|locucao_substantiva|singular_feminina|voltada|adjetivo|singular_feminina|à economia solidária|locucao_adjetiva|singular_feminina|local|adjetivo|singular_feminina|7.1
 organizei|verbo|passado|detalhamento técnico|locucao_substantiva|singular_masculina|específico|adjetivo|singular_masculino|para eventos|locucao_adjetiva|plural_masculina|solidários|adjetivo|plural_masculino|7.1

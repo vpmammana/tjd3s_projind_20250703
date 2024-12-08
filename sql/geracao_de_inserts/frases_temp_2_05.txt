@@ -8,7 +8,6 @@ gerenciei|verbo|passado|conta do Twitter|locucao_substantiva|singular_feminino|o
 coordenei|verbo|passado|grupo de Facebook|locucao_substantiva|singular_masculino|colaborativo|adjetivo|singular_masculino|para iniciativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|2.5
 administrei|verbo|passado|servidor do Discord|locucao_substantiva|singular_masculino|interativo|adjetivo|singular_masculino|para trocas de experiências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.5
 supervisionei|verbo|passado|canal de comunicação|locucao_substantiva|singular_masculino|dinâmico|adjetivo|singular_masculino|entre agentes|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.5
-
 administrei|verbo|passado|rede de contatos|locucao_substantiva|singular_feminino|ativa|adjetivo|singular_feminino|entre cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.5
 coordenei|verbo|passado|perfil oficial|locucao_substantiva|singular_masculino|dedicado|adjetivo|singular_masculino|para integração|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.5
 gerenciei|verbo|passado|grupo de WhatsApp|locucao_substantiva|singular_masculino|colaborativo|adjetivo|singular_masculino|para comunicação|locucao_adjetiva|singular_feminino|direta|adjetivo|singular_feminino|2.5
@@ -47,4 +46,3 @@ organizei|verbo|passado|grupo de Facebook|locucao_substantiva|singular_masculino
 gerenciei|verbo|passado|conta de YouTube|locucao_substantiva|singular_feminino|oficial|adjetivo|singular_comum|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.5
 administrei|verbo|passado|grupo de WhatsApp|locucao_substantiva|singular_masculino|exclusivo|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.5
 coordenei|verbo|passado|rede de comunicação|locucao_substantiva|singular_feminino|interativa|adjetivo|singular_feminino|para integração|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.5
-

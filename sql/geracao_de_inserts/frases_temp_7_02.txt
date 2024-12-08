@@ -8,10 +8,8 @@ facilitei|verbo|passado|logística necessária|locucao_substantiva|singular_femi
 apoiei|verbo|passado|estrutura de venda|locucao_substantiva|singular_feminino|adequada|adjetivo|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|7.2
 estruturei|verbo|passado|programação de feira|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|para economia solidária|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|7.2
 facilitei|verbo|passado|infraestrutura de feira|locucao_substantiva|singular_feminino|adequada|adjetivo|singular_feminino|para produtos solidários|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|7.2
-
-iaprovei|verbo|passado|plano logístico|locucao_substantiva|singular_masculino|estruturado|adjetivo|singular_masculino|para feira|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|7.2
+aprovei|verbo|passado|plano logístico|locucao_substantiva|singular_masculino|estruturado|adjetivo|singular_masculino|para feira|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|7.2
 facilitei|verbo|passado|espaço de exposição|locucao_substantiva|singular_masculino|adequado|adjetivo|singular_masculino|para feiras|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|7.2
-organizei|verbo|passado|estrutura de vendas|locucao_substantiva|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|7.2
 apoiei|verbo|passado|logística detalhada|locucao_substantiva|singular_feminino|adequada|adjetivo|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|7.2
 estruturei|verbo|passado|planejamento de feira|locucao_substantiva|singular_feminino|estruturado|adjetivo|singular_masculino|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|7.2
 coordenarei|verbo|passado|evento de vendas|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em produtos solidários|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|7.2
@@ -38,7 +36,6 @@ facilitei|verbo|passado|logística de feira|locucao_substantiva|singular_feminin
 apoiei|verbo|passado|organização para feiras|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|7.2
 estruturei|verbo|passado|eventos para feiras|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para produtos solidários|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|7.2
 facilitei|verbo|passado|infraestrutura de feiras|locucao_substantiva|singular_feminino|orientadas|adjetivo|plural_feminino|à economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|7.2
-
 organizei|verbo|passado|estrutura|substantivo|singular_feminino|para feira|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|com sucesso|adverbio|modo|7.2
 facilitei|verbo|passado|planejamento|substantivo|singular_masculino|para feiras|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|em parceria|adverbio|modo|7.2
 coordenarei|verbo|passado|evento|substantivo|singular_masculino|para economia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|com êxito|adverbio|modo|7.2
@@ -48,7 +45,6 @@ facilitei|verbo|passado|infraestrutura|substantivo|singular_feminino|para feiras
 apoiei|verbo|passado|organização|substantivo|singular_feminino|de feiras|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|com apoio|adverbio|modo|7.2
 estruturei|verbo|passado|evento|substantivo|singular_masculino|de produtos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|com sucesso|adverbio|modo|7.2
 facilitei|verbo|passado|acesso|substantivo|singular_masculino|para feiras|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|de forma segura|adverbio|modo|7.2
-organizei|verbo|passado|estrutura|substantivo|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|de produtos|locucao_substantiva|plural_masculino|7.2
 apoiei|verbo|passado|programação|substantivo|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|com suporte|adverbio|modo|7.2
 facilitei|verbo|passado|planejamento|substantivo|singular_masculino|para eventos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|em parceria|adverbio|modo|7.2
 organizei|verbo|passado|infraestrutura|substantivo|singular_feminino|para feiras|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|de forma precisa|adverbio|modo|7.2
@@ -69,4 +65,3 @@ organizei|verbo|passado|programação|substantivo|singular_feminino|para feiras|
 apoiei|verbo|passado|estrutura|substantivo|singular_feminino|para eventos|locucao_adjetiva|plural_masculino|voltados|adjetivo|plural_masculino|para economia|locucao_substantiva|singular_feminino|7.2
 facilitei|verbo|passado|feira|substantivo|singular_feminino|de economia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|com apoio|adverbio|modo|7.2
 coordenei|verbo|passado|espaço|substantivo|singular_masculino|para economia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|regional|adjetivo|singular_comum|7.2
-

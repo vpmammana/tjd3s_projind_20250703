@@ -28,7 +28,6 @@ analisei|verbo|passado|termo de outorga|locucao_substantiva|singular_masculino|p
 revisei|verbo|passado|situação contratual|locucao_substantiva|singular_feminino|para verificar|locucao_adjetiva|singular_feminino|aderência|locucao_substantiva|singular_feminino|aos requisitos|locucao_adjetiva|plural_masculino|8.1
 conferi|verbo|passado|dados dos bolsistas|locucao_substantiva|plural_masculino|para confirmar|locucao_adjetiva|singular_feminino|conformidade|locucao_substantiva|singular_feminino|contratual|adjetivo|singular_feminino|8.1
 analisei|verbo|passado|termos de outorga|locucao_substantiva|plural_masculino|para validar|locucao_adjetiva|singular_feminino|vínculos|locucao_substantiva|plural_masculino|oficiais|adjetivo|plural_masculino|8.1
-
 revisei|verbo|passado|planos de trabalho|locucao_substantiva|plural_masculino|para avaliar|locucao_adjetiva|singular_feminino|a qualidade|locucao_substantiva|singular_feminino|dos bolsistas|locucao_adjetiva|plural_masculino|8.1
 conferi|verbo|passado|relatórios entregues|locucao_substantiva|plural_masculino|para verificar|locucao_adjetiva|singular_feminino|a regularidade|locucao_substantiva|singular_feminino|dos bolsistas|locucao_adjetiva|plural_masculino|8.1
 analisei|verbo|passado|número de bolsas|locucao_substantiva|singular_masculino|pagas|adjetivo|plural_feminino|para garantir|locucao_adjetiva|singular_feminino|aderência|locucao_substantiva|singular_feminino|8.1
@@ -37,8 +36,6 @@ verifiquei|verbo|passado|qualidade dos relatórios|locucao_substantiva|plural_ma
 analisei|verbo|passado|condições de outorga|locucao_substantiva|plural_feminino|para garantir|locucao_adjetiva|singular_feminino|aderência|locucao_substantiva|singular_feminino|às normas|locucao_adjetiva|plural_feminino|8.1
 conferi|verbo|passado|relatórios mensais|locucao_substantiva|plural_masculino|para verificar|locucao_adjetiva|singular_feminino|as entregas|locucao_substantiva|plural_feminino|em tempo|locucao_adjetiva|singular_masculino|8.1
 analisei|verbo|passado|relatórios de atividades|locucao_substantiva|plural_masculino|para garantir|locucao_adjetiva|singular_feminino|a consistência|locucao_substantiva|singular_feminino|dos dados|locucao_substantiva|plural_masculino|8.1
-
-
 revisei|verbo|passado|termos de outorga|locucao_substantiva|plural_masculino|completos|adjetivo|plural_masculino|para assegurar|locucao_adjetiva|singular_feminino|conformidade|locucao_substantiva|singular_feminino|8.1
 conferi|verbo|passado|planos de trabalho|locucao_substantiva|plural_masculino|dos bolsistas|locucao_adjetiva|plural_masculino|para avaliar|locucao_adjetiva|singular_feminino|qualidade|locucao_substantiva|singular_feminino|8.1
 verifiquei|verbo|passado|relatórios de atividades|locucao_substantiva|plural_masculino|entregues|adjetivo|plural_masculino|para análise|locucao_adjetiva|singular_feminino|criteriosa|adjetivo|singular_feminino|8.1
@@ -52,19 +49,12 @@ conferi|verbo|passado|vigência dos termos|locucao_substantiva|plural_masculino|
 verifiquei|verbo|passado|frequência de relatórios|locucao_substantiva|singular_feminino|dos bolsistas|locucao_adjetiva|plural_masculino|para analisar|locucao_adjetiva|singular_feminino|regularidade|locucao_substantiva|singular_feminino|8.1
 analisei|verbo|passado|relatórios entregues|locucao_substantiva|plural_masculino|dos bolsistas|locucao_adjetiva|plural_masculino|para avaliar|locucao_adjetiva|singular_feminino|qualidade|locucao_substantiva|singular_feminino|8.1
 conferi|verbo|passado|entrega de relatórios|locucao_substantiva|singular_feminino|para bolsistas|locucao_adjetiva|plural_masculino|para manter|locucao_adjetiva|singular_feminino|controle|locucao_substantiva|singular_feminino|8.1
-revisei|verbo|passado|planos de trabalho|locucao_substantiva|plural_masculino|dos bolsistas|locucao_adjetiva|plural_masculino|para validar|locucao_adjetiva|singular_feminino|conformidade|locucao_substantiva|singular_feminino|necessária|adjetivo|singular_feminino|8.1
 analisei|verbo|passado|condições de outorga|locucao_substantiva|plural_feminino|dos bolsistas|locucao_adjetiva|plural_masculino|para garantir|locucao_adjetiva|singular_feminino|regularidade|locucao_substantiva|singular_feminino|8.1
 revisei|verbo|passado|documentos de outorga|locucao_substantiva|plural_masculino|completos|adjetivo|plural_masculino|para garantir|locucao_adjetiva|singular_feminino|conformidade|locucao_substantiva|singular_feminino|8.1
-
-
-
-
 analisei|verbo|passado|lista completa|locucao_substantiva|singular_feminino|de bolsistas|locucao_adjetiva|plural_masculino|para verificação|locucao_adjetiva|singular_feminino|detalhada|adjetivo|singular_feminino|8.1
 conferi|verbo|passado|entrega de relatórios|locucao_substantiva|singular_feminino|dos bolsistas|locucao_adjetiva|plural_masculino|para análise|locucao_adjetiva|singular_feminino|consistente|adjetivo|singular_feminino|8.1
 revisei|verbo|passado|validades de outorga|locucao_substantiva|plural_feminino|para manter|locucao_adjetiva|singular_feminino|vínculos|locucao_substantiva|plural_masculino|corretos|adjetivo|plural_masculino|8.1
 verifiquei|verbo|passado|lista de bolsistas|locucao_substantiva|singular_feminino|para assegurar|locucao_adjetiva|singular_feminino|qualidade|locucao_substantiva|singular_feminino|dos vínculos|locucao_adjetiva|plural_masculino|8.1
-
-
 revisei|verbo|passado|lista de bolsistas|locucao_substantiva|singular_feminino|completa|adjetivo|singular_feminino|para o projeto|locucao_adjetiva|singular_masculino|vigente|adjetivo|singular_comum|8.1
 verifiquei|verbo|passado|planos de trabalho|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|para os bolsistas|locucao_adjetiva|plural_masculino|ativos|adjetivo|plural_masculino|8.1
 analisei|verbo|passado|relatórios mensais|locucao_substantiva|plural_masculino|submetidos|adjetivo|plural_masculino|para revisão|locucao_adjetiva|singular_feminino|completa|adjetivo|singular_feminino|8.1

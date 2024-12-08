@@ -1,5 +1,6 @@
 # TABELAS COM 6 CONSTRAINTS
-
+# desenvolvido por Victor Mammana
+DROP TABLE IF EXISTS perguntas;
 DROP TABLE IF EXISTS `acoes`;
 
 # TABELAS COM 2 CONSTRAINTS
@@ -42,6 +43,20 @@ DROP TABLE IF EXISTS `tipos_vinculos`;
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE perguntas (
+  id_chave_pergunta int NOT NULL AUTO_INCREMENT,
+  nome_pergunta varchar(255) NOT NULL,
+  placeholder varchar(255) DEFAULT NULL,
+  help text,
+  `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id_chave_pergunta),
+  UNIQUE KEY nome_pergunta (nome_pergunta)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `esferas_institucionais` (
   `id_chave_esfera_institucional` int NOT NULL AUTO_INCREMENT,
   `nome_esfera_institucional` varchar(40) NOT NULL,
@@ -49,7 +64,7 @@ CREATE TABLE `esferas_institucionais` (
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_esfera_institucional`),
   UNIQUE KEY `nome_esfera_institucional` (`nome_esfera_institucional`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -65,7 +80,7 @@ CREATE TABLE `paises` (
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_pais`),
   UNIQUE KEY `codigo_iso` (`codigo_iso`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -81,7 +96,7 @@ CREATE TABLE `pessoas` (
   PRIMARY KEY (`id_chave_pessoa`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `cpf` (`cpf`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -95,7 +110,7 @@ CREATE TABLE `tabelas_mantidas` (
   `data_insercao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_tabela_mantida`),
   UNIQUE KEY `nome_tabela_mantida` (`nome_tabela_mantida`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -108,7 +123,7 @@ CREATE TABLE `tipos_arquivos` (
   `descricao` text NOT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_tipo_arquivo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -120,7 +135,7 @@ CREATE TABLE `tipos_elementos_sintaticos` (
   `descricao` text NOT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_tipo_elemento_sintatico`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -147,7 +162,7 @@ CREATE TABLE `tipos_vinculos` (
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_tipo_vinculo`),
   UNIQUE KEY `nome_tipo_vinculo` (`nome_tipo_vinculo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -167,7 +182,7 @@ CREATE TABLE `arquivos` (
   PRIMARY KEY (`id_chave_arquivo`),
   KEY `id_tipo_arquivo` (`id_tipo_arquivo`),
   CONSTRAINT `arquivos_ibfk_1` FOREIGN KEY (`id_tipo_arquivo`) REFERENCES `tipos_arquivos` (`id_chave_tipo_arquivo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -184,7 +199,7 @@ CREATE TABLE `usuarios` (
   UNIQUE KEY `nome_usuario` (`nome_usuario`),
   KEY `id_pessoa` (`id_pessoa`),
   CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_chave_pessoa`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -199,7 +214,7 @@ CREATE TABLE `atividades_eventos` (
   PRIMARY KEY (`id_chave_atividade_evento`),
   KEY `id_usuario` (`id_usuario`),
   CONSTRAINT `atividades_eventos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -220,7 +235,7 @@ CREATE TABLE `estados` (
   PRIMARY KEY (`id_chave_estado`),
   KEY `id_pais` (`id_pais`),
   CONSTRAINT `estados_ibfk_1` FOREIGN KEY (`id_pais`) REFERENCES `paises` (`id_chave_pais`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -242,7 +257,7 @@ CREATE TABLE `cidades` (
   UNIQUE KEY `codigo_ibge` (`codigo_ibge`),
   KEY `id_estado` (`id_estado`),
   CONSTRAINT `cidades_ibfk_1` FOREIGN KEY (`id_estado`) REFERENCES `estados` (`id_chave_estado`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -257,7 +272,7 @@ CREATE TABLE `tipos_instituicoes` (
   UNIQUE KEY `nome_tipo_instituicao` (`nome_tipo_instituicao`),
   KEY `id_esfera_institucional` (`id_esfera_institucional`),
   CONSTRAINT `tipos_instituicoes_ibfk_1` FOREIGN KEY (`id_esfera_institucional`) REFERENCES `esferas_institucionais` (`id_chave_esfera_institucional`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -272,7 +287,7 @@ CREATE TABLE `instituicoes` (
   UNIQUE KEY `nome_instituicao` (`nome_instituicao`),
   KEY `id_tipo_instituicao` (`id_tipo_instituicao`),
   CONSTRAINT `instituicoes_ibfk_1` FOREIGN KEY (`id_tipo_instituicao`) REFERENCES `tipos_instituicoes` (`id_chave_tipo_instituicao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -337,7 +352,7 @@ CREATE TABLE `localizacoes` (
   CONSTRAINT `localizacoes_ibfk_1` FOREIGN KEY (`id_cidade`) REFERENCES `cidades` (`id_chave_cidade`),
   CONSTRAINT `localizacoes_ibfk_2` FOREIGN KEY (`id_estado`) REFERENCES `estados` (`id_chave_estado`),
   CONSTRAINT `localizacoes_ibfk_3` FOREIGN KEY (`id_pais`) REFERENCES `paises` (`id_chave_pais`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -356,7 +371,7 @@ CREATE TABLE `enderecos` (
   KEY `id_localizacao` (`id_localizacao`),
   CONSTRAINT `enderecos_ibfk_1` FOREIGN KEY (`id_instituicao`) REFERENCES `instituicoes` (`id_chave_instituicao`),
   CONSTRAINT `enderecos_ibfk_2` FOREIGN KEY (`id_localizacao`) REFERENCES `localizacoes` (`id_chave_localizacao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 # TABELAS COM 3 CONSTRAINTS
@@ -380,7 +395,7 @@ CREATE TABLE `tokens` (
   CONSTRAINT `fk_raiz_token` FOREIGN KEY (`id_raiz`) REFERENCES `tokens` (`id_chave_token`),
   CONSTRAINT `fk_tipo_flexao` FOREIGN KEY (`id_tipo_flexao`) REFERENCES `tipos_flexoes` (`id_chave_tipo_flexao`),
   CONSTRAINT `fk_tipo_token` FOREIGN KEY (`id_tipo_token`) REFERENCES `tipos_tokens` (`id_chave_tipo_token`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 ALTER TABLE tokens MODIFY nome_token VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin; -- importante para permitir diferenciar acentuação, como crase, que dá tokens diferentes. No select é preciso mudar a collation para uma que não diferencia acentuação
 -- SELECT * FROM tokens WHERE nome_token COLLATE utf8mb4_unicode_ci LIKE '%autogestão%';
@@ -396,7 +411,7 @@ CREATE TABLE tipos_acoes (
 	UNIQUE KEY nome_tipo_acao (nome_tipo_acao),
 	CONSTRAINT tipos_acoes_ibfk_1 FOREIGN KEY (id_tipo_resultado) REFERENCES tipos_resultados (id_chave_tipo_resultado),
 	CONSTRAINT tipos_acoes_ibfk_2 FOREIGN KEY (id_tipo_elemento_sintatico) REFERENCES tipos_elementos_sintaticos (id_chave_tipo_elemento_sintatico)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -412,7 +427,7 @@ CREATE TABLE `frases` (
   UNIQUE KEY `id_token` (`id_tipo_acao`,`ordem`),
   CONSTRAINT `frases_ibfk_1` FOREIGN KEY (`id_token`) REFERENCES `tokens` (`id_chave_token`),
   CONSTRAINT `frases_ibfk_3` FOREIGN KEY (`id_tipo_acao`) REFERENCES `tipos_acoes` (`id_chave_tipo_acao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 
@@ -434,7 +449,7 @@ CREATE TABLE `vinculos` (
   CONSTRAINT `vinculos_ibfk_1` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_chave_pessoa`),
   CONSTRAINT `vinculos_ibfk_2` FOREIGN KEY (`id_instituicao`) REFERENCES `instituicoes` (`id_chave_instituicao`),
   CONSTRAINT `vinculos_ibfk_3` FOREIGN KEY (`id_tipo_vinculo`) REFERENCES `tipos_vinculos` (`id_chave_tipo_vinculo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 # TABLES COM 6 CONSTRAINTS
@@ -468,6 +483,6 @@ CREATE TABLE `acoes` (
   CONSTRAINT `acoes_ibfk_4` FOREIGN KEY (`id_tipo_acao`) REFERENCES `tipos_acoes` (`id_chave_tipo_acao`),
   CONSTRAINT `acoes_ibfk_5` FOREIGN KEY (`id_arquivo`) REFERENCES `arquivos` (`id_chave_arquivo`),
   CONSTRAINT `fk_acoes_pessoas` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_chave_pessoa`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

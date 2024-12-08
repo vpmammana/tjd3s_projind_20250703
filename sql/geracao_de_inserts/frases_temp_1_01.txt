@@ -1,4 +1,3 @@
-
 analisei|verbo|passado|atividades para confecção|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas comunidades|locucao_adjetiva|plural_feminino|cooperativas|adjetivo|plural_feminino|1.1
 analisei|verbo|passado|dados sobre horticultura|locucao_substantiva|singular_feminino|agrícolas|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|rural|adjetivo|singular_comum|1.1
 analisei|verbo|passado|dados sobre horticultura|locucao_substantiva|singular_feminino|relevantes|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|1.1

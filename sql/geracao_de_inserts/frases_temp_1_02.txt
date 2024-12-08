@@ -8,7 +8,6 @@ identifiquei|verbo|passado|limitações de vocações|substantivo|plural_feminin
 descrevi|verbo|passado|dificuldades econômicas|substantivo|plural_feminino|regionais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.2
 explorei|verbo|passado|fatores limitantes|substantivo|plural_masculino|econômicos|adjetivo|plural_masculino|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|1.2
 documentei|verbo|passado|restrições demográficas|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas cooperativas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
-
 mapeei|verbo|passado|deficiências de transporte|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas comunidades|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
 diagnostiquei|verbo|passado|barreiras econômicas|substantivo|plural_feminino|presentes|adjetivo|plural_comum|no território|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|1.2
 levantei|verbo|passado|problemas de conectividade|substantivo|plural_masculino|digitais|adjetivo|plural_comum|em áreas|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
@@ -29,7 +28,6 @@ identifiquei|verbo|passado|obstáculos na economia|substantivo|plural_masculino|
 descrevi|verbo|passado|desafios em conectividade|substantivo|plural_masculino|locais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
 explorei|verbo|passado|problemas econômicos|substantivo|plural_masculino|existentes|adjetivo|plural_comum|em cooperativas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
 documentei|verbo|passado|dificuldades em infraestrutura|substantivo|plural_feminino|locais|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|1.2
-
 mapeei|verbo|passado|deficiências estruturais|substantivo|plural_feminino|existentes|adjetivo|plural_comum|em setores|locucao_adjetiva|plural_masculino|produtivos|adjetivo|plural_masculino|1.2
 diagnostiquei|verbo|passado|restrições logísticas|substantivo|plural_feminino|regionais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|cooperativas|adjetivo|plural_feminino|1.2
 levantei|verbo|passado|barreiras econômicas|substantivo|plural_feminino|locais|adjetivo|plural_comum|no desenvolvimento|locucao_adjetiva|singular_masculino|comunitário|adjetivo|singular_masculino|1.2
@@ -70,7 +68,6 @@ identifiquei|verbo|passado|ausência de recursos|substantivo|singular_feminino|e
 descrevi|verbo|passado|limitações em conectividade|substantivo|plural_feminino|regionais|adjetivo|plural_comum|no território|locucao_adjetiva|singular_masculino|produtivo|adjetivo|singular_masculino|1.2
 explorei|verbo|passado|obstáculos econômicos|substantivo|plural_masculino|locais|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|cooperativa|adjetivo|singular_feminino|1.2
 documentei|verbo|passado|problemas logísticos|substantivo|plural_masculino|regionais|adjetivo|plural_comum|em regiões|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
-
 mapeei|verbo|passado|restrições para agroecologia|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas comunidades|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
 diagnostiquei|verbo|passado|barreiras para economia criativa|substantivo|plural_feminino|regionais|adjetivo|plural_comum|na área|locucao_adjetiva|singular_feminino|comunitária|adjetivo|singular_feminino|1.2
 levantei|verbo|passado|problemas de acesso à internet|substantivo|plural_masculino|digitais|adjetivo|plural_comum|em áreas|locucao_adjetiva|plural_feminino|isoladas|adjetivo|plural_feminino|1.2
@@ -111,7 +108,6 @@ identifiquei|verbo|passado|limitações de logística para turismo comunitário|
 descrevi|verbo|passado|dificuldades de distribuição para hortas comunitárias|substantivo|plural_feminino|locais|adjetivo|plural_comum|em regiões|locucao_adjetiva|plural_feminino|urbanas|adjetivo|plural_feminino|1.2
 explorei|verbo|passado|obstáculos econômicos para turismo rural|substantivo|plural_masculino|locais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
 documentei|verbo|passado|falta de apoio para turismo cultural|substantivo|singular_feminino|econômico|adjetivo|singular_masculino|nas comunidades|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
-
 mapeei|verbo|passado|restrições para ecoturismo|substantivo|plural_feminino|regionais|adjetivo|plural_comum|em comunidades|locucao_adjetiva|plural_feminino|rurais|adjetivo|plural_feminino|1.2
 diagnostiquei|verbo|passado|falta de estrutura em agroindústria|substantivo|singular_feminino|local|adjetivo|singular_comum|nas áreas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
 levantei|verbo|passado|barreiras no cultivo de ervas|substantivo|plural_feminino|comunitárias|adjetivo|plural_feminino|nas cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.2
@@ -152,7 +148,6 @@ identifiquei|verbo|passado|obstáculos em economia criativa|substantivo|plural_m
 descrevi|verbo|passado|restrições para turismo sustentável|substantivo|plural_feminino|locais|adjetivo|plural_comum|em áreas|locucao_adjetiva|plural_feminino|naturais|adjetivo|plural_comum|1.2
 explorei|verbo|passado|dificuldades de distribuição em turismo cultural|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.2
 documentei|verbo|passado|problemas logísticos em produção artesanal|substantivo|plural_masculino|locais|adjetivo|plural_comum|no setor|locucao_adjetiva|singular_masculino|produtivo|adjetivo|singular_masculino|1.2
-
 mapeei|verbo|passado|deficiências na distribuição para turismo rural|substantivo|plural_feminino|econômicas|adjetivo|plural_feminino|em regiões|locucao_adjetiva|plural_feminino|isoladas|adjetivo|plural_feminino|1.2
 diagnostiquei|verbo|passado|problemas de transporte para horticultura comunitária|substantivo|plural_masculino|locais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
 levantei|verbo|passado|restrições logísticas em ecoturismo|substantivo|plural_feminino|regionais|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|focalizada|adjetivo|singular_feminino|1.2
@@ -193,7 +188,6 @@ identifiquei|verbo|passado|limitações para transporte em economia circular|sub
 descrevi|verbo|passado|dificuldades em transporte para bioconstrução|substantivo|plural_feminino|regionais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|isoladas|adjetivo|plural_feminino|1.2
 explorei|verbo|passado|deficiências na confecção comunitária|substantivo|plural_feminino|econômicas|adjetivo|plural_feminino|na comunidade|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|1.2
 documentei|verbo|passado|problemas logísticos para carpintaria|substantivo|plural_masculino|locais|adjetivo|plural_comum|nas cooperativas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
-
 mapeei|verbo|passado|deficiências de infraestrutura básica|substantivo|plural_feminino|regionais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
 diagnostiquei|verbo|passado|limitações de conectividade|substantivo|plural_feminino|locais|adjetivo|plural_comum|nas regiões|locucao_adjetiva|plural_feminino|isoladas|adjetivo|plural_feminino|1.2
 levantei|verbo|passado|barreiras de transporte|substantivo|plural_feminino|locais|adjetivo|plural_comum|na comunidade|locucao_adjetiva|singular_feminino|rural|adjetivo|singular_comum|1.2
@@ -204,4 +198,3 @@ identifiquei|verbo|passado|deficiências na infraestrutura rodoviária|substanti
 descrevi|verbo|passado|ausência de apoio logístico|substantivo|singular_feminino|econômico|adjetivo|singular_masculino|nas regiões|locucao_adjetiva|plural_feminino|isoladas|adjetivo|plural_feminino|1.2
 explorei|verbo|passado|obstáculos estruturais|substantivo|plural_masculino|locais|adjetivo|plural_comum|nas áreas|locucao_adjetiva|plural_feminino|produtivas|adjetivo|plural_feminino|1.2
 documentei|verbo|passado|problemas de acesso a recursos|substantivo|plural_masculino|locais|adjetivo|plural_comum|em regiões|locucao_adjetiva|plural_feminino|comunitárias|adjetivo|plural_feminino|1.2
-

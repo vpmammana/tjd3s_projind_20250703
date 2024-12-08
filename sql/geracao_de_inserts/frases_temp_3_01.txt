@@ -1,4 +1,3 @@
-
 identifiquei|verbo|passado|aplicativos de apoio a coletivos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|não cadastrados no CADSOL|locucao_adjetiva|singular_masculino|oficial|adjetivo|singular_comum|3.1
 identifiquei|verbo|passado|associações de apoio a migrantes|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|não cadastradas no CADSOL|locucao_adjetiva|singular_masculino|nacional|adjetivo|singular_comum|3.1
 identifiquei|verbo|passado|associações de audiovisual comunitário|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|não cadastradas no CADSOL|locucao_adjetiva|singular_masculino|oficial|adjetivo|singular_comum|3.1

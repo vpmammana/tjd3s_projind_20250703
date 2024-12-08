@@ -8,7 +8,6 @@ elaborei|verbo|passado|post digital|locucao_substantiva|singular_masculino|instr
 produzi|verbo|passado|material informativo|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|para facebook|locucao_adjetiva|singular_masculino|comunitário|adjetivo|singular_masculino|2.3
 criei|verbo|passado|audiovisual educativo|locucao_substantiva|singular_masculino|impactante|adjetivo|singular_masculino|sobre economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.3
 elaborei|verbo|passado|guia ilustrado|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para divulgação|locucao_adjetiva|singular_feminino|pública|adjetivo|singular_feminino|2.3
-
 desenvolvi|verbo|passado|cartilha ilustrada|locucao_substantiva|singular_feminino|interativa|adjetivo|singular_feminino|para comunidade|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|2.3
 criei|verbo|passado|apostila educativa|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|para divulgação|locucao_adjetiva|singular_feminino|popular|adjetivo|singular_comum|2.3
 produzi|verbo|passado|manual visual|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para economia solidária|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|2.3
@@ -50,7 +49,6 @@ elaborei|verbo|passado|audiovisual educativo|locucao_substantiva|singular_mascul
 desenvolvi|verbo|passado|material de conscientização|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para economia solidária|locucao_adjetiva|singular_feminino|popular|adjetivo|singular_comum|2.3
 criei|verbo|passado|conteúdo educativo|locucao_substantiva|singular_masculino|explicativo|adjetivo|singular_masculino|para divulgação|locucao_adjetiva|singular_feminino|local|adjetivo|singular_comum|2.3
 produzi|verbo|passado|apostila prática|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|sobre economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.3
-
 desenvolvi|verbo|passado|cartilha agrícola|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|para agricultura familiar|locucao_adjetiva|singular_feminino|sustentável|adjetivo|singular_comum|2.3
 elaborei|verbo|passado|manual de reciclagem|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para catadores|locucao_adjetiva|plural_masculino|comunitários|adjetivo|plural_masculino|2.3
 criei|verbo|passado|apostila de agroecologia|locucao_substantiva|singular_feminino|ilustrada|adjetivo|singular_feminino|para horticultores|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
@@ -87,7 +85,6 @@ desenvolvi|verbo|passado|guia de alimentos orgânicos|locucao_substantiva|singul
 elaborei|verbo|passado|audiovisual de culinária comunitária|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para cozinheiros|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
 produzi|verbo|passado|cartilha de panificação|locucao_substantiva|singular_feminino|orientadora|adjetivo|singular_feminino|para coletivos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 desenvolvi|verbo|passado|apostila de cooperativismo|locucao_substantiva|singular_feminino|explicativa|adjetivo|singular_feminino|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.3
-
 elaborei|verbo|passado|manual de apicultura|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para pequenos produtores|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 desenvolvi|verbo|passado|podcast sobre cultivo de ervas|locucao_substantiva|singular_masculino|explicativo|adjetivo|singular_masculino|para agricultores|locucao_adjetiva|plural_masculino|urbanos|adjetivo|plural_comum|2.3
 criei|verbo|passado|apostila de produção de bebidas fermentadas|locucao_substantiva|singular_feminino|instrutiva|adjetivo|singular_feminino|para coletivos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
@@ -126,7 +123,6 @@ criei|verbo|passado|audiovisual de cooperativismo|locucao_substantiva|singular_m
 produzi|verbo|passado|podcast de inclusão financeira|locucao_substantiva|singular_masculino|explicativo|adjetivo|singular_masculino|para empreendedores|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|2.3
 elaborei|verbo|passado|material sobre economia popular|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para pequenos empresários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
 desenvolvi|verbo|passado|guia de comunicação comunitária|locucao_substantiva|singular_masculino|orientador|adjetivo|singular_masculino|para mídias locais|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.3
-
 desenvolvi|verbo|passado|guia de educação financeira|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.3
 elaborei|verbo|passado|manual de contabilidade|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para pequenos negócios|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
 criei|verbo|passado|apostila de administração comunitária|locucao_substantiva|singular_feminino|instrutiva|adjetivo|singular_feminino|para empreendedores|locucao_adjetiva|plural_masculino|populares|adjetivo|plural_comum|2.3
@@ -166,8 +162,6 @@ produzi|verbo|passado|apostila sobre economia solidária|locucao_substantiva|sin
 elaborei|verbo|passado|manual de precificação solidária|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|2.3
 criei|verbo|passado|material de administração financeira|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para redes cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.3
 produzi|verbo|passado|cartilha de planejamento|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|para microempreendimentos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
-
-
 desenvolvi|verbo|passado|manual de entrevistas comunitárias|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|para coletivos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 criei|verbo|passado|apostila de observação participante|locucao_substantiva|singular_feminino|instrutiva|adjetivo|singular_feminino|para projetos sociais|locucao_adjetiva|plural_masculino|comunitários|adjetivo|plural_masculino|2.3
 produzi|verbo|passado|cartilha de análise de discurso|locucao_substantiva|singular_feminino|explicativa|adjetivo|singular_feminino|para grupos de economia solidária|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
@@ -205,8 +199,6 @@ criei|verbo|passado|apostila de análise de conteúdo social|locucao_substantiva
 produzi|verbo|passado|cartilha de narrativas populares|locucao_substantiva|singular_feminino|informativa|adjetivo|singular_feminino|para associações locais|locucao_adjetiva|plural_feminino|comunitárias|adjetivo|plural_feminino|2.3
 elaborei|verbo|passado|guia de mapeamento social|locucao_substantiva|singular_masculino|orientador|adjetivo|singular_masculino|para redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.3
 desenvolvi|verbo|passado|manual de métodos etnográficos|locucao_substantiva|singular_masculino|prático|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.3
-
-
 produzi|verbo|passado|glossário de termos solidários|locucao_substantiva|singular_masculino|completo|adjetivo|singular_masculino|para coletivos locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 criei|verbo|passado|lista de frases inspiradoras|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.3
 desenvolvi|verbo|passado|vídeo de capacitação técnica|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.3
@@ -233,7 +225,6 @@ desenvolvi|verbo|passado|letra de música para economia solidária|locucao_subst
 elaborei|verbo|passado|partitura de músicas solidárias|locucao_substantiva|singular_feminino|harmônica|adjetivo|singular_feminino|para eventos populares|locucao_adjetiva|plural_masculino|comunitários|adjetivo|plural_masculino|2.3
 produzi|verbo|passado|jingle motivacional para redes solidárias|locucao_substantiva|singular_masculino|breve|adjetivo|singular_masculino|para negócios|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
 criei|verbo|passado|locução explicativa|locucao_substantiva|singular_feminino|informativa|adjetivo|singular_feminino|para pequenos grupos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
-
 desenvolvi|verbo|passado|discurso de apoio à economia solidária|locucao_substantiva|singular_masculino|motivador|adjetivo|singular_masculino|para coletivos locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 elaborei|verbo|passado|glossário de termos cooperativos|locucao_substantiva|singular_masculino|abrangente|adjetivo|singular_masculino|para economia solidária|locucao_adjetiva|singular_feminino|regional|adjetivo|singular_comum|2.3
 criei|verbo|passado|lista de frases de impacto|locucao_substantiva|singular_feminino|inspiradora|adjetivo|singular_feminino|para projetos|locucao_adjetiva|plural_masculino|comunitários|adjetivo|plural_masculino|2.3
@@ -244,7 +235,6 @@ criei|verbo|passado|partitura para encontros solidários|locucao_substantiva|sin
 produzi|verbo|passado|jingle de conscientização|locucao_substantiva|singular_masculino|motivacional|adjetivo|singular_comum|para cooperativas|locucao_adjetiva|plural_feminino|populares|adjetivo|plural_comum|2.3
 elaborei|verbo|passado|locução explicativa sobre economia solidária|locucao_substantiva|singular_feminino|instrutiva|adjetivo|singular_feminino|para empreendimentos locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 criei|verbo|passado|discurso inspirador|locucao_substantiva|singular_masculino|engajador|adjetivo|singular_masculino|para redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|2.3
-
 produzi|verbo|passado|cartilha acessível|locucao_substantiva|singular_feminino|inclusiva|adjetivo|singular_feminino|para pessoas com deficiência visual|locucao_adjetiva|plural_feminino|regional|adjetivo|singular_comum|2.3
 criei|verbo|passado|guia em braille|locucao_substantiva|singular_masculino|tátil|adjetivo|singular_masculino|para coletivos locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
 desenvolvi|verbo|passado|vídeo com legendas|locucao_substantiva|singular_masculino|acessível|adjetivo|singular_comum|para surdos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.3
@@ -279,4 +269,3 @@ desenvolvi|verbo|passado|cartilha com áudio-narrativa|locucao_substantiva|singu
 elaborei|verbo|passado|guia de acessibilidade auditiva|locucao_substantiva|singular_masculino|inclusivo|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|2.3
 produzi|verbo|passado|manual de acessibilidade visual|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|para eventos comunitários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.3
 criei|verbo|passado|glossário sobre economia solidária inclusiva|locucao_substantiva|singular_masculino|educativo|adjetivo|singular_masculino|para redes|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.3
-

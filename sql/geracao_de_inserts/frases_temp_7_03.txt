@@ -1,4 +1,3 @@
-
 apoiei|verbo|passado|estrutura|substantivo|singular_feminino|para as Conferências Nacionais|locucao_adjetiva|plural_feminino|de agroecologia|locucao_substantiva|singular_feminino|em âmbito estadual|locucao_adjetiva|singular_masculino|7.3
 apoiei|verbo|passado|estrutura|substantivo|singular_feminino|para as Conferências Nacionais|locucao_adjetiva|plural_feminino|de educação popular|locucao_substantiva|singular_feminino|em nível nacional|locucao_adjetiva|singular_masculino|7.3
 apoiei|verbo|passado|estrutura|substantivo|singular_feminino|para as Conferências Nacionais|locucao_adjetiva|plural_feminino|de povos das águas|locucao_substantiva|plural_masculino|em nível nacional|locucao_adjetiva|singular_masculino|7.3

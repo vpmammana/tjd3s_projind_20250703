@@ -7,7 +7,6 @@ estruturei|verbo|passado|plano econômico|locucao_substantiva|singular_masculino
 modelei|verbo|passado|fluxo de caixa|locucao_substantiva|singular_masculino|estável|adjetivo|singular_masculino|para negócios comunitários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.10
 estruturei|verbo|passado|rede de benefícios|locucao_substantiva|singular_feminino|para cooperativas|locucao_adjetiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.10
 desenvolvi|verbo|passado|modelo de sustentabilidade|locucao_substantiva|singular_masculino|para negócios locais|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|regionais|adjetivo|plural_comum|1.10
-
 modelei|verbo|passado|estrutura financeira|locucao_substantiva|singular_feminino|sustentável|adjetivo|singular_comum|para negócios|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|1.10
 desenvolvi|verbo|passado|modelo de multiagentes|locucao_substantiva|singular_masculino|adaptado|adjetivo|singular_masculino|para economia|locucao_substantiva|singular_feminino|solidária|adjetivo|singular_feminino|1.10
 estruturei|verbo|passado|processos econômicos|locucao_substantiva|plural_masculino|específicos|adjetivo|plural_masculino|para cooperativas|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.10
@@ -47,4 +46,3 @@ modelei|verbo|passado|sistema financeiro|locucao_substantiva|singular_masculino|
 desenvolvi|verbo|passado|método de sustentabilidade|locucao_substantiva|singular_masculino|econômica|adjetivo|singular_feminino|para redes|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|1.10
 estruturei|verbo|passado|modelo analítico|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|para cooperativas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|1.10
 desenvolvi|verbo|passado|sistema de dados|locucao_substantiva|singular_masculino|estruturado|adjetivo|singular_masculino|para análise|locucao_substantiva|singular_feminino|qualitativa|adjetivo|singular_feminino|1.10
-

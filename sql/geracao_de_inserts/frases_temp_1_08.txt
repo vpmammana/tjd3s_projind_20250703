@@ -8,7 +8,6 @@ identifiquei|verbo|passado|empresas autogestionadas|locucao_substantiva|plural_f
 mapeei|verbo|passado|negócios de economia solidária|locucao_substantiva|plural_masculino|no setor|locucao_substantiva|singular_masculino|artesanal|adjetivo|singular_comum|para registro|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|cooperativas de costura|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para catalogação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de produtores|locucao_substantiva|plural_feminino|nas áreas|locucao_substantiva|plural_feminino|rurais|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
-
 identifiquei|verbo|passado|empreendimentos solidários|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|negócios autogestionados|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|cooperativas de produção|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para análise|locucao_substantiva|singular_feminino|1.8
@@ -19,7 +18,6 @@ identifiquei|verbo|passado|negócios cooperativos|locucao_substantiva|plural_mas
 mapeei|verbo|passado|empreendimentos autossustentáveis|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|local|adjetivo|singular_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|iniciativas empresariais solidárias|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para mapeamento|locucao_substantiva|singular_masculino|1.8
 mapeei|verbo|passado|organizações cooperativas|locucao_substantiva|plural_feminino|em setores|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|para análise|locucao_substantiva|singular_feminino|1.8
-
 identifiquei|verbo|passado|negócios cooperativos|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para mapeamento|locucao_substantiva|singular_masculino|1.8
 mapeei|verbo|passado|iniciativas autossustentáveis|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|empreendimentos solidários|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para catalogação|locucao_substantiva|singular_feminino|1.8
@@ -58,7 +56,6 @@ identifiquei|verbo|passado|coletivos de transporte solidário|locucao_substantiv
 mapeei|verbo|passado|projetos de agricultura urbana|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para levantamento|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|organizações de bioconstrução|locucao_substantiva|plural_feminino|nas regiões|locucao_substantiva|plural_feminino|comunitárias|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|cooperativas de energia renovável|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
-
 identifiquei|verbo|passado|negócios de agricultura familiar|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|empreendimentos de artesanato|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para registro|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|cooperativas de reciclagem|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|urbano|adjetivo|singular_masculino|para catalogação|locucao_substantiva|singular_feminino|1.8
@@ -98,7 +95,6 @@ mapeei|verbo|passado|grupos de consumo|locucao_substantiva|plural_masculino|no t
 identifiquei|verbo|passado|projetos de comunicação|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|comunitárias|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|iniciativas de economia digital|locucao_substantiva|plural_feminino|nas regiões|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para estudo|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|organizações de economia circular|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
-
 mapeei|verbo|passado|empreendimentos de economia circular|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|local|adjetivo|singular_comum|para registro|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|iniciativas de tradução solidária|locucao_substantiva|plural_feminino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de mídia independente|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
@@ -136,7 +132,6 @@ identifiquei|verbo|passado|organizações de transporte ecológico|locucao_subst
 mapeei|verbo|passado|projetos de hortas urbanas|locucao_substantiva|plural_masculino|nas regiões|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|cooperativas de medicina alternativa|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|empreendimentos de ecoturismo|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
-
 mapeei|verbo|passado|iniciativas de biocosméticos|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para registro|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|projetos de marcenaria comunitária|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|empreendimentos de tinturas naturais|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
@@ -176,7 +171,6 @@ identifiquei|verbo|passado|negócios de impressão sustentável|locucao_substant
 mapeei|verbo|passado|projetos de produção de bebidas caseiras|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|rural|adjetivo|singular_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|empreendimentos de agricultura biodinâmica|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de sustentabilidade alimentar|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
-
 mapeei|verbo|passado|cooperativas de agricultura familiar|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para estudo|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|negócios de artesanato comunitário|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para registro|locucao_substantiva|singular_masculino|1.8
 mapeei|verbo|passado|iniciativas de reciclagem de resíduos|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|rurais|adjetivo|plural_feminino|para catalogação|locucao_substantiva|singular_feminino|1.8
@@ -217,7 +211,6 @@ mapeei|verbo|passado|iniciativas de mídia solidária|locucao_substantiva|plural
 identifiquei|verbo|passado|organizações de mídia independente|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|local|adjetivo|singular_comum|para análise|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|projetos de economia circular|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|cooperativas de tradução colaborativa|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para estudo|locucao_substantiva|singular_masculino|1.8
-
 mapeei|verbo|passado|iniciativas de culinária|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|negócios de produtos de limpeza|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para catalogação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|projetos de construção|locucao_substantiva|plural_masculino|no território|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|para registro|locucao_substantiva|singular_masculino|1.8
@@ -255,7 +248,6 @@ identifiquei|verbo|passado|associações de biotecnologia|locucao_substantiva|pl
 mapeei|verbo|passado|empreendimentos de energia elétrica|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para análise|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|projetos de agricultura urbana|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para mapeamento|locucao_substantiva|singular_masculino|1.8
 mapeei|verbo|passado|associações de saúde comunitária|locucao_substantiva|plural_feminino|nas regiões|locucao_substantiva|plural_feminino|rurais|adjetivo|plural_feminino|para estudo|locucao_substantiva|singular_masculino|1.8
-
 identifiquei|verbo|passado|organizações de serviços de limpeza|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de serviços gráficos|locucao_substantiva|plural_feminino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para registro|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|negócios de transporte público|locucao_substantiva|plural_masculino|nas regiões|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
@@ -294,7 +286,6 @@ identifiquei|verbo|passado|organizações de ensino de informática|locucao_subs
 mapeei|verbo|passado|associações de atendimento ao cliente|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|rurais|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|projetos de calçados|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para mapeamento|locucao_substantiva|singular_masculino|1.8
 mapeei|verbo|passado|negócios de hortas urbanas|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|para análise|locucao_substantiva|singular_feminino|1.8
-
 mapeei|verbo|passado|projetos de assessoria jurídica|locucao_substantiva|plural_masculino|nas comunidades|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|para estudo|locucao_substantiva|singular_masculino|1.8
 identifiquei|verbo|passado|negócios de vendas de alimentos|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para documentação|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de vendas de produtos agrícolas|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|rural|adjetivo|singular_comum|para registro|locucao_substantiva|singular_masculino|1.8
@@ -346,4 +337,3 @@ identifiquei|verbo|passado|organizações de engenharia civil|locucao_substantiv
 mapeei|verbo|passado|iniciativas de panificação|locucao_substantiva|plural_feminino|nas comunidades|locucao_substantiva|plural_feminino|rurais|adjetivo|plural_feminino|para catalogação|locucao_substantiva|singular_feminino|1.8
 identifiquei|verbo|passado|projetos de publicidade|locucao_substantiva|plural_masculino|nas áreas|locucao_substantiva|plural_feminino|urbanas|adjetivo|plural_feminino|para análise|locucao_substantiva|singular_feminino|1.8
 mapeei|verbo|passado|associações de fotografia|locucao_substantiva|plural_feminino|no território|locucao_substantiva|singular_masculino|local|adjetivo|singular_comum|para estudo|locucao_substantiva|singular_masculino|1.8
-

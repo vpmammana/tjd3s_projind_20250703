@@ -8,7 +8,6 @@ estruturei|verbo|passado|dados analíticos|locucao_substantiva|plural_masculino|
 sistematizei|verbo|passado|informações segmentadas|locucao_substantiva|plural_feminino|comunitárias|adjetivo|plural_feminino|para análise das comunidades|locucao_substantiva|plural_feminino|próprias|adjetivo|plural_feminino|1.6
 estruturei|verbo|passado|dados de comunidades|locucao_substantiva|plural_masculino|mapeadas|adjetivo|plural_feminino|no diagnóstico final|locucao_substantiva|singular_masculino|próprio|adjetivo|singular_masculino|1.6
 classifiquei|verbo|passado|informações obtidas|locucao_substantiva|plural_feminino|anteriores|adjetivo|plural_comum|para apoio comunitário|locucao_substantiva|singular_masculino|próprio|adjetivo|singular_masculino|1.6
-
 organizei|verbo|passado|dados comunitários|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|durante os mapeamentos|locucao_substantiva|plural_masculino|realizados|adjetivo|plural_masculino|1.6
 sistematizei|verbo|passado|informações coletadas|locucao_substantiva|plural_feminino|anteriores|adjetivo|plural_comum|de comunidades locais|locucao_substantiva|plural_feminino|levantadas|adjetivo|plural_feminino|1.6
 estruturei|verbo|passado|dados dos segmentos|locucao_substantiva|plural_masculino|analisados|adjetivo|plural_masculino|a partir das coletas|locucao_substantiva|plural_feminino|anteriores|adjetivo|plural_comum|1.6
@@ -16,7 +15,6 @@ classifiquei|verbo|passado|segmentos comunitários|locucao_substantiva|plural_ma
 sistematizei|verbo|passado|dados segmentados|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|nas atividades mapeadas|locucao_adjetiva|plural_feminino|anteriores|adjetivo|plural_comum|1.6
 organizei|verbo|passado|informações comunitárias|locucao_substantiva|plural_feminino|coletadas|adjetivo|plural_feminino|de segmentos estudados|locucao_substantiva|plural_masculino|anteriores|adjetivo|plural_comum|1.6
 estruturei|verbo|passado|dados analíticos|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|para diagnóstico final|locucao_substantiva|singular_masculino|gerado|adjetivo|singular_masculino|1.6
-
 organizei|verbo|passado|dados territoriais|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|a partir do diagnóstico|locucao_substantiva|singular_masculino|anterior|adjetivo|singular_masculino|1.6
 sistematizei|verbo|passado|informações de problemas|locucao_substantiva|plural_feminino|identificados|adjetivo|plural_masculino|no mapeamento territorial|locucao_substantiva|singular_masculino|comunitário|adjetivo|singular_masculino|1.6
 estruturei|verbo|passado|dados de redes sociais|locucao_substantiva|plural_masculino|coletadas|adjetivo|plural_feminino|para análise comunitária|locucao_substantiva|singular_feminino|detalhada|adjetivo|singular_feminino|1.6
@@ -27,11 +25,9 @@ sistematizei|verbo|passado|dados de barreiras|locucao_substantiva|plural_masculi
 classifiquei|verbo|passado|segmentos econômicos|locucao_substantiva|plural_masculino|avaliados|adjetivo|plural_masculino|nas regiões|locucao_substantiva|plural_feminino|diagnosticadas|adjetivo|plural_feminino|1.6
 organizei|verbo|passado|dados de conselhos|locucao_substantiva|plural_masculino|observados|adjetivo|plural_masculino|durante reuniões|locucao_substantiva|plural_feminino|analisadas|adjetivo|plural_feminino|1.6
 sistematizei|verbo|passado|informações de lideranças|locucao_substantiva|plural_feminino|mapeadas|adjetivo|plural_feminino|nas atividades iniciais|locucao_substantiva|plural_feminino|anteriores|adjetivo|plural_comum|1.6
-
 sistematizei|verbo|passado|informações segmentadas|locucao_substantiva|plural_feminino|de comunidades|locucao_substantiva|plural_feminino|mapeadas|adjetivo|plural_feminino|obtidas|adjetivo|plural_feminino|1.6
 estruturei|verbo|passado|dados de comunidades|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|durante as atividades|locucao_substantiva|plural_feminino|anteriores|adjetivo|plural_comum|1.6
 classifiquei|verbo|passado|informações obtidas|locucao_substantiva|plural_feminino|nos mapeamentos|locucao_substantiva|plural_masculino|anteriores|adjetivo|plural_comum|segmentados|adjetivo|plural_masculino|1.6
-
 organizei|verbo|passado|dados territoriais|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|durante o diagnóstico|locucao_substantiva|singular_masculino|inicial|adjetivo|singular_comum|1.6
 sistematizei|verbo|passado|informações sobre problemas|locucao_substantiva|plural_feminino|identificadas|adjetivo|plural_feminino|a partir dos desafios|locucao_adjetiva|plural_masculino|mapeados|adjetivo|plural_masculino|1.6
 estruturei|verbo|passado|dados de redes sociais|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|durante o levantamento|locucao_substantiva|singular_masculino|de lideranças|locucao_adjetiva|singular_feminino|1.6
@@ -42,7 +38,6 @@ estruturei|verbo|passado|dados sobre barreiras comunitárias|locucao_substantiva
 sistematizei|verbo|passado|informações das redes|locucao_substantiva|plural_feminino|coletadas|adjetivo|plural_feminino|no mapeamento de movimentos sociais|locucao_substantiva|plural_masculino|realizados|adjetivo|plural_masculino|1.6
 classifiquei|verbo|passado|dados de equipamentos públicos|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|nas visitas|locucao_substantiva|plural_feminino|a entidades|locucao_adjetiva|plural_feminino|1.6
 organizei|verbo|passado|dados de conselhos locais|locucao_substantiva|plural_masculino|observados|adjetivo|plural_masculino|durante as sessões|locucao_substantiva|plural_feminino|registradas|adjetivo|plural_feminino|1.6
-
 analisei|verbo|passado|dados territoriais|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|com métodos estatísticos|locucao_substantiva|plural_masculino|aplicados|adjetivo|plural_masculino|1.6
 estruturei|verbo|passado|informações segmentadas|locucao_substantiva|plural_feminino|coletadas|adjetivo|plural_feminino|usando técnicas estatísticas|locucao_substantiva|plural_feminino|avançadas|adjetivo|plural_feminino|1.6
 organizei|verbo|passado|dados de comunidades|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|em análises estatísticas|locucao_substantiva|plural_feminino|detalhadas|adjetivo|plural_feminino|1.6
@@ -63,7 +58,6 @@ organizei|verbo|passado|dados comunitários|locucao_substantiva|plural_masculino
 analisei|verbo|passado|informações sobre segmentos|locucao_substantiva|plural_feminino|obtidas|adjetivo|plural_feminino|usando métodos quantitativos|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|1.6
 estruturei|verbo|passado|dados de mapeamento|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|com análise estatística|locucao_substantiva|singular_feminino|aprofundada|adjetivo|singular_feminino|1.6
 organizei|verbo|passado|segmentos analisados|locucao_substantiva|plural_masculino|estatisticamente|adjetivo|plural_masculino|para gerar diagnósticos|locucao_substantiva|plural_masculino|precisos|adjetivo|plural_masculino|1.6
-
 analisei|verbo|passado|dados coletados|locucao_substantiva|plural_masculino|de comunidades|locucao_substantiva|plural_feminino|com métodos quantitativos|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|1.6
 analisei|verbo|passado|informações dos conselhos|locucao_substantiva|plural_feminino|mapeados|adjetivo|plural_masculino|por técnicas estatísticas|locucao_substantiva|plural_feminino|refinadas|adjetivo|plural_feminino|1.6
 analisei|verbo|passado|dados segmentados|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|no levantamento comunitário|locucao_substantiva|singular_masculino|inicial|adjetivo|singular_comum|1.6
@@ -102,7 +96,6 @@ analisei|verbo|passado|segmentos demográficos|locucao_substantiva|plural_mascul
 analisei|verbo|passado|dados coletivos|locucao_substantiva|plural_masculino|avaliados|adjetivo|plural_masculino|nas áreas comunitárias|locucao_substantiva|plural_feminino|avaliadas|adjetivo|plural_feminino|1.6
 analisei|verbo|passado|informações coletadas|locucao_substantiva|plural_feminino|sobre segmentos|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|para diagnóstico|locucao_substantiva|singular_masculino|1.6
 analisei|verbo|passado|segmentos mapeados|locucao_substantiva|plural_masculino|na área|locucao_substantiva|singular_feminino|comunitária|adjetivo|singular_feminino|localizada|adjetivo|singular_feminino|1.6
-
 analisei|verbo|passado|dados coletivos|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|por meio de entrevistas|locucao_substantiva|plural_feminino|abertas|adjetivo|plural_feminino|1.6
 estruturei|verbo|passado|informações de comunidades|locucao_substantiva|plural_feminino|mapeadas|adjetivo|plural_feminino|com base em observações|locucao_substantiva|plural_feminino|participativas|adjetivo|plural_feminino|1.6
 organizei|verbo|passado|dados de redes sociais|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|usando análise discursiva|locucao_substantiva|singular_feminino|aprofundada|adjetivo|singular_feminino|1.6
@@ -118,7 +111,6 @@ analisei|verbo|passado|informações sobre comunidades|locucao_substantiva|plura
 classifiquei|verbo|passado|dados de segmentos|locucao_substantiva|plural_masculino|identificados|adjetivo|plural_masculino|com análise simbólica|locucao_substantiva|singular_feminino|aprofundada|adjetivo|singular_feminino|1.6
 estruturei|verbo|passado|informações de redes|locucao_substantiva|plural_feminino|mapeadas|adjetivo|plural_feminino|a partir de análises hermenêuticas|locucao_substantiva|plural_feminino|consistentes|adjetivo|plural_comum|1.6
 organizei|verbo|passado|dados de comunidades|locucao_substantiva|plural_masculino|registrados|adjetivo|plural_masculino|por entrevistas em profundidade|locucao_substantiva|plural_feminino|qualitativas|adjetivo|plural_feminino|1.6
-analisei|verbo|passado|informações coletadas|locucao_substantiva|plural_feminino|nos levantamentos|locucao_substantiva|plural_masculino|anteriores|adjetivo|plural_comum|1.6
 sistematizei|verbo|passado|dados observacionais|locucao_substantiva|plural_masculino|coletados|adjetivo|plural_masculino|em estudos etnográficos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|1.6
 estruturei|verbo|passado|dados de redes sociais|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|em sessões de análise|locucao_substantiva|singular_feminino|cultural|adjetivo|singular_comum|1.6
 analisei|verbo|passado|informações sobre comunidades|locucao_substantiva|plural_feminino|coletadas|adjetivo|plural_feminino|por meio de entrevistas abertas|locucao_substantiva|plural_feminino|exploratórias|adjetivo|plural_feminino|1.6
@@ -141,5 +133,3 @@ analisei|verbo|passado|informações de grupos focais|locucao_substantiva|plural
 estruturei|verbo|passado|segmentos culturais|locucao_substantiva|plural_masculino|levantados|adjetivo|plural_masculino|a partir de observações|locucao_substantiva|plural_feminino|contextualizadas|adjetivo|plural_feminino|1.6
 organizei|verbo|passado|dados qualitativos|locucao_substantiva|plural_masculino|obtidos|adjetivo|plural_masculino|por meio de estudos etnográficos|locucao_substantiva|plural_masculino|aprofundados|adjetivo|plural_masculino|1.6
 analisei|verbo|passado|informações de segmentos|locucao_substantiva|plural_feminino|identificados|adjetivo|plural_masculino|usando técnicas narrativas|locucao_substantiva|plural_feminino|aprofundadas|adjetivo|plural_feminino|1.6
-
-

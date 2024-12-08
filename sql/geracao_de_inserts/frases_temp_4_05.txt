@@ -8,7 +8,6 @@ preparei|verbo|passado|orientações claras|locucao_substantiva|plural_feminino|
 defini|verbo|passado|metodologia específica|locucao_substantiva|singular_feminino|para processos|locucao_adjetiva|plural_masculino|de avaliação|locucao_substantiva|singular_feminino|para apoio solidário|locucao_adjetiva|singular_masculino|4.5
 colaborei|verbo|passado|na elaboração|locucao_adjetiva|singular_feminino|de chamada pública|locucao_adjetiva|singular_feminino|voltada a redes|locucao_adjetiva|plural_feminino|de economia popular|locucao_adjetiva|singular_feminino|4.5
 redigi|verbo|passado|documento formal|locucao_substantiva|singular_masculino|para chamada|locucao_adjetiva|singular_feminino|pública|adjetivo|singular_feminino|destinada a coletivos|locucao_adjetiva|plural_masculino|4.5
-
 desenvolvi|verbo|passado|critérios de seleção|locucao_substantiva|plural_masculino|para chamada|locucao_adjetiva|singular_feminino|pública|adjetivo|singular_feminino|voltada a cooperativas|locucao_adjetiva|plural_feminino|4.5
 elaborei|verbo|passado|documentação técnica|locucao_substantiva|singular_feminino|para edital|locucao_adjetiva|singular_masculino|de apoio|locucao_adjetiva|singular_masculino|a iniciativas solidárias|locucao_substantiva|plural_feminino|4.5
 facilitei|verbo|passado|definição de diretrizes|locucao_substantiva|plural_feminino|para convocação|locucao_adjetiva|singular_feminino|de empreendimentos|locucao_substantiva|plural_masculino|solidários locais|locucao_adjetiva|plural_masculino|4.5
@@ -46,7 +45,6 @@ coordenei|verbo|passado|preparação de texto|locucao_substantiva|singular_mascu
 facilitei|verbo|passado|definições técnicas|locucao_substantiva|plural_feminino|para estrutura|locucao_adjetiva|singular_feminino|de redes locais|locucao_adjetiva|plural_feminino|voltadas a economia|locucao_adjetiva|singular_feminino|4.5
 redigi|verbo|passado|esboço do edital|locucao_substantiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|4.5
 organizei|verbo|passado|diretrizes para edital|locucao_substantiva|singular_feminino|para redes|locucao_substantiva|plural_feminino|de economia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|4.5
-
 elaborei|verbo|passado|diretrizes de seleção|locucao_substantiva|plural_feminino|para edital|locucao_adjetiva|singular_masculino|de apoio|locucao_adjetiva|singular_masculino|a projetos artesanais|locucao_adjetiva|plural_masculino|4.5
 facilitei|verbo|passado|processo de seleção|locucao_substantiva|singular_masculino|para convênios|locucao_substantiva|plural_masculino|de agroecologia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|4.5
 planejei|verbo|passado|critérios técnicos|locucao_substantiva|plural_masculino|para apoio|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de energia renovável|locucao_adjetiva|singular_feminino|4.5
@@ -63,14 +61,11 @@ estruturei|verbo|passado|emenda colaborativa|locucao_substantiva|singular_femini
 apoiei|verbo|passado|projeto técnico|locucao_substantiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|voltadas ao artesanato|locucao_adjetiva|singular_masculino|4.5
 colaborei|verbo|passado|na estruturação|locucao_substantiva|singular_feminino|para edital|locucao_adjetiva|singular_masculino|destinado a redes|locucao_substantiva|plural_feminino|de economia digital|locucao_adjetiva|singular_feminino|4.5
 orientei|verbo|passado|processo de emenda|locucao_substantiva|singular_feminino|para apoio|locucao_adjetiva|singular_masculino|de cooperativas|locucao_substantiva|plural_feminino|na área de reciclagem|locucao_adjetiva|singular_feminino|4.5
-redigi|verbo|passado|documento base|locucao_substantiva|singular_masculino|para edital|locucao_adjetiva|singular_masculino|de apoio|locucao_adjetiva|singular_masculino|a cooperativas|locucao_substantiva|plural_feminino|no setor audiovisual|locucao_adjetiva|singular_masculino|4.5
-preparei|verbo|passado|critérios detalhados|locucao_substantiva|plural_masculino|para emenda|locucao_adjetiva|singular_feminino|de apoio|locucao_adjetiva|singular_masculino|a iniciativas|locucao_substantiva|plural_feminino|de bioconstrução|locucao_adjetiva|singular_feminino|4.5
 estruturei|verbo|passado|critérios de convocação|locucao_substantiva|plural_masculino|para redes|locucao_substantiva|plural_feminino|voltadas a turismo|locucao_adjetiva|singular_masculino|e cultura|locucao_adjetiva|singular_feminino|4.5
 defini|verbo|passado|diretrizes para redes|locucao_substantiva|plural_feminino|de apoio|locucao_adjetiva|singular_masculino|para artesãos|locucao_substantiva|plural_masculino|da economia local|locucao_adjetiva|singular_feminino|4.5
 articulei|verbo|passado|diretrizes básicas|locucao_substantiva|plural_feminino|para incentivo|locucao_adjetiva|singular_masculino|de redes|locucao_substantiva|plural_feminino|voltadas ao ecoturismo|locucao_adjetiva|singular_masculino|4.5
 orientei|verbo|passado|na elaboração|locucao_substantiva|singular_feminino|para edital|locucao_adjetiva|singular_masculino|para apoio|locucao_adjetiva|singular_masculino|de redes comunitárias|locucao_adjetiva|plural_feminino|4.5
 facilitei|verbo|passado|diretrizes técnicas|locucao_substantiva|plural_feminino|para edital|locucao_adjetiva|singular_masculino|de incentivo|locucao_adjetiva|singular_masculino|a turismo comunitário|locucao_adjetiva|singular_masculino|4.5
-
 redigi|verbo|passado|minuta de edital|locucao_substantiva|singular_feminino|para incentivo|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|4.5
 estruturei|verbo|passado|termos técnicos|locucao_substantiva|plural_masculino|para apoio|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de artesanato|locucao_adjetiva|singular_masculino|4.5
 planejei|verbo|passado|estrutura de edital|locucao_substantiva|singular_feminino|para incentivar|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|no setor de agroecologia|locucao_adjetiva|singular_feminino|4.5
@@ -80,4 +75,3 @@ desenvolvi|verbo|passado|documentação técnica|locucao_substantiva|singular_fe
 preparei|verbo|passado|termos de referência|locucao_substantiva|plural_masculino|para fomento|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|no setor de carpintaria|locucao_adjetiva|singular_feminino|4.5
 estruturei|verbo|passado|diretrizes específicas|locucao_substantiva|plural_feminino|para chamada pública|locucao_adjetiva|singular_feminino|de redes|locucao_substantiva|plural_feminino|voltadas à panificação|locucao_adjetiva|singular_feminino|4.5
 facilitei|verbo|passado|acordo colaborativo|locucao_substantiva|singular_masculino|para suporte|locucao_adjetiva|singular_masculino|a redes|locucao_substantiva|plural_feminino|de economia circular|locucao_adjetiva|singular_feminino|4.5
-

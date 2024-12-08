@@ -83,7 +83,7 @@ find . -type f -name "frases_temp_*" -exec sed -i 's/|alvo|adjetivo|singular_fem
 find . -type f -name "frases_temp_*" -exec sed -i 's/|anteriores|adjetivo|plural_feminino|/|anteriores|adjetivo|plural_comum|/g' {} +
 find . -type f -name "frases_temp_*" -exec sed -i 's/|anteriores|adjetivo|plural_masculino|/|anteriores|adjetivo|plural_comum|/g' {} +
 
-find . -type f -name "frases_temp_*" -exec sed -i 's/^apoiei|verbo|gerundio|/|apoiei|verbo|passado|/g' {} + # no caso e verbo não começa com | porque é o primeiro
+find . -type f -name "frases_temp_*" -exec sed -i 's/^apoiei|verbo|gerundio|/apoiei|verbo|passado|/g' {} + # no caso e verbo não começa com | porque é o primeiro
 
 find . -type f -name "frases_temp_*" -exec sed -i 's/|artesanais|adjetivo|plural_feminino|/|artesanais|adjetivo|plural_comum|/g' {} +
 find . -type f -name "frases_temp_*" -exec sed -i 's/|artesanais|adjetivo|plural_masculino|/|artesanais|adjetivo|plural_comum|/g' {} +
@@ -350,6 +350,12 @@ find . -type f -name "frases_temp_*" -exec sed -i 's/|vigente|adjetivo|singular_
 find . -type f -name "frases_temp_*" -exec sed -i 's/|vigentes|adjetivo|plural_feminino|/|vigentes|adjetivo|plural_comum|/g' {} +
 find . -type f -name "frases_temp_*" -exec sed -i 's/|vigentes|adjetivo|plural_masculino|/|vigentes|adjetivo|plural_comum|/g' {} +
 
+find . -type f -name "frases_temp_*" -exec sed -i 's/|locução_/|locucao_/g' {} +
 
 
-
+# comando abaixo deleta todas as linhas que tiverem menos ou mais do que 15 | (16 campos)
+find . -type f -name "frases_temp_*" -exec bash -c '
+for file; do
+    awk -F"|" "NF == 16" "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+done
+' bash {} +

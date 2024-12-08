@@ -8,7 +8,6 @@ observei|verbo|passado|reuniões de conselhos|locucao_substantiva|plural_feminin
 analisei|verbo|passado|encontros de economia solidária|locucao_substantiva|plural_masculino|significativos|adjetivo|plural_masculino|em conselhos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|1.5
 presenciei|verbo|passado|discussões de conselhos|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|em sessões|locucao_substantiva|plural_feminino|importantes|adjetivo|plural_comum|1.5
 acompanhei|verbo|passado|reuniões de economia solidária|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|1.5
-
 acompanhei|verbo|passado|discussões em conselhos|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|1.5
 observei|verbo|passado|reuniões de economia solidária|locucao_substantiva|plural_feminino|regulares|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|1.5
 presenciei|verbo|passado|sessões de colegiados|locucao_substantiva|plural_feminino|regionais|adjetivo|plural_comum|em encontros|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|1.5
@@ -49,7 +48,6 @@ acompanhei|verbo|passado|sessões de economia solidária|locucao_substantiva|plu
 observei|verbo|passado|encontros de conselhos|locucao_substantiva|plural_masculino|importantes|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|1.5
 presenciei|verbo|passado|reuniões de economia solidária|locucao_substantiva|plural_feminino|atuantes|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|1.5
 acompanhei|verbo|passado|sessões de conselhos|locucao_substantiva|plural_feminino|territoriais|adjetivo|plural_comum|em colegiados|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|1.5
-
 acompanhei|verbo|passado|sessões de movimentos populares|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|associativos|adjetivo|plural_masculino|1.5
 observei|verbo|passado|reuniões de conselhos religiosos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|setoriais|adjetivo|plural_masculino|1.5
 presenciei|verbo|passado|encontros legislativos|substantivo|plural_masculino|significativos|adjetivo|plural_masculino|em colegiados|locucao_substantiva|plural_masculino|ambientais|adjetivo|plural_masculino|1.5
@@ -89,7 +87,6 @@ presenciei|verbo|passado|encontros de fóruns associativos|locucao_substantiva|p
 acompanhei|verbo|passado|reuniões de conselhos partidários|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|1.5
 observei|verbo|passado|sessões de cooperativas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|1.5
 presenciei|verbo|passado|encontros associativos|substantivo|plural_masculino|regionais|adjetivo|plural_comum|nos conselhos|locucao_substantiva|plural_masculino|cooperativos|adjetivo|plural_masculino|1.5
-
 acompanhei|verbo|passado|sessões de conselhos empresariais|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|corporativos|adjetivo|plural_masculino|1.5
 observei|verbo|passado|reuniões de conselhos comunitários|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|em colegiados|locucao_substantiva|plural_masculino|associativos|adjetivo|plural_masculino|1.5
 presenciei|verbo|passado|encontros de fóruns legislativos|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|nas comissões|locucao_substantiva|plural_feminino|parlamentares|adjetivo|plural_feminino|1.5
@@ -127,7 +124,6 @@ acompanhei|verbo|passado|reuniões de conselhos empresariais|locucao_substantiva
 observei|verbo|passado|sessões de conselhos legislativos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|nas comissões|locucao_substantiva|plural_feminino|parlamentares|adjetivo|plural_feminino|1.5
 presenciei|verbo|passado|encontros de conselhos comunitários|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|em colegiados|locucao_substantiva|plural_masculino|associativos|adjetivo|plural_masculino|1.5
 acompanhei|verbo|passado|reuniões de fóruns cooperativos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|associativos|adjetivo|plural_masculino|1.5
-
 acompanhei|verbo|passado|sessões de conselhos empresariais|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|nos colegiados|locucao_substantiva|plural_masculino|próprios|adjetivo|plural_masculino|1.5
 observei|verbo|passado|reuniões de conselhos comunitários|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|em colegiados|locucao_substantiva|plural_masculino|próprios|adjetivo|plural_masculino|1.5
 presenciei|verbo|passado|encontros de fóruns legislativos|locucao_substantiva|plural_masculino|territoriais|adjetivo|plural_comum|nas comissões|locucao_substantiva|plural_feminino|próprias|adjetivo|plural_feminino|1.5
@@ -165,4 +161,3 @@ acompanhei|verbo|passado|reuniões de conselhos empresariais|locucao_substantiva
 observei|verbo|passado|sessões de conselhos legislativos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|nas comissões|locucao_substantiva|plural_feminino|próprias|adjetivo|plural_feminino|1.5
 presenciei|verbo|passado|encontros de conselhos comunitários|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|em colegiados|locucao_substantiva|plural_masculino|próprios|adjetivo|plural_masculino|1.5
 acompanhei|verbo|passado|reuniões de fóruns cooperativos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|em conselhos|locucao_substantiva|plural_masculino|próprios|adjetivo|plural_masculino|1.5
-

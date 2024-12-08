@@ -8,7 +8,6 @@ distribuí|verbo|passado|cartazes promocionais|locucao_substantiva|plural_mascul
 enviei|verbo|passado|folhetos explicativos|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|para os empreendimentos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|2.4
 divulguei|verbo|passado|materiais de economia solidária|locucao_substantiva|plural_masculino|inclusivos|adjetivo|plural_masculino|em centros educacionais|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|2.4
 entreguei|verbo|passado|folders de capacitação|locucao_substantiva|plural_masculino|explicativos|adjetivo|plural_masculino|em feiras comunitárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.4
-
 distribuí|verbo|passado|guias explicativos|locucao_substantiva|plural_masculino|completos|adjetivo|plural_masculino|nas associações locais|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.4
 entreguei|verbo|passado|manuais acessíveis|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|em eventos comunitários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.4
 compartilhei|verbo|passado|vídeos de conscientização|locucao_substantiva|plural_masculino|informativos|adjetivo|plural_masculino|em redes sociais|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|2.4
@@ -43,7 +42,6 @@ entreguei|verbo|passado|apostilas de capacitação|locucao_substantiva|plural_fe
 distribuí|verbo|passado|materiais sobre economia solidária|locucao_substantiva|plural_masculino|inclusivos|adjetivo|plural_masculino|em espaços públicos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.4
 compartilhei|verbo|passado|cartilhas educativas|locucao_substantiva|plural_feminino|orientadoras|adjetivo|plural_feminino|nas redes digitais|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|2.4
 postei|verbo|passado|conteúdos sobre economia solidária|locucao_substantiva|plural_masculino|explicativos|adjetivo|plural_masculino|em redes de apoio|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|2.4
-
 compartilhei|verbo|passado|conteúdo educativo|locucao_substantiva|singular_masculino|informativo|adjetivo|singular_masculino|em grupos de WhatsApp|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|2.4
 distribuí|verbo|passado|informativos digitais|locucao_substantiva|plural_masculino|explicativos|adjetivo|plural_masculino|nos canais de Telegram|locucao_adjetiva|plural_masculino|comunitários|adjetivo|plural_masculino|2.4
 postei|verbo|passado|vídeo educativo|locucao_substantiva|singular_masculino|instrutivo|adjetivo|singular_masculino|no Instagram|locucao_adjetiva|singular_masculino|local|adjetivo|singular_comum|2.4
@@ -80,4 +78,3 @@ divulguei|verbo|passado|conteúdo sobre economia solidária|locucao_substantiva|
 enviei|verbo|passado|informativos interativos|locucao_substantiva|plural_masculino|detalhados|adjetivo|plural_masculino|por meio de Torrent|locucao_adjetiva|singular_masculino|compartilhado|adjetivo|singular_masculino|2.4
 postei|verbo|passado|vídeo explicativo|locucao_substantiva|singular_masculino|educativo|adjetivo|singular_masculino|no canal do YouTube|locucao_adjetiva|singular_masculino|regional|adjetivo|singular_comum|2.4
 compartilhei|verbo|passado|conteúdo visual|locucao_substantiva|singular_masculino|detalhado|adjetivo|singular_masculino|em perfis de Instagram|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|2.4
-

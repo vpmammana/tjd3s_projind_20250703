@@ -1,4 +1,4 @@
-ngajei|verbo|passado|grupos de produtores|locucao_substantiva|plural_masculino|na criação|locucao_substantiva|singular_feminino|de redes de consumo|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.1
+engajei|verbo|passado|grupos de produtores|locucao_substantiva|plural_masculino|na criação|locucao_substantiva|singular_feminino|de redes de consumo|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.1
 engajei|verbo|passado|parceiros locais|locucao_substantiva|plural_masculino|na construção|locucao_substantiva|singular_feminino|de redes alimentares|locucao_substantiva|plural_feminino|solidárias|adjetivo|plural_feminino|4.1
 engajei|verbo|passado|associações comunitárias|locucao_substantiva|plural_feminino|na criação|locucao_substantiva|singular_feminino|de redes de serviços|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.1
 motivei|verbo|passado|redes comunitárias|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|o comércio de produtos locais|locucao_substantiva|plural_masculino|solidários|adjetivo|plural_masculino|4.1
@@ -11,15 +11,10 @@ promovi|verbo|passado|encontros comunitários|locucao_substantiva|plural_masculi
 incentivei|verbo|passado|redes de apoio|locucao_substantiva|plural_feminino|para estimular|locucao_verbal|infinitivo|a produção local|locucao_substantiva|singular_feminino|de alimentos|locucao_substantiva|plural_masculino|4.1
 motivei|verbo|passado|redes locais|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|empreendimentos de transporte solidário|locucao_substantiva|plural_masculino|no território|locucao_adjetiva|singular_masculino|4.1
 motivei|verbo|passado|redes locais|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|negócios de transporte solidário|locucao_substantiva|plural_masculino|no território|locucao_adjetiva|singular_masculino|4.1
-
-
-
 engajei|verbo|passado|grupos locais|locucao_substantiva|plural_masculino|na criação|locucao_substantiva|singular_feminino|de ações|locucao_substantiva|plural_feminino|em economia solidária|locucao_adjetiva|singular_feminino|4.1
 motivei|verbo|passado|grupos comunitários|locucao_substantiva|plural_masculino|para incentivar|locucao_verbal|infinitivo|ações na economia circular|locucao_substantiva|singular_feminino|locais|adjetivo|plural_comum|4.1
 engajei|verbo|passado|grupos solidários|locucao_substantiva|plural_masculino|em práticas|locucao_substantiva|plural_feminino|de turismo solidário|locucao_adjetiva|singular_masculino|no território|locucao_adjetiva|singular_masculino|4.1
 incentivei|verbo|passado|grupos de apoio|locucao_substantiva|plural_masculino|para fortalecer|locucao_verbal|infinitivo|a economia digital|locucao_substantiva|singular_feminino|comunitária|adjetivo|singular_feminino|4.1
-
-
 fortaleci|verbo|passado|redes de produção|locucao_substantiva|plural_feminino|voltadas para|locucao_adjetiva|singular_feminino|a sustentabilidade|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 desenvolvi|verbo|passado|cadeias produtivas|locucao_substantiva|plural_feminino|focadas na|locucao_adjetiva|singular_feminino|economia circular|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
 estruturei|verbo|passado|arranjos produtivos|locucao_substantiva|plural_masculino|dedicados a|locucao_adjetiva|infinitivo|ampliar a economia|locucao_substantiva|singular_feminino|solidária|adjetivo|singular_feminino|4.2
@@ -30,9 +25,6 @@ fortaleci|verbo|passado|redes de produção solidária|locucao_substantiva|plura
 estruturei|verbo|passado|arranjos de cooperação|locucao_substantiva|plural_masculino|para fortalecer|locucao_verbal|infinitivo|a produção integrada|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 mobilizei|verbo|passado|redes produtivas|locucao_substantiva|plural_feminino|com foco em|locucao_adjetiva|infinitivo|cadeias locais|locucao_substantiva|plural_feminino|sustentáveis|adjetivo|plural_comum|4.2
 desenvolvi|verbo|passado|cadeias de abastecimento|locucao_substantiva|plural_feminino|para impulsionar|locucao_verbal|infinitivo|a economia|locucao_substantiva|singular_feminino|solidária|adjetivo|singular_feminino|4.2
-
-
-
 fortaleci|verbo|passado|cadeias de distribuição|locucao_substantiva|plural_feminino|para ampliar|locucao_verbal|infinitivo|o comércio|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.2
 desenvolvi|verbo|passado|redes de logística|locucao_substantiva|plural_feminino|para apoiar|locucao_verbal|infinitivo|a circulação de produtos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|4.2
 estruturei|verbo|passado|arranjos de fornecimento|locucao_substantiva|plural_masculino|com foco em|locucao_adjetiva|infinitivo|mercado regional|locucao_substantiva|singular_masculino|solidário|adjetivo|singular_masculino|4.2
@@ -41,7 +33,6 @@ fortaleci|verbo|passado|redes de comercialização justa|locucao_substantiva|plu
 estruturei|verbo|passado|arranjos de energia renovável|locucao_substantiva|plural_masculino|para aumentar|locucao_verbal|infinitivo|o acesso|locucao_substantiva|singular_masculino|a recursos locais|locucao_adjetiva|plural_masculino|4.2
 mobilizei|verbo|passado|redes de produção artesanal|locucao_substantiva|plural_feminino|para expandir|locucao_verbal|infinitivo|a criação de produtos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|4.2
 desenvolvi|verbo|passado|cadeias de valor colaborativo|locucao_substantiva|plural_feminino|para promover|locucao_verbal|infinitivo|o desenvolvimento|locucao_substantiva|singular_masculino|comunitário|adjetivo|singular_masculino|4.2
-estruturei|verbo|passado|arranjos produtivos locais|locucao_substantiva|plural_masculino|focados em|locucao_adjetiva|infinitivo|economia de baixo impacto|locucao_substantiva|singular_feminino|4.2
 fortaleci|verbo|passado|redes de produção têxtil|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|a moda solidária|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 mobilizei|verbo|passado|cadeias produtivas agroecológicas|locucao_substantiva|plural_feminino|para estimular|locucao_verbal|infinitivo|a agricultura sustentável|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
 estruturei|verbo|passado|arranjos de distribuição|locucao_substantiva|plural_masculino|para otimizar|locucao_verbal|infinitivo|o comércio comunitário|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|4.2
@@ -69,9 +60,7 @@ desenvolvi|verbo|passado|cadeias de fornecimento regional|locucao_substantiva|pl
 fortaleci|verbo|passado|arranjos de economia verde|locucao_substantiva|plural_masculino|para incentivar|locucao_verbal|infinitivo|a preservação ambiental|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 estruturei|verbo|passado|redes de cooperativismo|locucao_substantiva|plural_feminino|voltadas para|locucao_adjetiva|singular_feminino|produção colaborativa|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
 mobilizei|verbo|passado|cadeias de consumo sustentável|locucao_substantiva|plural_feminino|para promover|locucao_verbal|infinitivo|a consciência|locucao_substantiva|singular_feminino|comunitária|adjetivo|singular_feminino|4.2
-
-
-ifortaleci|verbo|passado|redes de alimentos orgânicos|locucao_substantiva|plural_feminino|para estimular|locucao_verbal|infinitivo|a segurança alimentar|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
+fortaleci|verbo|passado|redes de alimentos orgânicos|locucao_substantiva|plural_feminino|para estimular|locucao_verbal|infinitivo|a segurança alimentar|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 mobilizei|verbo|passado|cadeias de turismo sustentável|locucao_substantiva|plural_feminino|para promover|locucao_verbal|infinitivo|a valorização cultural|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
 estruturei|verbo|passado|arranjos de economia circular|locucao_substantiva|plural_masculino|com foco em|locucao_adjetiva|infinitivo|produção sustentável|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
 desenvolvi|verbo|passado|redes de bioconstrução|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|práticas ecológicas|locucao_substantiva|plural_feminino|locais|adjetivo|plural_comum|4.2
@@ -111,7 +100,6 @@ mobilizei|verbo|passado|arranjos de produção local|locucao_substantiva|plural_
 estruturei|verbo|passado|cadeias de ecoturismo|locucao_substantiva|plural_feminino|para promover|locucao_verbal|infinitivo|o turismo sustentável|locucao_substantiva|singular_masculino|regional|adjetivo|singular_comum|4.2
 desenvolvi|verbo|passado|redes de comércio cooperativo|locucao_substantiva|plural_feminino|para expandir|locucao_verbal|infinitivo|o acesso a produtos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|4.2
 fortaleci|verbo|passado|cadeias de produtos fitoterápicos|locucao_substantiva|plural_feminino|para incentivar|locucao_verbal|infinitivo|a saúde comunitária|locucao_substantiva|singular_feminino|no território|locucao_adjetiva|singular_masculino|4.2
-
 desenvolvi|verbo|passado|redes de comercialização direta|locucao_substantiva|plural_feminino|para estimular|locucao_verbal|infinitivo|a economia local|locucao_substantiva|singular_feminino|sustentável|adjetivo|singular_comum|4.2
 fortaleci|verbo|passado|cadeias de transporte solidário|locucao_substantiva|plural_feminino|para melhorar|locucao_verbal|infinitivo|a acessibilidade|locucao_substantiva|singular_feminino|comunitária|adjetivo|singular_feminino|4.2
 estruturei|verbo|passado|redes de fornecimento agroecológico|locucao_substantiva|plural_feminino|para ampliar|locucao_verbal|infinitivo|a produção ecológica|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
@@ -145,4 +133,3 @@ fortaleci|verbo|passado|cadeias de economia digital|locucao_substantiva|plural_f
 estruturei|verbo|passado|redes de transporte solidário|locucao_substantiva|plural_feminino|para apoiar|locucao_verbal|infinitivo|a mobilidade local|locucao_substantiva|singular_feminino|regional|adjetivo|singular_comum|4.2
 mobilizei|verbo|passado|arranjos de agroecologia|locucao_substantiva|plural_masculino|para incentivar|locucao_verbal|infinitivo|a agricultura sustentável|locucao_substantiva|singular_feminino|no território|locucao_adjetiva|singular_masculino|4.2
 desenvolvi|verbo|passado|cadeias de confecção solidária|locucao_substantiva|plural_feminino|para fomentar|locucao_verbal|infinitivo|a moda sustentável|locucao_substantiva|singular_feminino|local|adjetivo|singular_comum|4.2
-

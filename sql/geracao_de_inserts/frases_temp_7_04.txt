@@ -8,7 +8,6 @@ acompanhei|verbo|passado|evento regional|locucao_substantiva|singular_masculino|
 observei|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|como ouvinte|locucao_adverbial|modo|7.4
 presenciei|verbo|passado|feira comunitária|locucao_substantiva|singular_feminino|orientada|adjetivo|singular_feminino|a produtos|locucao_adjetiva|plural_masculino|sustentáveis|adjetivo|plural_comum|7.4
 acompanhei|verbo|passado|palestra pública|locucao_substantiva|singular_feminino|sobre finanças|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|como observador|locucao_adverbial|modo|7.4
-
 observei|verbo|passado|palestra temática|locucao_substantiva|singular_feminino|sobre economia|locucao_adjetiva|singular_feminino|solidária|adjetivo|singular_feminino|como ouvinte|locucao_adverbial|modo|7.4
 acompanhei|verbo|passado|seminário especializado|locucao_substantiva|singular_masculino|voltado|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|7.4
 assisti|verbo|passado|evento informativo|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminino|sustentáveis|adjetivo|plural_comum|como observador|locucao_adverbial|modo|7.4
@@ -53,7 +52,6 @@ acompanhei|verbo|passado|palestra técnica|locucao_substantiva|singular_feminino
 observei|verbo|passado|evento público|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|na sustentabilidade|locucao_adjetiva|singular_feminino|ambiental|adjetivo|singular_feminino|7.4
 presenciei|verbo|passado|feira regional|locucao_substantiva|singular_feminino|dedicada|adjetivo|singular_feminino|a práticas|locucao_adjetiva|plural_feminino|sustentáveis|adjetivo|plural_comum|7.4
 acompanhei|verbo|passado|seminário temático|locucao_substantiva|singular_masculino|sobre produtos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|como ouvinte|locucao_adverbial|modo|7.4
-
 presenciei|verbo|passado|seminário técnico|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à sustentabilidade|locucao_adjetiva|singular_feminino|ambiental|adjetivo|singular_feminino|7.4
 acompanhei|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|sobre juventudes|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|como ouvinte|locucao_adverbial|modo|7.4
 assisti|verbo|passado|evento comunitário|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminino|sustentáveis|adjetivo|plural_comum|7.4
@@ -87,4 +85,3 @@ observei|verbo|passado|evento sobre finanças|locucao_substantiva|plural_feminin
 presenciei|verbo|passado|palestra sobre autogestão|locucao_substantiva|singular_feminino|focada|adjetivo|singular_feminino|em juventudes|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|7.4
 acompanhei|verbo|passado|seminário nacional|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à sustentabilidade|locucao_adjetiva|singular_feminino|ambiental|adjetivo|singular_feminino|7.4
 presenciei|verbo|passado|evento técnico|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminino|sustentáveis|adjetivo|plural_comum|7.4
-

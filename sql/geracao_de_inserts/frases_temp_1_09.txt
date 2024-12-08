@@ -37,24 +37,20 @@ identifiquei|verbo|passado|ferramentas digitais|locucao_substantiva|plural_femin
 mapeei|verbo|passado|plataformas de comercialização|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a produtos quilombolas|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de permacultura|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|a redes solidárias|locucao_adjetiva|plural_feminino|comunitárias|adjetivo|plural_feminino|1.9
 mapeei|verbo|passado|ferramentas de compra coletiva|locucao_substantiva|plural_feminino|para produtos indígenas|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|de distribuição|locucao_substantiva|singular_feminino|1.9
-
 identifiquei|verbo|passado|plataformas de comercialização|locucao_substantiva|plural_feminino|para produtos naturais|locucao_adjetiva|plural_masculino|da economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas digitais|locucao_substantiva|plural_masculino|para venda|locucao_adjetiva|singular_feminino|de produtos sem terra|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de suporte|locucao_substantiva|plural_masculino|para redes LGBTQIA+|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de logística|locucao_substantiva|plural_feminino|para produtos indígenas|locucao_adjetiva|plural_masculino|da economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas para gestão de serviços continuados|locucao_substantiva|plural_feminino|em ambientes governamentais|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|de abrangência|locucao_substantiva|singular_feminino|1.9
 mapeei|verbo|passado|aplicativos de compra coletiva|locucao_substantiva|plural_masculino|para produtos de permacultura|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|em desenvolvimento|locucao_adjetiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|sistemas de apoio logístico|locucao_substantiva|plural_masculino|para comercialização|locucao_adjetiva|singular_feminino|de produtos quilombolas|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de vendas|locucao_substantiva|plural_feminino|para produtos de agricultura familiar|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|no mercado|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|ferramentas digitais|locucao_substantiva|plural_feminino|para gestão de serviços|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos de suporte comunitário|locucao_substantiva|plural_masculino|para redes LGBTQIA+|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de comercialização|locucao_substantiva|plural_feminino|para produtos naturais|locucao_adjetiva|plural_masculino|em redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de logística|locucao_substantiva|plural_feminino|para produtos de sem terra|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|da comunidade|locucao_substantiva|singular_feminino|1.9
 identifiquei|verbo|passado|aplicativos de serviços comunitários|locucao_substantiva|plural_masculino|para atividades solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|de impacto|locucao_substantiva|singular_masculino|1.9
 mapeei|verbo|passado|ferramentas de comercialização|locucao_substantiva|plural_feminino|para produtos de permacultura|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|de alcance|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|plataformas de venda|locucao_substantiva|plural_feminino|de produtos quilombolas|locucao_adjetiva|plural_masculino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos para clubes de compra|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para produtos de economia solidária|locucao_adjetiva|singular_feminino|regionais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|sistemas de monitoramento|locucao_substantiva|plural_masculino|de serviços|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
@@ -71,7 +67,6 @@ mapeei|verbo|passado|plataformas de comercialização de alimentos|locucao_subst
 identifiquei|verbo|passado|sistemas para apoio|locucao_substantiva|plural_masculino|na gestão de produtos|locucao_adjetiva|plural_masculino|da economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de organização|locucao_substantiva|plural_masculino|para clubes de compra|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|de impacto|locucao_substantiva|singular_masculino|1.9
 identifiquei|verbo|passado|plataformas de gestão colaborativa|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|de alcance|locucao_substantiva|singular_masculino|1.9
-
 mapeei|verbo|passado|plataformas de ensino colaborativo|locucao_substantiva|plural_feminino|para capacitação|locucao_adjetiva|singular_feminino|em comunidades solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de assistência jurídica|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|a coletivos de economia solidária|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de coordenação de voluntariado|locucao_substantiva|plural_feminino|usadas|adjetivo|plural_feminino|para iniciativas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
@@ -87,11 +82,9 @@ identifiquei|verbo|passado|sistemas para gestão de hortas comunitárias|locucao
 mapeei|verbo|passado|plataformas de formação em empreendedorismo|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas de apoio a produções audiovisuais|locucao_substantiva|plural_feminino|dedicadas|adjetivo|plural_feminino|a coletivos culturais|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos de comercialização de alimentos|locucao_substantiva|plural_masculino|para feiras comunitárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|no território|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|plataformas de apoio a artesãos|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de capacitação em serviços de turismo|locucao_substantiva|plural_feminino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|na comunidade|locucao_adverbial|singular_feminino|1.9
 identifiquei|verbo|passado|aplicativos de microcrédito|locucao_substantiva|plural_masculino|para financiamento de negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|no território|locucao_substantiva|singular_masculino|1.9
-
 mapeei|verbo|passado|sistemas de monitoramento de produção|locucao_substantiva|plural_masculino|para agricultura familiar|locucao_adjetiva|singular_feminino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de apoio ao artesanato|locucao_substantiva|plural_feminino|para coletivos|locucao_adjetiva|plural_masculino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos de economia compartilhada|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|a grupos de economia solidária|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
@@ -99,24 +92,18 @@ identifiquei|verbo|passado|sistemas de promoção de eventos culturais|locucao_s
 mapeei|verbo|passado|plataformas para turismo comunitário|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|de impacto|locucao_substantiva|singular_masculino|1.9
 identifiquei|verbo|passado|ferramentas de capacitação em permacultura|locucao_substantiva|plural_feminino|para coletivos de economia solidária|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|na região|locucao_adverbial|singular_feminino|1.9
 mapeei|verbo|passado|sistemas de vendas para feiras solidárias|locucao_substantiva|plural_masculino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|de alcance|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|aplicativos para organização de redes de apoio|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|a grupos solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas para distribuição de produtos agrícolas|locucao_substantiva|plural_feminino|para feiras comunitárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|na comunidade|locucao_adverbial|singular_feminino|1.9
 mapeei|verbo|passado|ferramentas para distribuição de produtos agrícolas|locucao_substantiva|plural_feminino|para feiras comunitárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|no território|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|plataformas para rede de serviços|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|à economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos para gestão de grupos de consumo|locucao_substantiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|para redes|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|sistemas para suporte a empreendimentos familiares|locucao_substantiva|plural_masculino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|de impacto|locucao_substantiva|singular_masculino|1.9
-
 mapeei|verbo|passado|ferramentas de apoio a transporte comunitário|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|no território|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|aplicativos de comunicação interna|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de venda direta|locucao_substantiva|plural_feminino|para produtos orgânicos|locucao_adjetiva|plural_masculino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|sistemas para capacitação em artesanato|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|a cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos de comércio solidário|locucao_substantiva|plural_masculino|para produtos reciclados|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|no mercado|locucao_substantiva|singular_masculino|1.9
-
 identifiquei|verbo|passado|plataformas de serviços de apoio logístico|locucao_substantiva|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|regionais|adjetivo|plural_comum|1.9
-
 mapeei|verbo|passado|aplicativos de entrega|locucao_substantiva|plural_masculino|para restaurantes|locucao_adjetiva|plural_masculino|em redes locais|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de gestão financeira|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a pequenos negócios|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de pagamento digital|locucao_substantiva|plural_masculino|para empresas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
@@ -125,38 +112,18 @@ mapeei|verbo|passado|plataformas de marketing digital|locucao_substantiva|plural
 identifiquei|verbo|passado|sistemas de contabilidade|locucao_substantiva|plural_masculino|para redes solidárias|locucao_adjetiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de comunicação corporativa|locucao_substantiva|plural_feminino|destinadas|adjetivo|plural_feminino|a empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de recrutamento online|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
-mapeei|verbo|passado|aplicativos de atendimento ao cliente|locucao_substantiva|plural_masculino|para negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|sistemas de vendas de produtos|locucao_substantiva|plural_masculino|para empresas locais|locucao_adjetiva|plural_feminino|em economia solidária|locucao_adjetiva|singular_feminino|1.9
-mapeei|verbo|passado|plataformas de análise de mercado|locucao_substantiva|plural_feminino|para pequenos negócios|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
 identifiquei|verbo|passado|ferramentas de marketing para empresas|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|à economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de controle de estoque|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de logística|locucao_substantiva|plural_feminino|para redes de distribuição|locucao_adjetiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas para contratação de serviços|locucao_substantiva|plural_feminino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de controle de produção|locucao_substantiva|plural_masculino|para negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de suporte técnico|locucao_substantiva|plural_feminino|para empreendimentos|locucao_adjetiva|plural_masculino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|sistemas de agendamento|locucao_substantiva|plural_masculino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas de treinamento corporativo|locucao_substantiva|plural_feminino|para economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas para redes de networking|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a negócios locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|sistemas de feedback|locucao_substantiva|plural_masculino|para empresas cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
 identifiquei|verbo|passado|aplicativos para controle financeiro|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para negócios locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
 mapeei|verbo|passado|ferramentas de atendimento remoto|locucao_substantiva|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas de gestão de recursos humanos|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|aplicativos de suporte ao cliente|locucao_substantiva|plural_masculino|para negócios cooperativos|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
 identifiquei|verbo|passado|ferramentas de gerenciamento de projetos|locucao_substantiva|plural_feminino|para redes cooperativas|locucao_adjetiva|plural_feminino|em setores solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|sistemas de marketing digital|locucao_substantiva|plural_masculino|para redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos para análise de crédito|locucao_substantiva|plural_masculino|em cooperativas|locucao_adjetiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de publicidade online|locucao_substantiva|plural_feminino|para redes de negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|sistemas para gestão de conteúdo|locucao_substantiva|plural_masculino|para negócios locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|ferramentas de suporte a vendas|locucao_substantiva|plural_feminino|para pequenas empresas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
 identifiquei|verbo|passado|plataformas para educação corporativa|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
-mapeei|verbo|passado|sistemas de armazenamento de dados|locucao_substantiva|plural_masculino|para empresas solidárias|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
-identifiquei|verbo|passado|aplicativos de automação de marketing|locucao_substantiva|plural_masculino|para negócios locais|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|ferramentas de análise de dados|locucao_substantiva|plural_feminino|para empresas cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas de geração de relatórios|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de comunicação interna|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de suporte financeiro|locucao_substantiva|plural_masculino|para pequenos negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|plataformas de pesquisa de satisfação|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-
 mapeei|verbo|passado|ferramentas de suporte ao cliente|locucao_substantiva|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos para análise de desempenho|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|a negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de gestão de inventário|locucao_substantiva|plural_feminino|para pequenas empresas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
@@ -164,79 +131,41 @@ identifiquei|verbo|passado|ferramentas de segurança da informação|locucao_sub
 mapeei|verbo|passado|sistemas de controle de qualidade|locucao_substantiva|plural_masculino|para empreendimentos|locucao_adjetiva|plural_masculino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de capacitação técnica|locucao_substantiva|plural_feminino|para empresas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas de análise financeira|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a pequenos negócios|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos para monitoramento de vendas|locucao_substantiva|plural_masculino|para redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|plataformas para gestão de fluxo de caixa|locucao_substantiva|plural_feminino|em negócios locais|locucao_adjetiva|plural_masculino|de economia solidária|locucao_adjetiva|singular_feminino|1.9
 identifiquei|verbo|passado|sistemas para capacitação em atendimento|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|a cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
 mapeei|verbo|passado|ferramentas de automação de processos|locucao_substantiva|plural_feminino|para empresas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos para gestão de parcerias|locucao_substantiva|plural_masculino|destinados|adjetivo|plural_masculino|a redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de suporte para logística reversa|locucao_substantiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas para organização de eventos corporativos|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de atendimento virtual|locucao_substantiva|plural_masculino|para pequenos negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas para monitoramento de desempenho|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas para feedback de clientes|locucao_substantiva|plural_feminino|destinadas|adjetivo|plural_feminino|a negócios cooperativos|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de marketing para redes de consumo|locucao_substantiva|plural_masculino|em redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de análise de produtividade|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas para promoção de serviços|locucao_substantiva|plural_feminino|em redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas para controle de inventário|locucao_substantiva|plural_feminino|para negócios solidários|locucao_adjetiva|plural_masculino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de reserva de serviços|locucao_substantiva|plural_masculino|para redes comunitárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de segurança cibernética|locucao_substantiva|plural_masculino|destinados|adjetivo|plural_masculino|a cooperativas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas para treinamento em vendas|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a empresas locais|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
 mapeei|verbo|passado|plataformas para integração de serviços|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
-identifiquei|verbo|passado|sistemas para gerenciamento de cadeia de suprimentos|locucao_substantiva|plural_masculino|para redes cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas de suporte jurídico|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de monitoramento ambiental|locucao_substantiva|plural_masculino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas para divulgação de eventos|locucao_substantiva|plural_masculino|em cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas para treinamento digital|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas de divulgação de oportunidades|locucao_substantiva|plural_feminino|em redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de controle de compliance|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|regionais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas para captação de financiamento|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
-identifiquei|verbo|passado|ferramentas de gerenciamento de risco|locucao_substantiva|plural_feminino|em negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|aplicativos para análise de concorrência|locucao_substantiva|plural_masculino|em cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|sistemas para monitoramento de tendências|locucao_substantiva|plural_masculino|para redes cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas para melhoria contínua|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a cooperativas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de planejamento estratégico|locucao_substantiva|plural_feminino|para empresas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas para controle de processos|locucao_substantiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de gestão de clientes|locucao_substantiva|plural_masculino|para redes cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
-
-
 mapeei|verbo|passado|sistemas de análise de crédito|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de controle de inventário|locucao_substantiva|plural_feminino|destinadas|adjetivo|plural_feminino|a redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|aplicativos para análise de indicadores|locucao_substantiva|plural_masculino|em redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas para auditoria interna|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
 mapeei|verbo|passado|sistemas de agendamento de reuniões|locucao_substantiva|plural_masculino|para redes de negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas para acompanhamento de vendas|locucao_substantiva|plural_feminino|para empresas cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas de planejamento financeiro|locucao_substantiva|plural_feminino|em redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|aplicativos de controle de contratos|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de e-learning corporativo|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a redes de economia solidária|locucao_adjetiva|singular_feminino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|ferramentas para recrutamento de pessoal|locucao_substantiva|plural_feminino|em redes cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos de controle de fluxo de caixa|locucao_substantiva|plural_masculino|para pequenos negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de atendimento ao cliente|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|ferramentas para análise de dados de mercado|locucao_substantiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|sistemas de comunicação interna|locucao_substantiva|plural_masculino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|plataformas de treinamento em habilidades|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas para gerenciamento de estoque|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a empreendimentos|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|sistemas para rastreamento de entregas|locucao_substantiva|plural_masculino|para empresas cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de monitoramento de tarefas|locucao_substantiva|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas de otimização de processos|locucao_substantiva|plural_feminino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|sistemas de automação de relatórios|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|a pequenos negócios|locucao_adjetiva|plural_masculino|solidários|adjetivo|plural_masculino|1.9
-mapeei|verbo|passado|plataformas de organização de dados|locucao_substantiva|plural_feminino|para redes cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|ferramentas para promoção de produtos|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
-mapeei|verbo|passado|sistemas para gerenciamento de redes sociais|locucao_substantiva|plural_masculino|para negócios cooperativos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de cadastro de clientes|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas para avaliação de desempenho|locucao_substantiva|plural_feminino|para negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|aplicativos de suporte em recursos humanos|locucao_substantiva|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
 mapeei|verbo|passado|plataformas de ensino de gestão|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|a redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|ferramentas de desenvolvimento profissional|locucao_substantiva|plural_feminino|para empresas solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de análise de custos|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|plataformas de registro de transações|locucao_substantiva|plural_feminino|para redes cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|locais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|ferramentas para criação de relatórios financeiros|locucao_substantiva|plural_feminino|para cooperativas|locucao_adjetiva|plural_feminino|na economia solidária|locucao_adjetiva|singular_feminino|1.9
-identifiquei|verbo|passado|aplicativos de fidelização de clientes|locucao_substantiva|plural_masculino|para negócios cooperativos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|plataformas de colaboração entre empresas|locucao_substantiva|plural_feminino|voltadas|adjetivo|plural_feminino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
 identifiquei|verbo|passado|ferramentas para análise de projetos|locucao_substantiva|plural_feminino|em cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|regionais|adjetivo|plural_comum|1.9
-mapeei|verbo|passado|sistemas de gestão documental|locucao_substantiva|plural_masculino|para redes de economia solidária|locucao_adjetiva|singular_feminino|locais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas de suporte a vendas|locucao_substantiva|plural_feminino|para negócios solidários|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|aplicativos para integração de processos|locucao_substantiva|plural_masculino|voltados|adjetivo|plural_masculino|para cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|1.9
-identifiquei|verbo|passado|ferramentas de otimização de rotinas|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|1.9
 mapeei|verbo|passado|sistemas de agendamento de entregas|locucao_substantiva|plural_masculino|para redes cooperativas|locucao_adjetiva|plural_feminino|solidárias|adjetivo|plural_feminino|regionais|adjetivo|plural_comum|1.9
-identifiquei|verbo|passado|plataformas de controle de estoque|locucao_substantiva|plural_feminino|para redes solidárias|locucao_adjetiva|plural_feminino|regionais|adjetivo|plural_comum|1.9
-

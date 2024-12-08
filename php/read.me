@@ -1,0 +1,36 @@
+sugere_frases2.php é a versão quase funcional de busca de frases sequencialmente. Ou seja, token a token, do primeiro para o último.
+
+sugere_frases2.php precisará ser integrada à solução do mvp desenvolvida por Jaqueline e Marcos.
+
+VPM 2024-11-02
+
+A otimização a ser realizada por Jaqueline deve ocorrer na function queryIndexedDB() do arquivo ../js/offline.js. Esta função não está tirando proveito dos métodos de indexação do indexedDB.
+
+Para testar a função é preciso rodar:
+
+// **Exemplo de uso**
+queryIndexedDB({
+    query: 'c',
+    tokenIndex: 2,
+    previousTokens: ['analisei'], // Teste com []
+})
+    .then((result) => {
+        console.log('Result:', JSON.stringify(result, null, 2));
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+previousTokens: guarda os tokens que já foram escolhidos, separados por vírgula. Quando não houve escolha, substituir por []
+
+query: é a palavra de busca de tokens que está sendo digitada
+
+tokenIndex: é a ordem do token que está sendo buscado com query, começando com 1 no primeiro token. 
+
+Se previousTokens está vazio, tokenIndex é 1
+Se previousTokens tem um elemento, tokenIndex é 2
+Se previousToknes tem dois elementos, tokenIndex é 3...
+Se previousToknes tem três elementos, tokenIndex é 4...
+Se previousToknes tem quatro elementos, tokenIndex é 5...
+
+

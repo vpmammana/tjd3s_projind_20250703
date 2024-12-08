@@ -1,4 +1,3 @@
-
 analisei|verbo|passado|centros comunitários públicos|locucao_substantiva|plural_masculino|regionais|adjetivo|plural_comum|próximos às|locucao_adjetiva|plural_feminino|zonas de bioconstrução|locucao_substantiva|singular_feminino|1.4
 analisei|verbo|passado|centros de assistência pública|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|junto às|locucao_adjetiva|plural_feminino|zonas de economia circular|locucao_substantiva|singular_feminino|1.4
 analisei|verbo|passado|centros de serviços sociais públicos|locucao_substantiva|plural_masculino|locais|adjetivo|plural_comum|no território|locucao_adjetiva|singular_masculino|designado|adjetivo|singular_masculino|1.4

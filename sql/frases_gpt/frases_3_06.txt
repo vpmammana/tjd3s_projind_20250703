@@ -41,7 +41,7 @@ apoiei|verbo|passado|a criação|locucao_substantiva|singular_feminina|de proces
 
 defini|verbo|passado|estratégias para o CADSOL|locucao_substantiva|singular_feminina|para equipes|locucao_substantiva|plural_feminina|gestoras|adjetivo|plural_feminina|efetivas|adjetivo|plural_feminina|3.6
 desenvolvi|verbo|passado|parâmetros operacionais|locucao_substantiva|plural_masculina|para equipes|locucao_substantiva|plural_feminina|do CADSOL|locucao_adjetiva|singular_masculina|regionais|adjetivo|plural_feminina|3.6
-projetarei|verbo|passado|mecanismos de avaliação|locucao_substantiva|plural_masculina|para candidatos|locucao_substantiva|plural_masculina|ao CADSOL|locucao_substantiva|singular_masculino|nacionais|adjetivo|plural_masculina|3.6
+projetei|verbo|passado|mecanismos de avaliação|locucao_substantiva|plural_masculina|para candidatos|locucao_substantiva|plural_masculina|ao CADSOL|locucao_substantiva|singular_masculino|nacionais|adjetivo|plural_masculina|3.6
 incentivei|verbo|passado|a criação|locucao_substantiva|singular_feminina|de protocolos|locucao_substantiva|plural_masculina|para o CADSOL|locucao_substantiva|singular_masculina|nacional|adjetivo|singular_masculina|3.6
 propus|verbo|passado|ações de suporte|locucao_substantiva|plural_feminina|para equipes|locucao_substantiva|plural_feminina|do CADSOL|locucao_adjetiva|singular_masculina|territoriais|adjetivo|plural_feminina|3.6
 estruturei|verbo|passado|indicadores de escolha|locucao_substantiva|plural_masculina|para o CADSOL|locucao_substantiva|singular_masculina|com equipes|locucao_substantiva|plural_feminina|gestoras|adjetivo|plural_feminina|3.6

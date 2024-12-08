@@ -1,4 +1,3 @@
-
 coordenei|verbo|passado|atividades de mobilização|locucao_substantiva|plural_feminino|para estruturar|locucao_verbal|infinitivo|empreendimentos solidários|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|4.1
 coordenei|verbo|passado|atividades de mobilização|locucao_substantiva|plural_feminino|para estruturar|locucao_verbal|infinitivo|iniciativas solidárias|locucao_substantiva|plural_feminino|comunitárias|adjetivo|plural_feminino|4.1
 coordenei|verbo|passado|atividades de mobilização|locucao_substantiva|plural_feminino|para estruturar|locucao_verbal|infinitivo|negócios solidários|locucao_substantiva|plural_masculino|comunitários|adjetivo|plural_masculino|4.1
