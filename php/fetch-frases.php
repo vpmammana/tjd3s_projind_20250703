@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include "./database_conecta.php";
+include "./database.php";
 
 $stmt = $conn->prepare("select id_chave_frase, id_token, ordem, id_tipo_acao from frases;");
 

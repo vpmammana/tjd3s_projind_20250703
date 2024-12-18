@@ -1,7 +1,3 @@
-<?php
-include "./fetch-suggestions.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,16 +64,15 @@ include "./fetch-suggestions.php";
                         <label for="nome-atividade">Nome da atividade</label>
                         <input type="text" id="nome-atividade" name="nome-atividade">
                     </div>
-                    <div class="row-tipo-atividade-data">
-                        <div class="form-input">
-                            <label for="tipo-atividade">Frase que melhor descreve esse ação</label>
-                            <div id="tipo-atividade-container" class="chip-container">
-                                <div id="chips-container" class="chips-container"></div>
-                                <input type="text" id="tipo-atividade" name="tipo-atividade" oninput="fetchSuggestions()">
-                            </div>
-                            <div id="suggestions-container" class="suggestions-container"></div>
+                    <div id="mega_container">
+                        <div id="container">
+                            <!-- Chips serão adicionados dinamicamente aqui -->
                         </div>
-
+                        <div class="dropdown" id="dropdown"></div>
+                        <div id="frases"></div>
+                        <!-- <input type="button" id="botao_envio" value="Confirmar frase selecionada" disabled onclick="alert('teste!')" /> -->
+                    </div>
+                    <div class="row-tipo-atividade-data">
                         <div class="form-input">
                             <label for="data">Data</label>
                             <input id="data" name="data" type="datetime-local">
@@ -132,7 +127,6 @@ include "./fetch-suggestions.php";
         <div class="contact">
             <span>Contato: selecao0124@fundacentro.gov.br</span>
         </div>
-
         <script src="./main.js">
         </script>
 

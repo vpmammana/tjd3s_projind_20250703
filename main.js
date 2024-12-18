@@ -1,7 +1,497 @@
 let imagesArray = [];
 let suggestionSelected = "";
+let selectedPhraseId = 0;
+let chipCount = 0;
+//-----------cODIGO DE FRASES -----------------------------------------------------------------------------
+// o presente código foi desenvolvido por Victor Mammana, com auxílio de chatbots 
+const container = document.getElementById('container');
+const dropdown = document.getElementById('dropdown');
+const maximo_frases = 16;
+let frases_montadas;
+let tokenIndex = 1;
+let previousTokens = [];
+velhoDeleteBtn = 'delete_nulo';
+var perguntas = []; // Variável global
 
-// Mostrar um did quando os dados esta sendo carregados
+
+async function handleMutation(mutation) {
+    if (mutation.type === "childList") {
+        console.log("Child node added or removed:", mutation);
+
+        try {
+            // Fetch sugestões de uma API ou outra fonte
+            const frases = await fetchFrases();
+            if (frases.length > maximo_frases) {
+                document.getElementById('frases').innerHTML = "<div class='chip_tipo_resultado'>Muitas frases retornadas. Responda mais perguntas para refinar a busca.</div>";
+                if (frases.length > 0) {
+                    document.getElementById('frases').style.display = 'flex';
+                }
+            } else {
+                // Atualizar o HTML com as frases obtidas
+                let velho_id_tipo_resultado = "";
+                if (frases.length == 1 && document.getElementById('inputWrapper')) {
+                    document.getElementById('inputWrapper').remove();
+                }
+                if (frases.length > 0) {
+                    document.getElementById('frases').style.display = 'flex';
+                }
+                let phrasesHTML = frases.map(frase => {
+                    let str_tipo_resultado = ""; // Declare no escopo da função do map
+                    if (velho_id_tipo_resultado != frase.id_tipo_resultado_pai) {
+                        str_tipo_resultado = "<div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
+                    }
+                    velho_id_tipo_resultado = frase.id_tipo_resultado_pai;
+                    return str_tipo_resultado + "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/>" + frase.phrase + "</div>";
+                }).join("");
+                document.getElementById('frases').innerHTML = phrasesHTML;
+            }
+        } catch (error) {
+            console.error("Erro ao buscar frases:", error);
+        }
+    }
+}
+
+function handleSelectedPhrase(id) {
+    selectedPhraseId = id
+}
+
+// Seleciona o elemento onde deseja monitorar mudanças
+const targetElement = document.getElementById("container");
+
+// Configura o observer para detectar adição de filhos
+const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+        handleMutation(mutation); // Chamar a função assíncrona separadamente
+    }
+});
+
+// Configurações para o observer
+const config = {
+    childList: true
+};
+
+// Inicia a observação
+observer.observe(targetElement, config);
+
+// Para encerrar a observação (se necessário):
+// observer.disconnect();
+
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('interno')) {
+        return;
+    }
+
+    const excludedElement = document.getElementById('dropdown');
+
+    if (!excludedElement.contains(event.target)) {
+        // Executa a ação se o clique NÃO for no elemento excluído ou dentro dele
+        excludedElement.innerHTML = '';
+        excludedElement.style.display = 'none';
+    }
+
+});
+
+function showErrorMessage(message) {
+    // Verifica se já existe uma mensagem de erro exibida
+    let errorContainer = document.getElementById('error-message');
+    if (!errorContainer) {
+        // Cria um novo elemento para exibir a mensagem de erro
+        errorContainer = document.createElement('div');
+        errorContainer.id = 'error-message';
+        errorContainer.style.position = 'absolute';
+        errorContainer.style.top = '10px';
+        errorContainer.style.left = '50%';
+        errorContainer.style.transform = 'translateX(-50%)';
+        errorContainer.style.backgroundColor = '#f8d7da';
+        errorContainer.style.color = '#721c24';
+        errorContainer.style.padding = '10px';
+        errorContainer.style.border = '1px solid #f5c6cb';
+        errorContainer.style.borderRadius = '5px';
+        errorContainer.style.fontSize = '14px';
+        errorContainer.style.zIndex = '1000';
+        document.body.appendChild(errorContainer);
+    }
+
+    // Atualiza o texto da mensagem de erro
+    errorContainer.textContent = message;
+
+    // Remove a mensagem automaticamente após 5 segundos
+    setTimeout(() => {
+        if (errorContainer) {
+            errorContainer.remove();
+        }
+    }, 5000);
+}
+
+function showLoadingIndicator(inputWrapper) {
+    // Cria o elemento de carregamento (rodinha)
+    const loadingSpinner = document.createElement('div');
+    loadingSpinner.id = 'loading-spinner';
+    loadingSpinner.classList.add('loading-spinner'); // Use a classe CSS
+    loadingSpinner.textContent = '⏳'; // Aqui você pode usar um ícone ou animação CSS
+    loadingSpinner.style.marginLeft = '10px'; // Ajuste o estilo como preferir
+    inputWrapper.appendChild(loadingSpinner);
+}
+
+function hideLoadingIndicator() {
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if (loadingSpinner) {
+        loadingSpinner.remove();
+    }
+}
+
+async function retorna_perguntas() {
+    try {
+        const response = await fetch('busca_perguntas.php');
+
+        if (!response.ok) {
+            throw new Error('Erro ao buscar perguntas: ' + response.statusText);
+        }
+
+        const data = await response.json();
+
+        // Retornar um array de objetos contendo 'nome_pergunta', 'placeholder', 'help'
+        return data.map(row => ({
+            nome_pergunta: row.nome_pergunta,
+            placeholder: row.placeholder,
+            help: row.help
+        }));
+    } catch (error) {
+        console.error('Erro:', error);
+        return [];
+    }
+}
+
+
+function fetchFrases(query) {
+    const url = `/php/fetch_frases.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+
+    if (!navigator.onLine) {
+        console.warn("Sem conexão com a internet. Usando IndexedDB.");
+        return fetchPhrasesFromIndexedDB()
+            .then((result) => {
+                let filteredData = [];
+
+                if (previousTokens.length > 0) {
+                    filteredData = result.filter((data) => data.phrase.startsWith(previousTokens.join(' ')));
+                }
+                return filteredData;
+            })
+            .catch((error) => {
+                console.error('Erro ao consultar IndexedDB (frases):', error);
+                throw error;
+            });
+    }
+
+    // Se online, faz o fetch normalmente
+    return fetch(url)
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`Erro na resposta de frases do servidor: ${res.status}`);
+            }
+            return res.json();
+        })
+        .catch((error) => {
+            console.error('Erro no fetch:', error);
+            throw error;
+        });
+}
+
+function fetchTokensFromIndexedDB() {
+    return new Promise((resolve, reject) => {
+        openDatabase('TokensDB', 1, upgradeTokensDB)
+            .then((db) => {
+                const transaction = db.transaction(['tokens'], 'readonly');
+                const objectStore = transaction.objectStore('tokens');
+                const request = objectStore.getAll();
+
+                request.onsuccess = (event) => {
+                    resolve(event.target.result); // Resolve with the fetched data
+                };
+
+                request.onerror = () => {
+                    reject('Error fetching data from IndexedDB');
+                };
+            })
+            .catch((error) => reject(error));
+    });
+}
+
+function fetchPhrasesFromIndexedDB() {
+    return new Promise((resolve, reject) => {
+        openDatabase('PhrasesDB', 1, upgradeTokensDB)
+            .then((db) => {
+                const transaction = db.transaction(['phrases'], 'readonly');
+                const objectStore = transaction.objectStore('phrases');
+                const request = objectStore.getAll();
+
+                request.onsuccess = (event) => {
+                    resolve(event.target.result); // Resolve with the fetched data
+                };
+
+                request.onerror = () => {
+                    reject('Error fetching data from IndexedDB');
+                };
+            })
+            .catch((error) => reject(error));
+    });
+}
+
+
+
+
+function fetchSuggestions(query) {
+    const url = `/php/fetch_tokens_chip.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+    if (!navigator.onLine) {
+        return fetchTokensFromIndexedDB()
+            .then((tokensDbData) => {
+                //-------------------------------------------------------------
+                const frases = tokensDbData[0].tokens.frases
+                const tokens = tokensDbData[0].tokens.tokens
+                // Step 1: Construct 'phrase' for each id_tipo_acao
+                const phrases = frases.reduce((acc, frase) => {
+                    const token = tokens.find(t => t.id_chave_token === frase.id_token);
+                    if (token) {
+                        const key = frase.id_tipo_acao;
+                        acc[key] = acc[key] || [];
+                        acc[key].push({ ordem: frase.ordem, nome_token: token.nome_token });
+                    }
+                    return acc;
+                }, {});
+
+                // Format phrases and filter by the LIKE condition
+                const searchPattern = previousTokens.length === 0 ? "" : previousTokens.join(" "); // Example LIKE pattern
+                const matchingTipoAcao = Object.entries(phrases)
+                    .filter(([_, tokens]) => {
+                        const phrase = tokens
+                            .sort((a, b) => a.ordem - b.ordem)
+                            .map(t => t.nome_token)
+                            .join(' ');
+                        return phrase.startsWith(searchPattern.replace('%', '')); // Simulate LIKE
+                    })
+                    .map(([id_tipo_acao]) => parseInt(id_tipo_acao));
+
+                // Step 2: Filter frases and join with tokens
+                const ordem = tokenIndex; // Example "ordem"
+                const result = frases
+                    .filter(f => f.ordem === ordem && matchingTipoAcao.includes(f.id_tipo_acao))
+                    .map(f => {
+                        const token = tokens.find(t => t.id_chave_token === f.id_token);
+                        return token ? token.nome_token : null;
+                    })
+                    .filter(nome_token => nome_token);
+                const resultList = [...new Set(result)];
+                const resultListFiltered = resultList.filter((x) => x.startsWith(query))
+
+                return { tokens: resultListFiltered };
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
+    // Se online, faz o fetch normalmente
+    return fetch(url)
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`Erro na resposta de tokens do servidor: ${res.status}`);
+            }
+            return res.json();
+        }).then(data => {
+            return data
+        })
+        .catch((error) => {
+            console.error('Erro no fetch:', error);
+            throw error;
+        });
+}
+
+function createChip(token) {
+    const chip = document.createElement('div');
+    chip.className = 'chip';
+    document.querySelectorAll('.delete').forEach(el => el.style.display = 'none');
+    const deleteBtn = document.createElement('div');
+    deleteBtn.id = 'delete_' + tokenIndex;
+    velhoDeleteBtn = 'delete_' + (tokenIndex - 1); // sem parenteses dah NaN
+    if (velhoDeleteBtn == 'delete_0') {
+        velhoDeleteBtn = 'delete_nulo';
+    }
+    deleteBtn.setAttribute('data-anterior', velhoDeleteBtn);
+    chip.setAttribute('data-companion', deleteBtn.id);
+    deleteBtn.className = 'delete';
+    deleteBtn.innerHTML = 'X';
+    deleteBtn.onclick = () => {
+        if (deleteBtn.getAttribute("data-anterior") != "delete_nulo") {
+            document.getElementById(deleteBtn.getAttribute('data-anterior')).style.display = 'flex';
+        }
+        chip.remove();
+        previousTokens.pop();
+        tokenIndex--;
+        selectedPhraseId = "";
+        chipCount--;
+        updateInputPosition();
+    };
+
+    chip.innerHTML = "<div class='token'>" + token + "</div>";
+    chip.appendChild(deleteBtn);
+    container.appendChild(chip);
+    chipCount++;
+}
+
+function handleQuestion(chipCount) {
+    const inputWrapper = document.getElementById('pergunta')
+
+    if (chipCount === 1) {
+        console.log('here')
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Test 1</div>"
+    }
+
+}
+
+function updateInputPosition() {
+    let pergunta;
+    let placeholder;
+    if (tokenIndex == 1) {
+        velhoDeleteBtn = 'delete_nulo';
+    }
+    if (document.getElementById("inputWrapper")) {
+        document.getElementById("inputWrapper").remove();
+    }
+    const inputWrapper = document.createElement('div');
+    inputWrapper.className = 'input-wrapper';
+    inputWrapper.id = 'inputWrapper';
+
+    if (perguntas.length > 0 && tokenIndex <= perguntas.length) {
+        pergunta = perguntas[tokenIndex - 1].nome_pergunta;
+        placeholder = perguntas[tokenIndex - 1].placeholder;
+    } else {
+        pergunta = 'Qual foi a sua ação';
+        placeholder = 'Digite Aqui...';
+    }
+
+
+    const input = document.createElement('input');
+    input.id = 'edit_box_pergunta';
+    input.type = 'text';
+    input.className = 'interno';
+    input.placeholder = placeholder;
+
+
+
+    let handleInput = async () => {
+        try {
+            showLoadingIndicator(inputWrapper); // Mostra o indicador de carregamento
+            const suggestions_full = await fetchSuggestions(input.value);
+
+            const suggestions = suggestions_full.tokens;
+            const frases = suggestions_full.phrases;
+            if (suggestions.length === 0) {
+                input.value = input.value.slice(0, -1); // Atualiza o valor do input se necessário
+            } else {
+                showDropdown(suggestions, input, inputWrapper);
+            }
+        } catch (error) {
+            console.error('Erro ao buscar sugestões:', error);
+            showErrorMessage('Erro de conexão. Por favor, verifique sua rede.');
+        } finally {
+            hideLoadingIndicator(); // Sempre esconde o indicador, mesmo que haja erro
+        }
+    };
+
+
+    input.oninput = async () => {
+        handleInput(event);
+    };
+    input.onclick = async () => {
+        handleInput(event);
+    };
+
+    if (chipCount === 1) {
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Sobre quem ou o que você agiu</div>"
+    } else if (chipCount === 2) {
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Que caracteristicas você percebe no objeto da sua ação</div>"
+    } else if (chipCount === 3) {
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Indique um destino ou finalidade da sua ação</div>"
+    }
+    else if (chipCount === 4) {
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Indique as caracteristicas desse destino ou finalidade</div>"
+    }
+    else {
+        pergunta = 'Qual foi a sua ação';
+        placeholder = 'Digite Aqui...';
+        inputWrapper.innerHTML = "<div id='pergunta' class='interno'>" + pergunta + "</div>"
+    }
+
+    inputWrapper.appendChild(input);
+    container.appendChild(inputWrapper);
+    input.focus();
+}
+
+function showDropdown(suggestions, input, inputWrapper) {
+    document.getElementById('frases').style.opacity = "0.5";
+    dropdown.innerHTML = '';
+    suggestions.forEach(token => {
+        const item = document.createElement('div');
+        item.textContent = token;
+        item.onclick = () => {
+            previousTokens.push(token);
+            createChip(token);
+            dropdown.style.display = 'none';
+            inputWrapper.remove();
+            tokenIndex++;
+            document.getElementById('frases').style.opacity = "1.0";
+            if (tokenIndex <= 5) {
+                updateInputPosition();
+            }
+        };
+        dropdown.appendChild(item);
+    });
+
+    const rect = inputWrapper.getBoundingClientRect();
+    dropdown.style.top = `${rect.bottom + window.scrollY}px`;
+    dropdown.style.left = `${rect.left}px`;
+    dropdown.style.display = 'block';
+}
+
+updateInputPosition();
+
+async function carregarPerguntas() {
+    try {
+        // Tentar buscar perguntas pela internet
+        perguntas = await retorna_perguntas(); // Aguardar a resolução da Promise da função retorna_perguntas
+        document.getElementById('pergunta').innerHTML = perguntas[0].nome_pergunta;
+        document.getElementById('edit_box_pergunta').placeholder = perguntas[0].placeholder;
+    } catch (error) {
+        console.warn('Falha ao buscar perguntas pela internet, tentando carregar do IndexedDB...', error);
+
+        // Tentar carregar perguntas do IndexedDB
+        try {
+            const db = await openIndexedDB(); // Abre a conexão com o IndexedDB
+            const transaction = db.transaction('perguntas', 'readonly');
+            const store = transaction.objectStore('perguntas');
+
+            // Obter todas as perguntas do IndexedDB
+            const perguntasIndexedDB = await new Promise((resolve, reject) => {
+                const request = store.getAll();
+                request.onsuccess = () => {
+                    if (request.result.length > 0) {
+                        resolve(request.result);
+                    } else {
+                        reject(new Error('Elemento "perguntas" não encontrado no IndexedDB.'));
+                    }
+                };
+                request.onerror = () => reject(new Error('Erro ao acessar o IndexedDB.'));
+            });
+
+            perguntas = perguntasIndexedDB;
+            document.getElementById('pergunta').innerHTML = perguntas[0].nome_pergunta;
+            document.getElementById('edit_box_pergunta').placeholder = perguntas[0].placeholder;
+        } catch (indexedDBError) {
+            console.error('Erro ao carregar perguntas do IndexedDB:', indexedDBError);
+        }
+    }
+}
+//--------------------------------Main JS----------------------------------------------------------------------
 function showLoading() {
     document.getElementById("loading").style.display = "block";
 
@@ -46,7 +536,7 @@ window.addEventListener('load', function () {
     }
 
     function showError(error) {
-        console.log('Error in geolocation');
+        console.error('Error in geolocation');
     }
 });
 
@@ -224,6 +714,15 @@ function upgradePhrasesDB(db) {
     }
 }
 
+function upgradeTokensDB(db) {
+    if (!db.objectStoreNames.contains('tokens')) {
+        db.createObjectStore('tokens', {
+            keyPath: 'id',
+            autoIncrement: true
+        });
+    }
+}
+
 // Atualiza o db offline
 function upgradeOfflineDataDB(db) {
     if (!db.objectStoreNames.contains('offlineData')) {
@@ -243,7 +742,7 @@ function storePhrasesInDB(phrases) {
         objectStore.clear();
         phrases.forEach(phrase => {
             objectStore.add({
-                nome_frase: phrase
+                ...phrase
             });
         });
 
@@ -257,6 +756,23 @@ function storePhrasesInDB(phrases) {
     });
 }
 
+function storeTokensInDB(data) {
+    openDatabase('TokensDB', 1, upgradeTokensDB).then(db => {
+        const transaction = db.transaction(['tokens'], 'readwrite');
+        const objectStore = transaction.objectStore('tokens');
+
+        objectStore.clear();
+        objectStore.add({ tokens: data.tokens });
+
+        transaction.oncomplete = () => {
+            console.log('Tokens stored in IndexedDB');
+        };
+
+        transaction.onerror = () => {
+            console.error('Error storing tokens in IndexedDB');
+        };
+    });
+}
 // Pegar os phrases do indexeddb basedo no input de usuario
 function getPhrasesFromDB(query) {
     return new Promise((resolve, reject) => {
@@ -270,7 +786,6 @@ function getPhrasesFromDB(query) {
                 const filteredPhrases = phrases
                     .map(phrase => phrase.nome_frase)
                     .filter(phrase => phrase.toLowerCase().includes(query.toLowerCase()))
-                    .slice(0, 10);
                 resolve(filteredPhrases);
             };
 
@@ -299,10 +814,11 @@ function storeDataOffline(data) {
                 console.log('Old data removed, new data stored offline');
                 document.getElementById('criar-evidencia-form').reset();
                 document.getElementById('imagePreviews').innerHTML = '';
-                document.getElementById("remove-chip").click();
                 suggestionSelected = "";
                 imagePreviews = [];
                 alert('Dados salvos. Serão enviados quando houver conexão.');
+                hideLoading();
+                window.location.href = "/"
             };
 
             transaction.onerror = () => {
@@ -335,49 +851,53 @@ function syncDataWithServer() {
                     console.log('No offline data to sync');
                     hideLoading();
                     return;
+                } else {
+                    offlineDataArray.forEach(offlineData => {
+                        const formData = new FormData();
+
+                        for (const key in offlineData) {
+                            if (key === 'files') {
+                                for (const file of offlineData.files) {
+                                    formData.append('files[]', file);
+                                }
+                            } else {
+                                formData.append(key, offlineData[key]);
+                            }
+                        }
+
+                        fetch('/php/CriarEvidencia.php', {
+                            method: 'POST',
+                            body: formData
+                        })
+                            .then(response => {
+                                if (!response.ok) {
+                                    hideLoading();
+                                    throw new Error('Network response was not ok: ' + response.statusText);
+                                }
+                                fetchStatusArr.push(true)
+                                clearOfflineData(db, offlineData.id);
+                                hideLoading();
+                                // window.location.href = "/"
+                                return response.json();
+                            })
+                            .catch(error => {
+                                fetchStatusArr.push(false)
+                                hideLoading();
+                                console.error('Error syncing data:', error);
+                            });
+                    });
+                }
+                if (!fetchStatusArr.includes(false)) {
+                    hideLoading();
+                    alert('Dados enviados com sucesso!');
+                    window.location.href = "/"
+                } else {
+                    alert('Erro tente novamente!')
                 }
 
-                offlineDataArray.forEach(offlineData => {
-                    const formData = new FormData();
-
-                    for (const key in offlineData) {
-                        if (key === 'files') {
-                            for (const file of offlineData.files) {
-                                formData.append('files[]', file);
-                            }
-                        } else {
-                            formData.append(key, offlineData[key]);
-                        }
-                    }
-
-                    fetch('./php/CriarEvidencia.php', {
-                        method: 'POST',
-                        body: formData
-                    })
-                        .then(response => {
-                            if (!response.ok) {
-                                hideLoading();
-                                throw new Error('Network response was not ok: ' + response.statusText);
-                            }
-                            fetchStatusArr.push(true)
-                            clearOfflineData(db, offlineData.id);
-                            hideLoading();
-                            return response.json();
-                        })
-                        .catch(error => {
-                            fetchStatusArr.push(false)
-                            hideLoading();
-                            console.error('Error syncing data:', error);
-                        });
-                });
             };
 
-            if (!fetchStatusArr.includes(false)) {
-                hideLoading();
-                alert('Dados enviados com sucesso!')
-            } else {
-                alert('Erro tente novamente!')
-            }
+
 
             request.onerror = () => {
                 console.error('Error fetching data from IndexedDB');
@@ -430,6 +950,17 @@ function loadAllPhrasesIntoIndexedDB() {
     }
 }
 
+function loadAllTokensIntoIndexedDB() {
+    if (navigator.onLine) {
+        fetch('/php/fetch_tokens_chip2.php?query=&tokenIndex=1&previousTokens=[]')
+            .then(response => response.json())
+            .then(data => {
+                storeTokensInDB({ tokens: data });
+            })
+            .catch(error => console.error('Error fetching all Tokens:', error));
+    }
+}
+
 // Formatr os palavaras para no ter acentos
 function removerAcentos(str) {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -448,124 +979,16 @@ function isStopword(word) {
     return stopwords.includes(word);
 }
 
-// Pegar sugestão do input do frase digitado pelo usuario
-function fetchSuggestions() {
-    let input = document.getElementById('tipo-atividade').value;
-    input = removerAcentos(input.toLowerCase());
-    let suggestions = [];
-    const currentWord = getCurrentWord(input);
-
-    if (isStopword(currentWord)) {
-        clearSuggestions();
-        return;
-    }
-
-    if (currentWord.length >= 2) {
-        if (navigator.onLine) {
-            fetch(`/fetch-suggestions.php?q=${encodeURIComponent(currentWord)}`)
-                .then(response => response.json())
-                .then(data => {
-                    suggestions = []
-                    suggestions = data;
-                    if (suggestions.length)
-                        displaySuggestions(data);
-                })
-                .catch(error => console.error('Error fetching suggestions:', error));
-        } else {
-
-            getPhrasesFromDB(currentWord)
-                .then(data => {
-                    suggestions = []
-                    suggestions = data;
-
-                    if (suggestions.length) {
-                        displaySuggestions(data);
-                    }
-                })
-                .catch(error => console.error('Error retrieving suggestions from IndexedDB:', error));
-        }
-    } else {
-        if (suggestions.length !== 0 || currentWord.length === 0) {
-            clearSuggestions();
-        }
-    }
-}
-
 // Remover sugestoes
 function clearSuggestions() {
     const container = document.getElementById('suggestions-container');
     container.innerHTML = '';
 }
 
-//Mostrar sugestoes
-function displaySuggestions(suggestions) {
-    const container = document.getElementById('suggestions-container');
-    container.innerHTML = '';
-
-    suggestions.forEach(suggestion => {
-        const chip = document.createElement('div');
-        chip.className = 'suggestion-chip';
-        chip.textContent = suggestion;
-        chip.onclick = () => addChip(suggestion);
-        container.appendChild(chip);
-    });
-}
-
-// Adicionar os tags de sugestoes
-function addChip(text) {
-    suggestionSelected = text;
-    const chipsContainer = document.getElementById('chips-container');
-    const input = document.getElementById('tipo-atividade');
-    input.innerText = text;
-    input.value = text;
-    const chip = document.createElement('div');
-    chip.className = 'chip';
-    chip.innerHTML = `
-        <span>${text}</span>
-        <div id="remove-chip" class="remove-chip" onclick="removeChip(this)">x</div>
-`;
-    chipsContainer.appendChild(chip);
-
-    toggleInputVisibility();
-
-    // Clear the suggestions
-    clearSuggestions();
-}
-
-// Remover os tags da sugestão
-function removeChip(button) {
-    const chip = button.parentElement;
-    chip.remove();
-
-    toggleInputVisibility();
-
-    const input = document.getElementById('tipo-atividade');
-    input.value = '';
-    input.focus();
-}
-
-
-function toggleInputVisibility() {
-    const chipsContainer = document.getElementById('chips-container');
-    const input = document.getElementById('tipo-atividade');
-
-    if (chipsContainer.children.length > 0) {
-        input.classList.add('hidden');
-    } else {
-        input.classList.remove('hidden');
-    }
-}
-
-// Call toggleInputVisibility on page load to set the correct initial state
-document.addEventListener('DOMContentLoaded', toggleInputVisibility);
-
-
-
-document.getElementById('tipo-atividade').addEventListener('input', fetchSuggestions);
-
-
 document.addEventListener('DOMContentLoaded', function () {
     loadAllPhrasesIntoIndexedDB();
+    loadAllTokensIntoIndexedDB();
+
 });
 
 document.getElementById('fileInput').addEventListener('change', function (event) {
@@ -580,17 +1003,15 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
     const formData = new FormData();
 
     const nomeAtividade = document.getElementById('nome-atividade');
-    const tipoAtividade = document.getElementById('tipo-atividade');
     const data = document.getElementById('data');
     const atividadeRealizada = document.getElementById('atividade-realizada');
+    const tipoAtividade = document.getElementById('edit_box_pergunta');
 
     const fields = {
         nomeAtividade,
-        tipoAtividade,
         data,
-        atividadeRealizada
+        atividadeRealizada,
     }
-
     const errorFields = []
 
     if (!localStorage.getItem('longitude') || !localStorage.getItem('longitude')) {
@@ -615,6 +1036,10 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
         }
     })
 
+    if (!selectedPhraseId || selectedPhraseId === "") {
+        tipoAtividade.classList.add('error-input')
+    }
+
     if (errorFields.length > 0) {
         const focusField = errorFields[0];
         focusField.focus();
@@ -622,16 +1047,6 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
         hideLoading();
         return;
     }
-
-    if (suggestionSelected === "") {
-        alert("Por favor, escolha uma das opçoẽs do Frase que melhor descreve esse ação.");
-        document.getElementById('tipo-atividade').classList.add('error-input')
-        hideLoading();
-        return;
-    } else {
-        document.getElementById('tipo-atividade').classList.remove('error-input')
-    }
-
 
     if (errorFields.length > 0) {
         const focusField = errorFields[0];
@@ -647,7 +1062,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
         return;
     }
     formData.append('nome-atividade', nomeAtividade.value);
-    formData.append('tipo-atividade', tipoAtividade.value);
+    formData.append('tipo-atividade', selectedPhraseId);
     formData.append('data', data.value);
     formData.append('atividade-realizada', atividadeRealizada.value);
     formData.append('data-acao', data.value.split('T')[0]);
@@ -665,24 +1080,31 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
             method: 'POST',
             body: formData
         })
-            .then((response) => {
+            .then(async (response) => {
+                const jsonResponse = await response.json(); // Parse the response as JSON
+
                 if (!response.ok) {
-                    console.error('Error submitting data');
-                    alert('Erro ao enviar dados, tente novamente');
-                    hideLoading();
-                } else {
-                    formElement.reset();
-                    suggestionSelected = "";
-                    document.getElementById('imagePreviews').innerHTML = '';
-                    document.getElementById("remove-chip").click();
-                    loading.style.display = "none"
-                    alert('Dados enviados com sucesso!');
-                    hideLoading();
+                    throw {
+                        ...jsonResponse
+                    }
                 }
+                return jsonResponse
+            })
+            .then((res) => {
+                formElement.reset();
+                suggestionSelected = "";
+                document.getElementById('imagePreviews').innerHTML = '';
+                loading.style.display = "none"
+                alert('Dados enviados com sucesso!');
+                window.location.href = "/"
             })
             .catch(error => {
-                console.error('Error submitting data:', error);
-                alert('Erro ao enviar dados, tente novamente');
+                if (error.faceDetected === 'false' || error.extensionError === 'false') {
+                    alert(error.message);
+                }
+                else {
+                    alert('Erro ao enviar dados, tente novamente');
+                }
                 hideLoading();
             });
     } else {
@@ -699,3 +1121,6 @@ window.addEventListener('online', () => {
 window.addEventListener('offline', () => {
     console.log('You are now offline. Your data will be saved locally.');
 });
+
+
+

@@ -8,6 +8,15 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Function to print executed SQL with bound parameters
+function getExecutedSql($sql, $params)
+{
+    foreach ($params as $param) {
+        $sql = preg_replace('/\?/', is_numeric($param) ? $param : "'$param'", $sql, 1);
+    }
+    return $sql;
+}
+
 // Validar parâmetros de entrada
 if (!isset($_GET['query']) || !isset($_GET['tokenIndex'])) {
     echo json_encode(['error' => 'Missing parameters']);
@@ -20,14 +29,15 @@ $previousTokens = isset($_GET['previousTokens']) ? json_decode($_GET['previousTo
 
 // Construir placeholders para tokens anteriores
 $placeholders = '';
-$params = [$tokenIndex, "(^|[[:space:]])".$query];
+$params = [$tokenIndex, "(^|[[:space:]])" . $query];
 if (!empty($previousTokens)) {
     $placeholders = implode(',', array_fill(0, count($previousTokens), '?'));
-    $subphrases = [implode(' ', $previousTokens)."%"];
-    $subfrases = [implode(' ', $previousTokens)."%"];
+    $subphrases = [implode(' ', $previousTokens) . "%"];
+    $subfrases = [implode(' ', $previousTokens) . "%"];
     $params = array_merge($params, $subphrases);
+} else {
+    $subfrases = [""];
 }
-else {$subfrases=[""];} 
 
 // Construir a consulta SQL
 $sql = "
@@ -58,7 +68,7 @@ try {
     // Preparar e executar a consulta
     $stmt = $conn->prepare($sql);
     $stmt->execute($params);
-
+    error_log("Executed SQL Query 1:\n" . getExecutedSql($sql, $params) . "\n");
     // Buscar resultados
     $tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
 } catch (PDOException $e) {
@@ -72,20 +82,18 @@ $sql2 = "SELECT id_tipo_acao, group_concat(nome_token order by ordem separator '
 			WHERE f2.id_token = t2.id_chave_token
 			GROUP BY f2.id_tipo_acao
                         HAVING phrase LIKE ?";
+
 try {
-$stmt2 = $conn->prepare($sql2);
-$stmt2->execute($subfrases);
-$phrases = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+    $stmt2 = $conn->prepare($sql2);
+
+    $stmt2->execute($subfrases);
+    $phrases = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     // Capturar e exibir erros de consulta
     echo json_encode(['error' => $e->getMessage()]);
     exit;
 }
-    
+
 
 
 echo json_encode(["tokens" => $tokens, "phrases" => $phrases]);
-
-
-?>
-

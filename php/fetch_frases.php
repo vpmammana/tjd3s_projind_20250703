@@ -9,8 +9,8 @@ error_reporting(E_ALL);
 
 // Validar parâmetros de entrada
 if (!isset($_GET['previousTokens'])) {
-    echo json_encode(['error' => 'Missing parameters']);
-    exit;
+	echo json_encode(['error' => 'Missing parameters']);
+	exit;
 }
 
 $previousTokens = isset($_GET['previousTokens']) ? json_decode($_GET['previousTokens']) : [];
@@ -18,9 +18,10 @@ $previousTokens = isset($_GET['previousTokens']) ? json_decode($_GET['previousTo
 // Construir placeholders para tokens anteriores
 $placeholders = '';
 if (!empty($previousTokens)) {
-    $subfrases = [implode(' ', $previousTokens)."%"];
+	$subfrases = [implode(' ', $previousTokens) . "%"];
+} else {
+	$subfrases = [""];
 }
-else {$subfrases=[""];} 
 
 $sql2 = "
 SELECT 
@@ -50,19 +51,25 @@ ORDER BY
 	id_tipo_resultado, phrase
 ";
 try {
-$stmt2 = $conn->prepare($sql2);
-$stmt2->execute($subfrases);
-$phrases = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+	$stmt2 = $conn->prepare($sql2);
+	$stmt2->execute($subfrases);
+
+	// Construct the executed SQL query for debugging
+	$executedSql = $sql2;
+	foreach ($subfrases as $placeholder) {
+		$executedSql = preg_replace('/\?/', "'$placeholder'", $executedSql, 1);
+	}
+
+	// Log the final SQL query
+	error_log("Executed SQL: $executedSql");
+
+	$phrases = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    // Capturar e exibir erros de consulta
-    echo json_encode(['error' => $e->getMessage()]);
-    exit;
+	// Capturar e exibir erros de consulta
+	echo json_encode(['error' => $e->getMessage()]);
+	exit;
 }
-    
+
 
 
 echo json_encode($phrases);
-
-
-?>
-
