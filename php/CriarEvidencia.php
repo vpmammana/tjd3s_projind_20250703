@@ -19,7 +19,7 @@ function log_request_data()
     error_log($logDataJson);
 }
 
-log_request_data();
+// log_request_data();
 
 
 
