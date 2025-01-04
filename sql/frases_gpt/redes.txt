@@ -1,0 +1,6 @@
+engajei|verbo|passado|grupos locais|locucao_substantiva|plural_masculina|na criação|locucao_substantiva|singular_feminina|de ações|locucao_substantiva|plural_feminina|em economia solidária|locucao_adjetiva|singular_feminina|4.1
+organizei|verbo|passado|sessões temáticas|locucao_substantiva|plural_feminina|para capacitar|locucao_verbal|infinitivo|grupos|locucao_substantiva|plural_masculina|em práticas|locucao_substantiva|plural_feminina|4.1
+organizei|verbo|passado|sessões de incentivo|locucao_substantiva|plural_feminina|para apoiar|locucao_verbal|infinitivo|grupos de artesãos|locucao_substantiva|plural_masculina|na economia solidária|locucao_adjetiva|singular_feminina|4.1
+motivei|verbo|passado|grupos comunitários|locucao_substantiva|plural_masculina|para incentivar|locucao_verbal|infinitivo|ações na economia circular|locucao_substantiva|singular_feminina|locais|adjetivo|plural_feminina|4.1
+engajei|verbo|passado|grupos solidários|locucao_substantiva|plural_masculina|em práticas|locucao_substantiva|plural_feminina|de turismo solidário|locucao_adjetiva|singular_masculino|no território|locucao_adjetiva|singular_masculina|4.1
+incentivei|verbo|passado|grupos de apoio|locucao_substantiva|plural_masculina|para fortalecer|locucao_verbal|infinitivo|a economia digital|locucao_substantiva|singular_feminina|comunitária|adjetivo|singular_feminina|4.1

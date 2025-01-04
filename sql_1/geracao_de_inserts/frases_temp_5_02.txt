@@ -1,0 +1,47 @@
+engajei|verbo|passado|jovens locais|locucao_substantiva|plural_masculino|ativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+apoiei|verbo|passado|participação juvenil|locucao_substantiva|singular_feminino|forte|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+mobilizei|verbo|passado|vozes jovens|locucao_substantiva|plural_feminino|presentes|adjetivo|plural_comum|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+facilitei|verbo|passado|inclusão juvenil|locucao_substantiva|singular_feminino|ativa|adjetivo|singular_feminino|em conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+apoiei|verbo|passado|engajamento jovem|locucao_substantiva|singular_masculino|significativo|adjetivo|singular_masculino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+incentivei|verbo|passado|participação jovem|locucao_substantiva|singular_feminino|proativa|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+promovi|verbo|passado|presença juvenil|locucao_substantiva|singular_feminino|expressiva|adjetivo|singular_feminino|em encontros|locucao_adjetiva|plural_masculino|municipais|adjetivo|plural_feminino|5.2
+estruturei|verbo|passado|fóruns para jovens|locucao_substantiva|plural_masculino|ativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+organizei|verbo|passado|encontros preparatórios|locucao_substantiva|plural_masculino|para jovens|locucao_adjetiva|plural_masculino|engajados|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|5.2
+apoiei|verbo|passado|debates juvenis|locucao_substantiva|plural_masculino|inclusivos|adjetivo|plural_masculino|em conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+fomentei|verbo|passado|participação jovem|locucao_substantiva|singular_feminino|ativa|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+mobilizei|verbo|passado|juventude local|locucao_substantiva|singular_feminino|presente|adjetivo|singular_feminino|em encontros|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+promovi|verbo|passado|debates juvenis|locucao_substantiva|plural_masculino|significativos|adjetivo|plural_masculino|em conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+incentivei|verbo|passado|discussões juvenis|locucao_substantiva|plural_feminino|produtivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+apoiei|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|efetiva|adjetivo|singular_feminino|em reuniões|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+facilitei|verbo|passado|encontros de jovens|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|às conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+estruturei|verbo|passado|fóruns juvenis|locucao_substantiva|plural_masculino|ativos|adjetivo|plural_masculino|para conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+apoiei|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|participativa|adjetivo|singular_feminino|em conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+engajei|verbo|passado|juventude|locucao_substantiva|singular_feminino|envolvida|adjetivo|singular_feminino|em fóruns|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+incentivei|verbo|passado|jovens|substantivo|plural_masculino|ativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+facilitei|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|proativa|adjetivo|singular_feminino|em conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+engajei|verbo|passado|jovens locais|locucao_substantiva|plural_masculino|participativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+promovi|verbo|passado|encontros juvenis|locucao_substantiva|plural_masculino|significativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+mobilizei|verbo|passado|vozes jovens|locucao_substantiva|plural_feminino|expressivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+apoiei|verbo|passado|participação juvenil|locucao_substantiva|singular_feminino|ativa|adjetivo|singular_feminino|em eventos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+fortaleci|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|sólida|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+estruturei|verbo|passado|fóruns juvenis|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|às conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+mobilizei|verbo|passado|discussões jovens|locucao_substantiva|plural_feminino|inclusivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+facilitei|verbo|passado|debates juvenis|locucao_substantiva|plural_masculino|significativos|adjetivo|plural_masculino|em conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+promovi|verbo|passado|encontros de jovens|locucao_substantiva|plural_masculino|dedicados|adjetivo|plural_masculino|às conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+fomentei|verbo|passado|engajamento jovem|locucao_substantiva|singular_masculino|ativo|adjetivo|singular_masculino|em fóruns|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+fortaleci|verbo|passado|presença juvenil|locucao_substantiva|singular_feminino|dedicada|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+mobilizei|verbo|passado|jovens locais|locucao_substantiva|plural_masculino|ativos|adjetivo|plural_masculino|em fóruns|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+facilitei|verbo|passado|participação juvenil|locucao_substantiva|singular_feminino|proativa|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+apoiei|verbo|passado|inclusão jovem|locucao_substantiva|singular_feminino|significativa|adjetivo|singular_feminino|em eventos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+promovi|verbo|passado|engajamento juvenil|locucao_substantiva|singular_masculino|inclusivo|adjetivo|singular_masculino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+fortaleci|verbo|passado|presença juvenil|locucao_substantiva|singular_feminino|dedicada|adjetivo|singular_feminino|em fóruns|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+mobilizei|verbo|passado|jovens|substantivo|plural_masculino|engajados|adjetivo|plural_masculino|em conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+facilitei|verbo|passado|participação jovem|locucao_substantiva|singular_feminino|significativa|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+mobilizei|verbo|passado|discussões jovens|locucao_substantiva|plural_feminino|construtivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+incentivei|verbo|passado|debates juvenis|locucao_substantiva|plural_masculino|ativos|adjetivo|plural_masculino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+estruturei|verbo|passado|encontros de jovens|locucao_substantiva|plural_masculino|engajados|adjetivo|plural_masculino|em fóruns|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+mobilizei|verbo|passado|participação jovem|locucao_substantiva|singular_feminino|proativa|adjetivo|singular_feminino|nas conferências|locucao_adjetiva|plural_feminino|locais|adjetivo|plural_comum|5.2
+fortaleci|verbo|passado|vozes juvenis|locucao_substantiva|plural_feminino|expressivas|adjetivo|plural_feminino|nas conferências|locucao_adjetiva|plural_feminino|municipais|adjetivo|plural_feminino|5.2
+apoiei|verbo|passado|presença jovem|locucao_substantiva|singular_feminino|dedicada|adjetivo|singular_feminino|em eventos|locucao_adjetiva|plural_masculino|locais|adjetivo|plural_comum|5.2
+fomentei|verbo|passado|engajamento juvenil|locucao_substantiva|singular_masculino|sólido|adjetivo|singular_masculino|em fóruns|locucao_adjetiva|plural_masculino|municipais|adjetivo|plural_feminino|5.2
+

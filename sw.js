@@ -18,17 +18,17 @@ self.addEventListener('install', event => {
     );
 });
 
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) {
-                    return response; // Return the cached file if it exists
-                }
-                return fetch(event.request); // Fallback to network if not cached
-            })
-    );
-});
+// self.addEventListener('fetch', event => {
+//     event.respondWith(
+//         caches.match(event.request)
+//             .then(response => {
+//                 if (response) {
+//                     return response; // Return the cached file if it exists
+//                 }
+//                 return fetch(event.request); // Fallback to network if not cached
+//             })
+//     );
+// });
 
 self.addEventListener('activate', event => {
     const cacheWhitelist = [CACHE_NAME];
@@ -43,4 +43,20 @@ self.addEventListener('activate', event => {
             );
         })
     );
+});
+
+self.addEventListener('fetch', (event) => {
+    if (event.request.method === 'GET') {
+        event.respondWith(
+            caches.match(event.request)
+                .then((response) => {
+                    return response || fetch(event.request);
+                })
+                .catch(() => {
+                    if (event.request.mode === 'navigate') {
+                        return caches.match('/index.php');
+                    }
+                })
+        );
+    }
 });

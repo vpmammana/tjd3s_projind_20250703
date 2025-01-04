@@ -3,6 +3,11 @@ version: '3.8'
 services:
   tjd3s-web-app:
     container_name: tjd3s-web-app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50"
+        max-file: "3"     # Keep the last 3 log files
     build: .
     ports:
       - "8090:80"
@@ -25,27 +30,16 @@ services:
     networks:
       - app-network
 
-  keycloack:
-    image: quay.io/keycloak/keycloak:21.1
-    command: start-dev
-    ports:
-     - 8080:8080
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
     environment:
-      - KEYCLOAK_ADMIN=admin
-      - KEYCLOAK_ADMIN_PASSWORD=admin
+      PMA_HOST: papedins_db
+      MYSQL_ROOT_PASSWORD: admin
+    ports:
+      - "8092:80"
     networks:
-          - app-network
-
-  # phpmyadmin:
-  #   image: phpmyadmin/phpmyadmin
-  #   container_name: phpmyadmin
-  #   environment:
-  #     PMA_HOST: papedins_db
-  #     MYSQL_ROOT_PASSWORD: admin
-  #   ports:
-  #     - "8092:80"
-  #   networks:
-  #     - app-network
+      - app-network
 
 volumes:
   papedins_db:

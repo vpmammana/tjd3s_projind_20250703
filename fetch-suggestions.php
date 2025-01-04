@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include "./php/database.php";
+// Script usado para gerar os phrases basedo do query do usuario.
 
 $q = isset($_GET['q']) ? $_GET['q'] : '';
 

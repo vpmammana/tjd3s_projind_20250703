@@ -1,0 +1,1 @@
+find . -name "frases_*.txt" -exec cat {} \; | awk "NF" | awk 'BEGIN{FS="|"}{print "# "$2" "$5" "$8" "$11" "$14; print $1" - "$2; print $4" - "$5; print $7" - "$8; print $10" - "$11; print $13" - "$14;  print "#######\n\n";}'

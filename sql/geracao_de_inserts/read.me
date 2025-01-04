@@ -1,0 +1,34 @@
+Os códigos a seguir devem ser executados no diretório onde estão os arquivos frases_*.txt
+
+Mas cuidado porque troca_feminino_por_masculino.bash faz alterações extensas nos arquivos frases_*.txt, para corrigir erros de classificação do gpt
+
+O ideal é copiar os arquivos frases_*.txt para este diretório, executando os bash aqui... e depois jogando os *.sql criados, principalmente insert_tokens.sql na base. Esse procedimento de criar os tokens só pode ser executado depois que for executado insert_dados.sql, que, por sua vez, só pode ser executado depois de cria_banco_mvp.sql
+
+encontra_inconsistencias_nos_tokens.bash - este arquivo mostra tokens idênticos com tipos_tokens idênticos, o que vai dar problema com a chave primária, ou outras situações de inconsistências. Essas situações ocorrem porque o GPT não classifica perfeitamente os tokens
+
+greps_de_erros.bash - foi uma tentativa de automatizar a verificação de inconsistências, mas não é a melhor saída. O melhor é alterar os arquivos frases_*.txt diretamente como faz o batch troca_feminino_por_masculino.bash
+
+insert_tipos_flexoes.bash - cria os inserts de tipos_flexoes com base na coleção que está no conjunto de arquivos frases_*.txt. Este conjunto tem que ser complementado pelo que está no arquivo insert_dados.sql
+
+insert_tipo_tokens.bash - exatamente a mesma coisa que acima, mas para tipos_tokens
+
+insert_tokens.bash - cria os inserts para incluir tokens, mas com repetições, então tem que passar sort | uniq
+
+insert_tokens_unicos_no_sql.bash - cria os inserts já passando sort | uniq e gravando em insert_tokens.sql
+
+le_tipos_flexoes.bash - suporte para entender os tokens
+
+le_tipos_tokens.bash - suporte para entender os tipos_tokens
+
+le_tokens.bash - le os tokens, colocando a frase na primeira linha
+
+le_tokens_sozinhos.bash - obtém apenas os tokens
+
+le_tokens_tipos.bash - obtém os tokens seguidos dos tipos
+
+le_tokens_tipos_tokens.bash - alguma coisa parecida com o anterior
+
+mostra_frases_sem_tipos.bash - mostra as frases com awk
+
+troca_feminino_por_masculino.bash - faz as correções de erros nos arquivos frases_*.txt
+

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ccc;
+            border-top: 2px solid #000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        #mega_container {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: row;
+            /* Organiza os itens em uma coluna */
+            gap: 5px;
+            /* Espaçamento entre os itens */
+            flex-wrap: wrap;
+            /* Quebra a linha quando não há mais espaço */
+        }
+
+
+        #container {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: row;
+            /* Organiza os itens em uma coluna */
+            gap: 5px;
+            /* Espaçamento entre os itens */
+            flex-wrap: wrap;
+            /* Quebra a linha quando não há mais espaço */
+        }
+
+        #frases {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow-y: auto;
+            display: none;
+            flex-direction: column;
+            /* Organiza os itens em uma coluna */
+            flex-wrap: wrap;
+            /* Quebra a linha quando não há mais espaço */
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        .interno {
+            flex: 0 1 auto;
+            /* Garante que os elementos se comportem como itens Flex */
+            width: 100%;
+            /* Opcional: ocupa toda a largura do container */
+        }
+
+        .chip_frase {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px;
+            background-color: #00e0e0;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .chip_tipo_resultado {
+            padding: 10px;
+            background-color: #a0c080;
+            position: relative;
+            width: 100%;
+            border-sizing: border-box;
+        }
+
+        .token {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        #botao_envio {
+            margin-left: auto;
+        }
+
+        .chip {
+            display: flex;
+            align-items: right;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+            background-color: #e0e0e0;
+            border-radius: 16px;
+            position: relative;
+
+        }
+
+        .chip .delete {
+            padding-left: 3px;
+            padding-right: 3px;
+            padding-top: 1px;
+            padding-bottom: 2px;
+            height: 18px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .input-wrapper {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            /* Organiza os itens em uma coluna */
+            gap: 5px;
+            /* Espaçamento entre os itens */
+        }
+
+        .input-wrapper input {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .dropdown {
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 400px;
+            max-height: 80vh;
+            z-index: 10;
+            display: none;
+            overflow-y: scroll;
+            shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .dropdown div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown div:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mega_container">
+        <div id="container">
+            <!-- Chips serão adicionados dinamicamente aqui -->
+        </div>
+        <div class="dropdown" id="dropdown"></div>
+        <div id="frases"></div>
+        <input type="button" id="botao_envio" value="Confirmar frase selecionada" disabled onclick="alert('teste!')" />
+    </div>
+    <script src="../js/offline.js"></script>
+    <script>
+        // o presente código foi desenvolvido por Victor Mammana, com auxílio de chatbots 
+        const container = document.getElementById('container');
+        const dropdown = document.getElementById('dropdown');
+        const maximo_frases = 16;
+        let frases_montadas;
+        let tokenIndex = 1;
+        let previousTokens = [];
+        velhoDeleteBtn = 'delete_nulo';
+        var perguntas = []; // Variável global
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Garante que os IndexedDBs estejam carregados antes do preload
+            Promise.all([
+                    loadAllTiposAcoesIntoIndexedDB(),
+                    loadAllTiposResultadosIntoIndexedDB(),
+                    loadAllTokensIntoIndexedDB(),
+                    loadAllFrasesIntoIndexedDB()
+                ])
+                .then(() => {
+                    console.log('Tipos, resultados, tokens e frases carregados no IndexedDB.');
+                    // Carrega perguntas no IndexedDB
+                    return loadAllPerguntasIntoIndexedDB();
+                })
+                .then(() => {
+                    console.log('Perguntas carregadas no IndexedDB.');
+                    // Carrega perguntas apenas após o IndexedDB estar atualizado
+                    return carregarPerguntas();
+                })
+                .then(() => {
+                    console.log('Perguntas carregadas com sucesso.');
+                    // Chama preloadIndexedDBData para preencher o cache global baseado em arrays
+                    return preloadIndexedDBData();
+                })
+                .then(() => {
+                    console.log('Dados do IndexedDB carregados no cache com sucesso.');
+                    // Chama preloadCacheMap para preencher o cache baseado em Map
+                    return preloadCacheMap();
+                })
+                .then(() => {
+                    console.log('Dados carregados no cache_map com sucesso.');
+                    // Chama a função queryCacheMapfrases com os parâmetros desejados
+                    return queryCacheMapfrases(); // Substitua ['analisei'] pelos tokens desejados
+                })
+                .then((phrases) => {
+                    // Atribuir o resultado à variável global
+                    frases_montadas = phrases;
+                    console.log('Frases montadas:', frases_montadas);
+                })
+                .catch((error) => {
+                    console.error('Erro durante o carregamento ou execução da consulta:', error);
+                });
+
+            // Adiciona o listener para fechar o dropdown ao clicar fora dele
+            document.addEventListener('click', (event) => {
+                if (event.target.classList.contains('interno')) {
+                    return;
+                }
+                document.getElementById('frases').style.opacity = "1.0";
+
+                const excludedElement = document.getElementById('dropdown');
+
+                if (!excludedElement.contains(event.target)) {
+                    excludedElement.innerHTML = "";
+                    excludedElement.style.display = 'none';
+                }
+            });
+        });
+
+
+        //document.addEventListener('DOMContentLoaded', () => {
+        //    // Garante que os IndexedDBs estejam carregados antes do preload
+        //    Promise.all([
+        //        loadAllTiposAcoesIntoIndexedDB(),
+        //        loadAllPerguntasIntoIndexedDB(),
+        //        loadAllTiposResultadosIntoIndexedDB(),
+        //        loadAllTokensIntoIndexedDB(),
+        //        loadAllFrasesIntoIndexedDB(),
+        //	carregarPerguntas()
+        //    ])
+        //    .then(() => {
+        //        console.log('Todos os dados foram carregados no IndexedDB.');
+        //        // Chama preloadIndexedDBData para preencher o cache global baseado em arrays
+        //        return preloadIndexedDBData();
+        //    })
+        //    .then(() => {
+        //        console.log('Dados do IndexedDB carregados no cache com sucesso.');
+        //        // Chama preloadCacheMap para preencher o cache baseado em Map
+        //        return preloadCacheMap();
+        //    })
+        //    .then(() => {
+        //        console.log('Dados carregados no cache_map com sucesso.');
+        //
+        //        // Chama a função queryCacheMapfrases com os parâmetros desejados
+        //        return queryCacheMapfrases(); // Substitua ['analisei'] pelos tokens desejados
+        //    })
+        //    .then((phrases) => {
+        //        // Atribuir o resultado à variável global
+        //        frases_montadas = phrases;
+        //        console.log('Frases montadas:', frases_montadas);
+        //    })
+        //    .catch((error) => {
+        //        console.error('Erro durante o carregamento ou execução da consulta:', error);
+        //    });
+        //
+        //    // Adiciona o listener para fechar o dropdown ao clicar fora dele
+        //    document.addEventListener('click', (event) => {
+        //        if (event.target.classList.contains('interno')) { return; }
+        //        document.getElementById('frases').style.opacity = "1.0";
+        //
+        //        const excludedElement = document.getElementById('dropdown');
+        //
+        //        if (!excludedElement.contains(event.target)) {
+        //            excludedElement.innerHTML = "";
+        //            excludedElement.style.display = 'none';
+        //        } 
+        //    });
+        //});
+
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Garante que os IndexedDBs estejam carregados antes do preload
+        //     Promise.all([
+        //         loadAllTiposAcoesIntoIndexedDB(),
+        //         loadAllTiposResultadosIntoIndexedDB(),
+        //         loadAllTokensIntoIndexedDB(),
+        //         loadAllFrasesIntoIndexedDB()
+        //     ])
+        //     .then(() => {
+        //         console.log('Todos os dados foram carregados no IndexedDB.');
+        //         // Chama preloadIndexedDBData para preencher o cache global baseado em arrays
+        //         return preloadIndexedDBData();
+        //     })
+        //     .then(() => {
+        //         console.log('Dados do IndexedDB carregados no cache com sucesso.');
+        //         // Chama preloadCacheMap para preencher o cache baseado em Map
+        //         return preloadCacheMap();
+        //     })
+        //     .then(() => {
+        //         console.log('Dados carregados no cache_map com sucesso.');
+        //     })
+        //     .catch((error) => {
+        //         console.error('Erro durante o carregamento ou preload do IndexedDB/cache_map:', error);
+        //     });
+        // 
+        //     // Adiciona o listener para fechar o dropdown ao clicar fora dele
+        //     document.addEventListener('click', (event) => {
+        //         if (event.target.classList.contains('interno')) { return; }
+        //         document.getElementById('frases').style.opacity = "1.0";
+        // 
+        //         const excludedElement = document.getElementById('dropdown');
+        // 
+        //         if (!excludedElement.contains(event.target)) {
+        //             excludedElement.innerHTML = "";
+        //             excludedElement.style.display = 'none';
+        //         } 
+        //     });
+        // });
+
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Adiciona um event listener para fechar o dropdown ao clicar fora dele
+        //         loadAllTiposAcoesIntoIndexedDB();
+        //         loadAllTiposResultadosIntoIndexedDB();
+        //         loadAllTokensIntoIndexedDB();
+        //         loadAllFrasesIntoIndexedDB();
+        //     document.addEventListener('click', (event) => {
+        // 	if (event.target.classList.contains('interno')) { return;}
+        // 	    document.getElementById('frases').style.opacity = "1.0";
+        // 
+        // 
+        // 	const excludedElement = document.getElementById('dropdown');
+        // 
+        // 	if (!excludedElement.contains(event.target)) {
+        // 	    // Executa a ação se o clique NÃO for no elemento excluído ou dentro dele
+        // 	    excludedElement.innerHTML = "";
+        // 	    excludedElement.style.display = 'none';
+        // 	} 
+        //        
+        //     });
+        // });
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Garante que os IndexedDBs estejam carregados antes do preload
+        //     Promise.all([
+        //         loadAllTiposAcoesIntoIndexedDB(),
+        //         loadAllTiposResultadosIntoIndexedDB(),
+        //         loadAllTokensIntoIndexedDB(),
+        //         loadAllFrasesIntoIndexedDB()
+        //     ])
+        //     .then(() => {
+        //         console.log('Todos os dados foram carregados no IndexedDB.');
+        //         return preloadIndexedDBData();
+        //     })
+        //     .then(() => {
+        //         console.log('Dados do IndexedDB carregados no cache com sucesso.');
+        //     })
+        //     .catch((error) => {
+        //         console.error('Erro durante o carregamento ou preload do IndexedDB:', error);
+        //     });
+        // 
+        //     // Adiciona o listener para fechar o dropdown ao clicar fora dele
+        //     document.addEventListener('click', (event) => {
+        //         if (event.target.classList.contains('interno')) { return; }
+        //         document.getElementById('frases').style.opacity = "1.0";
+        // 
+        //         const excludedElement = document.getElementById('dropdown');
+        // 
+        //         if (!excludedElement.contains(event.target)) {
+        //             excludedElement.innerHTML = "";
+        //             excludedElement.style.display = 'none';
+        //         } 
+        //     });
+        // });
+
+        async function handleMutation(mutation) {
+            if (mutation.type === "childList") {
+                console.log("Child node added or removed:", mutation);
+
+                try {
+                    // Fetch sugestões de uma API ou outra fonte
+                    const frases = await fetchFrases();
+                    if (frases.length > maximo_frases) {
+                        document.getElementById('frases').innerHTML = "<div class='chip_tipo_resultado'>Muitas frases retornadas. Responda mais perguntas para refinar a busca.</div>";
+                        if (frases.length > 0) {
+                            document.getElementById('frases').style.display = 'flex';
+                        }
+                    } else {
+                        // Atualizar o HTML com as frases obtidas
+                        let velho_id_tipo_resultado = "";
+                        if (frases.length == 1 && document.getElementById('inputWrapper')) {
+                            document.getElementById('inputWrapper').remove();
+                        }
+                        if (frases.length > 0) {
+                            document.getElementById('frases').style.display = 'flex';
+                        }
+                        let phrasesHTML = frases.map(frase => {
+                            let str_tipo_resultado = ""; // Declare no escopo da função do map
+                            console.log(velho_id_tipo_resultado + 'frase:', frase);
+                            if (velho_id_tipo_resultado != frase.id_tipo_resultado_pai) {
+                                str_tipo_resultado = "<div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
+                            }
+                            velho_id_tipo_resultado = frase.id_tipo_resultado_pai;
+                            return str_tipo_resultado + "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='document.getElementById(`botao_envio`).disabled=false;'/>" + frase.phrase + "</div>";
+                        }).join("");
+                        console.log('phrasesHTML:', phrasesHTML);
+                        console.log('frases:', document.getElementById('frases'));
+                        document.getElementById('frases').innerHTML = phrasesHTML;
+                    }
+                } catch (error) {
+                    console.error("Erro ao buscar frases:", error);
+                }
+            }
+        }
+
+        // Seleciona o elemento onde deseja monitorar mudanças
+        const targetElement = document.getElementById("container");
+
+        // Configura o observer para detectar adição de filhos
+        const observer = new MutationObserver((mutationsList, observer) => {
+            for (let mutation of mutationsList) {
+                handleMutation(mutation); // Chamar a função assíncrona separadamente
+            }
+        });
+
+        // Configurações para o observer
+        const config = {
+            childList: true
+        };
+
+        // Inicia a observação
+        observer.observe(targetElement, config);
+
+        // Para encerrar a observação (se necessário):
+        // observer.disconnect();
+
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('interno')) {
+                return;
+            }
+
+            const excludedElement = document.getElementById('dropdown');
+
+            if (!excludedElement.contains(event.target)) {
+                // Executa a ação se o clique NÃO for no elemento excluído ou dentro dele
+                excludedElement.innerHTML = '';
+                excludedElement.style.display = 'none';
+            }
+
+        });
+
+        function showErrorMessage(message) {
+            // Verifica se já existe uma mensagem de erro exibida
+            let errorContainer = document.getElementById('error-message');
+            if (!errorContainer) {
+                // Cria um novo elemento para exibir a mensagem de erro
+                errorContainer = document.createElement('div');
+                errorContainer.id = 'error-message';
+                errorContainer.style.position = 'absolute';
+                errorContainer.style.top = '10px';
+                errorContainer.style.left = '50%';
+                errorContainer.style.transform = 'translateX(-50%)';
+                errorContainer.style.backgroundColor = '#f8d7da';
+                errorContainer.style.color = '#721c24';
+                errorContainer.style.padding = '10px';
+                errorContainer.style.border = '1px solid #f5c6cb';
+                errorContainer.style.borderRadius = '5px';
+                errorContainer.style.fontSize = '14px';
+                errorContainer.style.zIndex = '1000';
+                document.body.appendChild(errorContainer);
+            }
+
+            // Atualiza o texto da mensagem de erro
+            errorContainer.textContent = message;
+
+            // Remove a mensagem automaticamente após 5 segundos
+            setTimeout(() => {
+                if (errorContainer) {
+                    errorContainer.remove();
+                }
+            }, 5000);
+        }
+
+        function showLoadingIndicator(inputWrapper) {
+            // Cria o elemento de carregamento (rodinha)
+            const loadingSpinner = document.createElement('div');
+            loadingSpinner.id = 'loading-spinner';
+            loadingSpinner.classList.add('loading-spinner'); // Use a classe CSS
+            loadingSpinner.textContent = '⏳'; // Aqui você pode usar um ícone ou animação CSS
+            loadingSpinner.style.marginLeft = '10px'; // Ajuste o estilo como preferir
+            inputWrapper.appendChild(loadingSpinner);
+        }
+
+        function hideLoadingIndicator() {
+            const loadingSpinner = document.getElementById('loading-spinner');
+            if (loadingSpinner) {
+                loadingSpinner.remove();
+            }
+        }
+
+        async function retorna_perguntas() {
+            try {
+                const response = await fetch('busca_perguntas.php');
+
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar perguntas: ' + response.statusText);
+                }
+
+                const data = await response.json();
+
+                // Retornar um array de objetos contendo 'nome_pergunta', 'placeholder', 'help'
+                return data.map(row => ({
+                    nome_pergunta: row.nome_pergunta,
+                    placeholder: row.placeholder,
+                    help: row.help
+                }));
+            } catch (error) {
+                console.error('Erro:', error);
+                return [];
+            }
+        }
+
+
+        function fetchFrases(query) {
+            const url = `fetch_frases.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+
+            if (!navigator.onLine) {
+                console.warn("Sem conexão com a internet. Usando IndexedDB.");
+                // Chama acha_frase diretamente
+                console.log('query:', query);
+                return acha_frase(previousTokens)
+                    .then((result) => {
+                        console.log('Resultado IndexedDB (frases):', JSON.stringify(result, null, 2));
+                        return result; // Retorna o resultado para quem chamou fetchFrases
+                    })
+                    .catch((error) => {
+                        console.error('Erro ao consultar IndexedDB (frases):', error);
+                        throw error;
+                    });
+            }
+
+            // Se online, faz o fetch normalmente
+            return fetch(url)
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error(`Erro na resposta de frases do servidor: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .catch((error) => {
+                    console.error('Erro no fetch:', error);
+                    throw error;
+                });
+        }
+
+
+        //function fetchFrases(query) {
+        //    const url = `fetch_frases.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+        //    return fetch(url)
+        //        .then(res => {
+        //            if (!res.ok) {
+        //                throw new Error(`Erro na resposta de frases do servidor: ${res.status}`);
+        //            }
+        //            return res.json();
+        //        });
+        //}
+
+
+        function fetchSuggestions(query) {
+            const url = `fetch_tokens_chip.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+
+            if (!navigator.onLine) {
+                console.warn("Sem conexão com a internet. Usando IndexedDB.");
+                // Chama queryIndexedDB diretamente
+                console.log('query:', query);
+                return queryCacheMapSuggestions({
+                        query,
+                        tokenIndex,
+                        previousTokens
+                    })
+                    .then((result) => {
+                        console.log('Resultado IndexedDB:', JSON.stringify(result, null, 2));
+                        return result; // Retorna o resultado para quem chamou fetchSuggestions
+                    })
+                    .catch((error) => {
+                        console.error('Erro ao consultar IndexedDB:', error);
+                        throw error;
+                    });
+            }
+
+            // Se online, faz o fetch normalmente
+            return fetch(url)
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error(`Erro na resposta de tokens do servidor: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .catch((error) => {
+                    console.error('Erro no fetch:', error);
+                    throw error;
+                });
+        }
+
+
+
+        //        function fetchSuggestions(query) {
+        //	    const url = `fetch_tokens_chip.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+        //	    return fetch(url)
+        //       	    .then(res => {
+        //            if (!res.ok) {
+        //                throw new Error(`Erro na resposta de tokens do servidor: ${res.status}`);
+        //            }
+        //            return res.json();
+        //        });
+        //        }
+
+        function createChip(token) {
+            const chip = document.createElement('div');
+            chip.className = 'chip';
+            document.querySelectorAll('.delete').forEach(el => el.style.display = 'none');
+            const deleteBtn = document.createElement('button');
+            deleteBtn.id = 'delete_' + tokenIndex;
+            velhoDeleteBtn = 'delete_' + (tokenIndex - 1); // sem parenteses dah NaN
+            if (velhoDeleteBtn == 'delete_0') {
+                velhoDeleteBtn = 'delete_nulo';
+            }
+            deleteBtn.setAttribute('data-anterior', velhoDeleteBtn);
+            chip.setAttribute('data-companion', deleteBtn.id);
+            deleteBtn.className = 'delete';
+            deleteBtn.textContent = 'apaga';
+            deleteBtn.onclick = () => {
+                if (deleteBtn.getAttribute("data-anterior") != "delete_nulo") {
+                    document.getElementById(deleteBtn.getAttribute('data-anterior')).style.display = 'block';
+                }
+                chip.remove();
+                previousTokens.pop();
+                tokenIndex--;
+                updateInputPosition();
+            };
+
+            chip.innerHTML = "<div class='token'>" + token + "</div>";
+            chip.appendChild(deleteBtn);
+            container.appendChild(chip);
+        }
+
+        function updateInputPosition() {
+            let pergunta;
+            let placeholder;
+            if (tokenIndex == 1) {
+                velhoDeleteBtn = 'delete_nulo';
+            }
+            console.log('tokenIndex:', tokenIndex);
+            if (document.getElementById("inputWrapper")) {
+                document.getElementById("inputWrapper").remove();
+            }
+            const inputWrapper = document.createElement('div');
+            inputWrapper.className = 'input-wrapper';
+            inputWrapper.id = 'inputWrapper';
+
+            if (perguntas.length > 0 && tokenIndex <= perguntas.length) {
+                pergunta = perguntas[tokenIndex - 1].nome_pergunta;
+                placeholder = perguntas[tokenIndex - 1].placeholder;
+            } else {
+                pergunta = 'Carregando pergunta';
+                placeholder = 'Aguarde...';
+            }
+
+            inputWrapper.innerHTML = "<div id='pergunta' class='interno'>" + pergunta + "</div>"
+
+            const input = document.createElement('input');
+            input.id = 'edit_box_pergunta';
+            input.type = 'text';
+            input.className = 'interno';
+            input.placeholder = placeholder;
+
+
+            let handleInput = async () => {
+                try {
+                    showLoadingIndicator(inputWrapper); // Mostra o indicador de carregamento
+                    const suggestions_full = await fetchSuggestions(input.value);
+                    console.log('suggestions_full:', suggestions_full);
+                    const suggestions = suggestions_full.tokens;
+                    const frases = suggestions_full.phrases;
+                    console.log('frases:', frases);
+                    console.log('suggestions:', suggestions);
+                    if (suggestions.length === 0) {
+                        input.value = input.value.slice(0, -1); // Atualiza o valor do input se necessário
+                    } else {
+                        showDropdown(suggestions, input, inputWrapper);
+                    }
+                } catch (error) {
+                    console.error('Erro ao buscar sugestões:', error);
+                    showErrorMessage('Erro de conexão. Por favor, verifique sua rede.');
+                } finally {
+                    hideLoadingIndicator(); // Sempre esconde o indicador, mesmo que haja erro
+                }
+            };
+
+
+            input.oninput = async () => {
+                handleInput(event);
+            };
+            input.onclick = async () => {
+                handleInput(event);
+            };
+
+
+            inputWrapper.appendChild(input);
+            container.appendChild(inputWrapper);
+            input.focus();
+        }
+
+        function showDropdown(suggestions, input, inputWrapper) {
+            document.getElementById('frases').style.opacity = "0.5";
+            dropdown.innerHTML = '';
+            suggestions.forEach(token => {
+                const item = document.createElement('div');
+                item.textContent = token;
+                item.onclick = () => {
+                    previousTokens.push(token);
+                    createChip(token);
+                    dropdown.style.display = 'none';
+                    inputWrapper.remove();
+                    tokenIndex++;
+                    document.getElementById('frases').style.opacity = "1.0";
+                    if (tokenIndex <= 5) {
+                        updateInputPosition();
+                    }
+                };
+                dropdown.appendChild(item);
+            });
+
+            const rect = inputWrapper.getBoundingClientRect();
+            dropdown.style.top = `${rect.bottom + window.scrollY}px`;
+            dropdown.style.left = `${rect.left}px`;
+            dropdown.style.display = 'block';
+        }
+
+        updateInputPosition();
+
+        async function carregarPerguntas() {
+            try {
+                // Tentar buscar perguntas pela internet
+                perguntas = await retorna_perguntas(); // Aguardar a resolução da Promise da função retorna_perguntas
+                document.getElementById('pergunta').innerHTML = perguntas[0].nome_pergunta;
+                document.getElementById('edit_box_pergunta').placeholder = perguntas[0].placeholder;
+                console.log('Perguntas carregadas via internet:', perguntas);
+            } catch (error) {
+                console.warn('Falha ao buscar perguntas pela internet, tentando carregar do IndexedDB...', error);
+
+                // Tentar carregar perguntas do IndexedDB
+                try {
+                    const db = await openIndexedDB(); // Abre a conexão com o IndexedDB
+                    const transaction = db.transaction('perguntas', 'readonly');
+                    const store = transaction.objectStore('perguntas');
+
+                    // Obter todas as perguntas do IndexedDB
+                    const perguntasIndexedDB = await new Promise((resolve, reject) => {
+                        const request = store.getAll();
+                        request.onsuccess = () => {
+                            if (request.result.length > 0) {
+                                resolve(request.result);
+                            } else {
+                                reject(new Error('Elemento "perguntas" não encontrado no IndexedDB.'));
+                            }
+                        };
+                        request.onerror = () => reject(new Error('Erro ao acessar o IndexedDB.'));
+                    });
+
+                    perguntas = perguntasIndexedDB;
+                    document.getElementById('pergunta').innerHTML = perguntas[0].nome_pergunta;
+                    document.getElementById('edit_box_pergunta').placeholder = perguntas[0].placeholder;
+                    console.log('Perguntas carregadas do IndexedDB:', perguntas);
+                } catch (indexedDBError) {
+                    console.error('Erro ao carregar perguntas do IndexedDB:', indexedDBError);
+                }
+            }
+        }
+
+
+
+        //	async function carregarPerguntas() {
+        //	    perguntas = await retorna_perguntas(); // Aguardar a resolução da Promise
+        //	    document.getElementById('pergunta').innerHTML = perguntas[0].nome_pergunta;
+        //	    document.getElementById('edit_box_pergunta').placeholder = perguntas[0].placeholder;
+        //	    console.log('Perguntas carregadas:', perguntas);
+        //	}
+
+        // Chame a função para carregar as perguntas
+    </script>
+</body>
+
+</html>

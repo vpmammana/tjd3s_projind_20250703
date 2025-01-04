@@ -1,0 +1,5 @@
+mtcnn==0.1.1
+opencv-python
+cryptography
+numpy
+tensorflow

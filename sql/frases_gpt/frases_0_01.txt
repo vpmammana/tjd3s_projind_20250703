@@ -1,0 +1,1 @@
+Qual foi a sua ação|verbo|pergunta|Sobre quem ou o que você agiu|substantivo|pergunta|Que características você percebe no objeto da sua ação|adjetivo|pergunta|Indique um destino ou finalidade da sua ação|substantivo|pergunta|Indique as características desse destino ou finalidade|adjetivo|pergunta|0.1

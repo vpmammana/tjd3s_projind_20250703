@@ -4,6 +4,7 @@
     --form-width: 35%;
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -12,8 +13,11 @@
 }
 
 body {
+    margin: 0;
+    position: relative;
     overflow-x: hidden;
 }
+
 
 button {
     font-size: 20px;
@@ -98,13 +102,14 @@ select:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 45.65vh;
+    min-height: 35.65vh;
     width: 55%;
     margin: 0 auto;
     background-color: #fff;
 }
 
-.banner-section .banner-image {
+.banner-section .banner-image,
+.banner-section .banner-image2 {
     height: 100%;
     display: flex;
     align-items: center;
@@ -116,18 +121,31 @@ select:focus {
     margin: 0 auto;
 }
 
-.banner-section .banner-image .banner-image-img img {
+.banner-section .banner-image2 .banner-image-img2 {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.banner-section .banner-image .banner-image-img img,
+.banner-section .banner-image2 .banner-image-img2 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.banner-section .banner-text p,
-.banner-section .banner-text p span {
+.banner-text {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto 2rem auto;
+}
+
+.banner-text p,
+.banner-text p span {
     font-size: 20px;
 }
 
-.banner-section .banner-text p span {
+.banner-text p span {
     font-weight: bold;
     line-height: 2;
 }
@@ -165,9 +183,8 @@ select:focus {
 }
 
 .form-section form .form-atividade-inputs .row-tipo-atividade-data {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .form-section form .form-atividade .form-atividade-inputs h2 {
@@ -257,6 +274,17 @@ form .submit button:hover {
     background-color: var(--main-bg-color);
     padding: 0.5rem 2rem;
     color: #fff;
+}
+
+.footer .footer-icon {
+    height: 100px;
+    width: 300px;
+}
+
+.footer .footer-icon img {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 /* .image-previews img {
@@ -411,9 +439,209 @@ button {
     border: 2px solid red;
 }
 
+#loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/** 
+    styles dos frases
+*/
+
+#loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#mega_container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    /* Organiza os itens em uma coluna */
+    gap: 5px;
+    /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+    /* Quebra a linha quando não há mais espaço */
+}
+
+
+#container {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    /* Organiza os itens em uma coluna */
+    gap: 5px;
+    /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+    /* Quebra a linha quando não há mais espaço */
+}
+
+#frases {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    border-radius: 8px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    /* Organiza os itens em uma coluna */
+    flex-wrap: wrap;
+    /* Quebra a linha quando não há mais espaço */
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.interno {
+    flex: 0 1 auto;
+    /* Garante que os elementos se comportem como itens Flex */
+    width: 100%;
+    /* Opcional: ocupa toda a largura do container */
+}
+
+.chip_frase {
+    display: flex;
+    margin: 15px 0 0 0;
+    align-items: center;
+    padding: 10px;
+    background-color: #00e0e0;
+    border-radius: 16px;
+    position: relative;
+}
+
+.chip_frase input {
+    height: 15px;
+    width: 15px;
+    margin-right: 0.5rem;
+}
+
+.chip_tipo_resultado {
+    padding: 10px;
+    background-color: red;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.token {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#botao_envio {
+    margin-left: auto;
+}
+
+.chip {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+
+.chip .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: red;
+    color: #fff;
+}
+
+.input-wrapper {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    max-height: 80vh;
+    z-index: 900;
+    display: none;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown div {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.dropdown div:hover {
+    background-color: #f0f0f0;
+}
+
 @media (max-width: 992px) {
     .banner-section {
         display: block;
+    }
+
+    .banner-section .banner-image .banner-image-img {
+        height: 400px;
+        width: 600px;
+    }
+
+    .banner-section .banner-image:nth-child(2) {
+        margin-top: -6rem;
+    }
+
+    .banner-text {
+        width: 85%;
+        margin-top: 3rem;
     }
 
     .foto {
@@ -438,17 +666,17 @@ button {
 
 @media (max-width: 768px) {
     .form-section form .form-atividade .form-atividade-inputs {
-        width: 80%
+        width: 80%;
     }
 
     .form-section .form-evidencias {
-        width: 80%
+        width: 80%;
     }
 
 
     .form-section form .form-atividade .form-atividade-inputs,
     .form-section .form-evidencias {
-        width: 85%
+        width: 85%;
     }
 
     .header {
@@ -476,12 +704,13 @@ button {
         padding: 0.5rem 0;
     }
 
-    .banner-section .banner-image .banner-image-img {
+    /* .banner-section .banner-image .banner-image-img {
         height: 200px;
         width: 600px;
-    }
+    } */
 
-    .banner-section .banner-text {
+
+    .banner-text {
         text-align: center;
     }
 
@@ -509,13 +738,45 @@ button {
 
     .footer {
         padding: 5px 10px;
+        display: block;
+        text-align: center;
     }
 
     .footer h2 {
-        font-size: 14px;
+        display: none;
+    }
+
+    .footer .footer-icon {
+        margin: 0 auto;
     }
 
     .footer .contact span {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* .banner-section .banner-image:nth-child(2) {
+        margin-top: -9rem;
+    } */
+}
+
+@media (max-width: 475px) {
+    .banner-section .banner-image .banner-image-img {
+        height: 200px;
+        width: 600px;
+    }
+
+    .banner-section .banner-image:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .banner-text {
+        margin-top: 2rem;
+    }
+
+    .banner-text p,
+    .banner-text p span {
+        font-size: 16px;
     }
 }

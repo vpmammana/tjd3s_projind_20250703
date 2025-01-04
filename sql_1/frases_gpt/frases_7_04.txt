@@ -1,0 +1,90 @@
+assisti|verbo|passado|palestra técnica|locucao_substantiva|singular_feminina|sobre economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|em conferência|locucao_substantiva|singular_feminina|7.4
+presenciei|verbo|passado|seminário regional|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|congresso anual|locucao_substantiva|singular_masculino|de economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|como observador|locucao_adverbial|modo|7.4
+observei|verbo|passado|feira temática|locucao_substantiva|singular_feminina|focada|adjetivo|singular_feminina|em produtos|locucao_adjetiva|plural_masculina|solidários|adjetivo|plural_masculino|7.4
+presenciei|verbo|passado|palestra informativa|locucao_substantiva|singular_feminina|sobre autogestão|locucao_adjetiva|singular_feminina|cooperativa|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+assisti|verbo|passado|seminário local|locucao_substantiva|singular_masculino|sobre redes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|evento regional|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em economia|locucao_adjetiva|singular_feminina|popular|adjetivo|singular_feminina|7.4
+observei|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|feira comunitária|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|a produtos|locucao_adjetiva|plural_masculina|sustentáveis|adjetivo|plural_masculino|7.4
+acompanhei|verbo|passado|palestra pública|locucao_substantiva|singular_feminina|sobre finanças|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+
+observei|verbo|passado|palestra temática|locucao_substantiva|singular_feminina|sobre economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|seminário especializado|locucao_substantiva|singular_masculino|voltado|adjetivo|singular_masculino|para cooperativas|locucao_adjetiva|plural_feminina|locais|adjetivo|plural_feminina|7.4
+assisti|verbo|passado|evento informativo|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|a autogestão|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|feira regional|locucao_substantiva|singular_feminina|focada|adjetivo|singular_feminina|em produtos|locucao_adjetiva|plural_masculina|locais|adjetivo|plural_masculino|7.4
+presenciei|verbo|passado|seminário sobre redes|locucao_substantiva|plural_feminina|solidárias|adjetivo|plural_feminina|com foco|locucao_adverbial|modo|em sustentabilidade|locucao_substantiva|singular_feminina|7.4
+assisti|verbo|passado|palestra pública|locucao_substantiva|singular_feminina|sobre práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+observei|verbo|passado|evento formativo|locucao_substantiva|singular_masculino|em economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|com interesse|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|conferência local|locucao_substantiva|singular_feminina|sobre finanças|locucao_adjetiva|plural_feminina|populares|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|feira temática|locucao_substantiva|singular_feminina|sobre reciclagem|locucao_adjetiva|singular_feminina|comunitária|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+observei|verbo|passado|seminário de agroecologia|locucao_substantiva|singular_masculino|com foco|locucao_adverbial|modo|em produção|locucao_adjetiva|singular_feminina|sustentável|adjetivo|singular_feminina|7.4
+assisti|verbo|passado|evento estadual|locucao_substantiva|singular_masculino|voltado|adjetivo|singular_masculino|a práticas|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|congresso técnico|locucao_substantiva|singular_masculino|em finanças|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|seminário sobre economia|locucao_substantiva|singular_feminina|solidária|adjetivo|singular_feminina|em comunidades|locucao_adjetiva|plural_feminina|locais|adjetivo|plural_feminina|7.4
+assisti|verbo|passado|evento sobre juventudes|locucao_substantiva|plural_feminina|engajadas|adjetivo|plural_feminina|na economia|locucao_adjetiva|singular_feminina|popular|adjetivo|singular_feminina|7.4
+observei|verbo|passado|feira de produtos|locucao_substantiva|plural_masculina|voltados|adjetivo|plural_masculino|à sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|seminário de finanças|locucao_substantiva|plural_feminina|com foco|locucao_adverbial|modo|na autogestão|locucao_substantiva|singular_feminina|comunitária|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|evento local|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|na economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|congresso regional|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|comunitárias|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+assisti|verbo|passado|palestra sobre juventudes|locucao_substantiva|plural_feminina|focadas|adjetivo|plural_feminina|em economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+observei|verbo|passado|evento nacional|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à autogestão|locucao_adjetiva|singular_feminina|sustentável|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|seminário temático|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em finanças|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|feira local|locucao_substantiva|singular_feminina|de economia|locucao_adjetiva|singular_feminina|sustentável|adjetivo|singular_feminina|como observador|locucao_adverbial|modo|7.4
+assisti|verbo|passado|palestra comunitária|locucao_substantiva|singular_feminina|sobre reciclagem|locucao_adjetiva|singular_feminina|coletiva|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|evento nacional|locucao_substantiva|singular_masculino|sobre agroecologia|locucao_adjetiva|singular_feminina|sustentável|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|conferência comunitária|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|à economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+assisti|verbo|passado|evento estadual|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|feira local|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|a produtos|locucao_adjetiva|plural_masculina|solidários|adjetivo|plural_masculino|7.4
+acompanhei|verbo|passado|palestra de educação|locucao_substantiva|singular_feminina|com foco|locucao_adverbial|modo|em juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+observei|verbo|passado|seminário especializado|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|evento público|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|na sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|palestra regional|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|a práticas|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+assisti|verbo|passado|conferência sobre agroecologia|locucao_substantiva|singular_feminina|com foco|locucao_adverbial|modo|em economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+observei|verbo|passado|seminário técnico|locucao_substantiva|singular_masculino|sobre finanças|locucao_adjetiva|plural_feminina|populares|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|palestra local|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|a juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|evento estadual|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|7.4
+assisti|verbo|passado|congresso de economia|locucao_substantiva|singular_feminina|solidária|adjetivo|singular_feminina|em comunidades|locucao_adjetiva|plural_feminina|locais|adjetivo|plural_feminina|7.4
+observei|verbo|passado|seminário nacional|locucao_substantiva|singular_masculino|sobre redes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|evento sobre cultura|locucao_substantiva|singular_feminina|com foco|locucao_adverbial|modo|em inclusão|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|conferência comunitária|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|à economia|locucao_adjetiva|singular_feminina|popular|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|palestra técnica|locucao_substantiva|singular_feminina|sobre práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+observei|verbo|passado|evento público|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|na sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|feira regional|locucao_substantiva|singular_feminina|dedicada|adjetivo|singular_feminina|a práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|seminário temático|locucao_substantiva|singular_masculino|sobre produtos|locucao_adjetiva|plural_masculina|solidários|adjetivo|plural_masculino|como ouvinte|locucao_adverbial|modo|7.4
+
+presenciei|verbo|passado|seminário técnico|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|sobre juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+assisti|verbo|passado|evento comunitário|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|7.4
+observei|verbo|passado|seminário de finanças|locucao_substantiva|singular_feminina|com foco|locucao_adverbial|modo|em economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|congresso internacional|locucao_substantiva|singular_masculino|sobre práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como observador|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|evento estadual|locucao_substantiva|singular_masculino|voltado|adjetivo|singular_masculino|para a autogestão|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|palestra sobre reciclagem|locucao_substantiva|singular_feminina|coletiva|adjetivo|singular_feminina|em comunidades|locucao_adjetiva|plural_feminina|locais|adjetivo|plural_feminina|7.4
+assisti|verbo|passado|congresso nacional|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|7.4
+observei|verbo|passado|evento público|locucao_substantiva|singular_masculino|sobre economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+acompanhei|verbo|passado|palestra local|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|à sustentabilidade|locucao_adjetiva|singular_feminina|cooperativa|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|seminário estadual|locucao_substantiva|singular_masculino|sobre juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+assisti|verbo|passado|evento técnico|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|para economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|congresso de juventudes|locucao_substantiva|plural_feminina|engajadas|adjetivo|plural_feminina|na sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|palestra estadual|locucao_substantiva|singular_feminina|sobre agroecologia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|como ouvinte|locucao_adverbial|modo|7.4
+assisti|verbo|passado|evento formativo|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|a práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|7.4
+presenciei|verbo|passado|seminário técnico|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em redes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|conferência sobre juventudes|locucao_substantiva|plural_feminina|engajadas|adjetivo|plural_feminina|em economia|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+assisti|verbo|passado|congresso sobre práticas|locucao_substantiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|voltado|locucao_adjetiva|singular_masculina|para economia solidária|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|evento internacional|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|na autogestão|locucao_adjetiva|singular_feminina|comunitária|adjetivo|singular_feminina|7.4
+acompanhei|verbo|passado|palestra temática|locucao_substantiva|singular_feminina|sobre juventudes|locucao_adjetiva|plural_feminina|cooperativas|adjetivo|plural_feminina|como ouvinte|locucao_adverbial|modo|7.4
+presenciei|verbo|passado|seminário de práticas|locucao_substantiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|voltadas|adjetivo|plural_feminina|à economia solidária|locucao_adjetiva|singular_feminina|7.4
+assisti|verbo|passado|evento regional|locucao_substantiva|singular_masculino|sobre redes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|em comunidades|locucao_adjetiva|plural_feminina|7.4
+acompanhei|verbo|passado|palestra pública|locucao_substantiva|singular_feminina|orientada|adjetivo|singular_feminina|à sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|seminário comunitário|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+observei|verbo|passado|evento sobre finanças|locucao_substantiva|plural_feminina|solidárias|adjetivo|plural_feminina|voltado|adjetivo|singular_masculino|para autogestão|locucao_adjetiva|singular_feminina|7.4
+acompanhei|verbo|passado|palestra regional|locucao_substantiva|singular_feminina|focada|adjetivo|singular_feminina|em economia|locucao_adjetiva|singular_feminina|sustentável|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|evento formativo|locucao_substantiva|singular_masculino|voltado|adjetivo|singular_masculino|a juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|seminário técnico|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à sustentabilidade|locucao_adjetiva|singular_feminina|solidária|adjetivo|singular_feminina|7.4
+assisti|verbo|passado|conferência estadual|locucao_substantiva|singular_feminina|com foco|locucao_adverbial|modo|em economia|locucao_adjetiva|singular_feminina|cooperativa|adjetivo|singular_feminina|7.4
+observei|verbo|passado|evento sobre finanças|locucao_substantiva|plural_feminina|solidárias|adjetivo|plural_feminina|com objetivo|locucao_adverbial|modo|de autogestão|locucao_adjetiva|singular_feminina|7.4
+presenciei|verbo|passado|palestra sobre autogestão|locucao_substantiva|singular_feminina|focada|adjetivo|singular_feminina|em juventudes|locucao_adjetiva|plural_feminina|solidárias|adjetivo|plural_feminina|7.4
+acompanhei|verbo|passado|seminário nacional|locucao_substantiva|singular_masculino|orientado|adjetivo|singular_masculino|à sustentabilidade|locucao_adjetiva|singular_feminina|ambiental|adjetivo|singular_feminina|7.4
+presenciei|verbo|passado|evento técnico|locucao_substantiva|singular_masculino|focado|adjetivo|singular_masculino|em práticas|locucao_adjetiva|plural_feminina|sustentáveis|adjetivo|plural_feminina|7.4
+
