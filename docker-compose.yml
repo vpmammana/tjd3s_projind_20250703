@@ -36,6 +36,7 @@ services:
     environment:
       PMA_HOST: papedins_db
       MYSQL_ROOT_PASSWORD: admin
+      UPLOAD_LIMIT: 100000000
     ports:
       - "8092:80"
     networks:
