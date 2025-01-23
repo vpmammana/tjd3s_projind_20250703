@@ -1,7 +1,7 @@
 const CACHE_NAME = 'tjd3s-cache';
 const urlsToCache = [
     './',
-    './index.php',
+    './index.html',
     './style.css',
     './main.js',
     './map-script.js',
@@ -54,7 +54,7 @@ self.addEventListener('fetch', (event) => {
                 })
                 .catch(() => {
                     if (event.request.mode === 'navigate') {
-                        return caches.match('/index.php');
+                        return caches.match('/index.html');
                     }
                 })
         );

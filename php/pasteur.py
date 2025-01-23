@@ -23,7 +23,7 @@ novo_nome_arquivo = ""
 caminho_arquivo_anonimizado = ""
 caminho_arquivo_original = ""
 base_dir = '/imagem'
-
+resultsLength = 0
 # cria as pastas necessárias
 def ensure_directory_exists(directory_path):
     # Verifica se a pasta existe
@@ -51,6 +51,7 @@ origem = '../imagem/input'
 #origem1 = '../imagem/input'
 #origem2 = '../imagem/pasteur'
 destino = '../imagem/lixeira'
+destino2 = '../imagem/pasteur2'
 
 ############# mudar nomes
 # Obter a data e hora atual em UTC
@@ -152,52 +153,53 @@ def remove_faces_from_image(image_path, output_dir):
 
     # Detectar rostos na imagem
     results = detector.detect_faces(image)
-
-    # Criar uma máscara para cobrir os rostos
-    mask = np.ones_like(image, dtype=np.uint8) * 255  # Máscara branca
-   
-    # Aplicar a máscara na imagem original e deixa preto e branco
-    for result in results:
-        x, y, width, height = result['box']
-        x, y = abs(x), abs(y)
-        # Cobrir o rosto com uma máscara preta
-        mask[y:y + height, x:x + width] = 0
-        a= a+1
-        font = cv2.FONT_HERSHEY_SIMPLEX
-        org = (x, y)
-        fontScale = 0.7
-        color = (0, 0, 0)
-        thickness = 1
-        cv2.putText(image, str(a), org, font,fontScale, color, thickness, cv2.LINE_AA)
-    # Definir as coordenadas do retângulo (ponto inicial e final)
-    ponto_inicial = (4, 10)   # (x1, y1)
-    ponto_final = (110, 30)   # (x2, y2)
-
-    # Cor do retângulo (branco no formato BGR)
-    cor_branca = (255, 255, 255)
-
-    # Espessura da borda (se for -1, o retângulo será preenchido)
-    espessura = -1
-
-    # Desenhar o retângulo na imagem
-    cv2.rectangle(image, ponto_inicial, ponto_final, cor_branca, espessura)
-    cv2.rectangle(image, ponto_inicial, ponto_final, (0, 0, 0), 1)
-    # exibe o numero de pessoas
-    cv2.putText(image, str(a)+ " pessoas", (5, 25), font, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+    resultsLength = len(results) > 0
+    if results and resultsLength:
+        # Criar uma máscara para cobrir os rostos
+        mask = np.ones_like(image, dtype=np.uint8) * 255  # Máscara branca
     
-    # Aplicar a máscara na imagem original e deixa preto e branco
-    image_without_faces = cv2.bitwise_and(image, mask)
-    image_without_faces = cv2.cvtColor(image_without_faces, cv2.COLOR_BGR2GRAY)
-    # Criar a pasta de saída, se não existir
-    os.makedirs(output_dir, exist_ok=True)
+        # Aplicar a máscara na imagem original e deixa preto e branco
+        for result in results:
+            x, y, width, height = result['box']
+            x, y = abs(x), abs(y)
+            # Cobrir o rosto com uma máscara preta
+            mask[y:y + height, x:x + width] = 0
+            a= a+1
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            org = (x, y)
+            fontScale = 0.7
+            color = (0, 0, 0)
+            thickness = 1
+            cv2.putText(image, str(a), org, font,fontScale, color, thickness, cv2.LINE_AA)
+        # Definir as coordenadas do retângulo (ponto inicial e final)
+        ponto_inicial = (4, 10)   # (x1, y1)
+        ponto_final = (110, 30)   # (x2, y2)
 
-    # Gerar o caminho completo para salvar a nova imagem
-    output_path = os.path.join(output_dir, os.path.basename(image_path))
-    # Salvar a imagem sem rostos
-    cv2.imwrite(output_path, image_without_faces)
-    caminho_arquivo_anonimizado = os.path.join(base_dir, 'pasteur1', os.path.basename(image_path))
+        # Cor do retângulo (branco no formato BGR)
+        cor_branca = (255, 255, 255)
 
-    print(f"Imagem salva em: {output_path}")
+        # Espessura da borda (se for -1, o retângulo será preenchido)
+        espessura = -1
+
+        # Desenhar o retângulo na imagem
+        cv2.rectangle(image, ponto_inicial, ponto_final, cor_branca, espessura)
+        cv2.rectangle(image, ponto_inicial, ponto_final, (0, 0, 0), 1)
+        # exibe o numero de pessoas
+        cv2.putText(image, str(a)+ " pessoas", (5, 25), font, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+        
+        # Aplicar a máscara na imagem original e deixa preto e branco
+        image_without_faces = cv2.bitwise_and(image, mask)
+        image_without_faces = cv2.cvtColor(image_without_faces, cv2.COLOR_BGR2GRAY)
+        # Criar a pasta de saída, se não existir
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Gerar o caminho completo para salvar a nova imagem
+        output_path = os.path.join(output_dir, os.path.basename(image_path))
+        # Salvar a imagem sem rostos
+        cv2.imwrite(output_path, image_without_faces)
+        caminho_arquivo_anonimizado = os.path.join(base_dir, 'pasteur1', os.path.basename(image_path))
+
+        print(f"Imagem salva em: {output_path}")
 
 #processa todas as imagens do diretorio input    
 def process_images(input_dir, output_dir):
@@ -269,6 +271,9 @@ for arquivo in os.listdir(origem):
     if os.path.isfile(caminho_arquivo_origem):
         shutil.move(caminho_arquivo_origem, caminho_arquivo_destino)
         caminho_arquivo_original = os.path.join(base_dir, 'lixeira', os.path.basename(arquivo))
+    if resultsLength == 0:
+        caminho_arquivo_pasteur2 = os.path.join(destino2, arquivo)
+        shutil.copy(caminho_arquivo_destino, caminho_arquivo_pasteur2)
 print("Todos os arquivos foram movidos com sucesso!")
 
 # Fim da contagem do tempo

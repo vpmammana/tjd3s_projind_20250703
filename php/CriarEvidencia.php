@@ -20,9 +20,6 @@ function log_request_data()
 }
 
 // log_request_data();
-
-
-
 try {
     $lon = $_POST['longitude'];
     $lat = $_POST['latitude'];
@@ -37,7 +34,6 @@ try {
         'User-Agent: MyCustomUserAgent/1.0',
         'Accept-Language: pt'
     ));
-
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -47,15 +43,23 @@ try {
     $mapResponse = curl_exec($ch);
 
     if (curl_errno($ch)) {
-        $error_msg = curl_error($ch);
-        error_log("cURL Error: " . $error_msg);
-        die('Error occurred: ' . $error_msg);
+        http_response_code(500); // Set HTTP response code for error
+        echo json_encode([
+            'success' => false,
+            'faceDetected' => 'false',
+            'message' => 'Erro de localização'
+        ]);
+        exit;
     }
 
     $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if ($http_status !== 200) {
-        error_log("HTTP Error: " . $http_status);
-        die('Error occurred: HTTP Status ' . $http_status);
+        echo json_encode([
+            'success' => false,
+            'faceDetected' => 'false',
+            'message' => 'Erro de localização'
+        ]);
+        exit;
     }
 
     curl_close($ch);
@@ -75,7 +79,7 @@ try {
     $neighbourhood = $mapData['address']['municipality'];
     $country = $mapData['address']['country'];
     $road = $mapData['address']['road'];
-    $city = $mapData['address']['city'];
+    $city = $mapData['address']['city'] ? $mapData['address']['city'] : $mapData['address']['city_district'];
     $state = $mapData['address']['state'];
     $postCode = $mapData['address']['postcode'];
     $countryCode = strtoupper($mapData['address']['country_code']);
@@ -93,7 +97,6 @@ try {
     $id_arquivo = 0;
     $id_tipo_arquivo = 0;
     $id_pessoa = 0;
-
     // procure o id_chave_pessoa pelo nome_pessoa
     $stmt = $conn->prepare("SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ?");
 
@@ -109,6 +112,14 @@ try {
 
         if (!empty($data)) {
             $id_pessoa = $data[0]['id_chave_pessoa'];
+        } else {
+            http_response_code(500); // Set HTTP response code for error
+            echo json_encode([
+                'success' => false,
+                'faceDetected' => 'false',
+                'message' => 'Usuario não existe por favor contato o administrador'
+            ]);
+            exit;
         }
     } else {
         $response['message'] = $e->getMessage();
@@ -117,7 +128,6 @@ try {
     // procure o id_chave_pais pelo nome_pais
     $stmt = $conn->prepare("SELECT id_chave_pais FROM paises where nome_pais = ?");
     $stmt->bind_param('s', $country);
-
     if ($stmt === false) {
         throw new Exception('Prepare failed: ' . $conn->error);
     }
@@ -126,7 +136,6 @@ try {
     if ($stmt->execute()) {
         $result = $stmt->get_result();
         $data = $result->fetch_all(MYSQLI_ASSOC);
-
         if (!empty($data)) {
             $id_pais = $data[0]['id_chave_pais'];
         }
@@ -137,18 +146,15 @@ try {
     // procure o id_chave_estado pelo nome_estado
     $stmt = $conn->prepare("SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado =  ?");
     $stmt->bind_param('s', $state);
-
     if ($stmt->execute()) {
         $result = $stmt->get_result();
         $data = $result->fetch_all(MYSQLI_ASSOC);
-
         if (!empty($data)) {
             $id_estado = $data[0]['id_chave_estado'];
             $nome_estado = $data[0]['nome_estado'];
         }
     } else {
         $error_message = 'Query failed: ' . $stmt->error;
-        error_log($error_message);
         echo json_encode(['error' => $error_message]);
     }
 
@@ -162,8 +168,8 @@ try {
     $stmt->bind_param('is', $id_estado, $city);
 
     if ($stmt->execute()) {
-        $result = $stmt->get_result();
 
+        $result = $stmt->get_result();
         $data = $result->fetch_all(MYSQLI_ASSOC);
         if (!empty($data)) {
             $id_cidade = $data[0]['id_chave_cidade'];
@@ -338,7 +344,7 @@ try {
             echo json_encode([
                 'success' => false,
                 'faceDetected' => 'false',
-                'message' => 'Nenhum rosto foi detectado, por favor carregue outra imagem'
+                'message' => 'Erro de processamento de imagem'
             ]);
             exit;
         }
@@ -410,6 +416,15 @@ try {
     }
 } catch (Exception $e) {
     $response['message'] = $e->getMessage();
+    if (curl_errno($ch)) {
+        http_response_code(500); // Set HTTP response code for error
+        echo json_encode([
+            'success' => false,
+            'faceDetected' => 'false',
+            'message' => 'Erro de localização'
+        ]);
+        exit;
+    }
     header("HTTP/1.1 500 Internal Server Error");
 }
 

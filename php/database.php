@@ -1,9 +1,5 @@
 <?php
-
-$servername = "papedins_db";
-$username = "admin";
-$password = "admin";
-$dbname = "papedins_db";
+include 'identifica.cripto.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

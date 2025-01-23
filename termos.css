@@ -1,0 +1,44 @@
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main-bg-color);
+}
+
+#termos-section {
+    background-color: var(--main-bg-color);
+}
+
+.termos-container {
+    width: 35%;
+    margin: 1rem auto 0 auto;
+    background-color: var(--main-bg-color);
+}
+
+button {
+    background-color: #d9d9d9;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.termos-btns {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .termos-container {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .termos-btns button {
+        padding: 8px 45px;
+    }
+}

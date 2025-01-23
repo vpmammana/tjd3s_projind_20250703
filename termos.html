@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/page-auth.js"></script>
+
+    <link rel="icon" href="/assets/fundacentro-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/assets/fundacentro-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/fundacentro-64x64.png" sizes="64x64" type="image/png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="termos.css">
+    <title>TJD3S</title>
+</head>
+
+<body id="termos-page">
+    <div id="loading">
+        <div class="loader-container">
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
+    <div class="top-header">
+        <i class="fas fa-sign-out" id="logoutBtn"></i>
+        <img src="/assets/top-logo.svg" alt="top-logo">
+        <span class="top-header-phrase">Trabalho Justo, Digno, Solidário, Saudável e Seguro</span>
+    </div>
+    <div class="header">
+        <div class="header-text">
+            <span>Termo de Aceite do Aplicativo</span>
+        </div>
+    </div>
+    <section id="termos-section">
+        <div class="termos-container">
+            <iframe
+                src="https://docs.google.com/document/d/e/2PACX-1vQs7stUPbaWwSw43fQ3yKkx4I65Ccg3Zc4-aijsOFEbLH8l5FAqhBiVA8yD87xvUg/pub?embedded=true"></iframe>
+        </div>
+    </section>
+    <div class="termos-btns">
+        <button id="aceito">Aceito</button>
+        <button id="nao-aceito">Não Aceito</button>
+    </div>
+    <div class="footer">
+        <div class="contatos">
+            <h3>Endereços e contato:</h3>
+            <a href="https://www.gov.br/fundacentro/pt-br">gov.br/fundacentro</a>
+            <a href="https://www.gov.br/trabalho-e-emprego/pt-br">gov.br/trabalho-e-emprego</a>
+            <span>selecao0124@fundacentro.gov.br</span>
+        </div>
+        <div>
+            <img src="/assets/footer-logo.svg" alt="footer-logo">
+        </div>
+    </div>
+    <script src="/shared.js"></script>
+    <script src="/termos.js"></script>
+</body>
+
+</html>

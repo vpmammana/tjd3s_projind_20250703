@@ -12,21 +12,67 @@ let tokenIndex = 1;
 let previousTokens = [];
 velhoDeleteBtn = 'delete_nulo';
 var perguntas = []; // Variável global
+let resultsActioned = false;
+
+const inputs = document.querySelectorAll('input');
+
+function handleFormOrder(input) {
+    const currentValue = input.value.trim();
+    const nextId = input.dataset.next; // Get the ID of the next field
+    if (currentValue !== "" && nextId) {
+        const nextInput = document.getElementById(nextId);
+        if (nextInput) {
+            nextInput.disabled = false; // Enable the next field
+        }
+    }
+}
+
+inputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+        if (input.value.length > 5) {
+            e.preventDefault(); // Prevent form submission
+            handleFormOrder(input)
+        }
+    });
+    input.addEventListener('keypress', (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault(); // Prevent form submission
+            handleFormOrder(input)
+        }
+    });
+    input.addEventListener('blur', (e) => {
+        e.preventDefault(); // Prevent form submission
+        handleFormOrder(input)
+    });
+});
+
+// Pegar nome do usario do Hash e salvar no localstorage na carrega de pagina
+window.addEventListener('load', function () {
+    let nomeUsuario = "";
+    if (!localStorage.getItem('nome_usuario')) {
+        nomeUsuario = getNomeUsusario('nome_usuario');
+    } else {
+        nomeUsuario = localStorage.getItem('nome_usuario');
+    }
+    document.getElementById('nome-usuario').innerText = `${nomeUsuario},`;
+    localStorage.setItem('nome_usuario', nomeUsuario);
+})
 
 
 async function handleMutation(mutation) {
     if (mutation.type === "childList") {
-        console.log("Child node added or removed:", mutation);
-
         try {
             // Fetch sugestões de uma API ou outra fonte
             const frases = await fetchFrases();
             if (frases.length > maximo_frases) {
-                document.getElementById('frases').innerHTML = "<div class='chip_tipo_resultado'>Muitas frases retornadas. Responda mais perguntas para refinar a busca.</div>";
+                document.getElementById('frases').innerHTML = "<div class='chip_tipo_resultado muitas-frases'>Muitas frases retornadas. Responda mais perguntas para refinar a busca.</div>";
                 if (frases.length > 0) {
                     document.getElementById('frases').style.display = 'flex';
                 }
+                resultsActioned = true;
             } else {
+                resultsActioned = true;
+
                 // Atualizar o HTML com as frases obtidas
                 let velho_id_tipo_resultado = "";
                 if (frases.length == 1 && document.getElementById('inputWrapper')) {
@@ -35,15 +81,15 @@ async function handleMutation(mutation) {
                 if (frases.length > 0) {
                     document.getElementById('frases').style.display = 'flex';
                 }
+                let str_tipo_resultado = ""; // Declare no escopo da função do map
                 let phrasesHTML = frases.map(frase => {
-                    let str_tipo_resultado = ""; // Declare no escopo da função do map
                     if (velho_id_tipo_resultado != frase.id_tipo_resultado_pai) {
-                        str_tipo_resultado = "<div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
+                        str_tipo_resultado = "<div id='chip-resultado-label'><span>A sua atividade foi classificada como:</span></div><div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado tipo_classificacao' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
                     }
                     velho_id_tipo_resultado = frase.id_tipo_resultado_pai;
-                    return str_tipo_resultado + "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/>" + frase.phrase + "</div>";
+                    return "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/>" + frase.phrase + "</div>";
                 }).join("");
-                document.getElementById('frases').innerHTML = phrasesHTML;
+                document.getElementById('frases').innerHTML = phrasesHTML + str_tipo_resultado;
             }
         } catch (error) {
             console.error("Erro ao buscar frases:", error);
@@ -53,6 +99,20 @@ async function handleMutation(mutation) {
 
 function handleSelectedPhrase(id) {
     selectedPhraseId = id
+    const atividadeRealizada = document.getElementById('atividade-realizada');
+    atividadeRealizada.disabled = false;
+    atividadeRealizada.addEventListener('keypress', (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault(); // Prevent form submission
+            handleFormOrder(atividadeRealizada)
+        }
+    });
+
+    atividadeRealizada.addEventListener('blur', (e) => {
+        e.preventDefault(); // Prevent form submission
+        handleFormOrder(atividadeRealizada)
+    });
+
 }
 
 // Seleciona o elemento onde deseja monitorar mudanças
@@ -342,7 +402,6 @@ function handleQuestion(chipCount) {
     const inputWrapper = document.getElementById('pergunta')
 
     if (chipCount === 1) {
-        console.log('here')
         inputWrapper.innerHTML = "<div id='pergunta' class='interno'>Test 1</div>"
     }
 
@@ -365,8 +424,8 @@ function updateInputPosition() {
         pergunta = perguntas[tokenIndex - 1].nome_pergunta;
         placeholder = perguntas[tokenIndex - 1].placeholder;
     } else {
-        pergunta = 'Qual foi a sua ação';
-        placeholder = 'Digite Aqui...';
+        pergunta = 'Frase que melhor descreve essa ação';
+        placeholder = '[Lista frases relacionadas]';
     }
 
 
@@ -375,6 +434,8 @@ function updateInputPosition() {
     input.type = 'text';
     input.className = 'interno';
     input.placeholder = placeholder;
+    input.disabled = resultsActioned ? false : true;
+    input.dataNext = "atividade-realizada"
 
 
 
@@ -494,7 +555,6 @@ async function carregarPerguntas() {
 //--------------------------------Main JS----------------------------------------------------------------------
 function showLoading() {
     document.getElementById("loading").style.display = "block";
-
 }
 
 // Esconde o div loading
@@ -508,17 +568,14 @@ function getNomeUsusario(param) {
     return urlParams.get(param) ? urlParams.get(param).replaceAll('_', ' ') : "";
 }
 
-// Pegar nome do usario do Hash e salvar no localstorage na carrega de pagina
-window.addEventListener('load', function () {
-    let nomeUsuario = "";
-    if (!localStorage.getItem('nome_usuario')) {
-        nomeUsuario = getNomeUsusario('nome_usuario');
-    } else {
-        nomeUsuario = localStorage.getItem('nome_usuario');
-    }
-    document.getElementById('nome-usuario').innerText = `${nomeUsuario},`;
-    localStorage.setItem('nome_usuario', nomeUsuario);
-})
+// // Pegar nome do usario do Hash e salvar no localstorage na carrega de pagina
+// window.addEventListener('load', function () {
+//     let nomeUsuario = "";
+//     if (localStorage.getItem('nome_usuario')) {
+//         nomeUsuario = localStorage.setItem('nome_usuario', nomeUsuario);
+//         document.getElementById('nome-usuario').innerText = `${nomeUsuario},`;
+//     }
+// })
 
 // Configurar a mapa na carrega da pagina
 window.addEventListener('load', function () {
@@ -643,9 +700,10 @@ function displayImagePreview(file) {
         const img = document.createElement('img');
         img.src = e.target.result;
         img.style.display = 'block'
-        img.style.width = '300px';
-        img.style.height = '300px';
+        img.style.width = '100%';
+        img.style.height = '100%';
         img.style.margin = '0px auto 2rem auto';
+        img.style.objectFit = 'contain';
         document.getElementById('imagePreviews').appendChild(img);
     };
     reader.readAsDataURL(file);
@@ -747,7 +805,6 @@ function storePhrasesInDB(phrases) {
         });
 
         transaction.oncomplete = () => {
-            console.log('Phrases stored in IndexedDB');
         };
 
         transaction.onerror = () => {
@@ -765,7 +822,6 @@ function storeTokensInDB(data) {
         objectStore.add({ tokens: data.tokens });
 
         transaction.oncomplete = () => {
-            console.log('Tokens stored in IndexedDB');
         };
 
         transaction.onerror = () => {
@@ -811,7 +867,6 @@ function storeDataOffline(data) {
             objectStore.add(dataToStore);
 
             transaction.oncomplete = () => {
-                console.log('Old data removed, new data stored offline');
                 document.getElementById('criar-evidencia-form').reset();
                 document.getElementById('imagePreviews').innerHTML = '';
                 suggestionSelected = "";
@@ -835,7 +890,6 @@ function storeDataOffline(data) {
 
 //Syncronizar os dados para o servidor quando estiver online
 function syncDataWithServer() {
-    console.log('Back online! Syncing data with server in 10 seconds...');
     showLoading();
     setTimeout(() => {
         openDatabase('OfflineDataDB', 1, upgradeOfflineDataDB).then(db => {
@@ -848,7 +902,6 @@ function syncDataWithServer() {
                 const offlineDataArray = event.target.result;
 
                 if (offlineDataArray.length === 0) {
-                    console.log('No offline data to sync');
                     hideLoading();
                     return;
                 } else {
@@ -913,7 +966,6 @@ function clearOfflineData(db, id) {
     const deleteRequest = objectStore.delete(id);
 
     deleteRequest.onsuccess = () => {
-        console.log(`Offline data with id ${id} cleared after sync`);
     };
 
     deleteRequest.onerror = () => {
@@ -929,7 +981,6 @@ function removeSyncedDataFromDB(id) {
         objectStore.delete(id);
 
         transaction.oncomplete = () => {
-            console.log('Synced data removed from IndexedDB');
         };
 
         transaction.onerror = () => {
@@ -992,7 +1043,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById('fileInput').addEventListener('change', function (event) {
-    console.log('File input changed:', event.target.files);
 });
 
 // Funçoes para quando mandar os dados de formaulario para o servidor
@@ -1095,8 +1145,13 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
                 suggestionSelected = "";
                 document.getElementById('imagePreviews').innerHTML = '';
                 loading.style.display = "none"
-                alert('Dados enviados com sucesso!');
-                window.location.href = "/"
+                hideLoading()
+                setTimeout(() => {
+                    alert('Dados enviados com sucesso!');
+                    window.location.href = "/"
+                }, 1000)
+                // loading.style.display = "none"
+
             })
             .catch(error => {
                 if (error.faceDetected === 'false' || error.extensionError === 'false') {
@@ -1114,13 +1169,10 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
 });
 
 window.addEventListener('online', () => {
-    console.log('Back online! Syncing data with server...');
     syncDataWithServer();
 });
 
-window.addEventListener('offline', () => {
-    console.log('You are now offline. Your data will be saved locally.');
-});
+
 
 
 
