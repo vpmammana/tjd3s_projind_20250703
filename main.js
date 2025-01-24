@@ -65,6 +65,7 @@ async function handleMutation(mutation) {
             // Fetch sugestões de uma API ou outra fonte
             const frases = await fetchFrases();
             if (frases.length > maximo_frases) {
+                selectedPhraseId = 0;
                 document.getElementById('frases').innerHTML = "<div class='chip_tipo_resultado muitas-frases'>Muitas frases retornadas. Responda mais perguntas para refinar a busca.</div>";
                 if (frases.length > 0) {
                     document.getElementById('frases').style.display = 'flex';
@@ -87,7 +88,7 @@ async function handleMutation(mutation) {
                         str_tipo_resultado = "<div id='chip-resultado-label'><span>A sua atividade foi classificada como:</span></div><div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado tipo_classificacao' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
                     }
                     velho_id_tipo_resultado = frase.id_tipo_resultado_pai;
-                    return "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/>" + frase.phrase + "</div>";
+                    return "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/><span>" + frase.phrase + "</span></div>";
                 }).join("");
                 document.getElementById('frases').innerHTML = phrasesHTML + str_tipo_resultado;
             }
@@ -598,21 +599,21 @@ window.addEventListener('load', function () {
 });
 
 // Config de Service worker
-if ('serviceWorker' in navigator) {
-    const protocol = window.location.protocol;
-    const host = window.location.host;
-    const swUrl = `${protocol}//${host}/sw.js`;
+// if ('serviceWorker' in navigator) {
+//     const protocol = window.location.protocol;
+//     const host = window.location.host;
+//     const swUrl = `${protocol}//${host}/sw.js`;
 
-    navigator.serviceWorker.register(swUrl, {
-        scope: '/'
-    })
-        .then(function (registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-        })
-        .catch(function (error) {
-            console.log('Service Worker registration failed:', error);
-        });
-}
+//     navigator.serviceWorker.register(swUrl, {
+//         scope: '/'
+//     })
+//         .then(function (registration) {
+//             console.log('Service Worker registered with scope:', registration.scope);
+//         })
+//         .catch(function (error) {
+//             console.log('Service Worker registration failed:', error);
+//         });
+// }
 
 // Verificar se aparelho é Mobile
 function isMobileDevice() {
@@ -1086,8 +1087,16 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
         }
     })
 
-    if (!selectedPhraseId || selectedPhraseId === "") {
-        tipoAtividade.classList.add('error-input')
+    if (!selectedPhraseId || selectedPhraseId === "" || selectedPhraseId === 0) {
+        if (tipoAtividade) {
+            tipoAtividade.classList.add('error-input');
+            alert("Por favor, preencha todos os campos");
+
+        } else {
+            alert("Por favor, clique no botão para selecionar a frase escolhida.");
+        }
+        hideLoading()
+        return;
     }
 
     if (errorFields.length > 0) {
