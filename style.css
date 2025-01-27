@@ -83,6 +83,10 @@ textarea:disabled {
     display: block;
 }
 
+.header-text span {
+    text-align: center;
+}
+
 .header .header-text span:nth-child(1) {
     font-size: 25px;
     color: #fff;

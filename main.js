@@ -598,22 +598,22 @@ window.addEventListener('load', function () {
     }
 });
 
-// Config de Service worker
-// if ('serviceWorker' in navigator) {
-//     const protocol = window.location.protocol;
-//     const host = window.location.host;
-//     const swUrl = `${protocol}//${host}/sw.js`;
+//Config de Service worker
+if ('serviceWorker' in navigator) {
+    const protocol = window.location.protocol;
+    const host = window.location.host;
+    const swUrl = `${protocol}//${host}/sw.js`;
 
-//     navigator.serviceWorker.register(swUrl, {
-//         scope: '/'
-//     })
-//         .then(function (registration) {
-//             console.log('Service Worker registered with scope:', registration.scope);
-//         })
-//         .catch(function (error) {
-//             console.log('Service Worker registration failed:', error);
-//         });
-// }
+    navigator.serviceWorker.register(swUrl, {
+        scope: '/'
+    })
+        .then(function (registration) {
+            console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(function (error) {
+            console.log('Service Worker registration failed:', error);
+        });
+}
 
 // Verificar se aparelho é Mobile
 function isMobileDevice() {
