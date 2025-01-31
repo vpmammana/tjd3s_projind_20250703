@@ -1,4 +1,21 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[5]:
+
+
+# mudanças colorido para P&B , limitação de tamanho 5MB, apaga arquivos grandes, 
+#aprimoramento da detecção e melhoria no algoritmo
+# biblioteca de controle de horário de execução
+# mudar o horário de teste, linhas: 356 357 
+# define como tamanho máximo 4MB para os arquivos, valores maiores são apagados, linhas: 296, 297 e 325
+# arquivos maiores que 2MB são reduzidos para 1M, linhas: 175 e 192
+# evitar bombas de descompresão com pillow por limitação natural de pixels de repetição
+# extração de Metadados EXIF
+#Bloquear Imagens com Extensões Suspeitas
+# aplicação de antivirus clawAV (está desabilitado, intalar ClamAV abaixo), linhas: 28 a 36 e função na linha 300
+#sudo apt update && sudo apt install clamav -y e #Sudo freshclam para instalar o ClamAV  
+
 import cv2
 import os
 from mtcnn import MTCNN
@@ -6,25 +23,26 @@ import numpy as np
 import shutil
 from cryptography.fernet import Fernet
 from datetime import datetime, timezone
+import matplotlib.pyplot as plt
 import time
-import argparse
-import json
+import schedule
+from PIL import Image
+import piexif
+import subprocess
+import imghdr
 
-# Início da contagem do tempo
-start_time = time.time()
+#############funções criadas########################
+#função 0: antivirus claw
+#def scan_file(file_path):
+#    result = subprocess.run(["clamscan", file_path], capture_output=True, text=True)
+#    return "Infected" not in result.stdout
+#if scan_file("imagem.jpg"):
+#    print("Imagem segura.")
+#else:
+#    print("Imagem infectada! Excluindo...")
+#    os.remove("imagem.jpg")
 
-# Diretórios de criptografia
-source_dir = "../imagem/input"
-dest_dir = "../imagem/cript"
-key_dir = "../imagem/key"
-
-a = 0 # variável global
-novo_nome_arquivo = ""
-caminho_arquivo_anonimizado = ""
-caminho_arquivo_original = ""
-base_dir = '/imagem'
-
-# cria as pastas necessárias
+#função 1:  cria as pastas necessárias ao projeto caso não existam
 def ensure_directory_exists(directory_path):
     # Verifica se a pasta existe
     if not os.path.exists(directory_path):
@@ -33,97 +51,11 @@ def ensure_directory_exists(directory_path):
         print(f"Pasta '{directory_path}' criada.")
     else:
         print(f"Pasta '{directory_path}' já existe.")
-folder_path = '../imagem/cript'
-ensure_directory_exists(folder_path)
-folder_path = '../imagem/pasteur1'
-ensure_directory_exists(folder_path)
-folder_path = '../imagem/pasteur2'
-ensure_directory_exists(folder_path)
-folder_path = '../imagem/key'
-ensure_directory_exists(folder_path)
-folder_path = '../imagem/decrypted'
-ensure_directory_exists(folder_path)
-folder_path = '../imagem/lixeira'
-ensure_directory_exists(folder_path)
 
-# Diretórios de origem e destino da lixeira
-origem = '../imagem/input'
-#origem1 = '../imagem/input'
-#origem2 = '../imagem/pasteur'
-destino = '../imagem/lixeira'
-
-############# mudar nomes
-# Obter a data e hora atual em UTC
-agora_utc = datetime.now(timezone.utc)
-
-# Formatar a data e hora como string
-data_hora_string = agora_utc.strftime('%Y_%m_%d_%H_%M_%S')
-
-# Diretório contendo os arquivos de imagem
-diretorio = '../imagem/input'
-
-# Extensões de arquivos de imagem que você deseja renomear
-extensoes_imagem = ['.jpg', '.jpeg', '.png', '.gif', '.bmp']
-
-# Renomear todos os arquivos de imagem na pasta
-for arquivo in os.listdir(diretorio):
-    caminho_arquivo = os.path.join(diretorio, arquivo)
-    
-    # Verifique se é um arquivo e se tem uma das extensões de imagem
-    if os.path.isfile(caminho_arquivo) and any(arquivo.lower().endswith(ext) for ext in extensoes_imagem):
-        nome, extensao = os.path.splitext(arquivo)
-        novo_nome_arquivo = f"{nome}_{data_hora_string}{extensao}"
-        caminho_arquivo_novo = os.path.join(diretorio, novo_nome_arquivo)
-        
-        # Renomear o arquivo
-        os.rename(caminho_arquivo, caminho_arquivo_novo)
-
-print("Arquivos de imagem renomeados com sucesso!")
-
-#####################################
-# método Haar Cascade para detecção de faces
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt.xml')
-
-# Diretório contendo os arquivos de imagem
-diretorio_imagens = '../imagem/pasteur1'
-
-# Criar um diretório para salvar as imagens com rostos detectados, se não existir
-diretorio_saida = '../imagem/pasteur2'
-if not os.path.exists(diretorio_saida):
-    os.makedirs(diretorio_saida)
-#def remove_faces_cascade():
-#    global a
-# Processar cada imagem no diretório
-#    for arquivo in os.listdir(diretorio_imagens):
-#        caminho_imagem = os.path.join(diretorio_imagens, arquivo)
-#
-#        # Verifique se é um arquivo de imagem
-#        if os.path.isfile(caminho_imagem) and arquivo.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
-#            # Carregar a imagem
-#            imagem = cv2.imread(caminho_imagem)
-#        
-#            # Converter a imagem para escala de cinza
-#           # imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
-#        
-#            # Detectar rostos na imagem
-#            rostos = face_cascade.detectMultiScale(imagem, scaleFactor=1.09, minNeighbors=4, minSize=(10, 10))
-#            
-#            # Desenhar retângulos ao redor dos rostos detectados
-#            for (x, y, w, h) in rostos:
-#                cv2.rectangle(imagem, (x, y), (x+w, y+h), (0, 0, 0), -1)
-#            # Salvar a imagem com os rostos detectados no diretório de saída
-#            caminho_saida = os.path.join(diretorio_saida, arquivo)
-#            cv2.imwrite(caminho_saida, imagem)
-#
-#    print("Processamento concluído! Imagens com rostos detectados salvas em:", diretorio_saida)
-#####################################
-# função para remover faces método MTCNN
+# função 2: remove faces método MTCNN
 def remove_faces_from_image(image_path, output_dir):
     global a
     a = 0
-    global caminho_arquivo_anonimizado
-    caminho_arquivo_anonimizado = ""
-
     # Carregar a imagem
     image = cv2.imread(image_path)
     if image is None:
@@ -132,30 +64,24 @@ def remove_faces_from_image(image_path, output_dir):
    ##############
     # Carregar a imagem
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-
     # Equalização de histograma
     image_yuv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2YUV)
     image_yuv[:, :, 0] = cv2.equalizeHist(image_yuv[:, :, 0])
     image_eq = cv2.cvtColor(image_yuv, cv2.COLOR_YUV2RGB)
-
      # Correção Gama
     gamma = 1.1  # ajuste o valor de gamma conforme necessário
     image_gamma = np.power(image_eq/255.0, gamma)
     image_gamma = np.uint8(image_gamma*255)
-
     # Normalização da iluminação
     image_norm = cv2.normalize(image_gamma, None, 0, 255, cv2.NORM_MINMAX)
     image = image_norm
     ##############
     # Inicializar o detector de rostos MTCNN
-    detector = MTCNN(min_face_size=10, scale_factor=0.6, steps_threshold=[0.4, 0.4, 0.4])
-
+    detector = MTCNN()
     # Detectar rostos na imagem
     results = detector.detect_faces(image)
-
     # Criar uma máscara para cobrir os rostos
-    mask = np.ones_like(image, dtype=np.uint8) * 255  # Máscara branca
-   
+    mask = np.ones_like(image, dtype=np.uint8) * 255  # Máscara branca   
     # Aplicar a máscara na imagem original e deixa preto e branco
     for result in results:
         x, y, width, height = result['box']
@@ -172,55 +98,46 @@ def remove_faces_from_image(image_path, output_dir):
     # Definir as coordenadas do retângulo (ponto inicial e final)
     ponto_inicial = (4, 10)   # (x1, y1)
     ponto_final = (110, 30)   # (x2, y2)
-
     # Cor do retângulo (branco no formato BGR)
     cor_branca = (255, 255, 255)
-
     # Espessura da borda (se for -1, o retângulo será preenchido)
     espessura = -1
-
     # Desenhar o retângulo na imagem
+    font = cv2.FONT_HERSHEY_SIMPLEX  ## correção da font
     cv2.rectangle(image, ponto_inicial, ponto_final, cor_branca, espessura)
     cv2.rectangle(image, ponto_inicial, ponto_final, (0, 0, 0), 1)
     # exibe o numero de pessoas
-    cv2.putText(image, str(a)+ " pessoas", (5, 25), font, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-    
+    cv2.putText(image, str(a)+ " pessoas", (5, 25), font, 0.5, (0, 0, 0), 1, cv2.LINE_AA)    
     # Aplicar a máscara na imagem original e deixa preto e branco
     image_without_faces = cv2.bitwise_and(image, mask)
     image_without_faces = cv2.cvtColor(image_without_faces, cv2.COLOR_BGR2GRAY)
     # Criar a pasta de saída, se não existir
     os.makedirs(output_dir, exist_ok=True)
-
     # Gerar o caminho completo para salvar a nova imagem
     output_path = os.path.join(output_dir, os.path.basename(image_path))
     # Salvar a imagem sem rostos
     cv2.imwrite(output_path, image_without_faces)
-    caminho_arquivo_anonimizado = os.path.join(base_dir, 'pasteur1', os.path.basename(image_path))
-
     print(f"Imagem salva em: {output_path}")
 
-#processa todas as imagens do diretorio input    
-def process_images(input_dir, output_dir):
+#função 3 - processa todas as imagens do diretorio input    
+def process_images_dir(input_dir, output_dir):
     # Verificar se a pasta de entrada existe
     if not os.path.exists(input_dir):
         print(f"A pasta de entrada {input_dir} não existe.")
         return
-
     # Processar cada arquivo na pasta de entrada
     for filename in os.listdir(input_dir):
         if filename.endswith(('.png', '.jpg', '.jpeg')):
             image_path = os.path.join(input_dir, filename)
             remove_faces_from_image(image_path, output_dir)
 
-input_dir = "../imagem/input"
-output_dir = "../imagem/pasteur1"
-process_images(input_dir, output_dir)
-#remove_faces_cascade()
-# criptografia de imagem e geração de key
+# funções 4 a 8 funções de criptografia
+# função 4 - geração de key
 def generate_key():
     """Gera uma chave para a criptografia"""
     return Fernet.generate_key()
 
+# função 5 - criptografia de imagem
 def encrypt_image(file_path, key):
     """Criptografa a imagem e retorna os dados criptografados"""
     with open(file_path, 'rb') as file:
@@ -229,17 +146,20 @@ def encrypt_image(file_path, key):
     encrypted_data = fernet.encrypt(image_data)
     return encrypted_data
 
+# função 6 - salva as imagens criptografadas
 def save_encrypted_image(encrypted_data, dest_path):
     """Salva os dados criptografados em um arquivo"""
     with open(dest_path, 'wb') as file:
         file.write(encrypted_data)
 
+# função 7 - salva key criptografia        
 def save_key(key, key_path):
     """Salva a chave de criptografia em um arquivo"""
     with open(key_path, 'wb') as file:
         file.write(key)
-
-def process_images():
+        
+# função 8 - criptografa as imagens associando as keys geradas
+def process_images_cript():
     """Processa todas as imagens na pasta de origem"""
     for filename in os.listdir(source_dir):
         if filename.endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
@@ -257,35 +177,205 @@ def process_images():
 
             print(f"Imagem '{filename}' criptografada com sucesso!")
 
-if __name__ == "__main__":
-    process_images()
+# função 9 - 10 para reduzir imagens
+# função 9
+def redimensionar_imagem(caminho_imagem, tamanho_max_mb=1):                  # <---   >2MB reduz para 1MB
+    # Abrir a imagem
+    imagem = Image.open(caminho_imagem)
+    # Verificar o tamanho atual da imagem
+    tamanho_atual = os.path.getsize(caminho_imagem) / (1024 * 1024)  # em MB
+    # Se o tamanho da imagem for maior que o limite especificado, redimensionar
+    if tamanho_atual > tamanho_max_mb:
+        largura, altura = imagem.size
+        fator_reducao = (tamanho_max_mb / tamanho_atual) ** 0.5  # fator de redução proporcional
+        nova_largura = int(largura * fator_reducao)
+        nova_altura = int(altura * fator_reducao)
+        # Redimensionar a imagem
+        imagem = imagem.resize((nova_largura, nova_altura), Image.Resampling.LANCZOS)
+        # Salvar a imagem redimensionada no mesmo caminho
+        imagem.save(caminho_imagem, quality=85)  # quality pode ser ajustado para controlar o tamanho
 
-# transfere os arquivos input para a lixeira
-for arquivo in os.listdir(origem):
-    caminho_arquivo_origem = os.path.join(origem, arquivo)
-    caminho_arquivo_destino = os.path.join(destino, arquivo)
+# função 10
+def processar_imagens(diretorio_entrada, tamanho_min_mb=2, tamanho_max_mb=1):   # <---  >2MB reduz para 1MB
+    # Percorrer todos os arquivos do diretório
+    for nome_arquivo in os.listdir(diretorio_entrada):
+        caminho_completo = os.path.join(diretorio_entrada, nome_arquivo)
+        # Verificar se é um arquivo de imagem (tamanho > 5MB)
+        if os.path.isfile(caminho_completo) and caminho_completo.lower().endswith(('png', 'jpg', 'jpeg')):
+            tamanho_atual = os.path.getsize(caminho_completo) / (1024 * 1024)  # em MB
+            # Se o arquivo for maior que 5MB, redimensiona
+            if tamanho_atual > tamanho_min_mb:
+                print(f"Redimensionando imagem: {nome_arquivo} ({tamanho_atual:.2f} MB)")
+                redimensionar_imagem(caminho_completo, tamanho_max_mb)
+            else:
+                print(f"A imagem {nome_arquivo} não precisa de redimensionamento (tamanho: {tamanho_atual:.2f} MB)")
+        
+# função 11 - Reprocessar a Imagem e Criar uma Cópia Segura removendo metadados
+def sanitize_image(file_path):
+    try:
+        img = Image.open(file_path)
+        temp_path = file_path + "_sanitized.jpg"
+        img.save(temp_path, "jpeg", exif=b"")  # Salva sem EXIF
+        os.remove(file_path)  # Remove o arquivo original
+        os.rename(temp_path, file_path)  # Renomeia o arquivo sanitizado para o nome original
+        print(f"Imagem {file_path} sanitizada com sucesso!")
+    except Exception as e:
+        print(f"Erro ao processar {file_path}: {e}")
+
+def sanitize_images_in_directory(directory):
+    for file_name in os.listdir(directory):
+        file_path = os.path.join(directory, file_name)
+        if os.path.isfile(file_path) and file_name.lower().endswith(("jpg", "jpeg", "png")):
+            sanitize_image(file_path)
+
+# função 12 - verificação de extensao
+def is_valid_image(file_path):
+    valid_formats = {"jpeg", "png", "gif", "bmp"}
+    file_type = imghdr.what(file_path)
+    return file_type in valid_formats
+
+def process_images_in_directory(directory):
+    for file_name in os.listdir(directory):
+        file_path = os.path.join(directory, file_name)
+        if os.path.isfile(file_path) and is_valid_image(file_path):
+            print(f"Imagem {file_name} segura para processamento.")
+        else:
+            print(f"Arquivo {file_name} suspeito! Rejeitado e excluído.")
+            os.remove(file_path)  # Exclui o arquivo suspeito
+def process_images_in_directory(directory):
+    for file_name in os.listdir(directory):
+        file_path = os.path.join(directory, file_name)        
+        if os.path.isfile(file_path) and is_valid_image(file_path):
+            try:
+                img = Image.open(file_path)
+                if img.mode == 'RGBA':# Verifica se a imagem tem um canal alfa (transparência)              
+                    img = img.convert('RGB')# Converte a imagem para RGB antes de salvar como JPEG
+                sanitized_path = file_path + "_sanitized.jpg"# Salva a imagem no formato JPEG sem EXIF
+                img.save(sanitized_path, 'JPEG')
+                os.remove(file_path)# Exclui o arquivo original
+                print(f"Imagem {file_name} segura e convertida para JPEG.")
+            except Exception as e:
+                print(f"Erro ao processar {file_name}: {e}")
+        else:
+            print(f"Arquivo {file_name} suspeito! Rejeitado e excluído.")
+            os.remove(file_path)  # Exclui o arquivo suspeito
+############ fim funções secundárias
+
+# Diretórios de criptografia
+source_dir = "C:/imagem/input"
+dest_dir = "C:/imagem/cript"
+key_dir = "C:/imagem/key"
+
+def rodar_imagens():
+    # Início da contagem do tempo
+    start_time = time.time()
+
+    a = 0 # variável global
+    folder_path = 'C:/imagem/cript'
+    ensure_directory_exists(folder_path)
+    folder_path = 'C:/imagem/pasteur'
+    ensure_directory_exists(folder_path)
+    folder_path = 'C:/imagem/key'
+    ensure_directory_exists(folder_path)
+    folder_path = 'C:/imagem/decrypted'
+    ensure_directory_exists(folder_path)
+    folder_path = 'C:/imagem/lixeira'
+    ensure_directory_exists(folder_path)
+
+    # Diretórios de origem e destino da lixeira, diretorio da imagem
+    origem = 'C:/imagem/input'
+    destino = 'C:/imagem/lixeira'
+    diretorio = 'C:/imagem/input'
+    input_dir = "C:/imagem/input"
+    output_dir = "C:/imagem/pasteur"
+    diretorio_entrada = "C:/imagem/input"
+       
+    # Obter a data e hora atual em UTC
+    agora_utc = datetime.now(timezone.utc)
+
+    # Formatar a data e hora como string
+    data_hora_string = agora_utc.strftime('%Y_%m_%d_%H_%M_%S')
+
+    # Extensões de arquivos de imagem que você deseja renomear
+    extensoes_imagem = ['.jpg', '.jpeg', '.png', '.gif', '.bmp']
     
-    # Verifique se é um arquivo e não um diretório
-    if os.path.isfile(caminho_arquivo_origem):
-        shutil.move(caminho_arquivo_origem, caminho_arquivo_destino)
-        caminho_arquivo_original = os.path.join(base_dir, 'lixeira', os.path.basename(arquivo))
-print("Todos os arquivos foram movidos com sucesso!")
+    # Tamanho máximo permitido em bytes (4MB = 4 * 1024 * 1024)#<------------------------- tamanho máximo
+    TAMANHO_MAXIMO = 4 * 1024 * 1024  #<-------------------------------------------------- tamanho máximo
 
-# Fim da contagem do tempo
-end_time = time.time()
+    # uso do antivirus
+    # scan_file(input_dir)             #<-------------------------------------------------- antivirus ClamAv
+      
+    #bloqueio de imagens suspeitas
+    process_images_in_directory(input_dir)
+    
+    # extração de Metadados EXIF - segurança
+    sanitize_images_in_directory(input_dir)
+    
+    # Renomear todos os arquivos de imagem na pasta e apagar arquivos desnecessários
+    for arquivo in os.listdir(diretorio):
+        caminho_arquivo = os.path.join(diretorio, arquivo) 
 
-# Tempo gasto
-execution_time = end_time - start_time
-print(f"Tempo de execução: {execution_time:.4f} segundos")
+        # Verifique se é um arquivo e se tem uma das extensões de imagem e se está dentro do limite de tamanho
+        if os.path.isfile(caminho_arquivo) and any(arquivo.lower().endswith(ext) for ext in extensoes_imagem):
+            tamanho_arquivo = os.path.getsize(caminho_arquivo)
+            if tamanho_arquivo <= TAMANHO_MAXIMO:
+                # Se o arquivo estiver dentro do limite, renomeie-o
+                nome, extensao = os.path.splitext(arquivo)
+                novo_nome_arquivo = f"{nome}_{data_hora_string}{extensao}"
+                caminho_arquivo_novo = os.path.join(diretorio, novo_nome_arquivo)
+                os.rename(caminho_arquivo, caminho_arquivo_novo)
+                print(f"Arquivo renomeado: {arquivo} -> {novo_nome_arquivo}")
+            else:
+                # Se o arquivo for maior que o limite, exclua-o
+                os.remove(caminho_arquivo)
+                print(f"Arquivo excluído (maior que 4MB): {arquivo}")  #<----------------- tamanho máximo
+    #########
+    # redução de imagem
+    processar_imagens(diretorio_entrada)
+    
+    # extração de faces
+    process_images_dir(input_dir, output_dir)
+    print("Processamento concluído!")
 
-# After processing images, create a JSON output
-output_data = {"quantidade_pessoas": a, "caminho_arquivo_anonimizado":caminho_arquivo_anonimizado, "caminho_arquivo_original":caminho_arquivo_original, "nome_arquivo":novo_nome_arquivo}
+    # chamada de criptografia
+    if __name__ == "__main__":
+        process_images_cript()
 
-# Save to output.json
-with open('output.json', 'w') as f:
-    json.dump(output_data, f)
+    # transfere os arquivos input para a lixeira
+    for arquivo in os.listdir(origem):
+        caminho_arquivo_origem = os.path.join(origem, arquivo)
+        caminho_arquivo_destino = os.path.join(destino, arquivo)   
+        # Verifique se é um arquivo e não um diretório
+        if os.path.isfile(caminho_arquivo_origem):
+            shutil.move(caminho_arquivo_origem, caminho_arquivo_destino)
 
-### Executavel: no anaconda ir para o diretorio cd ../imagem
-### executar o comando pyinstaller --onefile --distpath ../imagem CTCNN_fundacentro_07_09_2024.py
-# auto-py-to-exe
-## (base) C:\imagem\fundacentro>cxfreeze setup.py --target-dir fundacentro
+    print("Todos os arquivos foram movidos com sucesso!")
+
+    # Fim da contagem do tempo
+    end_time = time.time()
+
+    # Tempo gasto
+    execution_time = end_time - start_time
+    print(f"Tempo de execução: {execution_time:.4f} segundos")
+
+### ciclo diário
+print("Script iniciado. Tarefa contínua rodando e tarefa diária agendada para 4h da manhã...") #<--horário de teste
+schedule.every().day.at("14:13").do(rodar_imagens)      #<-------------------------------horário de teste
+# Loop principal
+while True:
+    # Verifica se há uma tarefa agendada para executar
+    schedule.run_pending()
+    time.sleep(10)
+
+
+# In[2]:
+
+
+pip install piexif
+
+
+# In[ ]:
+
+
+
+
