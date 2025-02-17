@@ -7,85 +7,94 @@
     <link rel="icon" href="/assets/fundacentro-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/assets/fundacentro-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/assets/fundacentro-64x64.png" sizes="64x64" type="image/png">
-
+    <script src="/page-auth.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/keycloak-js@22.0.3/dist/keycloak.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>TJD3S</title>
 </head>
 
-<body>
-    <div id="loading"></div>
+<body id="index-page">
+    <div id="loading">
+        <div class="loader-container">
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
     <div id="notificationBox" class="notification-box">
         <span class="close" onclick="hideNotification()">&times;</span>
         <p>Deseja abrir a pasta de imagens ou usar a câmera?</p>
         <button onclick="handleChoice('folder')">Abrir pasta de imagens</button>
         <button onclick="handleChoice('camera')">Usar câmera</button>
     </div>
+    <div class="top-header">
+        <i class="fas fa-sign-out" id="logoutBtn"></i>
+        <img src="/assets/top-logo.svg" alt="top-logo">
+        <span class="top-header-phrase">Trabalho Justo, Digno, Solidário, Saudável e Seguro</span>
+    </div>
     <div class="header">
         <div class="header-icon">
             <img src="/assets/fundacentro.png" alt="fundacentro">
         </div>
         <div class="header-text">
-            <span>Ministério do Trabalho e Emprego</span>
-            <span>FUNDACENTRO</span>
             <span>Registro de Ação</span>
         </div>
-        <div class="header-icon">
-            <img src="/assets/calendar-check.svg" alt="">
-        </div>
+    </div>
+    <div id="banner-image-mobile">
+        <img src="/assets/logo-formacao.svg" alt="logo-formacao">
     </div>
     <section class="banner-section">
         <div class="banner-image">
             <div class="banner-image-img">
-                <img src="/assets/banner-image.svg" alt="banner-image">
             </div>
         </div>
         <div class="banner-image2">
             <div class="banner-image-img2">
                 <img src="/assets/logo-formacao.svg" alt="logo-formacao">
             </div>
+            <div class="banner-text">
+                <span id="nome-usuario"></span>
+                <span class="boa-text">Boas-vindas!</span>
+            </div>
         </div>
     </section>
-    <div class="banner-text">
-        <p>
-            <span id="nome-usuario"></span>
-            boas-vindas ao registro de atividades!
-        </p>
-    </div>
     <section class="form-section">
         <form id="criar-evidencia-form">
             <div class="form-atividade">
                 <div class="form-atividade-inputs">
-                    <h2><img src="/assets/check-icon.svg" alt="check-icon">Registre sua Contribuição!</h2>
-                    <div class="form-input">
-                        <label for="nome-atividade">Nome da atividade</label>
-                        <input type="text" id="nome-atividade" name="nome-atividade">
+                    <h2 id="registre-text"><img src="/assets/check-icon.svg" alt="check-icon">Registre a sua
+                        contribuição!</h2>
+
+                    <div class="form-row-1">
+                        <div class="form-input">
+                            <label for="nome-atividade">Nome da atividade</label>
+                            <input type="text" id="nome-atividade" name="nome-atividade" placeholder="[Campo de texto]"
+                                data-next="data">
+                        </div>
+                        <div class="form-input">
+                            <label for="data">Data</label>
+                            <input id="data" name="data" type="datetime-local" placeholder="[Seletor de data]"
+                                data-next="edit_box_pergunta" disabled>
+                        </div>
                     </div>
                     <div id="mega_container">
                         <div id="container">
-                            <!-- Chips serão adicionados dinamicamente aqui -->
                         </div>
                         <div class="dropdown" id="dropdown"></div>
                         <div id="frases"></div>
-                        <!-- <input type="button" id="botao_envio" value="Confirmar frase selecionada" disabled onclick="alert('teste!')" /> -->
-                    </div>
-                    <div class="row-tipo-atividade-data">
-                        <div class="form-input">
-                            <label for="data">Data</label>
-                            <input id="data" name="data" type="datetime-local">
-                        </div>
                     </div>
                     <div class="form-input">
-                        <label for="atividade-realizada">Detalhe a ação com suas palavras</label>
-                        <textarea type="text" id="atividade-realizada" name="atividade-realizada" rows="6"></textarea>
+                        <label for="atividade-realizada">Descreve a ação</label>
+                        <textarea type="text" id="atividade-realizada" name="atividade-realizada" data-next="fileInput"
+                            rows="6" disabled></textarea>
                     </div>
                 </div>
             </div>
             <div class="form-evidencias">
-                <span>Adicione evidências da sua atividade</span>
+                <span id="atividade-evidencia">Adicione evidências da sua atividade</span>
                 <div class="foto">
                     <div class="foto-container" onclick="promptUserForAction()">
                         <div class="foto-container-img">
@@ -100,18 +109,19 @@
                 </div>
                 <div class="image-previews" id="imagePreviews"></div>
                 <div class="local">
-                    <span>Localização Aproximada Detectada:</span>
+                    <span>Localização aproximada detectada:</span>
                     <div class="map" id="map">
                     </div>
                 </div>
-                <div class=" submit">
+                <div class="submit">
                     <button>Enviar</button>
                 </div>
             </div>
 
-            <input type="file" id="fileInput" name="files" accept="image/*" style="display:none" onchange="addImageToArray(event)">
-            <input type="file" id="cameraInput2" accept="image/*" name="files" style="display:none;" capture="environment"
-                onchange="addImageToArray(event)">
+            <input type="file" id="fileInput" name="files" accept="image/*" style="display:none"
+                onchange="addImageToArray(event)" disabled>
+            <input type="file" id="cameraInput2" accept="image/*" name="files" style="display:none;"
+                capture="environment" onchange="addImageToArray(event)">
 
 
             <input type="hidden" id="latitude" name="latitude">
@@ -120,18 +130,22 @@
     </section>
 
     <div class="footer">
-        <div class="footer-icon">
-            <img src="/assets/footer-logo.png" alt="fundacentro">
+        <div class="contatos">
+            <h3>Endereços e contato:</h3>
+            <a href="https://www.gov.br/fundacentro/pt-br">gov.br/fundacentro</a>
+            <a href="https://www.gov.br/trabalho-e-emprego/pt-br">gov.br/trabalho-e-emprego</a>
+            <span>selecao0124@fundacentro.gov.br</span>
         </div>
-        <h2>TJD3S</h2>
-        <div class="contact">
-            <span>Contato: selecao0124@fundacentro.gov.br</span>
+        <div>
+            <img src="/assets/footer-logo.svg" alt="footer-logo">
         </div>
-        <script src="./main.js">
-        </script>
+    </div>
+    <script src="/shared.js"></script>
+    <script src="./main.js">
+    </script>
 
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-        <script src="./map-script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./map-script.js"></script>
 </body>
 
 </html>
