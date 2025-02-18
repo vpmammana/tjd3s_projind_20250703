@@ -7,8 +7,8 @@ error_reporting(0);
 include "database.php";
 
 try {
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+    $usuario = $conn->real_escape_string($_POST['usuario']);
+    $senha = $conn->real_escape_string($_POST['senha']);
 
     if (!$usuario || !$senha) {
         http_response_code(400); // Set HTTP response code for error
@@ -25,7 +25,6 @@ try {
     }
 
     $stmt->bind_param('s', $usuario);
-
     if ($stmt->execute()) {
         $result = $stmt->get_result();
 
