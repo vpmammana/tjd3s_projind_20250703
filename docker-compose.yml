@@ -21,10 +21,10 @@ services:
     container_name: papedins_db
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: ${mysqlrootpassword}
       MYSQL_DATABASE: papedins_db
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
+      MYSQL_USER: ${mysqluser}
+      MYSQL_PASSWORD: ${mysqlpassword}
     volumes:
       - papedins_db:/var/lib/mysql
     networks:
@@ -35,7 +35,7 @@ services:
     container_name: phpmyadmin
     environment:
       PMA_HOST: papedins_db
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: ${mysqlrootpassword}
       UPLOAD_LIMIT: 100000000
     ports:
       - "8092:80"
