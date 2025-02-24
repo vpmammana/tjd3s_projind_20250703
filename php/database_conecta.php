@@ -1,7 +1,7 @@
 <?php
 $servername = "papedins_db";
-$username = "admin"; // teste .gitignore
-$password = "admin";
+$username = getenv('mysqluser'); // teste .gitignore
+$password = getenv('mysqlpassword');
 $dbname = "papedins_db";
 
 try {
