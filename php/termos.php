@@ -31,7 +31,7 @@ try {
         http_response_code(500); // Set HTTP response code for error
         echo json_encode([
             'success' => false,
-            'message' => 'Tenta novamente'
+            'message' => 'Tenta novamente3'
         ]);
         exit;
         header("HTTP/1.1 500 Internal Server Error");
@@ -42,7 +42,7 @@ try {
     http_response_code(500); // Set HTTP response code for error
     echo json_encode([
         'success' => false,
-        'message' => 'Tenta novamente'
+        'message' => $response['message']
     ]);
     exit;
     header("HTTP/1.1 500 Internal Server Error");
