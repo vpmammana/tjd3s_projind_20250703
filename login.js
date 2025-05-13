@@ -10,19 +10,22 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     const formData = new FormData();
     formData.append('usuario', usuario);
     formData.append('senha', senha);
-
-    fetch('/php/login.php', {
+    console.log(usuario, senha);
+    fetch('./php/login.php', {
         method: 'POST',
         body: formData
     })
         .then(async (response) => {
             const jsonResponse = await response.json(); // Parse the response as JSON
             if (!response.ok) {
+		    
+		    console.log("não passou");
                 throw {
                     ...jsonResponse
                 }
             }
             hideLoading()
+		    console.log("passou");
 
             return jsonResponse
         })
@@ -30,11 +33,12 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
             hideLoading()
             console.log(res)
             setTimeout(() => {
+		    alert('FUNDACENTRO\n\nAguarde enquanto redirecionamos você para a aplicação.');
                 localStorage.setItem('authenticated', 'true');
                 localStorage.setItem('nome_usuario', res.nome_pessoa)
 
                 if (!localStorage.getItem('terms_cond')) {
-                    window.location.replace("/termos.html");
+                    window.location.replace("./termos.html");
                 } else {
                     window.location.replace("/");
                 }

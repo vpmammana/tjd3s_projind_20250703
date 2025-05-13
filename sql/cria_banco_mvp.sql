@@ -1,3 +1,4 @@
+# Inadvertidamente, a equipe de bolsistas alterou o código da base, colocando um termo_lgpd que não estava documentado. Eu tive que acrescetar assumindo que é varchar(5) para caber true e false, uma vez que o prepare na hora de fazer o insert é do tipo s (string?) VPM 20250512 - eu percebi já que tem muita coisa não documentada no código ou em documentos de apoio
 # TABELAS COM 6 CONSTRAINTS
 # desenvolvido por Victor Mammana
 DROP TABLE IF EXISTS perguntas;
@@ -93,6 +94,7 @@ CREATE TABLE `pessoas` (
   `email` varchar(255) DEFAULT NULL,
   `telefone` varchar(20) DEFAULT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  termo_lgpd varchar(5) DEFAULT 'false',
   PRIMARY KEY (`id_chave_pessoa`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `cpf` (`cpf`)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# corrige erros introduzidos pelo GPT nos arquivos de frases
+
 cd "$(dirname "$0")"
 
 #gerundio
@@ -350,8 +352,102 @@ find . -type f -name "frases_temp_*" -exec sed -i 's/|vigente|adjetivo|singular_
 find . -type f -name "frases_temp_*" -exec sed -i 's/|vigentes|adjetivo|plural_feminino|/|vigentes|adjetivo|plural_comum|/g' {} +
 find . -type f -name "frases_temp_*" -exec sed -i 's/|vigentes|adjetivo|plural_masculino|/|vigentes|adjetivo|plural_comum|/g' {} +
 
+find . -type f -name "frases_temp_*" -exec sed -i 's/|cadastral|adjetivo|singular_feminino|/|cadastral|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|cadastral|adjetivo|singular_masculino|/|cadastral|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|comercial|adjetivo|singular_feminino|/|comercial|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|comercial|adjetivo|singular_masculino|/|comercial|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|educacional|adjetivo|singular_feminino|/|educacional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|educacional|adjetivo|singular_masculino|/|educacional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|estruturante|adjetivo|singular_feminino|/|estruturante|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|estruturante|adjetivo|singular_masculino|/|estruturante|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|familiar|adjetivo|singular_feminino|/|familiar|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|familiar|adjetivo|singular_masculino|/|familiar|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|federal|adjetivo|singular_feminino|/|federal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|federal|adjetivo|singular_masculino|/|federal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|gerencial|adjetivo|singular_feminino|/|gerencial|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|gerencial|adjetivo|singular_masculino|/|gerencial|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|governamental|adjetivo|singular_feminino|/|governamental|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|governamental|adjetivo|singular_masculino|/|governamental|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|horizontal|adjetivo|singular_feminino|/|horizontal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|horizontal|adjetivo|singular_masculino|/|horizontal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|institucional|adjetivo|singular_feminino|/|institucional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|institucional|adjetivo|singular_masculino|/|institucional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|instrucional|adjetivo|singular_feminino|/|instrucional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|instrucional|adjetivo|singular_masculino|/|instrucional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|interinstitucional|adjetivo|singular_feminino|/|interinstitucional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|interinstitucional|adjetivo|singular_masculino|/|interinstitucional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|intermunicipal|adjetivo|singular_feminino|/|intermunicipal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|intermunicipal|adjetivo|singular_masculino|/|intermunicipal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|medicinal|adjetivo|singular_feminino|/|medicinal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|medicinal|adjetivo|singular_masculino|/|medicinal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|multissetorial|adjetivo|singular_feminino|/|multissetorial|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|multissetorial|adjetivo|singular_masculino|/|multissetorial|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|municipal|adjetivo|singular_feminino|/|municipal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|municipal|adjetivo|singular_masculino|/|municipal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|natural|adjetivo|singular_feminino|/|natural|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|natural|adjetivo|singular_masculino|/|natural|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|operacional|adjetivo|singular_feminino|/|operacional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|operacional|adjetivo|singular_masculino|/|operacional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|organizacional|adjetivo|singular_feminino|/|organizacional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|organizacional|adjetivo|singular_masculino|/|organizacional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|presencialmente|adverbio|radical|/|presencialmente|adverbio|singular_neutro|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|presencialmente|advérbio|radical|/|presencialmente|adverbio|singular_neutro|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|presencialmente|advérbio|singular_neutro|/|presencialmente|adverbio|singular_neutro|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|profissionalizante|adjetivo|singular_feminino|/|profissionalizante|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|profissionalizante|adjetivo|singular_masculino|/|profissionalizante|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|relevante|adjetivo|singular_feminino|/|relevante|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|relevante|adjetivo|singular_masculino|/|relevante|adjetivo|singular_comum|/g' {} +
+
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|remotamente|adverbio|radical|/|remotamente|adverbio|singular_neutro|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|remotamente|advérbio|radical|/|remotamente|adverbio|singular_neutro|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|remotamente|advérbio|singular_neutro|/|remotamente|adverbio|singular_neutro|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|setorial|adjetivo|singular_feminino|/|setorial|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|setorial|adjetivo|singular_masculino|/|setorial|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|territorial|adjetivo|singular_feminino|/|territorial|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|territorial|adjetivo|singular_masculino|/|territorial|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|tradicional|adjetivo|singular_feminino|/|tradicional|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|tradicional|adjetivo|singular_masculino|/|tradicional|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|vegetal|adjetivo|singular_feminino|/|vegetal|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|vegetal|adjetivo|singular_masculino|/|vegetal|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/|visual|adjetivo|singular_feminino|/|visual|adjetivo|singular_comum|/g' {} +
+find . -type f -name "frases_temp_*" -exec sed -i 's/|visual|adjetivo|singular_masculino|/|visual|adjetivo|singular_comum|/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/EPS/economia popular e solidária/g' {} +
+
+find . -type f -name "frases_temp_*" -exec sed -i 's/Explicar como preencher os questionários/Explicar função do questionário de diagnóstico/g' {} +
+
+
+
 find . -type f -name "frases_temp_*" -exec sed -i 's/|locução_/|locucao_/g' {} +
 
+find . -type f -name "frases_temp_*" -exec sed -i -E 's/(\/a) *- *(consumidor\/a)/\1-\2/g' {} +
 
 # comando abaixo deleta todas as linhas que tiverem menos ou mais do que 15 | (16 campos)
 find . -type f -name "frases_temp_*" -exec bash -c '

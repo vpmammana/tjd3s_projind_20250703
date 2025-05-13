@@ -14,18 +14,66 @@ velhoDeleteBtn = 'delete_nulo';
 var perguntas = []; // Variável global
 let resultsActioned = false;
 
+function dataHoraAtualFormatada() {
+    const agora = new Date();
+    const pad = n => String(n).padStart(2, '0');
+
+    return agora.getFullYear() + '-' +
+           pad(agora.getMonth() + 1) + '-' +
+           pad(agora.getDate()) + 'T' +
+           pad(agora.getHours()) + ':' +
+           pad(agora.getMinutes());
+}
+
+const btn = document.getElementById('confirmar-data');
+btn.addEventListener('mousedown', () => {
+  btn.style.transform = 'translateY(1px)';
+  btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.2), inset 0 0 0 rgba(0,0,0,0)';
+});
+btn.addEventListener('mouseup', () => {
+  btn.style.transform = 'translateY(0)';
+  btn.style.boxShadow = '0 2px 4px rgba(0,0,0,0.2), inset 0 -2px 0 rgba(0,0,0,0.1)';
+});
+
 const inputs = document.querySelectorAll('input');
 
 function handleFormOrder(input) {
     const currentValue = input.value.trim();
     const nextId = input.dataset.next; // Get the ID of the next field
     if (currentValue !== "" && nextId) {
+	    //alert('Frase selecionada: ' + currentValue);
         const nextInput = document.getElementById(nextId);
         if (nextInput) {
+	    console.log(nextInput);
+	    if (nextInput.id == 'data') {
+		    if (nextInput) {
+		        nextInput.value = dataHoraAtualFormatada();
+			document.getElementById('confirmar-data').disabled = false;
+    		    }
+	    }
             nextInput.disabled = false; // Enable the next field
         }
     }
 }
+
+botao_confirmar = document.getElementById('confirmar-data');
+
+botao_confirmar.addEventListener('click', (e) => {
+
+	const current = e.currentTarget; // pega o botão clicado
+        const nextInput = document.getElementById(current.dataset.next);
+        if (nextInput) {
+		
+            console.log(nextInput);
+            if (nextInput.id == 'edit_box_pergunta') {
+
+                        current.style.display = 'none';
+            }
+            nextInput.disabled = false; // Enable the next field
+        }
+
+});
+
 
 inputs.forEach(input => {
     input.addEventListener('input', (e) => {
@@ -48,6 +96,7 @@ inputs.forEach(input => {
 
 // Pegar nome do usario do Hash e salvar no localstorage na carrega de pagina
 window.addEventListener('load', function () {
+    
     let nomeUsuario = "";
     if (!localStorage.getItem('nome_usuario')) {
         nomeUsuario = getNomeUsusario('nome_usuario');
@@ -225,7 +274,7 @@ async function retorna_perguntas() {
 
 
 function fetchFrases(query) {
-    const url = `/php/fetch_frases.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+    const url = `./php/fetch_frases.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
 
     if (!navigator.onLine) {
         console.warn("Sem conexão com a internet. Usando IndexedDB.");
@@ -302,7 +351,7 @@ function fetchPhrasesFromIndexedDB() {
 
 
 function fetchSuggestions(query) {
-    const url = `/php/fetch_tokens_chip.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
+    const url = `./php/fetch_tokens_chip.php?query=${query}&tokenIndex=${tokenIndex}&previousTokens=${JSON.stringify(previousTokens)}`;
     if (!navigator.onLine) {
         return fetchTokensFromIndexedDB()
             .then((tokensDbData) => {
@@ -599,19 +648,33 @@ window.addEventListener('load', function () {
 });
 
 //Config de Service worker
-if ('serviceWorker' in navigator) {
-    const protocol = window.location.protocol;
-    const host = window.location.host;
-    const swUrl = `${protocol}//${host}/sw.js`;
+//if ('serviceWorker' in navigator) {
+//    const protocol = window.location.protocol;
+//    const host = window.location.host;
+//    const swUrl = `${protocol}//${host}/sw.js`;
+//
+//    navigator.serviceWorker.register(swUrl, {
+//        scope: './'
+//    })
+//        .then(function (registration) {
+//            console.log('Service Worker registered with scope:', registration.scope);
+//        })
+//        .catch(function (error) {
+//            console.log('Service Worker registration failed:', error);
+//        });
+//}
 
+if ('serviceWorker' in navigator) {
+    const swUrl = './sw.js'; // relativo à URL atual (funciona dentro do app)
+    
     navigator.serviceWorker.register(swUrl, {
-        scope: '/'
+        scope: './' // restringe ao app atual
     })
         .then(function (registration) {
             console.log('Service Worker registered with scope:', registration.scope);
         })
         .catch(function (error) {
-            console.log('Service Worker registration failed:', error);
+            console.error('Service Worker registration failed:', error);
         });
 }
 
@@ -993,7 +1056,7 @@ function removeSyncedDataFromDB(id) {
 // Carregar todos os phrases para o IndexedDB
 function loadAllPhrasesIntoIndexedDB() {
     if (navigator.onLine) {
-        fetch('/fetch-all-frases.php')
+        fetch('./fetch-all-frases.php')
             .then(response => response.json())
             .then(data => {
                 storePhrasesInDB(data);
@@ -1004,7 +1067,7 @@ function loadAllPhrasesIntoIndexedDB() {
 
 function loadAllTokensIntoIndexedDB() {
     if (navigator.onLine) {
-        fetch('/php/fetch_tokens_chip2.php?query=&tokenIndex=1&previousTokens=[]')
+        fetch('./php/fetch_tokens_chip2.php?query=&tokenIndex=1&previousTokens=[]')
             .then(response => response.json())
             .then(data => {
                 storeTokensInDB({ tokens: data });

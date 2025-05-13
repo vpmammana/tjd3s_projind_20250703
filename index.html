@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/fundacentro-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/assets/fundacentro-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/fundacentro-64x64.png" sizes="64x64" type="image/png">
-    <script src="/page-auth.js"></script>
+    <link rel="icon" href="./assets/fundacentro-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./assets/fundacentro-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./assets/fundacentro-64x64.png" sizes="64x64" type="image/png">
+    <script src="./page-auth.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <script src="https://cdn.jsdelivr.net/npm/keycloak-js@22.0.3/dist/keycloak.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>TJD3S</title>
@@ -32,19 +32,19 @@
     </div>
     <div class="top-header">
         <i class="fas fa-sign-out" id="logoutBtn"></i>
-        <img src="/assets/top-logo.svg" alt="top-logo">
+        <img src="./assets/top-logo.svg" alt="top-logo">
         <span class="top-header-phrase">Trabalho Justo, Digno, Solidário, Saudável e Seguro</span>
     </div>
     <div class="header">
         <div class="header-icon">
-            <img src="/assets/fundacentro.png" alt="fundacentro">
+            <img src="./assets/fundacentro.png" alt="fundacentro">
         </div>
         <div class="header-text">
             <span>Registro de Ação</span>
         </div>
     </div>
     <div id="banner-image-mobile">
-        <img src="/assets/logo-formacao.svg" alt="logo-formacao">
+        <img src="./assets/logo-formacao.svg" alt="logo-formacao_teste">
     </div>
     <section class="banner-section">
         <div class="banner-image">
@@ -53,7 +53,7 @@
         </div>
         <div class="banner-image2">
             <div class="banner-image-img2">
-                <img src="/assets/logo-formacao.svg" alt="logo-formacao">
+                <img src="./assets/logo-formacao.svg" alt="logo-formacao">
             </div>
             <div class="banner-text">
                 <span id="nome-usuario"></span>
@@ -65,7 +65,7 @@
         <form id="criar-evidencia-form">
             <div class="form-atividade">
                 <div class="form-atividade-inputs">
-                    <h2 id="registre-text"><img src="/assets/check-icon.svg" alt="check-icon">Registre a sua
+                    <h2 id="registre-text"><img src="./assets/check-icon.svg" alt="check-icon">Registre a sua
                         contribuição!</h2>
 
                     <div class="form-row-1">
@@ -76,8 +76,10 @@
                         </div>
                         <div class="form-input">
                             <label for="data">Data</label>
+			    <div style="display: flex; align-items: center; gap: 4px;">
                             <input id="data" name="data" type="datetime-local" placeholder="[Seletor de data]"
-                                data-next="edit_box_pergunta" disabled>
+                                data-next="edit_box_pergunta" disabled>  <button id="confirmar-data" type="button"  disabled  data-next="edit_box_pergunta" >✔️ Confirmar</button>
+			    </div>
                         </div>
                     </div>
                     <div id="mega_container">
@@ -98,7 +100,7 @@
                 <div class="foto">
                     <div class="foto-container" onclick="promptUserForAction()">
                         <div class="foto-container-img">
-                            <img src="/assets/camera.svg" alt="camera">
+                            <img src="./assets/camera.svg" alt="camera">
                         </div>
                         <span>Clique para tirar uma foto</span>
                     </div>
@@ -137,10 +139,10 @@
             <span>selecao0124@fundacentro.gov.br</span>
         </div>
         <div>
-            <img src="/assets/footer-logo.svg" alt="footer-logo">
+            <img src="./assets/footer-logo.svg" alt="footer-logo">
         </div>
     </div>
-    <script src="/shared.js"></script>
+    <script src="./shared.js"></script>
     <script src="./main.js">
     </script>
 

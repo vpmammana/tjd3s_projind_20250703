@@ -5,14 +5,14 @@ function handleTerms(term) {
     showLoading();
     const formData = new FormData();
     formData.append('accept', term)
-    fetch('/php/termos.php', {
+    fetch('php/termos.php', {
         method: 'POST',
         body: formData
     })
         .then(async (response) => {
             const jsonResponse = await response.json(); // Parse the response as JSON
-
             if (!response.ok) {
+		    console.error('Error:', jsonResponse);
                 throw {
                     ...jsonResponse
                 }
@@ -23,10 +23,10 @@ function handleTerms(term) {
             if (res.success) {
                 if (res.terms) {
                     localStorage.setItem('terms_cond', term);
-                    window.location.href = '/'
+                    window.location.href = './'
                 } else {
                     localStorage.removeItem('authenticated');
-                    window.location.href = '/login.html'
+                    window.location.href = './login.html'
                 }
 
             }

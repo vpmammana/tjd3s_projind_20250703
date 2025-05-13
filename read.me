@@ -1,0 +1,58 @@
+VPM 20250513
+
+Arquivos para teste dos dados:
+
+select_coringa_para_frases.sql : arquivo padrão para mostrar todas as frases
+select_frases_repetidas.sql: arquivo para mostrar as frases repetidas
+select_tipos_acoes_para_apagar.sql: arquivo para mostrar as frases que devem ser apagadas
+delete_duplicados_frases_e_depois_tipos_acoes.sql: arquivo para deletar frases repetidas (tem que testar mais)
+
+
+VPM 20250513
+
+Foi atribuída a data e hora no carregamento do aplicativo... para reduzir a sobrecarga do usuário e evitar uma barreira que estava acontecendo: a atribuição de hora era necessária para liberar a busca por frases.
+
+VPM 20250512
+
+Encontrei bug para "promovi evento colaborativo para grupo popular". Não mostra a classificação em amarelo.
+O problema é que o tipo_resultado não pode ter símbolos como -, /, ou outra coisa qualquer.
+
+O problema é que o GPT colocou alguns espacinhos e fez algumas abreviações. 
+
+Eu fiz as correções no arquivo troca_feminino_por_masculino.bash
+
+Para verificar se algum tipo_resultado ficou sem frases, pode usar o query:
+
+SELECT 1
+select nome_tipo_resultado from tipos_resultados where nome_tipo_resultado not in (select distinct group_concat(distinct nome_tipo_resultado) from tokens join frases on id_token = id_chave_token join tipos_acoes on id_tipo_acao = id_chave_tipo_acao join tipos_resultados on id_tipo_resultado = id_chave_tipo_resultado  group by id_tipo_acao);
+
+O select abaixo identifica os tipos_acoes que não conseguiram (não deram match a partir do que consta no CSV) com um tipo_resultado.
+
+SELECT 2
+select group_concat(nome_token order by ordem separator " ") frase from tokens join frases on id_token = id_chave_token join tipos_acoes on id_tipo_acao = id_chave_tipo_acao left join tipos_resultados on id_tipo_resultado = id_chave_tipo_resultado where id_tipo_resultado is null  group by id_tipo_acao;
+
+O SELECT 1 deve mostrar todos os elementos da raiz de tipos_resultados porque não há tipo_acao diretamente ligada ao primeiro nível da árvore tipos_resultados, mas não deve mostrar do nível inferior. Se mostrar, é porque tem algum tipo_acao que não conseguiu achar o tipo_resultado ao que está ligado.
+
+O SELECT 2 mostra todos os tipos_acoes que tem id_tuipo_resultado is null. Curiosamente, o SELECT 1 pode dar os tipos_resultados esperados da raiz da árvore (a menos de dois tipos_resultados que não tem nada a ver, pois eu tinha usado essa tabela erroneamente para guardar as perguntas). Mesmo assim, SELECT 2 pode mostrar várias tipos_acoes que têm id_tipo_resultado nulo.
+
+Se SELECT 1 mostrar nome_tipo_resultado do segundo nível da árvore, ou se SELECT 2 mostrar linhas, então há problemas com o match do nome_tipo_resultado constante no CSV com o nome_tipo_resultado constante no inserts_resultados.py.
+
+VPM 20250512
+
+Big em Z index do sistema de zoom do mapa
+
+VPM 20250512
+
+Encontrei um comportamento ruim na data. O usuário tem que escolher a data através do calendário. Ao selecionar a data, ele tem que digitar a hora... penso que seria melhor a data e hora já estarem preenchidas com o valor atual... ter um botão de confirma... permitindo também a alteração. 
+
+VPM 20250512
+
+Depois de algum tempo, retomo o presente código. Eu já tinha tido que intervir no código por diversas vezes, como na implementação de sugere_codigo2.php ou fetch_frases.php. Identifico que houve avanços em questões como controle de páginas de autenticação por parte dos Bolsistas (page-auth.php, login.php, login.js), mas identifiquei muitos problemas com paths absolutas e relativas, que tive que tratar com horas de análise.
+
+VPM 20250511
+
+Refiz todas as gerações de frases com LLM, partindo da nova estrutura de resultados estabelecida por Sérgio Godoy, em substituição da Renata. Foi bastante trabalho para gerar cerca de 6000 frases para 39 resultados. Usei o prompt gerado com Fábio Stasiak, modificando-o para a nova realidade das definições de resultados do Sérgio. 
+
+Foram horas de e mais horas de geração.
+
+Depois foi preciso adaptar gera_base_completa.bash,  e todos os demais arquivos derivados, para a nova realidade de frases. 

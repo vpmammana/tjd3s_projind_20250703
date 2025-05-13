@@ -1,0 +1,40 @@
+ordem|id_macro_tema|Macro Tema|Tarefa|Verbo|Objetivo|Público|Código
+1|1|Políticas Públicas Municipais de economia popular e solidária|Articular e atuar na implementação e monitoramento de políticas públicas municipais de economia popular e solidária|articular|incidência política|gestores públicos|V3-O5-P3
+2|1|Políticas Públicas Municipais de economia popular e solidária|Catalogar legislação municipal de economia popular e solidária e respectivos municípios|coletar|diagnóstico|gestores públicos|V1-O1-P3
+3|1|Políticas Públicas Municipais de economia popular e solidária|Catalogar programas municipais de economia popular e solidária e respectivos municípios|coletar|diagnóstico|gestores públicos|V1-O1-P3
+4|1|Políticas Públicas Municipais de economia popular e solidária|Reuniões com gestores para discutir implementação da política pública de economia popular e solidária|articular|incidência política|gestores públicos|V3-O5-P3
+5|1|Políticas Públicas Municipais de economia popular e solidária|Reunir com empreendimentos para discutir papel das políticas municipais|articular|diagnóstico|empreendimentos economia popular e solidária|V3-O1-P1
+6|1|Políticas Públicas Municipais de economia popular e solidária|Planejar formas de acesso às políticas municipais de economia popular e solidária|orientar|infraestrutura/apoio|empreendimentos economia popular e solidária|V6-O6-P1
+7|1|Políticas Públicas Municipais de economia popular e solidária|Monitorar o acesso às políticas municipais de economia popular e solidária|executar|monitoramento/avaliação|empreendimentos economia popular e solidária|V4-O4-P1
+8|1|Políticas Públicas Municipais de economia popular e solidária|Catalogar espaços de comercialização dos produtos da economia popular e solidária|coletar|infraestrutura/apoio|empreendimentos economia popular e solidária|V1-O6-P1
+9|1|Políticas Públicas Municipais de economia popular e solidária|Divulgar espaços de comercialização, aproximando produtor/a-consumidor/a|comunicar|infraestrutura/apoio|comunidade em geral|V5-O6-P7
+10|2|Formação e Qualificação com Empreendimentos|Levantar demandas de formação, qualificação e assessoramento técnico|coletar|formação/qualificação|empreendimentos economia popular e solidária|V1-O2-P1
+11|2|Formação e Qualificação com Empreendimentos|Identificar parcerias para demandas de formação nos territórios|articular|formação/qualificação|instituições parceiras|V3-O2-P5
+12|2|Formação e Qualificação com Empreendimentos|Sistematizar as informações|analisar|formação/qualificação|equipe interna|V2-O2-P6
+13|2|Formação e Qualificação com Empreendimentos|Propor reuniões com instituições parceiras|articular|formação/qualificação|instituições parceiras|V3-O2-P5
+14|2|Formação e Qualificação com Empreendimentos|Realizar planejamento com parceiros sobre execução das demandas|articular|formação/qualificação|instituições parceiras|V3-O2-P5
+15|2|Formação e Qualificação com Empreendimentos|Organizar a realização das atividades|executar|formação/qualificação|empreendimentos economia popular e solidária|V4-O2-P1
+16|2|Formação e Qualificação com Empreendimentos|Acompanhar atividades relativas às demandas do Programa|executar|monitoramento/avaliação|empreendimentos economia popular e solidária|V4-O4-P1
+17|2|Formação e Qualificação com Empreendimentos|Elaborar documentos sobre andamento para Senaes|comunicar|monitoramento/avaliação|equipe interna|V5-O4-P6
+18|2|Formação e Qualificação com Empreendimentos|Sistematizar experiências exitosas nos territórios|analisar|formação/qualificação|equipe interna|V2-O2-P6
+19|3|Diagnósticos Territoriais|Visitar empreendimentos para apresentar o Programa|articular|diagnóstico|empreendimentos economia popular e solidária|V3-O1-P1
+20|3|Diagnósticos Territoriais|Reunir movimentos para dialogar sobre desafios e potencialidades|articular|diagnóstico|coletivos economia popular|V3-O1-P2
+21|3|Diagnósticos Territoriais|Explicar função do questionário de diagnóstico|orientar|diagnóstico|empreendimentos economia popular e solidária|V6-O1-P1
+22|3|Diagnósticos Territoriais|Realizar diagnóstico dos empreendimentos (formas organizativas, gestão, etc.)|coletar|diagnóstico|empreendimentos economia popular e solidária|V1-O1-P1
+23|3|Diagnósticos Territoriais|Cadastrar empreendimentos no CADSOL|executar|infraestrutura/apoio|empreendimentos economia popular e solidária|V4-O6-P1
+24|3|Diagnósticos Territoriais|Levantar relações dos empreendimentos com outras organizações do território|coletar|diagnóstico|empreendimentos economia popular e solidária|V1-O1-P1
+25|3|Diagnósticos Territoriais|Identificar programas e políticas públicas existentes no território|coletar|diagnóstico|gestores públicos|V1-O1-P3
+26|3|Diagnósticos Territoriais|Gerar relatórios preliminares para subsidiar decisões|analisar|diagnóstico|equipe interna|V2-O1-P6
+27|3|Diagnósticos Territoriais|Sistematizar dados classificando demandas|analisar|diagnóstico|equipe interna|V2-O1-P6
+28|4|Mobilização e Sensibilização|Reunir coletivos de produção sobre organização da economia popular e solidária|articular|mobilização|coletivos economia popular|V3-O3-P2
+29|4|Mobilização e Sensibilização|Visitar coletivos para conversar sobre fortalecimento da economia popular e solidária|articular|mobilização|coletivos economia popular|V3-O3-P2
+30|3|Diagnósticos Territoriais|Identificar tipos de coletivos que comercializam em feiras locais|coletar|diagnóstico|coletivos economia popular|V1-O1-P2
+31|3|Diagnósticos Territoriais|Levantar tipos de produtos comercializados em feiras populares|coletar|diagnóstico|coletivos economia popular|V1-O1-P2
+32|2|Formação e Qualificação com Empreendimentos|Desenvolver cursos sobre economia popular e solidária com integrantes de coletivos|executar|formação/qualificação|coletivos economia popular|V4-O2-P2
+33|3|Diagnósticos Territoriais|Levantar informações sobre redes de educação popular no território|coletar|diagnóstico|coletivos economia popular|V1-O1-P2
+34|2|Formação e Qualificação com Empreendimentos|Reunir com redes de educação popular para discutir relação com economia popular e solidária|articular|mobilização|coletivos economia popular|V3-O3-P2
+35|4|Monitoramento de Ações Formativas|Levantar informações do andamento das ações do Programa|coletar|monitoramento/avaliação|equipe interna|V1-O4-P6
+36|4|Monitoramento de Ações Formativas|Organizar dados para subsidiar decisões da Senaes|analisar|monitoramento/avaliação|equipe interna|V2-O4-P6
+37|4|Monitoramento de Ações Formativas|Apontar formas de resolução coletiva de desafios|orientar|monitoramento/avaliação|equipe interna|V6-O4-P6
+38|5|Diálogo com Movimentos de economia popular e solidária|Colaborar com espaços organizativos de economia popular e solidária conforme demandas|articular|incidência política|conselhos/fóruns|V3-O5-P4
+39|5|Diálogo com Movimentos de economia popular e solidária|Participar de reuniões de fóruns, colegiados e conselhos quando convidados|articular|incidência política|conselhos/fóruns|V3-O5-P4
