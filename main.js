@@ -982,7 +982,7 @@ function syncDataWithServer() {
                             }
                         }
 
-                        fetch('/php/CriarEvidencia.php', {
+                        fetch('./php/CriarEvidencia.php', {
                             method: 'POST',
                             body: formData
                         })
@@ -1198,7 +1198,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
     }
 
     if (navigator.onLine) {
-        fetch('/php/CriarEvidencia.php', {
+        fetch('./php/CriarEvidencia.php', {
             method: 'POST',
             body: formData
         })
@@ -1220,7 +1220,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
                 hideLoading()
                 setTimeout(() => {
                     alert('Dados enviados com sucesso!');
-                    window.location.href = "/"
+                    window.location.href = "./"
                 }, 1000)
                 // loading.style.display = "none"
 

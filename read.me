@@ -1,5 +1,99 @@
 VPM 20250513
 
+O comando para chamar o pasteur.py está com path errado para o pasteur.py.
+                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
+
+Tá faltando o diretório raiz do projeto.
+
+Vou usar $projectRoot = dirname(__DIR__);
+
+vou usar 
+
+$pythonPath = $projectRoot . '/venv/bin/python';
+$scriptPath = $projectRoot . '/php/pasteur.py';
+
+
+VPM 20250513
+
+Parece que não criou também imagens no diretório raiz do projeto. Vou criar.
+
+VPM 20250513
+
+Bolsistas desligaram o report de erros, mas ainda temos warnings importantes do ponto de vista de consistência de algoritmo:
+
+[Tue May 13 23:28:56.594698 2025] [php:warn] [pid 198654] [client 127.0.0.1:60088] PHP Warning:  Undefined array key "suburb" in /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/CriarEvidencia.php on line 103, referer: http://localhost/tjd3s-app_fork_20250513/
+[Tue May 13 23:28:56.621400 2025] [php:warn] [pid 198654] [client 127.0.0.1:60088] PHP Warning:  file_put_contents(/var/www/html/php/pasteur.lock): Failed to open stream: No such file or directory in /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/CriarEvidencia.php on line 293, referer: http://localhost/tjd3s-app_fork_20250513/
+[Tue May 13 23:28:56.621482 2025] [php:notice] [pid 198654] [client 127.0.0.1:60088] destinationPath: ../imagem/input/8510864026823ffe897ba43.19610471.png, referer: http://localhost/tjd3s-app_fork_20250513/
+[Tue May 13 23:28:56.621527 2025] [php:warn] [pid 198654] [client 127.0.0.1:60088] PHP Warning:  move_uploaded_file(../imagem/input/8510864026823ffe897ba43.19610471.png): Failed to open stream: No such file or directory in /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/CriarEvidencia.php on line 306, referer: http://localhost/tjd3s-app_fork_20250513/
+[Tue May 13 23:28:56.621541 2025] [php:warn] [pid 198654] [client 127.0.0.1:60088] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phptLh7qC&quot; to &quot;../imagem/input/8510864026823ffe897ba43.19610471.png&quot; in /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/CriarEvidencia.php on line 306, referer: http://localhost/tjd3s-app_fork_20250513/
+
+A questão parece ser a definição de    $lockFile = "/var/www/html/php/pasteur.lock";
+Esse diretório php debaixo de html não é criado automaticamente. Substitui por ../locks/pasteur.lock
+
+VPM 20250513
+
+Não esqueça de retornar para error_reporting(0); em todos os arquivos php.
+
+eu mudei para error_reporting(E_ALL); porque estou pegando muitos pequenos erros.
+
+
+VPM 20250513
+
+Para instalar o environment do Python no local de produção tem que observar a questão de quem é o usuário que faz. Tem que fazer tudo com www-data. Isso não está na "documentação". 
+
+sudo rm -rf /var/www/html/venv
+sudo -u www-data python3 -m venv /var/www/html/venv
+sudo mkdir -p /var/www/html/venv
+sudo chown www-data:www-data /var/www/html/venv
+sudo chmod 755 /var/www/html/venv
+sudo -u www-data python3 -m venv /var/www/html/venv
+sudo -u www-data /var/www/html/venv/bin/python -c "import sys; print(sys.executable)"
+sudo -u www-data /var/www/html/venv/bin/pip install --upgrade pip
+sudo -u www-data /var/www/html/venv/bin/pip install -r php/requirements.txt
+
+A localização de venv está errada no READ.me provido pelo Marcos.
+
+Não há documentação sobre se precisa de um diretório ./imagem/input
+
+Eu tive que criar.
+
+VPM 20250513
+
+Tem uns file_put_contents perdidos no CriarEvidencia.php
+
+VPM 20250513
+
+O error.log está recebendo essa mensagem em algum momento. Ainda não descobri de onde vem:
+
+[Tue May 13 21:46:12.986866 2025] [php:notice] [pid 90973] [client 127.0.0.1:60338] Executed SQL: \nSELECT \n\tid_tipo_acao, \n\tid_tipo_resultado as id_tipo_resultado_filho, \n\ttr2.id_chave_tipo_resultado as id_tipo_resultado_pai, \n\ttr1.nome_tipo_resultado as nome_tipo_resultado_filho, \n\ttr2.nome_tipo_resultado as nome_tipo_resultado_pai, \n\tgroup_concat(nome_token order by ordem separator ' ') as phrase\nFROM \n\ttokens t2, \n\tfrases f2, \n\ttipos_resultados tr1, \n\ttipos_resultados tr2, \n\ttipos_acoes\nWHERE \n\tf2.id_token = t2.id_chave_token AND \n\tf2.id_tipo_acao = id_chave_tipo_acao AND \n\ttr1.id_chave_tipo_resultado = id_tipo_resultado AND \n\ttr1.id_tipo_resultado_pai = tr2.id_chave_tipo_resultado\nGROUP BY \n\tf2.id_tipo_acao\n                        \nHAVING \n\tphrase LIKE '' \nORDER BY \n\tid_tipo_resultado, phrase\n, referer: http://localhost/tjd3s-app_fork_20250513/
+
+
+Quando seleciona um token nas perguntas, obtenho:
+
+[Tue May 13 21:47:23.256431 2025] [php:notice] [pid 4988] [client 127.0.0.1:47680] Executed SQL Query 1:\n\n    SELECT DISTINCT t.nome_token \n    FROM frases f\n    JOIN tokens t ON t.id_chave_token = f.id_token \n    WHERE f.ordem = 1 \n      AND t.nome_token REGEXP '(^|[[:space:]])'\n\n, referer: http://localhost/tjd3s-app_fork_20250513/
+
+
+VPM 20250513
+
+Identifiquei acionamento de autocomplete em alguns inputs... esse tipo de situação pode forçar a liberação do enabled do próximo input porque a pessoa clica fora do input, gerando um blur... e quando dá blur, aciona o enabled do próximo input (ver handleFormOrder)
+
+VPM 20250513
+
+Um repositório remoto foi criado para colocar a versão com as correções, sem perder o trabalho anteriormente feito. Passou a chamar tjd3s-app_fork_20250513.
+
+VPM 20250513
+
+Com delete_duplicados_frases_e_depois_tipos_acoes.sql foi possível corrigir todas as tipos_acoes duplicadas. 
+
+Esse fenômeno de duplicação dos tipos ações ocorreu porque o GPT, na geração das frases representativas de atividades de EcoSol, acabou mudando os nome_tipo_resultados inadvertidamente e o inserts_resultados.py não conseguia fazer o match pelo nome_tipo_resultado, deixando muitas tipos_acoes orfãs. Ver discussão abaixo. 
+
+
+VPM 20250513
+
+Colocado o preenchimento automático da data para evitar essa barreira para o usuário (da forma anterior o fluxo de enabled dos inputs esperava o preenchimento da hora, e isso não era intuitivo). Eu preenchi automaticamente com a data e hora atuais, colocando um botão de confirma, para o usuário ter a opção de mudar caso queira fazer uma outra data, ou outra hora.
+
+VPM 20250513
+
 Arquivos para teste dos dados:
 
 select_coringa_para_frases.sql : arquivo padrão para mostrar todas as frases

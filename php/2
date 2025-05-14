@@ -2,20 +2,12 @@
 ob_start();
 header('Content-Type: application/json;');
 ini_set('display_errors', 0);
-error_reporting(E_ALL);
+error_reporting(0);
 
-$log__file = 'log.txt';
-$log__Message = "Início em " . date('Y-m-d H:i:s') . "\n";
-
-$projectRoot = dirname(__DIR__);
-$pythonPath = '/var/www/html/venv/bin/python';
-$scriptPath = $projectRoot . '/php/pasteur.py';
-
-file_put_contents($log__file, $log__Message, FILE_APPEND | LOCK_EX);
-
+$logFile = 'log.txt';
+$logMessage = "Início em " . date('Y-m-d H:i:s') . " - Detalhes do erro: Algum erro ocorreu.\n";
 include "database.php";
 include "handleDecrypt.php";
-file_put_contents($log__file, "POST Data: " . json_encode($_POST) . "\n", FILE_APPEND | LOCK_EX);
 
 $response = ['success' => false, 'message' => ''];
 function log_request_data()
@@ -52,8 +44,6 @@ try {
 
     $mapResponse = curl_exec($ch);
 
-    file_put_contents($log__file,  $mapResponse . "\n", FILE_APPEND | LOCK_EX);
-
     if (curl_errno($ch)) {
         http_response_code(500); // Set HTTP response code for error
         echo json_encode([
@@ -61,13 +51,11 @@ try {
             'faceDetected' => 'false',
             'message' => 'Erro de localização'
         ]);
-	file_put_contents($log__file,  'Erro de localização - saindo' . "\n", FILE_APPEND | LOCK_EX);
         exit;
     }
 
     $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if ($http_status !== 200) {
-	file_put_contents($log__file,  'Erro de localização - status: ' . $http_status . " Vou sair \n", FILE_APPEND | LOCK_EX);
         echo json_encode([
             'success' => false,
             'faceDetected' => 'false',
@@ -75,16 +63,10 @@ try {
         ]);
         exit;
     }
-    file_put_contents($log__file,  "Passou exits\n", FILE_APPEND | LOCK_EX);
 
     curl_close($ch);
-    file_put_contents($log__file,  "passou curl\n", FILE_APPEND | LOCK_EX);
-
     // variables used to capture request data from frontend
     $mapData = json_decode($mapResponse, true);
- file_put_contents($log__file,  "passou json decode\n", FILE_APPEND | LOCK_EX);
-
-
     $nome_usuario = $_POST['nome-usuario'];
     $nomeAtividadeEvento = $_POST['nome-atividade'];
     $id_tipo_acao = $_POST['tipo-atividade'];
@@ -96,7 +78,6 @@ try {
     $bounding_box_lat_max = $mapData['boundingbox'][1];
     $bounding_box_long_min = $mapData['boundingbox'][2];
     $bounding_box_long_max = $mapData['boundingbox'][3];
-    file_put_contents($log__file,  "passou bounding box\n", FILE_APPEND | LOCK_EX);
     $neighbourhood = $mapData['address']['municipality'];
     $country = $mapData['address']['country'];
     $road = $mapData['address']['road'];
@@ -107,44 +88,18 @@ try {
     $suburb = $mapData['address']['suburb'];
     $dislayName = $mapData['display_name'];
     $address = $mapData['address'];
-    file_put_contents($log__file,  "passou address\n", FILE_APPEND | LOCK_EX);
     $id_pais = 0;
-    file_put_contents($log__file,  "passou id_pais\n", FILE_APPEND | LOCK_EX);
     $id_estado = 0;
-    file_put_contents($log__file,  "passou id_estado\n", FILE_APPEND | LOCK_EX);
     $nome_estado = '';
-    file_put_contents($log__file,  "passou nome_estado\n", FILE_APPEND | LOCK_EX);
     $id_cidade = 0;
-    file_put_contents($log__file,  "passou id_cidade\n", FILE_APPEND | LOCK_EX);
     $codigo_ibge = 0;
-    file_put_contents($log__file,  "passou codigo_ibge\n", FILE_APPEND | LOCK_EX);
     $id_localizacao = 0;
-    file_put_contents($log__file,  "passou id_localizacao\n", FILE_APPEND | LOCK_EX);
     $id_endereco = 0;
-    file_put_contents($log__file,  "passou id_endereco\n", FILE_APPEND | LOCK_EX);
     $id_atividade_evento = 0;
-    file_put_contents($log__file,  "passou id_atividade_evento\n", FILE_APPEND | LOCK_EX);
     $id_arquivo = 0;
-    file_put_contents($log__file,  "passou id_arquivo\n", FILE_APPEND | LOCK_EX);
     $id_tipo_arquivo = 0;
-    file_put_contents($log__file,  "passou id_tipo_arquivo\n", FILE_APPEND | LOCK_EX);
     $id_pessoa = 0;
-   
     // procure o id_chave_pessoa pelo nome_pessoa
-
-file_put_contents($log__file, "passou atribuições", FILE_APPEND | LOCK_EX);
-
-
-    $log_message = "[" . date('Y-m-d H:i:s') . "] "
-    . "Usuário: $nome_usuario, "
-    . "Atividade: $nomeAtividadeEvento, "
-    . "Tipo de Ação: $id_tipo_acao, "
-    . "Data: $data, "
-    . "Descrição: $descricao, "
-    . "Data da Ação: $dataAcao, "
-    . "Hora da Ação: $horaAcao\n";
-    file_put_contents($log__file, $log_message, FILE_APPEND | LOCK_EX);
-
     $stmt = $conn->prepare("SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ?");
 
     if ($stmt === false) {
@@ -280,14 +235,10 @@ file_put_contents($log__file, "passou atribuições", FILE_APPEND | LOCK_EX);
                 global $caminho_arquivo_anonimizado;
                 global $caminho_arquivo_original;
                 global $nome_arquivo;
-		global $log__file;
-		global $pythonPath;
-		global $scriptPath;
-                $lockFile = "../locks/pasteur.lock";
+                $lockFile = "/var/www/html/php/pasteur.lock";
 
                 if (isset($_FILES[$fileInputName]) && is_array($_FILES[$fileInputName]['name'])) {
                     foreach ($_FILES[$fileInputName]['name'] as $key => $name) {
-			file_put_contents($log__file,  'nome_file: ' . $name . "\n", FILE_APPEND | LOCK_EX);
                         if ($_FILES[$fileInputName]['error'][$key] == UPLOAD_ERR_OK) {
                             // Verifica se tem um lockfile que é usado quando tem um arquivo sendo processado.
                             while (file_exists($lockFile)) {
@@ -304,28 +255,18 @@ file_put_contents($log__file, "passou atribuições", FILE_APPEND | LOCK_EX);
                             $fileTmpPath = $_FILES[$fileInputName]['tmp_name'][$key];
                             $fileExtension = pathinfo($name, PATHINFO_EXTENSION);
                             $fileName = uniqid(rand(), true) . '.' . $fileExtension;
-                            //$destinationPath = "../imagem/input/" . $fileName;
-
-$destinationDir = realpath(__DIR__ . '/../imagem/input');
-if ($destinationDir === false) {
-    file_put_contents($log__file, "Destino inválido ->". $destinationDir."\n", FILE_APPEND | LOCK_EX);
-    throw new Exception('Destino de imagem inválido.');
-}
-
-$destinationPath = $destinationDir . '/' . $fileName;
+                            $destinationPath = "../imagem/input/" . $fileName;
 
                             error_log("destinationPath: " . $destinationPath);
 
 
                             if (!move_uploaded_file($fileTmpPath, $destinationPath)) {
-				file_put_contents($log__file,  'Error moving uploaded file: ' . $name . " ou ".$fileTmpPath." / ".$destinationPath. "\n", FILE_APPEND | LOCK_EX);
                                 throw new Exception('Error moving uploaded file.');
                             }
 
                             // Comanda de Python usado para fazer o processamento de imagem
-//                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
-$command = escapeshellcmd("$pythonPath $scriptPath") . ' ' . escapeshellarg($destinationPath);
-file_put_contents($log__file,  'Comando: ' . $command . "\n", FILE_APPEND | LOCK_EX);
+                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
+
                             $output = [];
                             $returnVar = 0;
                             exec($command, $output, $returnVar);
@@ -334,7 +275,6 @@ file_put_contents($log__file,  'Comando: ' . $command . "\n", FILE_APPEND | LOCK
                                 // Empty the 'imagem/input' folder
                                 $files = glob('../imagem/input/*'); // Get all file names
                                 foreach ($files as $file) {
-					file_put_contents($log__file,  'Deletando arquivo: ' . $file . "\n", FILE_APPEND | LOCK_EX);
                                     if (is_file($file)) {
                                         unlink($file); // Delete each file
                                     }
