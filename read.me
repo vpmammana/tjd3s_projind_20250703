@@ -1,3 +1,113 @@
+VPM 20250522
+
+O CriarEvidencia.php está gerando esta saída
+
+<b>Warning</b>:  openssl_encrypt(): IV passed is only 5 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in <b>/var/www/html/tjd3s-app_fork_20250513/php/handleDecrypt.php</b> on line <b>9</b><br />
+
+Parece que está relacionado ao $iv gerado... é bem pequeno... está hardcoded no código... rsrsrsrs
+
+
+VPM 20250521
+
+Apesar de eu ter rodado o requirements.txt, ainda enfrentei problemas com pendências no python, relativas ao cv2.
+
+VPM 20250521
+
+CriarEvidencia.php está funcionando (está gravando) embora o id_usuario esteja NULL.
+
+Mas o retorno de CriarEvidencia.php é 500 (Internal Server Error). Além disso, no aplicativo, observamos que o CriarEvidencia.php está retornando Unexpected token  '<', "<br />" <b>etc... is not a valid json. (para obter esse erro tive que alterar o respectivo, alert (grep "erro ao enviar dados, tente novamente") do main.js)
+
+
+VPM 20250520
+
+Tabela atividades_acoes está com null em id_usuario
+
+|                         6 | Teste                   | 2025-05-20 19:28:45 |       NULL | 2025-05-20            | 19:25:00              |
+|                         7 | Teste                   | 2025-05-20 19:43:03 |       NULL | 2025-05-20            | 19:41:00              |
+|                         8 | Teste                   | 2025-05-20 19:44:09 |       NULL | 2025-05-20            | 19:43:00              |
+|                         9 | Teste                   | 2025-05-20 19:53:11 |       NULL | 2025-05-20            | 19:52:00              |
+
+O motivo dessa situação é que o CriarEvidencia.php simplesmente tem um insert into atividades_eventos sem atribuir valor para id_usuario. Vou fazer um nested select para dar conta disso.
+
+tive que alterar:
+
+    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento) VALUES (?,?,?)");
+para
+    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?,?,?,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa = ?)))");
+
+
+
+VPM 20250520
+
+tive que criar o diretório locks.
+
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513$ sudo chown -R www-data:www-data locks
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513$ sudo chmod -R 775 locks
+
+
+VPM 20250520
+
+[Tue May 20 22:28:45.854169 2025] [php:warn] [pid 995812] [client 189.9.32.5:52876] PHP Warning:  Undefined array key "suburb" in /var/www/html/tjd3s-app_fork_20250513/php/CriarEvidencia.php on line 107, referer: https://h5g37o62z.specchio.info/tjd3s-app_fork_20250513/
+
+
+
+VPM 20250520
+
+Está apresentando isso antes de enviar.
+
+[Tue May 20 22:26:54.739172 2025] [ssl:error] [pid 995809] [client 185.41.97.134:50293] AH02261: Re-negotiation handshake failed
+
+[Tue May 20 22:26:54.739288 2025] [ssl:error] [pid 995809] SSL Library Error: error:0A000119:SSL routines::decryption failed or bad record mac
+
+VPM 20250520
+
+Continua mandando mensagens para error.log
+
+[Tue May 20 22:25:10.482224 2025] [php:notice] [pid 999826] [client 189.9.32.5:52848] Executed SQL: \nSELECT \n\tid_tipo_acao, \n\tid_tipo_resultado as id_tipo_resultado_filho, \n\ttr2.id_chave_tipo_resultado as id_tipo_resultado_pai, \n\ttr1.nome_tipo_resultado as nome_tipo_resultado_filho, \n\ttr2.nome_tipo_resultado as nome_tipo_resultado_pai, \n\tgroup_concat(nome_token order by ordem separator ' ') as phrase\nFROM \n\ttokens t2, \n\tfrases f2, \n\ttipos_resultados tr1, \n\ttipos_resultados tr2, \n\ttipos_acoes\nWHERE \n\tf2.id_token = t2.id_chave_token AND \n\tf2.id_tipo_acao = id_chave_tipo_acao AND \n\ttr1.id_chave_tipo_resultado = id_tipo_resultado AND \n\ttr1.id_tipo_resultado_pai = tr2.id_chave_tipo_resultado\nGROUP BY \n\tf2.id_tipo_acao\n                        \nHAVING \n\tphrase LIKE '' \nORDER BY \n\tid_tipo_resultado, phrase\n, referer: https://h5g37o62z.specchio.info/tjd3s-app_fork_20250513/
+
+[Tue May 20 22:25:27.627816 2025] [php:notice] [pid 999824] [client 189.9.32.5:52854] Executed SQL Query 1:\n\n    SELECT DISTINCT t.nome_token \n    FROM frases f\n    JOIN tokens t ON t.id_chave_token = f.id_token \n    WHERE f.ordem = 1 \n      AND t.nome_token REGEXP '(^|[[:space:]])'\n\n, referer: https://h5g37o62z.specchio.info/tjd3s-app_fork_20250513/
+
+
+VPM 20250520
+
+Parte inferior do textbox não está adjacente ao lado superior do varal do dropbox.
+
+VPM 20250520
+
+Peguei mais um erro em main.js. 
+
+O erro está em <input id="radio_2714" type="radio" name="frases" onclick="handleSelectedPhrase(2714).disabled=false;">
+
+tjd3s-app_fork_20250513/:1 Uncaught TypeError: Cannot set properties of undefined (setting 'disabled')
+    at HTMLInputElement.onclick (tjd3s-app_fork_20250513/:1:36)
+    at HTMLDivElement.onclick (tjd3s-app_fork_20250513/:1:18)
+
+O erro ocorre sempre que radio_button tal é pressionado (click).
+
+Acontece que a função handleSelectedPhrase não tem a propriedade disabled. Preciso ver o que estava tentando fazer... 
+
+VPM 20250514
+
+Mais um bug encontrado.
+
+O sistema de busca de palavras estava sensível a minúsculas e maiúsculas... no desktop, se o capslock estiver não acionado, ele funciona ok.
+
+No celular, dependendo do modo do teclado, ele sempre coloca a primeira palavra em minúsculas e a experiência do usuário fica horrível, porque não vai encontrar nada na busca incremental, porque o primeiro caracter é maiúscula.
+
+Uma saída possível é fazer isso:
+
+Colocar lowercase depois de input.value            const suggestions_full = await fetchSuggestions(input.value.toLowerCase);
+                input.value = input.value.slice(0, -1).toLowerCase; // Atualiza o valor do input se necessário
+    input.oninput = async () => {
+->        input.value = input.value.toLowerCase();
+        handleInput(event);
+    };
+    input.onclick = async () => {
+------->      input.value = input.value.toLowerCase();
+        handleInput(event);
+    };
+
+
 VPM 20250514
 
 A colocação do venv no /var/www/html não faz sentido, como estava na documentação. 

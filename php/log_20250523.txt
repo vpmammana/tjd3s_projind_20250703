@@ -1,0 +1,1813 @@
+Início em 2025-05-14 01:51:22
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Início em 2025-05-14 01:54:08
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Início em 2025-05-14 01:56:53
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Início em 2025-05-14 01:58:10
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Início em 2025-05-14 02:05:38
+{"place_id":14445502,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+Início em 2025-05-14 02:06:36
+{"place_id":14445502,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+Início em 2025-05-14 02:07:42
+{"place_id":14445502,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+Início em 2025-05-14 02:08:46
+{"place_id":14445502,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+Início em 2025-05-14 02:10:46
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+Início em 2025-05-14 02:11:18
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+Início em 2025-05-14 02:12:49
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+Início em 2025-05-14 02:18:14
+POST Data: {"nome-atividade":"ec","tipo-atividade":"2093","data":"2025-05-13T23:18","atividade-realizada":"tetawsfsa","data-acao":"2025-05-13","hora-acao":"23:18","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+Início em 2025-05-14 02:19:56
+POST Data: {"nome-atividade":"faasd","tipo-atividade":"255","data":"2025-05-13T23:19","atividade-realizada":"dasdas","data-acao":"2025-05-13","hora-acao":"23:19","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+Início em 2025-05-14 02:20:58
+POST Data: {"nome-atividade":"log","tipo-atividade":"2093","data":"2025-05-13T23:20","atividade-realizada":"dasdsa","data-acao":"2025-05-13","hora-acao":"23:20","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+Início em 2025-05-14 02:24:59
+POST Data: {"nome-atividade":"err","tipo-atividade":"2093","data":"2025-05-13T23:24","atividade-realizada":"fsfd","data-acao":"2025-05-13","hora-acao":"23:24","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+Início em 2025-05-14 02:26:42
+POST Data: {"nome-atividade":"testeadsasd","tipo-atividade":"2093","data":"2025-05-13T23:26","atividade-realizada":"dadsads","data-acao":"2025-05-13","hora-acao":"23:26","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:26:43] Usuário: ADRIANA CUNHA BELASCO, Atividade: testeadsasd, Tipo de Ação: 2093, Data: 2025-05-13T23:26, Descrição: dadsads, Data da Ação: 2025-05-13, Hora da Ação: 23:26
+Início em 2025-05-14 02:27:57
+POST Data: {"nome-atividade":"fsdfsd","tipo-atividade":"2839","data":"2025-05-13T23:27","atividade-realizada":"fdsfsdfsd","data-acao":"2025-05-13","hora-acao":"23:27","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:27:58] Usuário: ADRIANA CUNHA BELASCO, Atividade: fsdfsd, Tipo de Ação: 2839, Data: 2025-05-13T23:27, Descrição: fdsfsdfsd, Data da Ação: 2025-05-13, Hora da Ação: 23:27
+Início em 2025-05-14 02:28:55
+POST Data: {"nome-atividade":"glob","tipo-atividade":"2093","data":"2025-05-13T23:28","atividade-realizada":"dasdas","data-acao":"2025-05-13","hora-acao":"23:28","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:28:56] Usuário: ADRIANA CUNHA BELASCO, Atividade: glob, Tipo de Ação: 2093, Data: 2025-05-13T23:28, Descrição: dasdas, Data da Ação: 2025-05-13, Hora da Ação: 23:28
+name: captured-image.png
+Início em 2025-05-14 02:39:21
+POST Data: {"nome-atividade":"i","tipo-atividade":"2093","data":"2025-05-13T23:39","atividade-realizada":"teertet","data-acao":"2025-05-13","hora-acao":"23:39","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:39:22] Usuário: ADRIANA CUNHA BELASCO, Atividade: i, Tipo de Ação: 2093, Data: 2025-05-13T23:39, Descrição: teertet, Data da Ação: 2025-05-13, Hora da Ação: 23:39
+name: captured-image.png
+Início em 2025-05-14 02:43:58
+POST Data: {"nome-atividade":"dsadas","tipo-atividade":"2093","data":"2025-05-13T23:43","atividade-realizada":"dadadsa","data-acao":"2025-05-13","hora-acao":"23:43","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:43:58] Usuário: ADRIANA CUNHA BELASCO, Atividade: dsadas, Tipo de Ação: 2093, Data: 2025-05-13T23:43, Descrição: dadadsa, Data da Ação: 2025-05-13, Hora da Ação: 23:43
+\nnome_file: captured-image.png
+Início em 2025-05-14 02:47:25
+POST Data: {"nome-atividade":"dasdas","tipo-atividade":"2093","data":"2025-05-13T23:47","atividade-realizada":"dasdas","data-acao":"2025-05-13","hora-acao":"23:47","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:47:26] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdas, Tipo de Ação: 2093, Data: 2025-05-13T23:47, Descrição: dasdas, Data da Ação: 2025-05-13, Hora da Ação: 23:47
+nome_file: captured-image.png
+Error moving uploaded file: captured-image.png
+Início em 2025-05-14 02:50:10
+POST Data: {"nome-atividade":"dasdas","tipo-atividade":"2093","data":"2025-05-13T23:49","atividade-realizada":"dasdas","data-acao":"2025-05-13","hora-acao":"23:49","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 02:50:11] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdas, Tipo de Ação: 2093, Data: 2025-05-13T23:49, Descrição: dasdas, Data da Ação: 2025-05-13, Hora da Ação: 23:49
+nome_file: captured-image.png
+Error moving uploaded file: captured-image.png ou /tmp/phpS3haXa / ../imagem/input/8914888682404f7287494.78514772.png
+Início em 2025-05-14 03:04:05
+POST Data: {"nome-atividade":"dsadas","tipo-atividade":"5","data":"2025-05-14T00:03","atividade-realizada":"dasdas","data-acao":"2025-05-14","hora-acao":"00:03","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:04:06] Usuário: ADRIANA CUNHA BELASCO, Atividade: dsadas, Tipo de Ação: 5, Data: 2025-05-14T00:03, Descrição: dasdas, Data da Ação: 2025-05-14, Hora da Ação: 00:03
+nome_file: captured-image.png
+Destino inválido.
+Início em 2025-05-14 03:07:17
+POST Data: {"nome-atividade":"teste","tipo-atividade":"2093","data":"2025-05-14T00:07","atividade-realizada":"tete","data-acao":"2025-05-14","hora-acao":"00:07","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:07:18] Usuário: ADRIANA CUNHA BELASCO, Atividade: teste, Tipo de Ação: 2093, Data: 2025-05-14T00:07, Descrição: tete, Data da Ação: 2025-05-14, Hora da Ação: 00:07
+nome_file: captured-image.png
+Destino inválido.
+Início em 2025-05-14 03:08:41
+POST Data: {"nome-atividade":"dasdas","tipo-atividade":"2093","data":"2025-05-14T00:08","atividade-realizada":"dadas","data-acao":"2025-05-14","hora-acao":"00:08","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:08:42] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdas, Tipo de Ação: 2093, Data: 2025-05-14T00:08, Descrição: dadas, Data da Ação: 2025-05-14, Hora da Ação: 00:08
+nome_file: captured-image.png
+Destino inválido .
+Início em 2025-05-14 03:09:47
+POST Data: {"nome-atividade":"eqweqw","tipo-atividade":"2093","data":"2025-05-14T00:09","atividade-realizada":"dadsa","data-acao":"2025-05-14","hora-acao":"00:09","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:09:48] Usuário: ADRIANA CUNHA BELASCO, Atividade: eqweqw, Tipo de Ação: 2093, Data: 2025-05-14T00:09, Descrição: dadsa, Data da Ação: 2025-05-14, Hora da Ação: 00:09
+nome_file: captured-image.png
+Destino inválido ->
+Início em 2025-05-14 03:13:15
+POST Data: {"nome-atividade":"sadasd","tipo-atividade":"2093","data":"2025-05-14T00:13","atividade-realizada":"dadasd","data-acao":"2025-05-14","hora-acao":"00:13","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:13:16] Usuário: ADRIANA CUNHA BELASCO, Atividade: sadasd, Tipo de Ação: 2093, Data: 2025-05-14T00:13, Descrição: dadasd, Data da Ação: 2025-05-14, Hora da Ação: 00:13
+nome_file: captured-image.png
+Início em 2025-05-14 03:14:25
+POST Data: {"nome-atividade":"dasdsa","tipo-atividade":"2093","data":"2025-05-14T00:14","atividade-realizada":"dasdas","data-acao":"2025-05-14","hora-acao":"00:14","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:14:26] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdsa, Tipo de Ação: 2093, Data: 2025-05-14T00:14, Descrição: dasdas, Data da Ação: 2025-05-14, Hora da Ação: 00:14
+nome_file: captured-image.png
+Início em 2025-05-14 03:21:45
+POST Data: {"nome-atividade":"dasdas","tipo-atividade":"5","data":"2025-05-14T00:21","atividade-realizada":"dsadas","data-acao":"2025-05-14","hora-acao":"00:21","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:21:46] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdas, Tipo de Ação: 5, Data: 2025-05-14T00:21, Descrição: dsadas, Data da Ação: 2025-05-14, Hora da Ação: 00:21
+nome_file: captured-image.png
+Início em 2025-05-14 03:23:00
+POST Data: {"nome-atividade":"p","tipo-atividade":"2093","data":"2025-05-14T00:22","atividade-realizada":"fdsfdsdf","data-acao":"2025-05-14","hora-acao":"00:22","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:23:01] Usuário: ADRIANA CUNHA BELASCO, Atividade: p, Tipo de Ação: 2093, Data: 2025-05-14T00:22, Descrição: fdsfdsdf, Data da Ação: 2025-05-14, Hora da Ação: 00:22
+nome_file: captured-image.png
+Início em 2025-05-14 03:25:53
+POST Data: {"nome-atividade":"dasdsa","tipo-atividade":"2093","data":"2025-05-14T00:25","atividade-realizada":"dasdas","data-acao":"2025-05-14","hora-acao":"00:25","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14885342,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:25:54] Usuário: ADRIANA CUNHA BELASCO, Atividade: dasdsa, Tipo de Ação: 2093, Data: 2025-05-14T00:25, Descrição: dasdas, Data da Ação: 2025-05-14, Hora da Ação: 00:25
+nome_file: captured-image.png
+Deletando arquivo: ../imagem/input/140384211268240d4206eb00.74101793.png
+Início em 2025-05-14 03:29:33
+POST Data: {"nome-atividade":"ewq","tipo-atividade":"2093","data":"2025-05-14T00:29","atividade-realizada":"eqweqweqw","data-acao":"2025-05-14","hora-acao":"00:29","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:29:34] Usuário: ADRIANA CUNHA BELASCO, Atividade: ewq, Tipo de Ação: 2093, Data: 2025-05-14T00:29, Descrição: eqweqweqw, Data da Ação: 2025-05-14, Hora da Ação: 00:29
+nome_file: captured-image.png
+Comando: /mnt/disco_ssd_240gb/tjd3s-app_20250512/venv/bin/python /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/pasteur.py '/mnt/disco_ssd_240gb/tjd3s-app_20250512/imagem/input/108391099268240e1e8217c3.89000497.png'
+Deletando arquivo: ../imagem/input/108391099268240e1e8217c3.89000497.png
+Início em 2025-05-14 03:32:59
+POST Data: {"nome-atividade":"dsadas","tipo-atividade":"2093","data":"2025-05-14T00:32","atividade-realizada":"asdasd","data-acao":"2025-05-14","hora-acao":"00:32","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:33:00] Usuário: ADRIANA CUNHA BELASCO, Atividade: dsadas, Tipo de Ação: 2093, Data: 2025-05-14T00:32, Descrição: asdasd, Data da Ação: 2025-05-14, Hora da Ação: 00:32
+nome_file: captured-image.png
+Comando: /var/www/html/venv/bin/python /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/pasteur.py '/mnt/disco_ssd_240gb/tjd3s-app_20250512/imagem/input/21495828568240eec24e555.67094145.png'
+Início em 2025-05-14 03:34:50
+POST Data: {"nome-atividade":"teste","tipo-atividade":"2093","data":"2025-05-14T00:34","atividade-realizada":"asdas","data-acao":"2025-05-14","hora-acao":"00:34","longitude":"-47.8707712","latitude":"-15.8072832","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14463535,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":32532534,"lat":"-15.8070427","lon":"-47.8714849","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"SAF Quadra 7","display_name":"SAF Quadra 7, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70404-900, Brasil","address":{"road":"SAF Quadra 7","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70404-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8081070","-15.8043709","-47.8718340","-47.8705852"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-14 03:34:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: teste, Tipo de Ação: 2093, Data: 2025-05-14T00:34, Descrição: asdas, Data da Ação: 2025-05-14, Hora da Ação: 00:34
+nome_file: captured-image.png
+Comando: /var/www/html/venv/bin/python /mnt/disco_ssd_240gb/tjd3s-app_20250512/php/pasteur.py '/mnt/disco_ssd_240gb/tjd3s-app_20250512/imagem/input/182103570368240f5bd3b215.77571198.png'
+Início em 2025-05-15 01:11:09
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"724","data":"2025-05-14T22:10","atividade-realizada":"Teste ","data-acao":"2025-05-14","hora-acao":"22:10","longitude":"-47.8507857","latitude":"-15.7859159","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14498295,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-15 01:11:11] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 724, Data: 2025-05-14T22:10, Descrição: Teste , Data da Ação: 2025-05-14, Hora da Ação: 22:10
+nome_file: 17472714496387943313528960273360.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/170010777568253f2f3d0614.71299840.jpg'
+Deletando arquivo: ../imagem/input/170010777568253f2f3d0614.71299840.jpg
+Início em 2025-05-15 01:11:25
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"724","data":"2025-05-14T22:10","atividade-realizada":"Teste ","data-acao":"2025-05-14","hora-acao":"22:10","longitude":"-47.8507857","latitude":"-15.7859159","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14498295,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-15 01:11:25] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 724, Data: 2025-05-14T22:10, Descrição: Teste , Data da Ação: 2025-05-14, Hora da Ação: 22:10
+nome_file: 17472714496387943313528960273360.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/194999281768253f3defeae3.89591686.jpg'
+Deletando arquivo: ../imagem/input/194999281768253f3defeae3.89591686.jpg
+Início em 2025-05-20 19:22:03
+POST Data: {"nome-atividade":"Acompanhamento abertura","tipo-atividade":"26","data":"2025-05-20T16:19","atividade-realizada":"Relacionei nova cooperativa","data-acao":"2025-05-20","hora-acao":"16:19","longitude":"-47.8689853","latitude":"-15.7996615","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 19:22:04] Usuário: ADRIANA CUNHA BELASCO, Atividade: Acompanhamento abertura, Tipo de Ação: 26, Data: 2025-05-20T16:19, Descrição: Relacionei nova cooperativa, Data da Ação: 2025-05-20, Hora da Ação: 16:19
+nome_file: 1747768896002159804533013377200.jpg
+Início em 2025-05-20 19:24:29
+POST Data: {"nome-atividade":"Acompanhamento abertura","tipo-atividade":"26","data":"2025-05-20T16:19","atividade-realizada":"Relacionei nova cooperativa","data-acao":"2025-05-20","hora-acao":"16:19","longitude":"-47.8689853","latitude":"-15.7996615","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 19:24:29] Usuário: ADRIANA CUNHA BELASCO, Atividade: Acompanhamento abertura, Tipo de Ação: 26, Data: 2025-05-20T16:19, Descrição: Relacionei nova cooperativa, Data da Ação: 2025-05-20, Hora da Ação: 16:19
+nome_file: 1747768896002159804533013377200.jpg
+Início em 2025-05-20 19:35:51
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"1314","data":"2025-05-20T16:34","atividade-realizada":"Teste","data-acao":"2025-05-20","hora-acao":"16:34","longitude":"-47.8690935","latitude":"-15.7996385","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 19:35:52] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 1314, Data: 2025-05-20T16:34, Descrição: Teste, Data da Ação: 2025-05-20, Hora da Ação: 16:34
+nome_file: 174776973516527578811651311086.jpg
+Início em 2025-05-20 22:28:44
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"1","data":"2025-05-20T19:25","atividade-realizada":"Teste","data-acao":"2025-05-20","hora-acao":"19:25","longitude":"-47.8690945","latitude":"-15.7996655","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 22:28:45] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 1, Data: 2025-05-20T19:25, Descrição: Teste, Data da Ação: 2025-05-20, Hora da Ação: 19:25
+nome_file: 17477800996902536175044742395824.jpg
+Início em 2025-05-20 22:43:03
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"9","data":"2025-05-20T19:41","atividade-realizada":"Teste ","data-acao":"2025-05-20","hora-acao":"19:41","longitude":"-47.8690868","latitude":"-15.7996635","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 22:43:03] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 9, Data: 2025-05-20T19:41, Descrição: Teste , Data da Ação: 2025-05-20, Hora da Ação: 19:41
+nome_file: 17477809617993817719878466611838.jpg
+Início em 2025-05-20 22:44:08
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"1","data":"2025-05-20T19:43","atividade-realizada":"Teste","data-acao":"2025-05-20","hora-acao":"19:43","longitude":"-47.8690965","latitude":"-15.7996346","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 22:44:09] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 1, Data: 2025-05-20T19:43, Descrição: Teste, Data da Ação: 2025-05-20, Hora da Ação: 19:43
+nome_file: 17477810286928787086782915363966.jpg
+Início em 2025-05-20 22:53:09
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"7","data":"2025-05-20T19:52","atividade-realizada":"Teste","data-acao":"2025-05-20","hora-acao":"19:52","longitude":"-47.8690662","latitude":"-15.7996584","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-20 22:53:11] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 7, Data: 2025-05-20T19:52, Descrição: Teste, Data da Ação: 2025-05-20, Hora da Ação: 19:52
+nome_file: 17477815517875188015254869498484.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/458721482682d07d78efb81.41755013.jpg'
+Deletando arquivo: ../imagem/input/458721482682d07d78efb81.41755013.jpg
+Início em 2025-05-21 12:11:35
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"1","data":"2025-05-21T09:10","atividade-realizada":"Teste ","data-acao":"2025-05-21","hora-acao":"09:10","longitude":"-47.8690731","latitude":"-15.7996802","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 12:11:36] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 1, Data: 2025-05-21T09:10, Descrição: Teste , Data da Ação: 2025-05-21, Hora da Ação: 09:10
+nome_file: 17478294635278360797149384421306.jpg
+Início em 2025-05-21 12:29:21
+POST Data: {"nome-atividade":"Teste ","tipo-atividade":"1","data":"2025-05-21T09:28","atividade-realizada":"Teste ","data-acao":"2025-05-21","hora-acao":"09:28","longitude":"-47.8690928","latitude":"-15.7996639","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 12:29:22] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste , Tipo de Ação: 1, Data: 2025-05-21T09:28, Descrição: Teste , Data da Ação: 2025-05-21, Hora da Ação: 09:28
+nome_file: 1747830547777444698608141234621.jpg
+Início em 2025-05-21 12:49:58
+POST Data: {"nome-atividade":"Alo","tipo-atividade":"1","data":"2025-05-21T09:49","atividade-realizada":"Teste","data-acao":"2025-05-21","hora-acao":"09:49","longitude":"-47.8690974","latitude":"-15.7996325","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 12:49:59] Usuário: ADRIANA CUNHA BELASCO, Atividade: Alo, Tipo de Ação: 1, Data: 2025-05-21T09:49, Descrição: Teste, Data da Ação: 2025-05-21, Hora da Ação: 09:49
+nome_file: 17478317854257479083318216597447.jpg
+Início em 2025-05-21 12:57:50
+POST Data: {"nome-atividade":"Teste1000","tipo-atividade":"7","data":"2025-05-21T09:57","atividade-realizada":"I","data-acao":"2025-05-21","hora-acao":"09:57","longitude":"-47.8690792","latitude":"-15.799661","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 12:57:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste1000, Tipo de Ação: 7, Data: 2025-05-21T09:57, Descrição: I, Data da Ação: 2025-05-21, Hora da Ação: 09:57
+nome_file: 17478322555047778312307009511198.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/253250342682dcdcf1970a0.25517067.jpg'
+Deletando arquivo: ../imagem/input/253250342682dcdcf1970a0.25517067.jpg
+Início em 2025-05-21 13:23:58
+POST Data: {"nome-atividade":"Erro","tipo-atividade":"2","data":"2025-05-21T10:23","atividade-realizada":"Busca","data-acao":"2025-05-21","hora-acao":"10:23","longitude":"-47.8690896","latitude":"-15.799645","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 13:23:58] Usuário: ADRIANA CUNHA BELASCO, Atividade: Erro, Tipo de Ação: 2, Data: 2025-05-21T10:23, Descrição: Busca, Data da Ação: 2025-05-21, Hora da Ação: 10:23
+nome_file: 17478338146044648933922408187112.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1467724926682dd3eee067e8.70935051.jpg'
+Deletando arquivo: ../imagem/input/1467724926682dd3eee067e8.70935051.jpg
+Início em 2025-05-21 18:05:13
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"81","data":"2025-05-21T15:03","atividade-realizada":"R","data-acao":"2025-05-21","hora-acao":"15:03","longitude":"-47.8690882","latitude":"-15.7996692","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 18:05:14] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 81, Data: 2025-05-21T15:03, Descrição: R, Data da Ação: 2025-05-21, Hora da Ação: 15:03
+nome_file: 17478506338882539843173999074050.jpg
+Error uploading file "17478506338882539843173999074050.jpg": File size exceeds the allowed limit.
+Início em 2025-05-21 18:23:20
+POST Data: {"nome-atividade":"Max","tipo-atividade":"2","data":"2025-05-21T15:22","atividade-realizada":"Max file","data-acao":"2025-05-21","hora-acao":"15:22","longitude":"-47.8690822","latitude":"-15.7996756","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-21 18:23:21] Usuário: ADRIANA CUNHA BELASCO, Atividade: Max, Tipo de Ação: 2, Data: 2025-05-21T15:22, Descrição: Max file, Data da Ação: 2025-05-21, Hora da Ação: 15:22
+nome_file: 1747851785266846583626558323950.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/675027639682e1a193cf0f7.40270416.jpg'
+Início em 2025-05-22 12:24:10
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"2714","data":"2025-05-22T09:22","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"09:22","longitude":"-47.8690819","latitude":"-15.799666","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 12:24:12] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 2714, Data: 2025-05-22T09:22, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 09:22
+nome_file: 17479166304418751973614724124547.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1720977011682f176c0725b9.03319797.jpg'
+Início em 2025-05-22 13:27:14
+POST Data: {"nome-atividade":"Teste","tipo-atividade":"157","data":"2025-05-22T10:26","atividade-realizada":"Res","data-acao":"2025-05-22","hora-acao":"10:26","longitude":"-47.8691116","latitude":"-15.7996485","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 13:27:15] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste, Tipo de Ação: 157, Data: 2025-05-22T10:26, Descrição: Res, Data da Ação: 2025-05-22, Hora da Ação: 10:26
+nome_file: 17479204175581242679345505663846.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/230459769682f2633d6bd31.04109662.jpg'
+Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 13:39:51
+POST Data: {"nome-atividade":"Vaio","tipo-atividade":"4713","data":"2025-05-22T10:39","atividade-realizada":"G","data-acao":"2025-05-22","hora-acao":"10:39","longitude":"-47.8690956","latitude":"-15.7996767","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 13:39:52] Usuário: ADRIANA CUNHA BELASCO, Atividade: Vaio, Tipo de Ação: 4713, Data: 2025-05-22T10:39, Descrição: G, Data da Ação: 2025-05-22, Hora da Ação: 10:39
+nome_file: 1747921178240803627567421355628.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1117807683682f2928969272.84833531.jpg'
+Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 13:41:37
+POST Data: {"nome-atividade":"Vaio2","tipo-atividade":"1316","data":"2025-05-22T10:41","atividade-realizada":"Vai","data-acao":"2025-05-22","hora-acao":"10:41","longitude":"-47.8690842","latitude":"-15.7996822","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 13:41:38] Usuário: ADRIANA CUNHA BELASCO, Atividade: Vaio2, Tipo de Ação: 1316, Data: 2025-05-22T10:41, Descrição: Vai, Data da Ação: 2025-05-22, Hora da Ação: 10:41
+nome_file: 17479212819744630392791144203771.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1323770818682f29927a6e24.29583201.jpg'
+Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 13:45:27
+POST Data: {"nome-atividade":"Teate","tipo-atividade":"7","data":"2025-05-22T10:45","atividade-realizada":"I","data-acao":"2025-05-22","hora-acao":"10:45","longitude":"-47.8691072","latitude":"-15.7996849","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 13:45:28] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teate, Tipo de Ação: 7, Data: 2025-05-22T10:45, Descrição: I, Data da Ação: 2025-05-22, Hora da Ação: 10:45
+nome_file: 17479215154663598067347133985169.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1574097332682f2a78f2d077.37764075.jpg'
+Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 17:48:38
+POST Data: {"nome-atividade":"Rua","tipo-atividade":"17","data":"2025-05-22T14:47","atividade-realizada":"Te ste","data-acao":"2025-05-22","hora-acao":"14:47","longitude":"-47.8690806","latitude":"-15.7996821","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 17:48:39] Usuário: ADRIANA CUNHA BELASCO, Atividade: Rua, Tipo de Ação: 17, Data: 2025-05-22T14:47, Descrição: Te ste, Data da Ação: 2025-05-22, Hora da Ação: 14:47
+nome_file: 17479361024217852780711450918913.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1477769727682f637762a4c7.83432302.jpg'
+output.json:{"quantidade_pessoas": 7, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1477769727682f637762a4c7.83432302_2025_05_22_17_48_42.jpg", "caminho_arquivo_original": "/imagem/lixeira/1477769727682f637762a4c7.83432302_2025_05_22_17_48_42.jpg", "nome_arquivo": "1477769727682f637762a4c7.83432302_2025_05_22_17_48_42.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 18:10:44
+POST Data: {"nome-atividade":"Iv","tipo-atividade":"1324","data":"2025-05-22T15:10","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"15:10","longitude":"-47.8690667","latitude":"-15.7996877","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:10:44] Usuário: ADRIANA CUNHA BELASCO, Atividade: Iv, Tipo de Ação: 1324, Data: 2025-05-22T15:10, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 15:10
+nome_file: 17479374298555243076344383108985.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1846877632682f68a4e9c3c0.71670349.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/1846877632682f68a4e9c3c0.71670349_2025_05_22_18_10_52.jpg", "nome_arquivo": "1846877632682f68a4e9c3c0.71670349_2025_05_22_18_10_52.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 18:25:29
+POST Data: {"nome-atividade":"Nome usuario","tipo-atividade":"7","data":"2025-05-22T15:25","atividade-realizada":"Oi","data-acao":"2025-05-22","hora-acao":"15:25","longitude":"-47.8690674","latitude":"-15.7996765","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:25:30] Usuário: ADRIANA CUNHA BELASCO, Atividade: Nome usuario, Tipo de Ação: 7, Data: 2025-05-22T15:25, Descrição: Oi, Data da Ação: 2025-05-22, Hora da Ação: 15:25
+fechou o conn: 
+Início em 2025-05-22 18:25:47
+POST Data: {"nome-atividade":"Nome usuario","tipo-atividade":"7","data":"2025-05-22T15:25","atividade-realizada":"Oi","data-acao":"2025-05-22","hora-acao":"15:25","longitude":"-47.8690674","latitude":"-15.7996765","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:25:48] Usuário: ADRIANA CUNHA BELASCO, Atividade: Nome usuario, Tipo de Ação: 7, Data: 2025-05-22T15:25, Descrição: Oi, Data da Ação: 2025-05-22, Hora da Ação: 15:25
+fechou o conn: 
+Início em 2025-05-22 18:26:11
+POST Data: {"nome-atividade":"Nome usuario","tipo-atividade":"7","data":"2025-05-22T15:25","atividade-realizada":"Oi","data-acao":"2025-05-22","hora-acao":"15:25","longitude":"-47.8690674","latitude":"-15.7996765","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:26:12] Usuário: ADRIANA CUNHA BELASCO, Atividade: Nome usuario, Tipo de Ação: 7, Data: 2025-05-22T15:25, Descrição: Oi, Data da Ação: 2025-05-22, Hora da Ação: 15:25
+fechou o conn: 
+Início em 2025-05-22 18:26:31
+POST Data: {"nome-atividade":"Nome usuario","tipo-atividade":"7","data":"2025-05-22T15:25","atividade-realizada":"Oi","data-acao":"2025-05-22","hora-acao":"15:25","longitude":"-47.8690674","latitude":"-15.7996765","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:26:32] Usuário: ADRIANA CUNHA BELASCO, Atividade: Nome usuario, Tipo de Ação: 7, Data: 2025-05-22T15:25, Descrição: Oi, Data da Ação: 2025-05-22, Hora da Ação: 15:25
+fechou o conn: 
+Início em 2025-05-22 18:31:29
+POST Data: {"nome-atividade":"Wrro","tipo-atividade":"2714","data":"2025-05-22T15:30","atividade-realizada":"Agora vak","data-acao":"2025-05-22","hora-acao":"15:30","longitude":"-47.8690811","latitude":"-15.799688","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições
+[2025-05-22 18:31:30] Usuário: ADRIANA CUNHA BELASCO, Atividade: Wrro, Tipo de Ação: 2714, Data: 2025-05-22T15:30, Descrição: Agora vak, Data da Ação: 2025-05-22, Hora da Ação: 15:30
+fechou o conn: 
+Início em 2025-05-22 18:33:58
+POST Data: {"nome-atividade":"Vamos ver se tem log","tipo-atividade":"1","data":"2025-05-22T15:33","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"15:33","longitude":"-47.8690919","latitude":"-15.799665","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições
+[2025-05-22 18:33:59] Usuário: ADRIANA CUNHA BELASCO, Atividade: Vamos ver se tem log, Tipo de Ação: 1, Data: 2025-05-22T15:33, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 15:33
+fechou o conn: 
+Início em 2025-05-22 18:40:04
+POST Data: {"nome-atividade":"Agora vamos ver ","tipo-atividade":"16","data":"2025-05-22T15:39","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"15:39","longitude":"-47.8690971","latitude":"-15.7996809","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições
+[2025-05-22 18:40:05] Usuário: ADRIANA CUNHA BELASCO, Atividade: Agora vamos ver , Tipo de Ação: 16, Data: 2025-05-22T15:39, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 15:39
+fechou o conn: 
+Início em 2025-05-22 18:48:24
+POST Data: {"nome-atividade":"Volta","tipo-atividade":"936","data":"2025-05-22T15:48","atividade-realizada":"Ta","data-acao":"2025-05-22","hora-acao":"15:48","longitude":"-47.8690955","latitude":"-15.7996599","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:48:25] Usuário: ADRIANA CUNHA BELASCO, Atividade: Volta, Tipo de Ação: 936, Data: 2025-05-22T15:48, Descrição: Ta, Data da Ação: 2025-05-22, Hora da Ação: 15:48
+nome_file: 17479396942821619509445519027190.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1509762346682f7179523b45.41156035.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/1509762346682f7179523b45.41156035_2025_05_22_18_48_30.jpg", "nome_arquivo": "1509762346682f7179523b45.41156035_2025_05_22_18_48_30.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 18:49:59
+POST Data: {"nome-atividade":"Hardcoded","tipo-atividade":"2","data":"2025-05-22T15:49","atividade-realizada":"Em","data-acao":"2025-05-22","hora-acao":"15:49","longitude":"-47.8690986","latitude":"-15.7996795","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:49:59] Usuário: ADRIANA CUNHA BELASCO, Atividade: Hardcoded, Tipo de Ação: 2, Data: 2025-05-22T15:49, Descrição: Em, Data da Ação: 2025-05-22, Hora da Ação: 15:49
+nome_file: 17479397845946880267822901302335.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/909856634682f71d7cc2ed7.52971444.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/909856634682f71d7cc2ed7.52971444_2025_05_22_18_50_03.jpg", "nome_arquivo": "909856634682f71d7cc2ed7.52971444_2025_05_22_18_50_03.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 18:51:50
+POST Data: {"nome-atividade":"Nested","tipo-atividade":"686","data":"2025-05-22T15:51","atividade-realizada":"Feira","data-acao":"2025-05-22","hora-acao":"15:51","longitude":"-47.8690773","latitude":"-15.7996703","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:51:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: Nested, Tipo de Ação: 686, Data: 2025-05-22T15:51, Descrição: Feira, Data da Ação: 2025-05-22, Hora da Ação: 15:51
+nome_file: 17479398892406795213409537602982.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1815684354682f72471320e3.82794175.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/1815684354682f72471320e3.82794175_2025_05_22_18_51_54.jpg", "nome_arquivo": "1815684354682f72471320e3.82794175_2025_05_22_18_51_54.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 18:55:44
+POST Data: {"nome-atividade":"Refoz","tipo-atividade":"16","data":"2025-05-22T15:55","atividade-realizada":"Teste final?","data-acao":"2025-05-22","hora-acao":"15:55","longitude":"-47.8691101","latitude":"-15.7996542","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 18:55:44] Usuário: ADRIANA CUNHA BELASCO, Atividade: Refoz, Tipo de Ação: 16, Data: 2025-05-22T15:55, Descrição: Teste final?, Data da Ação: 2025-05-22, Hora da Ação: 15:55
+nome_file: 17479401304981158384253261219542.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1250044725682f7330e140f0.59580702.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/1250044725682f7330e140f0.59580702_2025_05_22_18_55_48.jpg", "nome_arquivo": "1250044725682f7330e140f0.59580702_2025_05_22_18_55_48.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 19:05:14
+POST Data: {"nome-atividade":"Rosto ","tipo-atividade":"16","data":"2025-05-22T16:04","atividade-realizada":"Q","data-acao":"2025-05-22","hora-acao":"16:04","longitude":"-47.8690785","latitude":"-15.7996797","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 19:05:15] Usuário: ADRIANA CUNHA BELASCO, Atividade: Rosto , Tipo de Ação: 16, Data: 2025-05-22T16:04, Descrição: Q, Data da Ação: 2025-05-22, Hora da Ação: 16:04
+nome_file: 17479406965197790164675868608809.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1602907749682f756b38c531.01477279.jpg'
+output.json:{"quantidade_pessoas": 2, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1602907749682f756b38c531.01477279_2025_05_22_19_05_18.jpg", "caminho_arquivo_original": "/imagem/lixeira/1602907749682f756b38c531.01477279_2025_05_22_19_05_18.jpg", "nome_arquivo": "1602907749682f756b38c531.01477279_2025_05_22_19_05_18.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 19:13:16
+POST Data: {"nome-atividade":"Id_peesoa","tipo-atividade":"7","data":"2025-05-22T16:12","atividade-realizada":"Id","data-acao":"2025-05-22","hora-acao":"16:12","longitude":"-47.8690801","latitude":"-15.7996814","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 19:13:17] Usuário: ADRIANA CUNHA BELASCO, Atividade: Id_peesoa, Tipo de Ação: 7, Data: 2025-05-22T16:12, Descrição: Id, Data da Ação: 2025-05-22, Hora da Ação: 16:12
+nome_file: 17479411785201587273366439931054.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1166769437682f774dbd2153.04719442.jpg'
+output.json:{"quantidade_pessoas": 5, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1166769437682f774dbd2153.04719442_2025_05_22_19_13_43.jpg", "caminho_arquivo_original": "/imagem/lixeira/1166769437682f774dbd2153.04719442_2025_05_22_19_13_43.jpg", "nome_arquivo": "1166769437682f774dbd2153.04719442_2025_05_22_19_13_43.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 19:20:05
+POST Data: {"nome-atividade":"Terra","tipo-atividade":"1328","data":"2025-05-22T16:19","atividade-realizada":"auxiliei documento oficial com organiza\u00e7\u00e3o demandante comunit\u00e1ria","data-acao":"2025-05-22","hora-acao":"16:19","longitude":"-47.8690924","latitude":"-15.7996642","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 19:20:06] Usuário: ADRIANA CUNHA BELASCO, Atividade: Terra, Tipo de Ação: 1328, Data: 2025-05-22T16:19, Descrição: auxiliei documento oficial com organização demandante comunitária, Data da Ação: 2025-05-22, Hora da Ação: 16:19
+nome_file: 17479415817694935174125345261390.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/533161658682f78e698b451.73460091.jpg'
+output.json:{"quantidade_pessoas": 9, "caminho_arquivo_anonimizado": "/imagem/pasteur1/533161658682f78e698b451.73460091_2025_05_22_19_20_35.jpg", "caminho_arquivo_original": "/imagem/lixeira/533161658682f78e698b451.73460091_2025_05_22_19_20_35.jpg", "nome_arquivo": "533161658682f78e698b451.73460091_2025_05_22_19_20_35.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 19:47:39
+POST Data: {"nome-atividade":"Ola","tipo-atividade":"1","data":"2025-05-22T16:47","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"16:47","longitude":"-47.8691246","latitude":"-15.7996495","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 19:47:40] Usuário: ADRIANA CUNHA BELASCO, Atividade: Ola, Tipo de Ação: 1, Data: 2025-05-22T16:47, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 16:47
+nome_file: 17479432435551370389181173501897.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1860327315682f7f5c3dffb1.89537164.jpg'
+output.json:{"quantidade_pessoas": 3, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1860327315682f7f5c3dffb1.89537164_2025_05_22_19_48_02.jpg", "caminho_arquivo_original": "/imagem/lixeira/1860327315682f7f5c3dffb1.89537164_2025_05_22_19_48_02.jpg", "nome_arquivo": "1860327315682f7f5c3dffb1.89537164_2025_05_22_19_48_02.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-22 20:46:22
+POST Data: {"nome-atividade":"The Sun","tipo-atividade":"5","data":"2025-05-22T17:44","atividade-realizada":"colaborei na obten\u00e7\u00e3o de documentos oficiais com rede de empreendimentos solid\u00e1rios","data-acao":"2025-05-22","hora-acao":"17:44","longitude":"-47.8508051","latitude":"-15.7859554","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 20:46:23] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun, Tipo de Ação: 5, Data: 2025-05-22T17:44, Descrição: colaborei na obtenção de documentos oficiais com rede de empreendimentos solidários, Data da Ação: 2025-05-22, Hora da Ação: 17:44
+nome_file: 17479467482044592157439969718402.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/878567277682f8d1f916381.73066367.jpg'
+Deletando arquivo: ../imagem/input/878567277682f8d1f916381.73066367_2025_05_22_20_46_26.jpg
+output.json:Início em 2025-05-22 20:56:43
+POST Data: {"nome-atividade":"The Sun","tipo-atividade":"5","data":"2025-05-22T17:44","atividade-realizada":"colaborei na obten\u00e7\u00e3o de documentos oficiais com rede de empreendimentos solid\u00e1rios","data-acao":"2025-05-22","hora-acao":"17:44","longitude":"-47.8508051","latitude":"-15.7859554","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 20:56:44] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun, Tipo de Ação: 5, Data: 2025-05-22T17:44, Descrição: colaborei na obtenção de documentos oficiais com rede de empreendimentos solidários, Data da Ação: 2025-05-22, Hora da Ação: 17:44
+nome_file: 17479467482044592157439969718402.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1116458666682f8f8cad6ef7.67398827.jpg'
+Deletando arquivo: ../imagem/input/1116458666682f8f8cad6ef7.67398827_2025_05_22_20_56_47.jpg
+output.json:Início em 2025-05-22 20:57:31
+POST Data: {"nome-atividade":"The Sun","tipo-atividade":"5","data":"2025-05-22T17:44","atividade-realizada":"colaborei na obten\u00e7\u00e3o de documentos oficiais com rede de empreendimentos solid\u00e1rios","data-acao":"2025-05-22","hora-acao":"17:44","longitude":"-47.8508051","latitude":"-15.7859554","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 20:57:32] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun, Tipo de Ação: 5, Data: 2025-05-22T17:44, Descrição: colaborei na obtenção de documentos oficiais com rede de empreendimentos solidários, Data da Ação: 2025-05-22, Hora da Ação: 17:44
+nome_file: 17479467482044592157439969718402.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1489256726682f8fbc7fae45.60180815.jpg'
+Deletando arquivo: ../imagem/input/1489256726682f8fbc7fae45.60180815_2025_05_22_20_57_35.jpg
+output.json:Início em 2025-05-22 20:59:06
+POST Data: {"nome-atividade":"The Sun","tipo-atividade":"5","data":"2025-05-22T17:44","atividade-realizada":"colaborei na obten\u00e7\u00e3o de documentos oficiais com rede de empreendimentos solid\u00e1rios","data-acao":"2025-05-22","hora-acao":"17:44","longitude":"-47.8508051","latitude":"-15.7859554","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 20:59:07] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun, Tipo de Ação: 5, Data: 2025-05-22T17:44, Descrição: colaborei na obtenção de documentos oficiais com rede de empreendimentos solidários, Data da Ação: 2025-05-22, Hora da Ação: 17:44
+nome_file: 17479467482044592157439969718402.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/267805131682f901bc05a25.42146120.jpg'
+Deletando arquivo: ../imagem/input/267805131682f901bc05a25.42146120_2025_05_22_20_59_10.jpg
+output.json:Início em 2025-05-22 23:04:17
+POST Data: {"nome-atividade":"Pont\u00e3o ","tipo-atividade":"2","data":"2025-05-22T20:03","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"20:03","longitude":"-47.8713065","latitude":"-15.8257403","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14853128,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":230617319,"lat":"-15.8257410","lon":"-47.8714585","class":"amenity","type":"restaurant","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"amenity","name":"SoHo","display_name":"SoHo, Ponte Honestino Guimarães, Lago Sul, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71630-115, Brasil","address":{"amenity":"SoHo","road":"Ponte Honestino Guimarães","town":"Lago Sul","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71630-115","country":"Brasil","country_code":"br"},"boundingbox":["-15.8258214","-15.8256528","-47.8715590","-47.8713558"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-22 23:04:18] Usuário: ADRIANA CUNHA BELASCO, Atividade: Pontão , Tipo de Ação: 2, Data: 2025-05-22T20:03, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 20:03
+fechou o conn: 
+Início em 2025-05-23 00:56:07
+POST Data: {"nome-atividade":"De volta ao the sun","tipo-atividade":"2708","data":"2025-05-22T21:55","atividade-realizada":"Teste ","data-acao":"2025-05-22","hora-acao":"21:55","longitude":"-47.8508347","latitude":"-15.7859746","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 00:56:08] Usuário: ADRIANA CUNHA BELASCO, Atividade: De volta ao the sun, Tipo de Ação: 2708, Data: 2025-05-22T21:55, Descrição: Teste , Data da Ação: 2025-05-22, Hora da Ação: 21:55
+nome_file: 17479617532091773566326248634919.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1222391062682fc7a886e060.96371875.jpg'
+output.json:{"quantidade_pessoas": 1, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1222391062682fc7a886e060.96371875_2025_05_23_00_56_11.jpg", "caminho_arquivo_original": "/imagem/lixeira/1222391062682fc7a886e060.96371875_2025_05_23_00_56_11.jpg", "nome_arquivo": "1222391062682fc7a886e060.96371875_2025_05_23_00_56_11.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 00:57:32
+POST Data: {"nome-atividade":"The Sun 2","tipo-atividade":"1341","data":"2025-05-22T21:56","atividade-realizada":"Aux","data-acao":"2025-05-22","hora-acao":"21:56","longitude":"-47.8508119","latitude":"-15.7859617","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 00:57:33] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun 2, Tipo de Ação: 1341, Data: 2025-05-22T21:56, Descrição: Aux, Data da Ação: 2025-05-22, Hora da Ação: 21:56
+nome_file: 17479618342854913896715530240731.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/876059835682fc7fd4c08c5.05756618.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/876059835682fc7fd4c08c5.05756618_2025_05_23_00_57_36.jpg", "nome_arquivo": "876059835682fc7fd4c08c5.05756618_2025_05_23_00_57_36.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 02:49:45
+POST Data: {"nome-atividade":"The Sun 5","tipo-atividade":"1264","data":"2025-05-22T23:47","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"23:47","longitude":"-47.8713065","latitude":"-15.8257403","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14397073,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":230617319,"lat":"-15.8257410","lon":"-47.8714585","class":"amenity","type":"restaurant","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"amenity","name":"SoHo","display_name":"SoHo, Ponte Honestino Guimarães, Lago Sul, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71630-115, Brasil","address":{"amenity":"SoHo","road":"Ponte Honestino Guimarães","town":"Lago Sul","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71630-115","country":"Brasil","country_code":"br"},"boundingbox":["-15.8258214","-15.8256528","-47.8715590","-47.8713558"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 02:49:46] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun 5, Tipo de Ação: 1264, Data: 2025-05-22T23:47, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 23:47
+fechou o conn: 
+Início em 2025-05-23 02:50:17
+POST Data: {"nome-atividade":"The Sun 5","tipo-atividade":"1264","data":"2025-05-22T23:47","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"23:47","longitude":"-47.8713065","latitude":"-15.8257403","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14397073,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":230617319,"lat":"-15.8257410","lon":"-47.8714585","class":"amenity","type":"restaurant","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"amenity","name":"SoHo","display_name":"SoHo, Ponte Honestino Guimarães, Lago Sul, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71630-115, Brasil","address":{"amenity":"SoHo","road":"Ponte Honestino Guimarães","town":"Lago Sul","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71630-115","country":"Brasil","country_code":"br"},"boundingbox":["-15.8258214","-15.8256528","-47.8715590","-47.8713558"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 02:50:17] Usuário: ADRIANA CUNHA BELASCO, Atividade: The Sun 5, Tipo de Ação: 1264, Data: 2025-05-22T23:47, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 23:47
+fechou o conn: 
+Início em 2025-05-23 02:52:50
+POST Data: {"nome-atividade":"firefox","tipo-atividade":"2714","data":"2025-05-22T23:51","atividade-realizada":"Di\u00e1logo","data-acao":"2025-05-22","hora-acao":"23:51","longitude":"-47.8521465","latitude":"-15.7883452","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14380749,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":201589323,"lat":"-15.7887543","lon":"-47.8518204","class":"building","type":"yes","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"building","name":"Espaço da Corte","display_name":"Espaço da Corte, Lote 01/11B, Estrada Hotéis e Turismo, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-110, Brasil","address":{"building":"Espaço da Corte","house_number":"Lote 01/11B","road":"Estrada Hotéis e Turismo","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-110","country":"Brasil","country_code":"br"},"boundingbox":["-15.7890632","-15.7884748","-47.8520890","-47.8515512"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 02:52:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: firefox, Tipo de Ação: 2714, Data: 2025-05-22T23:51, Descrição: Diálogo, Data da Ação: 2025-05-22, Hora da Ação: 23:51
+nome_file: 1000067103.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1524341767682fe303b029c4.20648487.jpg'
+output.json:{"quantidade_pessoas": 5, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1524341767682fe303b029c4.20648487_2025_05_23_02_52_54.jpg", "caminho_arquivo_original": "/imagem/lixeira/1524341767682fe303b029c4.20648487_2025_05_23_02_52_54.jpg", "nome_arquivo": "1524341767682fe303b029c4.20648487_2025_05_23_02_52_54.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 02:55:13
+POST Data: {"nome-atividade":"teste wi-fi ","tipo-atividade":"1328","data":"2025-05-22T23:53","atividade-realizada":"Teste","data-acao":"2025-05-22","hora-acao":"23:53","longitude":"-47.8521465","latitude":"-15.7883452","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14764655,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":201589323,"lat":"-15.7887543","lon":"-47.8518204","class":"building","type":"yes","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"building","name":"Espaço da Corte","display_name":"Espaço da Corte, Lote 01/11B, Estrada Hotéis e Turismo, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-110, Brasil","address":{"building":"Espaço da Corte","house_number":"Lote 01/11B","road":"Estrada Hotéis e Turismo","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-110","country":"Brasil","country_code":"br"},"boundingbox":["-15.7890632","-15.7884748","-47.8520890","-47.8515512"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 02:55:14] Usuário: ADRIANA CUNHA BELASCO, Atividade: teste wi-fi , Tipo de Ação: 1328, Data: 2025-05-22T23:53, Descrição: Teste, Data da Ação: 2025-05-22, Hora da Ação: 23:53
+nome_file: 2025-05-2223.54.204272826792315105938.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/757351280682fe392aac6b7.71655082.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/757351280682fe392aac6b7.71655082_2025_05_23_02_55_18.jpg", "nome_arquivo": "757351280682fe392aac6b7.71655082_2025_05_23_02_55_18.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 02:58:16
+POST Data: {"nome-atividade":"wifi ","tipo-atividade":"1","data":"2025-05-22T23:55","atividade-realizada":"R","data-acao":"2025-05-22","hora-acao":"23:55","longitude":"-47.8507892","latitude":"-15.7859701","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 02:58:17] Usuário: ADRIANA CUNHA BELASCO, Atividade: wifi , Tipo de Ação: 1, Data: 2025-05-22T23:55, Descrição: R, Data da Ação: 2025-05-22, Hora da Ação: 23:55
+nome_file: 2025-05-2223.57.125820852383778287646.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/646873348682fe4496fc6e7.03656105.jpg'
+Deletando arquivo: ../imagem/input/646873348682fe4496fc6e7.03656105_2025_05_23_02_58_20.jpg
+output.json:Início em 2025-05-23 03:14:50
+POST Data: {"nome-atividade":"wifi ","tipo-atividade":"1","data":"2025-05-22T23:55","atividade-realizada":"R","data-acao":"2025-05-22","hora-acao":"23:55","longitude":"-47.8507892","latitude":"-15.7859701","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14498295,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 03:14:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: wifi , Tipo de Ação: 1, Data: 2025-05-22T23:55, Descrição: R, Data da Ação: 2025-05-22, Hora da Ação: 23:55
+nome_file: 2025-05-2223.57.125820852383778287646.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1960022995682fe82bebf077.59548160.jpg'
+Deletando arquivo: ../imagem/input/1960022995682fe82bebf077.59548160_2025_05_23_03_14_54.jpg
+output.json:Início em 2025-05-23 03:43:13
+POST Data: {"nome-atividade":"Erro ","tipo-atividade":"2714","data":"2025-05-23T00:22","atividade-realizada":"Ny","data-acao":"2025-05-23","hora-acao":"00:22","longitude":"-47.8508158","latitude":"-15.7859558","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14498295,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 03:43:14] Usuário: ADRIANA CUNHA BELASCO, Atividade: Erro , Tipo de Ação: 2714, Data: 2025-05-23T00:22, Descrição: Ny, Data da Ação: 2025-05-23, Hora da Ação: 00:22
+nome_file: 17479716787318371500723189237661.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/257006983682feed22d61f1.03230928.jpg'
+Deletando arquivo: ../imagem/input/257006983682feed22d61f1.03230928_2025_05_23_03_43_17.jpg
+output.json:Início em 2025-05-23 08:17:58
+POST Data: {"nome-atividade":"Lavanderia ","tipo-atividade":"5119","data":"2025-05-23T05:16","atividade-realizada":"Localizei ","data-acao":"2025-05-23","hora-acao":"05:16","longitude":"-47.8508158","latitude":"-15.7859558","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 08:17:59] Usuário: ADRIANA CUNHA BELASCO, Atividade: Lavanderia , Tipo de Ação: 5119, Data: 2025-05-23T05:16, Descrição: Localizei , Data da Ação: 2025-05-23, Hora da Ação: 05:16
+nome_file: 17479882273353354857852309919619.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/68212029768302f37d23244.61603247.jpg'
+output.json:{"quantidade_pessoas": 2, "caminho_arquivo_anonimizado": "/imagem/pasteur1/68212029768302f37d23244.61603247_2025_05_23_08_18_03.jpg", "caminho_arquivo_original": "/imagem/lixeira/68212029768302f37d23244.61603247_2025_05_23_08_18_03.jpg", "nome_arquivo": "68212029768302f37d23244.61603247_2025_05_23_08_18_03.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 08:21:53
+POST Data: {"nome-atividade":"Sem dados moveis","tipo-atividade":"234","data":"2025-05-23T05:18","atividade-realizada":"Teste","data-acao":"2025-05-23","hora-acao":"05:18","longitude":"-47.8508158","latitude":"-15.7859558","nome-usuario":"ADRIANA CUNHA BELASCO","id":"1"}
+Início em 2025-05-23 08:21:53
+POST Data: []
+{"place_id":14474246,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 08:21:54] Usuário: ADRIANA CUNHA BELASCO, Atividade: Sem dados moveis, Tipo de Ação: 234, Data: 2025-05-23T05:18, Descrição: Teste, Data da Ação: 2025-05-23, Hora da Ação: 05:18
+nome_file: 17479883683565881573819086614652.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/924584380683030224c6ee2.47524248.jpg'
+{"error":{"code":400,"message":"Parameter 'lon' must be a number."}}
+Erro de localização - status: 400 Vou sair 
+output.json:{"quantidade_pessoas": 2, "caminho_arquivo_anonimizado": "/imagem/pasteur1/924584380683030224c6ee2.47524248_2025_05_23_08_21_57.jpg", "caminho_arquivo_original": "/imagem/lixeira/924584380683030224c6ee2.47524248_2025_05_23_08_21_57.jpg", "nome_arquivo": "924584380683030224c6ee2.47524248_2025_05_23_08_21_57.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+Início em 2025-05-23 08:27:10
+POST Data: {"nome-atividade":"Teste de internet 3","tipo-atividade":"2738","data":"2025-05-23T05:25","atividade-realizada":"atendi cadastro federal com entidade solid\u00e1ria formalizada","data-acao":"2025-05-23","hora-acao":"05:25","longitude":"-47.8508158","latitude":"-15.7859558","nome-usuario":"ADRIANA CUNHA BELASCO"}
+{"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+Passou exits
+passou curl
+passou json decode
+passou bounding box
+passou address
+passou id_pais
+passou id_estado
+passou nome_estado
+passou id_cidade
+passou codigo_ibge
+passou id_localizacao
+passou id_endereco
+passou id_atividade_evento
+passou id_arquivo
+passou id_tipo_arquivo
+passou atribuições[2025-05-23 08:27:11] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste de internet 3, Tipo de Ação: 2738, Data: 2025-05-23T05:25, Descrição: atendi cadastro federal com entidade solidária formalizada, Data da Ação: 2025-05-23, Hora da Ação: 05:25
+nome_file: 17479887686127834667435985211841.jpg
+Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/13683225816830315f4bea77.12550786.jpg'
+output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/13683225816830315f4bea77.12550786_2025_05_23_08_27_14.jpg", "nome_arquivo": "13683225816830315f4bea77.12550786_2025_05_23_08_27_14.jpg"}Passou o tratamento de imagens: 
+Passou o select: 
+fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-23 17:22:17
+
+MSG: POST Data: {"nome-atividade":"Teste gabinete","tipo-atividade":"1309","data":"2025-05-23T14:19","atividade-realizada":"contribu\u00ed em revis\u00e3o de dados do cadsol com coletivo autogestion\u00e1rio popular","data-acao":"2025-05-23","hora-acao":"14:19","longitude":"-47.8691081","latitude":"-15.7996687","nome-usuario":"ADRIANA CUNHA BELASCO"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996687&lon=-47.8691081
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-23 17:22:18] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste gabinete, Tipo de Ação: 1309, Data: 2025-05-23T14:19, Descrição: contribuí em revisão de dados do cadsol com coletivo autogestionário popular, Data da Ação: 2025-05-23, Hora da Ação: 14:19
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'ADRIANA CUNHA BELASCO'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691081, -15.7996687, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste gabinete,2025-05-23, 14:19,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =ADRIANA CUNHA BELASCO )))MSG: nome_file: 1748020769772216907313476961392.jpg
+ERRO: UPLOAD_ERR_OKMSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/20300154346830aeca8fddb6.46235828.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/20300154346830aeca8fddb6.46235828.jpg'
+
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/20300154346830aeca8fddb6.46235828_2025_05_23_17_22_21.jpg", "nome_arquivo": "20300154346830aeca8fddb6.46235828_2025_05_23_17_22_21.jpg"}
+
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (20300154346830aeca8fddb6.46235828_2025_05_23_17_22_21.jpg, 4, OUoI3pxXnJzPuQjJKPQg5gQU06qYuTkrFc7IhmzBZAJdzdxmTCyamm7C6FvXdGgWVej4/RFoqLALO8yecsKMaPpEY5eMJ/BnqzcrXM/2g2Q=, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-23 17:23:51
+
+MSG: POST Data: {"nome-atividade":"Teste gabinete 2","tipo-atividade":"1","data":"2025-05-23T14:23","atividade-realizada":"colaborei em elabora\u00e7\u00e3o de proposta institucional com grupo solid\u00e1rio territorial","data-acao":"2025-05-23","hora-acao":"14:23","longitude":"-47.8691107","latitude":"-15.7996446","nome-usuario":"ADRIANA CUNHA BELASCO"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996446&lon=-47.8691107
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-23 17:23:51] Usuário: ADRIANA CUNHA BELASCO, Atividade: Teste gabinete 2, Tipo de Ação: 1, Data: 2025-05-23T14:23, Descrição: colaborei em elaboração de proposta institucional com grupo solidário territorial, Data da Ação: 2025-05-23, Hora da Ação: 14:23
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'ADRIANA CUNHA BELASCO'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691107, -15.7996446, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste gabinete 2,2025-05-23, 14:23,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =ADRIANA CUNHA BELASCO )))MSG: nome_file: 17480210139865822208881094885658.jpg
+ERRO: UPLOAD_ERR_OKMSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/17623261976830af27e752d2.82169354.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/17623261976830af27e752d2.82169354.jpg'
+
+MSG: output.json:{"quantidade_pessoas": 2, "caminho_arquivo_anonimizado": "/imagem/pasteur1/17623261976830af27e752d2.82169354_2025_05_23_17_23_56.jpg", "caminho_arquivo_original": "/imagem/lixeira/17623261976830af27e752d2.82169354_2025_05_23_17_23_56.jpg", "nome_arquivo": "17623261976830af27e752d2.82169354_2025_05_23_17_23_56.jpg"}
+
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (17623261976830af27e752d2.82169354_2025_05_23_17_23_56.jpg, 4, OUoI3pxXnJzPuQjJKPQg5nj1rNLcR5QxEWaJu2alF1fOjxsaeKd6AdpBTCPEdXoxa4pfNLvX3PE+GwMu6eHsgQbyxS4/tt7XtsStkxoz/jA=, 2, /imagem/pasteur1/17623261976830af27e752d2.82169354_2025_05_23_17_23_56.jpg)CHECK: fechou o conn: 

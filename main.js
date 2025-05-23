@@ -137,7 +137,7 @@ async function handleMutation(mutation) {
                         str_tipo_resultado = "<div id='chip-resultado-label'><span>A sua atividade foi classificada como:</span></div><div id='tipo_resultado_" + frase.id_tipo_resultado_pai + "' class='chip_tipo_resultado tipo_classificacao' data-id_acao='" + frase.id_tipo_acao + "'>" + frase.nome_tipo_resultado_pai + "</div>";
                     }
                     velho_id_tipo_resultado = frase.id_tipo_resultado_pai;
-                    return "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ").disabled=false;'/><span>" + frase.phrase + "</span></div>";
+                    return "<div class='chip_frase' data-id_acao='" + frase.id_tipo_acao + "' onclick='this.children[0].click();'><input id='radio_" + frase.id_tipo_acao + "' type='radio' name='frases' onclick='handleSelectedPhrase(" + frase.id_tipo_acao + ");'/><span>" + frase.phrase + "</span></div>";
                 }).join("");
                 document.getElementById('frases').innerHTML = phrasesHTML + str_tipo_resultado;
             }
@@ -492,12 +492,12 @@ function updateInputPosition() {
     let handleInput = async () => {
         try {
             showLoadingIndicator(inputWrapper); // Mostra o indicador de carregamento
-            const suggestions_full = await fetchSuggestions(input.value);
+            const suggestions_full = await fetchSuggestions(input.value.toLowerCase());
 
             const suggestions = suggestions_full.tokens;
             const frases = suggestions_full.phrases;
             if (suggestions.length === 0) {
-                input.value = input.value.slice(0, -1); // Atualiza o valor do input se necessário
+                input.value = input.value.slice(0, -1).toLowerCase(); // Atualiza o valor do input se necessário
             } else {
                 showDropdown(suggestions, input, inputWrapper);
             }
@@ -510,10 +510,12 @@ function updateInputPosition() {
     };
 
 
-    input.oninput = async () => {
+    input.oninput = async (event) => {
+	input.value = input.value.toLowerCase();
         handleInput(event);
     };
-    input.onclick = async () => {
+    input.onclick = async (event) => {
+	input.value = input.value.toLowerCase();
         handleInput(event);
     };
 
@@ -1230,7 +1232,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
                     alert(error.message);
                 }
                 else {
-                    alert('Erro ao enviar dados, tente novamente');
+                    alert('Erro ao enviar dados, tente novamente.'+error.message);
                 }
                 hideLoading();
             });

@@ -52,6 +52,6 @@ echo "Inserindo frases"
 mysql -u root  papedins_mvp_db < insert_frases.sql
 
 
-#echo "Tira frases/tipos_acoes duplicadas"
+echo "Tira frases/tipos_acoes duplicadas"
 
-#sudo mysql -u root -t papedins_mvp_db < delete_duplicados_frases_e_depois_tipos_acoes.sql
+sudo mysql -u root -t papedins_mvp_db < delete_duplicados_frases_e_depois_tipos_acoes.sql
