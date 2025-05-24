@@ -1,0 +1,123 @@
+
+
+===========================================================================
+Início de transação em 2025-05-24 17:37:13
+
+MSG: POST Data: {"nome-atividade":"Seu Francisco 1","tipo-atividade":"1","data":"2025-05-24T14:36","atividade-realizada":"colaborei em elabora\u00e7\u00e3o de proposta institucional com grupo solid\u00e1rio territorial","data-acao":"2025-05-24","hora-acao":"14:36","longitude":"-47.0761822","latitude":"-22.8234143","nome-usuario":"ADRIANA CUNHA BELASCO"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8234143&lon=-47.0761822
+MSG: mapResponse: {"place_id":8887438,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":75259405,"lat":"-22.8233133","lon":"-47.0762657","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Cecílio Feltrim","display_name":"Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil","address":{"road":"Rua Cecílio Feltrim","city_district":"Barão Geraldo","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13083-755","country":"Brasil","country_code":"br"},"boundingbox":["-22.8235151","-22.8198778","-47.0765098","-47.0720516"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-24 17:37:14] Usuário: ADRIANA CUNHA BELASCO, Atividade: Seu Francisco 1, Tipo de Ação: 1, Data: 2025-05-24T14:36, Descrição: colaborei em elaboração de proposta institucional com grupo solidário territorial, Data da Ação: 2025-05-24, Hora da Ação: 14:36
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'ADRIANA CUNHA BELASCO'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Campinas
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.0761822, -22.8234143, -22.8235151, -22.8198778, -47.0765098, -47.0720516, Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil, Rua Cecílio Feltrim, Região Imediata de Campinas, , Campinas, São Paulo, 13083-755, Brasil, BR, 3376, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Seu Francisco 1,2025-05-24, 14:36,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =ADRIANA CUNHA BELASCO )))MSG: nome_file: 17481082236698042916552318852713.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/557525348683203caac4833.48456456.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/557525348683203caac4833.48456456.jpg'
+
+MSG: output.json:{"quantidade_pessoas": 1, "caminho_arquivo_anonimizado": "/imagem/pasteur1/557525348683203caac4833.48456456_2025_05_24_17_37_18.jpg", "caminho_arquivo_original": "/imagem/lixeira/557525348683203caac4833.48456456_2025_05_24_17_37_18.jpg", "nome_arquivo": "557525348683203caac4833.48456456_2025_05_24_17_37_18.jpg"}
+
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (557525348683203caac4833.48456456_2025_05_24_17_37_18.jpg, 4, OUoI3pxXnJzPuQjJKPQg5mFb/5h3kYhfXIS76xpY1WXN71smijSX4TTk5RHkjqEBhlRVP7M/f5ta97Q/E/y8wKbhjxUAXrKxZXj0FgI105I=, 1, /imagem/pasteur1/557525348683203caac4833.48456456_2025_05_24_17_37_18.jpg)CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-24 17:45:46
+
+MSG: POST Data: {"nome-atividade":"Seu Francisco II","tipo-atividade":"2717","data":"2025-05-24T14:45","atividade-realizada":"colaborei em busca por financiamento p\u00fablico com entidade solid\u00e1ria formalizada","data-acao":"2025-05-24","hora-acao":"14:45","longitude":"-47.0762014","latitude":"-22.8234211","nome-usuario":"ADRIANA CUNHA BELASCO"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8234211&lon=-47.0762014
+MSG: mapResponse: {"place_id":9041647,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":75259405,"lat":"-22.8233255","lon":"-47.0762805","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Cecílio Feltrim","display_name":"Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil","address":{"road":"Rua Cecílio Feltrim","city_district":"Barão Geraldo","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13083-755","country":"Brasil","country_code":"br"},"boundingbox":["-22.8235151","-22.8198778","-47.0765098","-47.0720516"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-24 17:45:47] Usuário: ADRIANA CUNHA BELASCO, Atividade: Seu Francisco II, Tipo de Ação: 2717, Data: 2025-05-24T14:45, Descrição: colaborei em busca por financiamento público com entidade solidária formalizada, Data da Ação: 2025-05-24, Hora da Ação: 14:45
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'ADRIANA CUNHA BELASCO'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Campinas
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.0762014, -22.8234211, -22.8235151, -22.8198778, -47.0765098, -47.0720516, Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil, Rua Cecílio Feltrim, Região Imediata de Campinas, , Campinas, São Paulo, 13083-755, Brasil, BR, 3376, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Seu Francisco II,2025-05-24, 14:45,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =ADRIANA CUNHA BELASCO )))MSG: nome_file: 17481087354211950851360015916421.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/1376696472683205cb3aa8b9.08003066.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1376696472683205cb3aa8b9.08003066.jpg'
+
+MSG: output.json:{"quantidade_pessoas": 1, "caminho_arquivo_anonimizado": "/imagem/pasteur1/1376696472683205cb3aa8b9.08003066_2025_05_24_17_45_50.jpg", "caminho_arquivo_original": "/imagem/lixeira/1376696472683205cb3aa8b9.08003066_2025_05_24_17_45_50.jpg", "nome_arquivo": "1376696472683205cb3aa8b9.08003066_2025_05_24_17_45_50.jpg"}
+
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1376696472683205cb3aa8b9.08003066_2025_05_24_17_45_50.jpg, 4, OUoI3pxXnJzPuQjJKPQg5pnui6xm/fki2zt4IQn9b7dfe/YN4BAmZ0sHytfOd4vTqn4J4zQ6XCLmzyRxYYuBAiXX2vQmU5GXCQ1TuourxfQ=, 1, /imagem/pasteur1/1376696472683205cb3aa8b9.08003066_2025_05_24_17_45_50.jpg)CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-24 17:47:08
+
+MSG: POST Data: {"nome-atividade":"Seu Francisco III","tipo-atividade":"7","data":"2025-05-24T14:46","atividade-realizada":"intermediei na media\u00e7\u00e3o com \u00f3rg\u00e3os governamentais com coletivo autogestion\u00e1rio popular","data-acao":"2025-05-24","hora-acao":"14:46","longitude":"-47.0761437","latitude":"-22.8233731","nome-usuario":"ADRIANA CUNHA BELASCO"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8233731&lon=-47.0761437
+MSG: mapResponse: {"place_id":9041647,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":75259405,"lat":"-22.8232776","lon":"-47.0762226","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Cecílio Feltrim","display_name":"Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil","address":{"road":"Rua Cecílio Feltrim","city_district":"Barão Geraldo","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13083-755","country":"Brasil","country_code":"br"},"boundingbox":["-22.8235151","-22.8198778","-47.0765098","-47.0720516"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-24 17:47:09] Usuário: ADRIANA CUNHA BELASCO, Atividade: Seu Francisco III, Tipo de Ação: 7, Data: 2025-05-24T14:46, Descrição: intermediei na mediação com órgãos governamentais com coletivo autogestionário popular, Data da Ação: 2025-05-24, Hora da Ação: 14:46
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'ADRIANA CUNHA BELASCO'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Campinas
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.0761437, -22.8233731, -22.8235151, -22.8198778, -47.0765098, -47.0720516, Rua Cecílio Feltrim, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-755, Brasil, Rua Cecílio Feltrim, Região Imediata de Campinas, , Campinas, São Paulo, 13083-755, Brasil, BR, 3376, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Seu Francisco III,2025-05-24, 14:46,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =ADRIANA CUNHA BELASCO )))MSG: nome_file: 17481088185172381931860852824928.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/1080077976832061d7bd322.19190036.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/1080077976832061d7bd322.19190036.jpg'
+
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "/imagem/lixeira/1080077976832061d7bd322.19190036_2025_05_24_17_47_12.jpg", "nome_arquivo": "1080077976832061d7bd322.19190036_2025_05_24_17_47_12.jpg"}
+
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1080077976832061d7bd322.19190036_2025_05_24_17_47_12.jpg, 4, OUoI3pxXnJzPuQjJKPQg5kNPzySd/gFFlmwYpSBOsNuzUaFzn62+6+x0JU3k2oRH97bI/T3gkhX8ViiKBAib8MHVCHCLcDZgaWkZzjK5Ma4=, 0, )CHECK: fechou o conn: 

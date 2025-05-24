@@ -1,1 +1,1 @@
-{"success":true,"message":"Data submitted successfully"}{"success":true,"message":"Data submitted successfully"}
+{"success":true,"message":"Data submitted successfully"}{"success":true,"message":"Data submitted successfully"}{"success":true,"message":"Data submitted successfully"}{"success":true,"message":"Data submitted successfully"}{"success":true,"message":"Data submitted successfully"}
