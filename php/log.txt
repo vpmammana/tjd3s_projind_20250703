@@ -3511,3 +3511,148 @@ CHECK: Passou o tratamento de imagens:
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
 SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (8795221756835a72cf0d2f9.25006750.jpg_sanitized_2025_05_27_11_51_12.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 12:19:15
+
+MSG: POST Data: {"nome-atividade":"Palestra","tipo-atividade":"5904","data":"2025-05-27T09:17","atividade-realizada":"A\u00e7ao","data-acao":"2025-05-27","hora-acao":"09:17","longitude":"-47.2179186","latitude":"-22.8069468","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8069468&lon=-47.2179186
+MSG: mapResponse: {"place_id":8980338,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":638620380,"lat":"-22.8080108","lon":"-47.2182843","class":"amenity","type":"school","place_rank":30,"importance":6.129015030132017e-05,"addresstype":"amenity","name":"Centro de Atividades Fuad Assef Maluf","display_name":"Centro de Atividades Fuad Assef Maluf, 99, Avenida Amazonas, Jardim Vitória, Centro, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13177-060, Brasil","address":{"amenity":"Centro de Atividades Fuad Assef Maluf","house_number":"99","road":"Avenida Amazonas","neighbourhood":"Jardim Vitória","suburb":"Centro","city_district":"Nova Veneza","city":"Sumaré","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13177-060","country":"Brasil","country_code":"br"},"boundingbox":["-22.8091283","-22.8064580","-47.2194686","-47.2168565"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 12:19:16] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Palestra, Tipo de Ação: 5904, Data: 2025-05-27T09:17, Descrição: Açao, Data da Ação: 2025-05-27, Hora da Ação: 09:17
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Sumaré
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.2179186, -22.8069468, -22.8091283, -22.8064580, -47.2194686, -47.2168565, Centro de Atividades Fuad Assef Maluf, 99, Avenida Amazonas, Jardim Vitória, Centro, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13177-060, Brasil, Avenida Amazonas, Região Imediata de Campinas, Centro, Sumaré, São Paulo, 13177-060, Brasil, BR, 3853, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Palestra,2025-05-27, 09:17,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483483230752180261779462901976.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/6163613046835adc47c8eb1.42374992.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/6163613046835adc47c8eb1.42374992.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 6163613046835adc47c8eb1.42374992.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/6163613046835adc47c8eb1.42374992.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 6163613046835adc47c8eb1.42374992.jpg_sanitized.jpg -> 6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg
+A imagem 6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg não precisa de redimensionamento (tamanho: 0.95 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 564ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 581ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 243ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 259ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 96ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 113ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 61ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 78ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 58ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m 1/23[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m3s[0m 175ms/step[1m10/23[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m19/23[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 6ms/step[1m23/23[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 11ms/step[1m23/23[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 12ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 155ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 173ms/step
+Imagem salva em: ../imagem/pasteur/6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg
+Processamento concluído!
+Imagem '6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 6.3309 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (6163613046835adc47c8eb1.42374992.jpg_sanitized_2025_05_27_12_19_20.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 12:23:22
+
+MSG: POST Data: {"nome-atividade":"Semin\u00e1rio","tipo-atividade":"294","data":"2025-05-27T09:20","atividade-realizada":"Ouvinte","data-acao":"2025-05-27","hora-acao":"09:20","longitude":"-47.2179153","latitude":"-22.8069787","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8069787&lon=-47.2179153
+MSG: mapResponse: {"place_id":8980338,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":638620380,"lat":"-22.8080108","lon":"-47.2182843","class":"amenity","type":"school","place_rank":30,"importance":6.129015030132017e-05,"addresstype":"amenity","name":"Centro de Atividades Fuad Assef Maluf","display_name":"Centro de Atividades Fuad Assef Maluf, 99, Avenida Amazonas, Jardim Vitória, Centro, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13177-060, Brasil","address":{"amenity":"Centro de Atividades Fuad Assef Maluf","house_number":"99","road":"Avenida Amazonas","neighbourhood":"Jardim Vitória","suburb":"Centro","city_district":"Nova Veneza","city":"Sumaré","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13177-060","country":"Brasil","country_code":"br"},"boundingbox":["-22.8091283","-22.8064580","-47.2194686","-47.2168565"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 12:23:23] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Seminário, Tipo de Ação: 294, Data: 2025-05-27T09:20, Descrição: Ouvinte, Data da Ação: 2025-05-27, Hora da Ação: 09:20
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Sumaré
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.2179153, -22.8069787, -22.8091283, -22.8064580, -47.2194686, -47.2168565, Centro de Atividades Fuad Assef Maluf, 99, Avenida Amazonas, Jardim Vitória, Centro, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13177-060, Brasil, Avenida Amazonas, Região Imediata de Campinas, Centro, Sumaré, São Paulo, 13177-060, Brasil, BR, 3853, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Seminário,2025-05-27, 09:20,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483484702233325157797345333686.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/18886368996835aebb9d15f3.25389624.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/18886368996835aebb9d15f3.25389624.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 18886368996835aebb9d15f3.25389624.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/18886368996835aebb9d15f3.25389624.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 18886368996835aebb9d15f3.25389624.jpg_sanitized.jpg -> 18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg
+A imagem 18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg não precisa de redimensionamento (tamanho: 0.77 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 528ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 548ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 273ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 290ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 100ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 116ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 65ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 81ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 63ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 67ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 91ms/step
+[1m1/6[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m0s[0m 174ms/step[1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step [1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+Imagem salva em: ../imagem/pasteur/18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg
+Processamento concluído!
+Imagem '18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 5.8025 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
