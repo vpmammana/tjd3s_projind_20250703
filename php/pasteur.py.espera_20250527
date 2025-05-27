@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[2]:
 
 
 # mudanças colorido para P&B , limitação de tamanho 5MB, apaga arquivos grandes, 
@@ -22,24 +22,15 @@ import numpy as np
 import shutil
 from cryptography.fernet import Fernet
 from datetime import datetime, timezone
-import matplotlib.pyplot as plt  #novo meu
+import matplotlib.pyplot as plt
 import time
-import schedule  #novo meu
-from PIL import Image #novo meu
-import piexif  #novo meu
-import subprocess  #novo meu
-import imghdr  #novo meu
+import schedule
+from PIL import Image
+import piexif
+import subprocess
+import imghdr
 #from nudenet import NudeDetector
 
-import argparse  #antigo incluido
-import json      #antigo incluido
-
-a = 0 # variável global
-novo_nome_arquivo = ""
-caminho_arquivo_anonimizado = ""
-caminho_arquivo_original = ""
-base_dir = '/imagem'
-resultsLength = 0
 #############funções criadas########################
 
 
@@ -264,44 +255,20 @@ def process_images_in_directory(directory):
 
 ############ fim funções secundárias
 
-# Diretórios de criptografia windows
-## source_dir = "../imagem/input"
-## dest_dir = "../imagem/crypt"
-## key_dir = "../imagem/key"
-
-# Diretórios de criptografia  linux
+# Diretórios de criptografia
 source_dir = "../imagem/input"
-dest_dir = "../imagem/crypt"
+dest_dir = "../imagem/cript"
 key_dir = "../imagem/key"
 
-##encrypted_dir = '../imagem/crypt_quar'  # Onde as imagens criptografadas serão armazenadas windows
-##keys_dir = '../imagem/decrypt_quar'  # Onde as chaves de descriptografia serão armazenadas windows
-
-encrypted_dir = "../imagem/crypt_quar"  # Onde as imagens criptografadas serão armazenadas linux
-keys_dir = "../imagem/decrypt_quar" # Onde as chaves de descriptografia serão armazenadas linux
-
+encrypted_dir = '../imagem/cript_quar'  # Onde as imagens criptografadas serão armazenadas
+keys_dir = '../imagem/decript_quar'  # Onde as chaves de descriptografia serão armazenadas
 os.makedirs(encrypted_dir, exist_ok=True)
 os.makedirs(keys_dir, exist_ok=True)
 
 def rodar_imagens():
     # Início da contagem do tempo
-    start_time = time.time()
-    novo_nome_arquivo = None  # valor inicial
     a = 0 # variável global
-    # pastas criadas windows
-    #folder_path = '../imagem/crypt'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/pasteur'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/key'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/decrypted'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/lixeira'
-    #ensure_directory_exists(folder_path)
-    
-    # pastas criadas linux
-    folder_path = '../imagem/crypt'
+    folder_path = '../imagem/cript'
     ensure_directory_exists(folder_path)
     folder_path = '../imagem/pasteur'
     ensure_directory_exists(folder_path)
@@ -310,18 +277,9 @@ def rodar_imagens():
     folder_path = '../imagem/decrypted'
     ensure_directory_exists(folder_path)
     folder_path = '../imagem/lixeira'
-    ensure_directory_exists(folder_path)    
-    
+    ensure_directory_exists(folder_path)
 
-    # Diretórios de origem e destino da lixeira, diretorio da imagem windows
-    #origem = '../imagem/input'
-    #destino = '../imagem/lixeira'
-    #diretorio = '../imagem/input'
-    #input_dir = "../imagem/input"
-    #output_dir = "../imagem/pasteur"
-    #diretorio_entrada = "../imagem/input"
-    
-    # Diretórios de origem e destino da lixeira, diretorio da imagem linux
+    # Diretórios de origem e destino da lixeira, diretorio da imagem
     origem = '../imagem/input'
     destino = '../imagem/lixeira'
     diretorio = '../imagem/input'
@@ -388,23 +346,14 @@ def rodar_imagens():
             shutil.move(caminho_arquivo_origem, caminho_arquivo_destino)
 
     print("Todos os arquivos foram movidos com sucesso!")
-    
-    # Fim da contagem do tempo
-    end_time = time.time()
-    # After processing images, create a JSON output  "a" = numero de pessoas
-    if novo_nome_arquivo is not None:
-        output_data = {"quantidade_pessoas": a, "caminho_arquivo_anonimizado":caminho_arquivo_anonimizado, "caminho_arquivo_original":caminho_arquivo_original, "nome_arquivo":novo_nome_arquivo}
 
-        # Save to output.json
-        with open('output.json', 'w') as f:
-            json.dump(output_data, f)
-        # Tempo gasto
-        execution_time = end_time - start_time
-        print(f"Tempo de execução: {execution_time:.4f} segundos")
-    else:
-        print("Nenhum arquivo foi renomeado, variável 'novo_nome_arquivo' não definida.")
-    
 rodar_imagens()
+
+
+# In[ ]:
+
+
+#pip list
 
 
 # In[ ]:

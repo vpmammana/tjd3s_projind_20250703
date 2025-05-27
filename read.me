@@ -1,3 +1,39 @@
+VPM 20250527
+
+Foi preciso retirar a capacidade de identificação de imagens impróprias pela retirada do modelo indicado abaixo do repositório do nudenet. 
+
+VPM 20250527
+
+Ficou evidente que a versão do pasteur.py presente no repositório estava desatualizada e que a versão atualizada não tinha sido preparada para passar o JSON do python para o PHP.
+
+Foi preciso ter uma reunião com Wagner para rever tudo, identificar os problemas e refazer as interfaces. 
+
+Para identificar esse problema, sem documentação, tive que realizar uma miríade de testes até compreender o que estava sendo feito na versão anterior e o que precisaria ser feito na nova. 
+
+Dentre as dificuldades estava a intermitência nos erros de tratamento de imagens na versão anterior, que causava erro no aplicativo sempre que uma imagem sem rosto e sem "features" (borrada) era uploaded. Observei esse fenômeno para imagens de superfícies planas e uniformes, desfocadas.
+
+
+VPM 20250526
+
+Foi preciso mudar C: para .. no pasteur.py
+
+VPM 20250526
+
+Foi preciso retirar o detector de imagens impróprias pela falta do modelo detector_v2_default_tal tal tal. onnx
+
+VPM 20250526
+
+Foi colocada uma versão nova do pasteur.py que o Wagner passou por whatswapp, com uma nova estrutura de diretórios dentro do diretório imagem.
+
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ mkdir crypt 
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ mkdir crupt_quar
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ rmdir crupt_quar/
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ mkdir crypt_quar
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ mkdir decrypt_quar
+(dev_victor) victor@h5g37o62z:/var/www/html/tjd3s-app_fork_20250513/imagem$ mkdir pasteur
+
+
+
 VPM 20250522
 
 O CriarEvidencia.php está gerando esta saída

@@ -14,6 +14,8 @@
 # extração de Metadados EXIF
 #Bloquear Imagens com Extensões Suspeitas
 # detecta e trasfere arquivos de imagem impropria para quarentena, sensibilidade linha: 277
+# aplicação de antivirus clawAV (está desabilitado, intalar ClamAV abaixo), linhas: 31 a 39 e função na linha 356
+#sudo apt update && sudo apt install clamav -y e #Sudo freshclam para instalar o ClamAV  
 
 import cv2
 import os
@@ -22,26 +24,25 @@ import numpy as np
 import shutil
 from cryptography.fernet import Fernet
 from datetime import datetime, timezone
-import matplotlib.pyplot as plt  #novo meu
+import matplotlib.pyplot as plt
 import time
-import schedule  #novo meu
-from PIL import Image #novo meu
-import piexif  #novo meu
-import subprocess  #novo meu
-import imghdr  #novo meu
-#from nudenet import NudeDetector
+import schedule
+from PIL import Image
+import piexif
+import subprocess
+import imghdr
+from nudenet import NudeDetector
 
-import argparse  #antigo incluido
-import json      #antigo incluido
-
-a = 0 # variável global
-novo_nome_arquivo = ""
-caminho_arquivo_anonimizado = ""
-caminho_arquivo_original = ""
-base_dir = '/imagem'
-resultsLength = 0
 #############funções criadas########################
-
+#função 0: antivirus claw
+#def scan_file(file_path):
+#    result = subprocess.run(["clamscan", file_path], capture_output=True, text=True)
+#    return "Infected" not in result.stdout
+#if scan_file("imagem.jpg"):
+#    print("Imagem segura.")
+#else:
+#    print("Imagem infectada! Excluindo...")
+#    os.remove("imagem.jpg")
 
 #função 1:  cria as pastas necessárias ao projeto caso não existam
 def ensure_directory_exists(directory_path):
@@ -261,46 +262,71 @@ def process_images_in_directory(directory):
             print(f"Arquivo {file_name} suspeito! Rejeitado e excluído.")
             os.remove(file_path)  # Exclui o arquivo suspeito
 
+####função 16 detectar pornografia #################             
+def impropria():
+    #detector = NudeDetector() # Inicializa o detector
+    detector = NudeDetector(model_path='/var/www/html/tjd3s-app_fork_20250513/modelos/QualityUpdateModelV2.onnx')
+    # Percorre todas as imagens do diretório
+    for filename in os.listdir(source_dir):
+        image_path = os.path.join(source_dir, filename)  # Caminho completo do arquivo original
+
+        # Verifica se o arquivo é uma imagem
+        if not filename.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
+            continue  # Pula arquivos que não são imagens
+
+        # Detecta conteúdo NSFW
+        results = detector.detect(image_path)
+
+        # Se for impróprio, processa a criptografia
+        if results:
+            for result in results:
+                if 'score' in result and result['score'] > 0.85:                #<-------------------------sensibilidade
+                    print(f"❌ Conteúdo impróprio detectado em {image_path} com pontuação {result['score']:.2f}")
+
+                    # Gera uma chave de criptografia única para cada imagem
+                    key = Fernet.generate_key()
+                    cipher = Fernet(key)
+
+                    # Lê e criptografa o arquivo
+                    with open(image_path, 'rb') as file:
+                        encrypted_data = cipher.encrypt(file.read())
+
+                    # Salva o arquivo criptografado
+                    encrypted_path = os.path.join(encrypted_dir, filename + '.enc')
+                    with open(encrypted_path, 'wb') as file:
+                        file.write(encrypted_data)
+
+                    # Salva a chave de descriptografia
+                    key_path = os.path.join(keys_dir, filename + '.key')
+                    with open(key_path, 'wb') as file:
+                        file.write(key)
+
+                    # Remove o arquivo original
+                    os.remove(image_path)
+                    print(f"🔒 {image_path} criptografada e movida para {encrypted_path}")
+                    print(f"🔑 Chave de descriptografia salva em {key_path}")
+
+                    break  # Sai do loop interno para evitar múltiplas exclusões
+
+    print("✅ Processamento de imagens improprias concluído.")
 
 ############ fim funções secundárias
 
-# Diretórios de criptografia windows
-## source_dir = "../imagem/input"
-## dest_dir = "../imagem/crypt"
-## key_dir = "../imagem/key"
-
-# Diretórios de criptografia  linux
+# Diretórios de criptografia
 source_dir = "../imagem/input"
 dest_dir = "../imagem/crypt"
 key_dir = "../imagem/key"
 
-##encrypted_dir = '../imagem/crypt_quar'  # Onde as imagens criptografadas serão armazenadas windows
-##keys_dir = '../imagem/decrypt_quar'  # Onde as chaves de descriptografia serão armazenadas windows
-
-encrypted_dir = "../imagem/crypt_quar"  # Onde as imagens criptografadas serão armazenadas linux
-keys_dir = "../imagem/decrypt_quar" # Onde as chaves de descriptografia serão armazenadas linux
-
+encrypted_dir = '../imagem/crypt_quar'  # Onde as imagens criptografadas serão armazenadas
+keys_dir = '../imagem/decrypt_quar'  # Onde as chaves de descriptografia serão armazenadas
 os.makedirs(encrypted_dir, exist_ok=True)
 os.makedirs(keys_dir, exist_ok=True)
 
 def rodar_imagens():
     # Início da contagem do tempo
     start_time = time.time()
-    novo_nome_arquivo = None  # valor inicial
+
     a = 0 # variável global
-    # pastas criadas windows
-    #folder_path = '../imagem/crypt'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/pasteur'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/key'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/decrypted'
-    #ensure_directory_exists(folder_path)
-    #folder_path = '../imagem/lixeira'
-    #ensure_directory_exists(folder_path)
-    
-    # pastas criadas linux
     folder_path = '../imagem/crypt'
     ensure_directory_exists(folder_path)
     folder_path = '../imagem/pasteur'
@@ -310,18 +336,9 @@ def rodar_imagens():
     folder_path = '../imagem/decrypted'
     ensure_directory_exists(folder_path)
     folder_path = '../imagem/lixeira'
-    ensure_directory_exists(folder_path)    
-    
+    ensure_directory_exists(folder_path)
 
-    # Diretórios de origem e destino da lixeira, diretorio da imagem windows
-    #origem = '../imagem/input'
-    #destino = '../imagem/lixeira'
-    #diretorio = '../imagem/input'
-    #input_dir = "../imagem/input"
-    #output_dir = "../imagem/pasteur"
-    #diretorio_entrada = "../imagem/input"
-    
-    # Diretórios de origem e destino da lixeira, diretorio da imagem linux
+    # Diretórios de origem e destino da lixeira, diretorio da imagem
     origem = '../imagem/input'
     destino = '../imagem/lixeira'
     diretorio = '../imagem/input'
@@ -341,7 +358,9 @@ def rodar_imagens():
     # Tamanho máximo permitido em bytes (4MB = 4 * 1024 * 1024)#<------------------------- tamanho máximo
     TAMANHO_MAXIMO = 4 * 1024 * 1024  #<-------------------------------------------------- tamanho máximo
 
-  
+    # uso do antivirus
+    # scan_file(input_dir)             #<-------------------------------------------------- antivirus ClamAv desabilitado
+      
     #bloqueio de imagens suspeitas
     process_images_in_directory(input_dir)
     
@@ -369,7 +388,9 @@ def rodar_imagens():
     #########
     # redução de imagem
     processar_imagens(diretorio_entrada)
-
+    
+    # detecção e extração de imagem impropria
+    impropria()
     
     # extração de faces
     process_images_dir(input_dir, output_dir)
@@ -388,23 +409,24 @@ def rodar_imagens():
             shutil.move(caminho_arquivo_origem, caminho_arquivo_destino)
 
     print("Todos os arquivos foram movidos com sucesso!")
-    
+
     # Fim da contagem do tempo
     end_time = time.time()
-    # After processing images, create a JSON output  "a" = numero de pessoas
-    if novo_nome_arquivo is not None:
-        output_data = {"quantidade_pessoas": a, "caminho_arquivo_anonimizado":caminho_arquivo_anonimizado, "caminho_arquivo_original":caminho_arquivo_original, "nome_arquivo":novo_nome_arquivo}
 
-        # Save to output.json
-        with open('output.json', 'w') as f:
-            json.dump(output_data, f)
-        # Tempo gasto
-        execution_time = end_time - start_time
-        print(f"Tempo de execução: {execution_time:.4f} segundos")
-    else:
-        print("Nenhum arquivo foi renomeado, variável 'novo_nome_arquivo' não definida.")
-    
+    # Tempo gasto
+    execution_time = end_time - start_time
+    print(f"Tempo de execução: {execution_time:.4f} segundos")
 rodar_imagens()
+### ciclo diário   (desabilitado)
+#"""
+#print("Script iniciado. Tarefa contínua rodando e tarefa diária agendada para 4h da manhã...")     #<--horário de teste
+#schedule.every().day.at("10:20").do(rodar_imagens)         #<------------------------------------horário de teste 10:20
+## Loop principal
+#while True:
+#    # Verifica se há uma tarefa agendada para executar
+#    schedule.run_pending()
+#    time.sleep(10)
+#"""
 
 
 # In[ ]:

@@ -1009,7 +1009,7 @@ function syncDataWithServer() {
                 if (!fetchStatusArr.includes(false)) {
                     hideLoading();
                     alert('Dados enviados com sucesso!');
-                    window.location.href = "/"
+                    window.location.href = "/tjd3s-app_fork_20250513/"
                 } else {
                     alert('Erro tente novamente!')
                 }

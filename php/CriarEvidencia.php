@@ -1,10 +1,17 @@
 <?php
-ob_start();
-header('Content-Type: application/json;');
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 
+ob_start(); // Captura a saída, inclusive avisos e erros
+
+// Evita que o erro apareça para quem chamou via navegador/Apache
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+
+// Garante que os erros continuem sendo registrados no log do PHP
+ini_set('log_errors', 1);
 error_reporting(E_ALL);
+
+// Configura o Content-Type como JSON (opcional)
+header('Content-Type: application/json;');
 
 $log__file = 'log.txt';
 $log__Message = "Início de transação em " . date('Y-m-d H:i:s') . "\n";
@@ -89,28 +96,28 @@ try {
  file_put_contents($log__file,  "CHECK: passou json decode\n", FILE_APPEND | LOCK_EX);
 
 
-    $nome_usuario = $_POST['nome-usuario'];
-    $nomeAtividadeEvento = $_POST['nome-atividade'];
-    $id_tipo_acao = $_POST['tipo-atividade'];
-    $data = $_POST['data'];
-    $descricao = $_POST['atividade-realizada'];
-    $dataAcao = $_POST['data-acao'];
-    $horaAcao = $_POST['hora-acao'];
-    $bounding_box_lat_min = $mapData['boundingbox'][0];
-    $bounding_box_lat_max = $mapData['boundingbox'][1];
-    $bounding_box_long_min = $mapData['boundingbox'][2];
-    $bounding_box_long_max = $mapData['boundingbox'][3];
+    $nome_usuario = $_POST['nome-usuario'] ?? null;
+    $nomeAtividadeEvento = $_POST['nome-atividade'] ?? null;
+    $id_tipo_acao = $_POST['tipo-atividade'] ?? null;
+    $data = $_POST['data'] ?? null;
+    $descricao = $_POST['atividade-realizada'] ?? null;
+    $dataAcao = $_POST['data-acao'] ?? null;
+    $horaAcao = $_POST['hora-acao'] ?? null;
+    $bounding_box_lat_min = $mapData['boundingbox'][0] ?? null;
+    $bounding_box_lat_max = $mapData['boundingbox'][1] ?? null;
+    $bounding_box_long_min = $mapData['boundingbox'][2] ?? null;
+    $bounding_box_long_max = $mapData['boundingbox'][3] ?? null;
     file_put_contents($log__file,  "CHECK: passou bounding box\n", FILE_APPEND | LOCK_EX);
-    $neighbourhood = $mapData['address']['municipality'];
-    $country = $mapData['address']['country'];
-    $road = $mapData['address']['road'];
-    $city = $mapData['address']['city'] ? $mapData['address']['city'] : $mapData['address']['city_district'];
-    $state = $mapData['address']['state'];
-    $postCode = $mapData['address']['postcode'];
+    $neighbourhood = $mapData['address']['municipality'] ?? null;
+    $country = $mapData['address']['country'] ?? null;
+    $road = $mapData['address']['road'] ?? null;
+    $city = $mapData['address']['city'] ? $mapData['address']['city'] : $mapData['address']['city_district'] ?? null;
+    $state = $mapData['address']['state'] ?? null;
+    $postCode = $mapData['address']['postcode'] ?? null;
     $countryCode = strtoupper($mapData['address']['country_code']);
     $suburb = $mapData['address']['suburb'] ?? null;
-    $dislayName = $mapData['display_name'];
-    $address = $mapData['address'];
+    $dislayName = $mapData['display_name'] ?? null;
+    $address = $mapData['address'] ?? null;
     file_put_contents($log__file,  "CHECK: passou address\n", FILE_APPEND | LOCK_EX);
     $id_pais = 0;
     file_put_contents($log__file,  "CHECK: passou id_pais\n", FILE_APPEND | LOCK_EX);
@@ -349,12 +356,13 @@ $destinationPath = $destinationDir . '/' . $fileName;
                             }
 
                             // Comanda de Python usado para fazer o processamento de imagem
-//                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath);
+//                            $command = escapeshellcmd("/var/www/html/venv/bin/python /var/www/html/php/pasteur.py") . ' ' . escapeshellarg($destinationPath). ' 2>&1';
 $command = escapeshellcmd("$pythonPath $scriptPath") . ' ' . escapeshellarg($destinationPath);
 file_put_contents($log__file,  "\nMSG: Comando: " . $command . "\n", FILE_APPEND | LOCK_EX);
                             $output = [];
                             $returnVar = 0;
                             exec($command, $output, $returnVar);
+                                file_put_contents($log__file, "\nSaida de erros do python:  ".implode("\n",$output), FILE_APPEND | LOCK_EX  );
 
                             if ($returnVar !== 0) {
                                 // Empty the 'imagem/input' folder
@@ -378,6 +386,7 @@ file_put_contents($log__file,  "\nMSG: Comando: " . $command . "\n", FILE_APPEND
 				file_put_contents($log__file, "\nERRO: Failed to read output.json\n", FILE_APPEND | LOCK_EX);
                                 error_log("Failed to read output.json");
                             } else {
+				file_put_contents($log__file, "\nOutput nao eh false. Vai tentar encript. ", FILE_APPEND | LOCK_EX  );
                                 // formatar e configurar os dados de processamneto de imagem
                                 $jsonOutput = json_decode($output, true);
                                 error_log(json_encode($jsonOutput));
