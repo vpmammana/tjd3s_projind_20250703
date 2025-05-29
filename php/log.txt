@@ -3656,3 +3656,435 @@ CHECK: Passou o tratamento de imagens:
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
 SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (18886368996835aebb9d15f3.25389624.jpg_sanitized_2025_05_27_12_23_27.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 15:11:01
+
+MSG: POST Data: {"nome-atividade":"Apresenta\u00e7\u00e3o do aplicativo para eberval ","tipo-atividade":"111","data":"2025-05-27T12:10","atividade-realizada":"Oi","data-acao":"2025-05-27","hora-acao":"12:10","longitude":"-46.9252989","latitude":"-23.2076963","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.2076963&lon=-46.9252989
+MSG: mapResponse: {"place_id":7894291,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":30426566,"lat":"-23.2076884","lon":"-46.9252854","class":"highway","type":"motorway","place_rank":26,"importance":0.05339746318760964,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil","address":{"road":"Rodovia dos Bandeirantes","neighbourhood":"Brisas da Mata","suburb":"Gramadão","city_district":"Jundiaí","city":"Jundiaí","municipality":"Região Imediata de Jundiaí","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13211-510","country":"Brasil","country_code":"br"},"boundingbox":["-23.2133639","-23.1987543","-46.9287926","-46.9206549"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 15:11:04] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Apresentação do aplicativo para eberval , Tipo de Ação: 111, Data: 2025-05-27T12:10, Descrição: Oi, Data da Ação: 2025-05-27, Hora da Ação: 12:10
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Jundiaí
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.9252989, -23.2076963, -23.2133639, -23.1987543, -46.9287926, -46.9206549, Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil, Rodovia dos Bandeirantes, Região Imediata de Jundiaí, Gramadão, Jundiaí, São Paulo, 13211-510, Brasil, BR, 3563, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Apresentação do aplicativo para eberval ,2025-05-27, 12:10,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483586503826291445368381199595.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/9945028276835d6081f3ad5.64771223.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/9945028276835d6081f3ad5.64771223.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 9945028276835d6081f3ad5.64771223.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/9945028276835d6081f3ad5.64771223.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 9945028276835d6081f3ad5.64771223.jpg_sanitized.jpg -> 9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg
+A imagem 9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg não precisa de redimensionamento (tamanho: 0.31 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 274ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 291ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 155ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 173ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 87ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m 1/25[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 191ms/step[1m10/25[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m19/25[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 6ms/step[1m25/25[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 10ms/step[1m25/25[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 11ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 160ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 179ms/step
+Imagem salva em: ../imagem/pasteur/9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg
+Processamento concluído!
+Imagem '9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.9295 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (9945028276835d6081f3ad5.64771223.jpg_sanitized_2025_05_27_15_11_08.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 16:24:58
+
+MSG: POST Data: {"nome-atividade":"Reuni\u00e3o ","tipo-atividade":"3968","data":"2025-05-27T13:21","atividade-realizada":"Fiz um curso sobre o app do Paulo Singer.","data-acao":"2025-05-27","hora-acao":"13:21","longitude":"-46.9252989","latitude":"-23.2076963","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.2076963&lon=-46.9252989
+MSG: mapResponse: {"place_id":8178348,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":30426566,"lat":"-23.2076884","lon":"-46.9252854","class":"highway","type":"motorway","place_rank":26,"importance":0.05339746318760964,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil","address":{"road":"Rodovia dos Bandeirantes","neighbourhood":"Brisas da Mata","suburb":"Gramadão","city_district":"Jundiaí","city":"Jundiaí","municipality":"Região Imediata de Jundiaí","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13211-510","country":"Brasil","country_code":"br"},"boundingbox":["-23.2133639","-23.1987543","-46.9287926","-46.9206549"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 16:24:59] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Reunião , Tipo de Ação: 3968, Data: 2025-05-27T13:21, Descrição: Fiz um curso sobre o app do Paulo Singer., Data da Ação: 2025-05-27, Hora da Ação: 13:21
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Jundiaí
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.9252989, -23.2076963, -23.2133639, -23.1987543, -46.9287926, -46.9206549, Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil, Rodovia dos Bandeirantes, Região Imediata de Jundiaí, Gramadão, Jundiaí, São Paulo, 13211-510, Brasil, BR, 3563, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Reunião ,2025-05-27, 13:21,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483630739383815505071063306381.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/17413157246835e75b9a3f58.85705329.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/17413157246835e75b9a3f58.85705329.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17413157246835e75b9a3f58.85705329.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17413157246835e75b9a3f58.85705329.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17413157246835e75b9a3f58.85705329.jpg_sanitized.jpg -> 17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg
+A imagem 17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg não precisa de redimensionamento (tamanho: 1.37 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 544ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 562ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 260ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 277ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 108ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 125ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 61ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 78ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 62ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 69ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 87ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step
+[1m 1/78[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m13s[0m 174ms/step[1m11/78[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 5ms/step   [1m22/78[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 5ms/step[1m32/78[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 5ms/step[1m43/78[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 5ms/step[1m54/78[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 5ms/step[1m66/78[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 5ms/step[1m76/78[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 5ms/step[1m78/78[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 6ms/step[1m78/78[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 6ms/step
+[1m1/2[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 153ms/step[1m2/2[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 132ms/step[1m2/2[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 150ms/step
+Imagem salva em: ../imagem/pasteur/17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg
+Processamento concluído!
+Imagem '17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 7.2859 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (17413157246835e75b9a3f58.85705329.jpg_sanitized_2025_05_27_16_25_04.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 16:30:15
+
+MSG: POST Data: {"nome-atividade":"Teste capote","tipo-atividade":"1324","data":"2025-05-27T13:29","atividade-realizada":"Oi","data-acao":"2025-05-27","hora-acao":"13:29","longitude":"-46.9252989","latitude":"-23.2076963","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.2076963&lon=-46.9252989
+MSG: mapResponse: {"place_id":8178348,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":30426566,"lat":"-23.2076884","lon":"-46.9252854","class":"highway","type":"motorway","place_rank":26,"importance":0.05339746318760964,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil","address":{"road":"Rodovia dos Bandeirantes","neighbourhood":"Brisas da Mata","suburb":"Gramadão","city_district":"Jundiaí","city":"Jundiaí","municipality":"Região Imediata de Jundiaí","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13211-510","country":"Brasil","country_code":"br"},"boundingbox":["-23.2133639","-23.1987543","-46.9287926","-46.9206549"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 16:30:15] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Teste capote, Tipo de Ação: 1324, Data: 2025-05-27T13:29, Descrição: Oi, Data da Ação: 2025-05-27, Hora da Ação: 13:29
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Jundiaí
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.9252989, -23.2076963, -23.2133639, -23.1987543, -46.9287926, -46.9206549, Rodovia dos Bandeirantes, Brisas da Mata, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-510, Brasil, Rodovia dos Bandeirantes, Região Imediata de Jundiaí, Gramadão, Jundiaí, São Paulo, 13211-510, Brasil, BR, 3563, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste capote,2025-05-27, 13:29,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483633994202023024358913950138.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/16801082026835e897e61558.79430141.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/16801082026835e897e61558.79430141.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 16801082026835e897e61558.79430141.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/16801082026835e897e61558.79430141.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 16801082026835e897e61558.79430141.jpg_sanitized.jpg -> 16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg
+A imagem 16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg não precisa de redimensionamento (tamanho: 1.07 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 544ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 563ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 281ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 320ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 98ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 115ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 76ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 60ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 65ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step
+[1m 1/33[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m6s[0m 215ms/step[1m10/33[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m20/33[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 6ms/step[1m31/33[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 5ms/step[1m33/33[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step[1m33/33[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 152ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 169ms/step
+Imagem salva em: ../imagem/pasteur/16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg
+Processamento concluído!
+Imagem '16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 6.0653 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (16801082026835e897e61558.79430141.jpg_sanitized_2025_05_27_16_30_20.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 16:35:57
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"1324","data":"2025-05-27T13:35","atividade-realizada":"Oi","data-acao":"2025-05-27","hora-acao":"13:35","longitude":"-46.676419","latitude":"-23.5565866","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5565866&lon=-46.676419
+MSG: mapResponse: {"place_id":8503744,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":5739288008,"lat":"-23.5566218","lon":"-46.6764387","class":"place","type":"house","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"place","name":"","display_name":"23, Rua Cangatará, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-060, Brasil","address":{"house_number":"23","road":"Rua Cangatará","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-060","country":"Brasil","country_code":"br"},"boundingbox":["-23.5566718","-23.5565718","-46.6764887","-46.6763887"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 16:35:58] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Teste, Tipo de Ação: 1324, Data: 2025-05-27T13:35, Descrição: Oi, Data da Ação: 2025-05-27, Hora da Ação: 13:35
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = São Paulo
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.676419, -23.5565866, -23.5566718, -23.5565718, -46.6764887, -46.6763887, 23, Rua Cangatará, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-060, Brasil, Rua Cangatará, Região Imediata de São Paulo, Jardim Paulista, São Paulo, São Paulo, 05409-060, Brasil, BR, 3832, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-05-27, 13:35,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483637373871671614124620887189.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/12363011106835e9ee142497.12164818.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/12363011106835e9ee142497.12164818.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 12363011106835e9ee142497.12164818.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/12363011106835e9ee142497.12164818.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 12363011106835e9ee142497.12164818.jpg_sanitized.jpg -> 12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg
+A imagem 12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg não precisa de redimensionamento (tamanho: 1.29 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 528ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 547ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 244ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 261ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 91ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 107ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 58ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 75ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 60ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m 1/34[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 216ms/step[1m10/34[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m20/34[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 6ms/step[1m31/34[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 5ms/step[1m34/34[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step[1m34/34[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 9ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 147ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 165ms/step
+Imagem salva em: ../imagem/pasteur/12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg
+Processamento concluído!
+Imagem '12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 6.1189 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (12363011106835e9ee142497.12164818.jpg_sanitized_2025_05_27_16_36_01.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 16:40:25
+
+MSG: POST Data: {"nome-atividade":"Mapeamento","tipo-atividade":"5955","data":"2025-05-27T13:38","atividade-realizada":"Identifiquei empreendimento de economia popular e solid\u00e1ria que atua com transporte por aplicativo","data-acao":"2025-05-27","hora-acao":"13:38","longitude":"-46.6752118","latitude":"-23.5555735","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5555735&lon=-46.6752118
+MSG: mapResponse: {"place_id":8660164,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":11093501369,"lat":"-23.5556151","lon":"-46.6752071","class":"amenity","type":"fast_food","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Nations Burger & Salads","display_name":"Nations Burger & Salads, Rua Oscar Freire, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-011, Brasil","address":{"amenity":"Nations Burger & Salads","road":"Rua Oscar Freire","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-011","country":"Brasil","country_code":"br"},"boundingbox":["-23.5556651","-23.5555651","-46.6752571","-46.6751571"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 16:40:26] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Mapeamento, Tipo de Ação: 5955, Data: 2025-05-27T13:38, Descrição: Identifiquei empreendimento de economia popular e solidária que atua com transporte por aplicativo, Data da Ação: 2025-05-27, Hora da Ação: 13:38
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = São Paulo
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.6752118, -23.5555735, -23.5556651, -23.5555651, -46.6752571, -46.6751571, Nations Burger & Salads, Rua Oscar Freire, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-011, Brasil, Rua Oscar Freire, Região Imediata de São Paulo, Jardim Paulista, São Paulo, São Paulo, 05409-011, Brasil, BR, 3832, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Mapeamento,2025-05-27, 13:38,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483639953812490675696176535847.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/6118136876835eafa21b967.04373093.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/6118136876835eafa21b967.04373093.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 6118136876835eafa21b967.04373093.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/6118136876835eafa21b967.04373093.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 6118136876835eafa21b967.04373093.jpg_sanitized.jpg -> 6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg
+A imagem 6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg não precisa de redimensionamento (tamanho: 0.36 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 343ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 367ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 180ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 200ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 73ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 64ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 56ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 61ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 60ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m 1/17[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m3s[0m 227ms/step[1m 8/17[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 8ms/step  [1m16/17[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 7ms/step[1m17/17[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step[1m17/17[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 165ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 183ms/step
+Imagem salva em: ../imagem/pasteur/6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg
+Processamento concluído!
+Imagem '6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 4.8526 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (6118136876835eafa21b967.04373093.jpg_sanitized_2025_05_27_16_40_30.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-05-27 16:43:17
+
+MSG: POST Data: {"nome-atividade":"Incuba\u00e7\u00e3o de empreendimento agroecol\u00f3gico ","tipo-atividade":"5814","data":"2025-05-27T13:40","atividade-realizada":"Organizei encontro de forma\u00e7\u00e3o para incuba\u00e7\u00e3o de empreendimento solid\u00e1rio ","data-acao":"2025-05-27","hora-acao":"13:40","longitude":"-46.6752118","latitude":"-23.5555735","nome-usuario":"VICTOR PELLEGRINI MAMMANA"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5555735&lon=-46.6752118
+MSG: mapResponse: {"place_id":9060062,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":11093501369,"lat":"-23.5556151","lon":"-46.6752071","class":"amenity","type":"fast_food","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Nations Burger & Salads","display_name":"Nations Burger & Salads, Rua Oscar Freire, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-011, Brasil","address":{"amenity":"Nations Burger & Salads","road":"Rua Oscar Freire","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-011","country":"Brasil","country_code":"br"},"boundingbox":["-23.5556651","-23.5555651","-46.6752571","-46.6751571"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-05-27 16:43:18] Usuário: VICTOR PELLEGRINI MAMMANA, Atividade: Incubação de empreendimento agroecológico , Tipo de Ação: 5814, Data: 2025-05-27T13:40, Descrição: Organizei encontro de formação para incubação de empreendimento solidário , Data da Ação: 2025-05-27, Hora da Ação: 13:40
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'VICTOR PELLEGRINI MAMMANA'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = São Paulo
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.6752118, -23.5555735, -23.5556651, -23.5555651, -46.6752571, -46.6751571, Nations Burger & Salads, Rua Oscar Freire, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-011, Brasil, Rua Oscar Freire, Região Imediata de São Paulo, Jardim Paulista, São Paulo, São Paulo, 05409-011, Brasil, BR, 3832, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Incubação de empreendimento agroecológico ,2025-05-27, 13:40,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =VICTOR PELLEGRINI MAMMANA )))MSG: nome_file: 17483641819986735657832049931391.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s-app_fork_20250513/imagem/input/18346900636835eba67aaf37.73174548.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s-app_fork_20250513/php/pasteur.py '/var/www/html/tjd3s-app_fork_20250513/imagem/input/18346900636835eba67aaf37.73174548.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 18346900636835eba67aaf37.73174548.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/18346900636835eba67aaf37.73174548.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 18346900636835eba67aaf37.73174548.jpg_sanitized.jpg -> 18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg
+A imagem 18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg não precisa de redimensionamento (tamanho: 0.33 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 286ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 325ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 162ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 180ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 66ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 56ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m 1/10[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 178ms/step[1m10/10[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 17ms/step [1m10/10[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 141ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 159ms/step
+Imagem salva em: ../imagem/pasteur/18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg
+Processamento concluído!
+Imagem '18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 4.1577 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 

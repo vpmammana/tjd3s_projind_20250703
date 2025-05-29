@@ -1,6 +1,7 @@
 # Inadvertidamente, a equipe de bolsistas alterou o código da base, colocando um termo_lgpd que não estava documentado. Eu tive que acrescetar assumindo que é varchar(5) para caber true e false, uma vez que o prepare na hora de fazer o insert é do tipo s (string?) VPM 20250512 - eu percebi já que tem muita coisa não documentada no código ou em documentos de apoio
 # TABELAS COM 6 CONSTRAINTS
 # desenvolvido por Victor Mammana
+DROP TABLE IF EXISTS mensagens;
 DROP TABLE IF EXISTS perguntas;
 DROP TABLE IF EXISTS `acoes`;
 
@@ -124,7 +125,8 @@ CREATE TABLE `tipos_arquivos` (
   `extensao` varchar(10) NOT NULL,
   `descricao` text NOT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id_chave_tipo_arquivo`)
+  PRIMARY KEY (`id_chave_tipo_arquivo`),
+  unique (nome_tipo_arquivo)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -182,6 +184,7 @@ CREATE TABLE `arquivos` (
   `descricao_imagem` text,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_chave_arquivo`),
+  unique (nome_arquivo),
   KEY `id_tipo_arquivo` (`id_tipo_arquivo`),
   CONSTRAINT `arquivos_ibfk_1` FOREIGN KEY (`id_tipo_arquivo`) REFERENCES `tipos_arquivos` (`id_chave_tipo_arquivo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -190,14 +193,17 @@ CREATE TABLE `arquivos` (
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id_usuario` int NOT NULL AUTO_INCREMENT,
+  `id_chave_usuario` int NOT NULL AUTO_INCREMENT,
   `nome_usuario` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
+  `hash` varchar(128),
   `data_inicio_cadastro` date NOT NULL,
   `data_fim_cadastro` date DEFAULT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `id_pessoa` int DEFAULT NULL,
-  PRIMARY KEY (`id_usuario`),
+  tem_local_storage varchar(3) default 'nao', # marca se o aplicativo já colocou um cookie com o hash no celular do cara... se colocou, não permite mais colocar
+  pode_msg varchar(3) DEFAULT 'nao',
+  PRIMARY KEY (`id_chave_usuario`),
   UNIQUE KEY `nome_usuario` (`nome_usuario`),
   KEY `id_pessoa` (`id_pessoa`),
   CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_chave_pessoa`)
@@ -207,17 +213,33 @@ CREATE TABLE `usuarios` (
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `atividades_eventos` (
-  `id_chave_atividade_evento` int NOT NULL AUTO_INCREMENT,
-  `nome_atividade_evento` varchar(255) NOT NULL,
-  `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `id_usuario` int DEFAULT NULL,
-  `data_atividade_evento` date DEFAULT NULL,
-  `hora_atividade_evento` time DEFAULT NULL,
+  `id_chave_atividade_evento` INT NOT NULL AUTO_INCREMENT,
+  `nome_atividade_evento` VARCHAR(255) NOT NULL,
+  `data_insercao` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `id_usuario` INT DEFAULT NULL,
+  `data_atividade_evento` DATE DEFAULT NULL,
+  `hora_atividade_evento` TIME DEFAULT NULL,
+  `hash_atividade_evento` CHAR(128) NOT NULL,
   PRIMARY KEY (`id_chave_atividade_evento`),
+  UNIQUE KEY `unq_hash_atividade_evento` (`hash_atividade_evento`),
   KEY `id_usuario` (`id_usuario`),
-  CONSTRAINT `atividades_eventos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`)
+  CONSTRAINT `atividades_eventos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_chave_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DELIMITER $$
+
+CREATE TRIGGER trg_gerar_hash_atividade_evento
+BEFORE INSERT ON atividades_eventos
+FOR EACH ROW
+BEGIN
+  IF NEW.hash_atividade_evento IS NULL THEN
+    SET NEW.hash_atividade_evento = SHA2(UUID(), 512);
+  END IF;
+END$$
+
+DELIMITER ;
 
 
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -347,7 +369,9 @@ CREATE TABLE `localizacoes` (
   `id_estado` int DEFAULT NULL,
   `id_pais` int DEFAULT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `hash_localizacao` CHAR(128) NOT NULL,
   PRIMARY KEY (`id_chave_localizacao`),
+  unique(hash_localizacao),
   KEY `id_cidade` (`id_cidade`),
   KEY `id_estado` (`id_estado`),
   KEY `id_pais` (`id_pais`),
@@ -356,6 +380,20 @@ CREATE TABLE `localizacoes` (
   CONSTRAINT `localizacoes_ibfk_3` FOREIGN KEY (`id_pais`) REFERENCES `paises` (`id_chave_pais`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+DELIMITER $$
+
+
+
+CREATE TRIGGER trg_gerar_hash_localizacao
+BEFORE INSERT ON localizacoes
+FOR EACH ROW
+BEGIN
+  IF NEW.hash_localizacao IS NULL THEN
+    SET NEW.hash_localizacao = SHA2(UUID(), 512);
+  END IF;
+END$$
+DELIMITER ;
 
 
 
@@ -472,7 +510,9 @@ CREATE TABLE `acoes` (
   `descricao` text,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `id_pessoa` int DEFAULT NULL,
+  `hash_acao` CHAR(128) NOT NULL,
   PRIMARY KEY (`id_chave_acao`),
+  UNIQUE KEY `unq_hash_acao` (`hash_acao`),
   KEY `id_atividade_evento` (`id_atividade_evento`),
   KEY `id_usuario` (`id_usuario`),
   KEY `id_localizacao` (`id_localizacao`),
@@ -480,11 +520,38 @@ CREATE TABLE `acoes` (
   KEY `id_arquivo` (`id_arquivo`),
   KEY `fk_acoes_pessoas` (`id_pessoa`),
   CONSTRAINT `acoes_ibfk_1` FOREIGN KEY (`id_atividade_evento`) REFERENCES `atividades_eventos` (`id_chave_atividade_evento`),
-  CONSTRAINT `acoes_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
+  CONSTRAINT `acoes_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_chave_usuario`),
   CONSTRAINT `acoes_ibfk_3` FOREIGN KEY (`id_localizacao`) REFERENCES `localizacoes` (`id_chave_localizacao`),
   CONSTRAINT `acoes_ibfk_4` FOREIGN KEY (`id_tipo_acao`) REFERENCES `tipos_acoes` (`id_chave_tipo_acao`),
   CONSTRAINT `acoes_ibfk_5` FOREIGN KEY (`id_arquivo`) REFERENCES `arquivos` (`id_chave_arquivo`),
   CONSTRAINT `fk_acoes_pessoas` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_chave_pessoa`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+DELIMITER $$
+
+CREATE TRIGGER trg_gerar_hash_acao
+BEFORE INSERT ON acoes
+FOR EACH ROW
+BEGIN
+  IF NEW.hash_acao IS NULL THEN
+    SET NEW.hash_acao = SHA2(UUID(), 512);
+  END IF;
+END$$
+
+DELIMITER ;
+
+CREATE TABLE mensagens (
+	id_chave_mensagem INT NOT NULL AUTO_INCREMENT,
+	nome_mensagem VARCHAR(255),
+	texto_mensagem TEXT,
+	id_usuario_remetente int,
+	id_usuario_destinatario int,
+        data_mensagem timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id_chave_mensagem),
+	CONSTRAINT fk_mensagem1 FOREIGN Key (id_usuario_remetente) REFERENCES usuarios(id_chave_usuario),
+	CONSTRAINT fk_mensagem2 FOREIGN Key (id_usuario_destinatario) REFERENCES usuarios(id_chave_usuario)
+);
+
+
 

@@ -284,8 +284,8 @@ file_put_contents($log__file, "SQL: INSERT INTO enderecos (id_localizacao) VALUE
     }
 
     // insercão de dados atividades_eventos, data_atividade_evento, hora_atividade_evento  para a tabela de atividades_eventos
-    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?,?,?,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa = ?)))");
-file_put_contents($log__file, "SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES ($nomeAtividadeEvento,$dataAcao, $horaAcao,(select id_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =$nome_usuario )))" ,  FILE_APPEND | LOCK_EX);
+    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?,?,?,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa = ?)))");
+file_put_contents($log__file, "SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES ($nomeAtividadeEvento,$dataAcao, $horaAcao,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =$nome_usuario )))" ,  FILE_APPEND | LOCK_EX);
     if ($stmt === false) {
 file_put_contents($log__file, "\nERRO: Prepare failed:$conn->error", FILE_APPEND | LOCK_EX);
         throw new Exception('Prepare failed: ' . $conn->error);
@@ -509,10 +509,10 @@ file_put_contents($log__file, "SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_
     }
 
     // Insersão de dados de acoes
-    $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, (select id_usuario from usuarios where id_pessoa = ?))");
+    $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, (select id_chave_usuario from usuarios where id_pessoa = ?))");
 
     if ($stmt === false) {
-	file_put_contents($log__file, "\nERRO: INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES ($id_atividade_evento, $id_localizacao, $id_tipo_acao, $id_arquivo, $lat, $lon, $dataAcao, $horaAcao, $descricao, $id_pessoa, (select id_usuario from usuarios where id_pessoa = $id_pessoa))", FILE_APPEND | LOCK_EX);
+	file_put_contents($log__file, "\nERRO: INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES ($id_atividade_evento, $id_localizacao, $id_tipo_acao, $id_arquivo, $lat, $lon, $dataAcao, $horaAcao, $descricao, $id_pessoa, (select id_chave_usuario from usuarios where id_pessoa = $id_pessoa))", FILE_APPEND | LOCK_EX);
         throw new Exception('Prepare failed: ' . $conn->error);
     }
 
