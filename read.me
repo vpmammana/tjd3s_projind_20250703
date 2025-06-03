@@ -1,3 +1,7 @@
+VMP 20250603
+
+Adicionei no frontend (android e IOS) uma camada de compressão para as imagens, de forma a sobrecarregar menos o envio. Usei a função compressImage, compressImageToSize, etc... A versão anterior dos bolsistas usava fetch(dataURL), convertendo canvas para base64 e depois para Blob. Agora a conversão é direta de canvas para Blob para File... Tem muitas outras vantagens em reduzir o tamanho. Estou tentando focalizar em imagens com 500kb, partindo de 3Mb
+
 VPM 20250603
 
 Alterei page-auth_hash_deepseek.php

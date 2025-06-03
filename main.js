@@ -710,36 +710,305 @@ function openCamera() {
 
 
 }
+/**
+ * Comprime imagens grandes (2MB+) para um tamanho máximo (ex.: 500KB)
+ * @param {File} file - Arquivo original
+ * @param {number} [maxSizeBytes=500000] - Tamanho máximo em bytes (opcional)
+ * @returns {Promise<File>} - Imagem comprimida como File (não Blob)
+ */
 
-// Captura imagem de camera
+async function compressImage(file) {
+  const MAX_SIZE_BYTES = 500 * 1024; // 500KB
+  const MAX_WIDTH = 1600;            // Aumentei para preservar detalhes
+  const MAX_HEIGHT = 1600;           // Aumentei para preservar detalhes
+  const MIN_QUALITY = 0.6;           // Limite mínimo de qualidade
+
+  // Carrega a imagem
+  const img = await new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.src = URL.createObjectURL(file);
+  });
+
+  // Calcula o ratio (sem ampliar)
+  const ratio = Math.min(
+    1,
+    MAX_WIDTH / img.width,
+    MAX_HEIGHT / img.height
+  );
+
+  // Redimensiona apenas se necessário
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  
+  // Se a imagem já é pequena, usa o tamanho original
+  if (ratio >= 1) {
+    canvas.width = img.width;
+    canvas.height = img.height;
+  } else {
+    canvas.width = Math.floor(img.width * ratio);
+    canvas.height = Math.floor(img.height * ratio);
+  }
+  
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+  // Otimização inteligente:
+  // 1. Primeiro tenta com qualidade mais alta
+  // 2. Só reduz dimensões se realmente necessário
+  let quality = 0.85; // Começa com qualidade alta
+  
+  // Primeira tentativa com qualidade alta
+  let blob = await new Promise(resolve =>
+    canvas.toBlob(resolve, 'image/jpeg', quality)
+  );
+
+  // Se ainda grande, reduz qualidade gradualmente (até 60%)
+  while (blob.size > MAX_SIZE_BYTES && quality > MIN_QUALITY) {
+    quality -= 0.05;
+    blob = await new Promise(resolve =>
+      canvas.toBlob(resolve, 'image/jpeg', quality)
+    );
+  }
+
+  // Se ainda grande após reduzir qualidade, tenta redimensionar um pouco mais
+  if (blob.size > MAX_SIZE_BYTES && ratio > 0.5) {
+    const newRatio = ratio * 0.9; // Reduz apenas 10% do ratio original
+    canvas.width = Math.floor(img.width * newRatio);
+    canvas.height = Math.floor(img.height * newRatio);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    
+    blob = await new Promise(resolve =>
+      canvas.toBlob(resolve, 'image/jpeg', 0.7) // Qualidade média
+    );
+  }
+
+  // Fallback para WebP (se suportado)
+  if (blob.size > MAX_SIZE_BYTES && await supportsWebP()) {
+    blob = await new Promise(resolve =>
+      canvas.toBlob(resolve, 'image/webp', 0.75) // Qualidade um pouco maior
+    );
+  }
+
+  console.log('Tamanho final:', (blob.size / 1024).toFixed(1), 'KB',
+              'Dimensões:', canvas.width, 'x', canvas.height,
+              'Qualidade:', quality);
+
+  return new File([blob], file.name, {
+    type: blob.type,
+    lastModified: Date.now()
+  });
+}
+
+//async function compressImage(file) {
+//  const MAX_SIZE_BYTES = 500 * 1024; // 500KB
+//  const MAX_WIDTH = 1000;             // Largura máxima desejada
+//  const MAX_HEIGHT = 1000;            // Altura máxima desejada
+//
+//  // Carrega a imagem
+//  const img = await new Promise((resolve) => {
+//    const img = new Image();
+//    img.onload = () => resolve(img);
+//    img.src = URL.createObjectURL(file);
+//  });
+//
+//  // Calcula o ratio SEMPRE <= 1 (evita aumento)
+//  const ratio = Math.min(
+//    1,                              // ← Garante que a imagem não será ampliada
+//    MAX_WIDTH / img.width,
+//    MAX_HEIGHT / img.height
+//  );
+//
+//  // Redimensiona
+//  const canvas = document.createElement('canvas');
+//  const ctx = canvas.getContext('2d');
+//  canvas.width = Math.floor(img.width * ratio);
+//  canvas.height = Math.floor(img.height * ratio);
+//  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+//
+//  // Comprime (JPEG 70% → 50% se necessário)
+//  let quality = 0.7;
+//  let blob = await new Promise(resolve =>
+//    canvas.toBlob(resolve, 'image/jpeg', quality)
+//  );
+//
+//  // Reduz qualidade progressivamente (se ainda estiver grande)
+//  while (blob.size > MAX_SIZE_BYTES && quality > 0.5) {
+//    quality -= 0.05;
+//    blob = await new Promise(resolve =>
+//      canvas.toBlob(resolve, 'image/jpeg', quality)
+//    );
+//  }
+//
+//  // Fallback para WebP (se suportado e JPEG ainda grande)
+//  if (blob.size > MAX_SIZE_BYTES && await supportsWebP()) {
+//    blob = await new Promise(resolve =>
+//      canvas.toBlob(resolve, 'image/webp', 0.7)
+//    );
+//  }
+//
+//  return new File([blob], file.name, {
+//    type: blob.type,
+//    lastModified: Date.now()
+//  });
+//}
+
+//async function compressImage(file, maxSizeBytes = 500000) {
+//  // Converte File para Blob (para processamento)
+//  const blob = await new Promise(resolve => {
+//    const reader = new FileReader();
+//    reader.onload = () => resolve(new Blob([reader.result], { type: file.type }));
+//    reader.readAsArrayBuffer(file);
+//  });
+//
+//  // Redimensiona e comprime (usando as funções auxiliares abaixo)
+//  const compressedBlob = await compressImageToSize(blob, maxSizeBytes, 1000, 1000);
+//  
+//  // Converte Blob de volta para File (mantendo o nome original)
+//  return new File([compressedBlob], file.name, {
+//    type: compressedBlob.type,
+//    lastModified: Date.now()
+//  });
+//}
+
+async function compressImageToSize(blob, maxSizeBytes, maxWidth, maxHeight) {
+  const img = await loadImage(blob);
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Reduz dimensões
+  const { width, height } = calculateNewSize(img.width, img.height, maxWidth, maxHeight);
+  canvas.width = width;
+  canvas.height = height;
+  ctx.drawImage(img, 0, 0, width, height);
+
+  // Tenta JPEG (75% → 50%)
+  let compressedBlob = await tryCompress(canvas, 'image/jpeg', maxSizeBytes, 0.75);
+
+  // Fallback para WebP
+  if (compressedBlob.size > maxSizeBytes && await supportsWebP()) {
+    compressedBlob = await tryCompress(canvas, 'image/webp', maxSizeBytes, 0.75);
+  }
+
+  return compressedBlob;
+}
+
+function loadImage(blob) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.src = URL.createObjectURL(blob);
+  });
+}
+
+function calculateNewSize(originalWidth, originalHeight, maxWidth, maxHeight) {
+  const ratio = Math.min(maxWidth / originalWidth, maxHeight / originalHeight);
+  return {
+    width: Math.floor(originalWidth * ratio),
+    height: Math.floor(originalHeight * ratio)
+  };
+}
+
+async function tryCompress(canvas, mimeType, maxSizeBytes, initialQuality = 0.75, maxAttempts = 3) {
+  let quality = initialQuality;
+  let blob = await canvasToBlob(canvas, mimeType, quality);
+
+  for (let i = 0; i < maxAttempts && blob.size > maxSizeBytes && quality >= 0.5; i++) {
+    quality -= 0.1;
+    blob = await canvasToBlob(canvas, mimeType, quality);
+	      console.log(`Tentativa ${i + 1}: qualidade ${quality.toFixed(2)}, tamanho: ${(blob.size / 1024).toFixed(1)} KB`);
+  }
+
+  return blob;
+}
+
+function canvasToBlob(canvas, mimeType, quality) {
+  return new Promise((resolve) => {
+    canvas.toBlob(resolve, mimeType, quality);
+  });
+}
+
+function supportsWebP() {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+    img.src = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+  });
+}
+
 function captureImage() {
     const video = document.getElementById('cameraStream');
     const canvas = document.getElementById('cameraCanvas');
     const context = canvas.getContext('2d');
 
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
-    context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
+    // Para a câmera e esconde o vídeo
     video.srcObject.getTracks().forEach(track => track.stop());
     video.style.display = 'none';
 
-    const dataURL = canvas.toDataURL('image/png');
+    // Detecta orientação (mobile)
+    const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
-    // Convert dataURL to a File object
-    fetch(dataURL)
-        .then(res => res.blob())
-        .then(blob => {
-            const file = new File([blob], 'captured-image.png', {
-                type: 'image/png'
-            });
-            imagesArray = [file]; // Replace previous image with the new one
+    // Ajusta dimensões do canvas (inverte se portrait)
+    canvas.width = isPortrait ? video.videoHeight : video.videoWidth;
+    canvas.height = isPortrait ? video.videoWidth : video.videoHeight;
+
+    // Rotaciona e desenha a imagem
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    if (isPortrait) {
+        context.translate(canvas.width / 2, canvas.height / 2);
+        context.rotate(Math.PI / 2);
+        context.drawImage(video, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
+    } else {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    }
+
+    // Converte canvas para File (PNG) e comprime
+    canvas.toBlob(async (blob) => {
+        const file = new File([blob], 'captured-image.png', { type: 'image/png' });
+
+        try {
+            const compressedFile = await compressImage(file);
+            imagesArray = [compressedFile];
+            displayImagePreview(compressedFile);
+        } catch (error) {
+            console.error("Erro ao comprimir imagem:", error);
+            // Fallback: usa a imagem original
+            imagesArray = [file];
             displayImagePreview(file);
-        });
+        }
+    }, 'image/png');
 }
 
-// Pegar imagem e verificar se o arquivo é imagem
-function addImageToArray(event) {
+
+//// Captura imagem de camera
+//function captureImage() {
+//    const video = document.getElementById('cameraStream');
+//    const canvas = document.getElementById('cameraCanvas');
+//    const context = canvas.getContext('2d');
+//
+//    canvas.width = video.videoWidth;
+//    canvas.height = video.videoHeight;
+//    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+//
+//    video.srcObject.getTracks().forEach(track => track.stop());
+//    video.style.display = 'none';
+//
+//    const dataURL = canvas.toDataURL('image/png');
+//
+//    // Convert dataURL to a File object
+//    fetch(dataURL)
+//        .then(res => res.blob())
+//        .then(blob => {
+//            const file = new File([blob], 'captured-image.png', {
+//                type: 'image/png'
+//            });
+//		//alert(`Imagem capturada tem ${file.size} bytes (${(file.size/1024).toFixed(1)} KB)`);
+//            imagesArray = [file]; // Replace previous image with the new one
+//            displayImagePreview(file);
+//        });
+//}
+
+async function addImageToArray(event) {
     const files = event.target.files;
     if (files.length > 0) {
         const file = files[0];
@@ -747,15 +1016,44 @@ function addImageToArray(event) {
             alert("O arquivo não é uma imagem");
             return;
         } else {
-            imagesArray = [file]; // Replace previous image with the new one
-            displayImagePreview(file);
+            // Comprime a imagem antes de exibir/adicionar ao array
+            try {
+                const compressedFile = await compressImage(file);
+                imagesArray = [compressedFile];
+                displayImagePreview(compressedFile);
+            } catch (error) {
+                console.error("Erro ao comprimir imagem:", error);
+                // Fallback: usa a imagem original
+                imagesArray = [file];
+                displayImagePreview(file);
+            }
 
-            // Clear the input value to allow re-upload of the same file
+            // Limpa o input
             event.target.value = '';
         }
-
     }
 }
+
+
+// Pegar imagem e verificar se o arquivo é imagem
+//function addImageToArray(event) {
+//    const files = event.target.files;
+//    if (files.length > 0) {
+//        const file = files[0];
+//        if (!file.type.includes("image/")) {
+//            alert("O arquivo não é uma imagem");
+//            return;
+//        } else {
+//		           // alert(`Imagem selecionada tem ${file.size} bytes (${(file.size / 1024).toFixed(1)} KB)`); // ← AQUI
+//            imagesArray = [file]; // Replace previous image with the new one
+//            displayImagePreview(file);
+//
+//            // Clear the input value to allow re-upload of the same file
+//            event.target.value = '';
+//        }
+//
+//    }
+//}
 
 // Mostrar imagem na tela
 function displayImagePreview(file) {
@@ -1204,6 +1502,7 @@ for (let [key, value] of formData.entries()) {
 }
 setTimeout(function () {
     if (navigator.onLine) {
+	    //alert('settimeout');
         fetch('./php/CriarEvidencia.php', {
             method: 'POST',
             body: formData
@@ -1243,7 +1542,7 @@ setTimeout(function () {
     } else {
         const plainData = Object.fromEntries(formData.entries());
         storeDataOffline(plainData);
-    }}, 2000);
+    }}, 4000);
 });
 
 window.addEventListener('online', () => {

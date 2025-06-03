@@ -4657,3 +4657,1382 @@ SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distri
 SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
 SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8690811, -15.7996984, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
 SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Face,2025-06-03, 04:34,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 08:04:48
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"2","data":"2025-06-03T05:04","atividade-realizada":"Trstr","data-acao":"2025-06-03","hora-acao":"05:04","longitude":"-47.8601917","latitude":"-15.8052667","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8052667&lon=-47.8601917
+MSG: mapResponse: {"place_id":14600784,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":773795642,"lat":"-15.8053217","lon":"-47.8602515","class":"highway","type":"secondary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"S2 Leste","display_name":"S2 Leste, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70160-900, Brasil","address":{"road":"S2 Leste","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70160-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8056576","-15.8001150","-47.8724594","-47.8599377"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 08:04:50] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste, Tipo de Ação: 2, Data: 2025-06-03T05:04, Descrição: Trstr, Data da Ação: 2025-06-03, Hora da Ação: 05:04
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8601917, -15.8052667, -15.8056576, -15.8001150, -47.8724594, -47.8599377, S2 Leste, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70160-900, Brasil, S2 Leste, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70160-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-06-03, 05:04,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 08:13:09
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"2","data":"2025-06-03T05:04","atividade-realizada":"Trstr","data-acao":"2025-06-03","hora-acao":"05:04","longitude":"-47.8601917","latitude":"-15.8052667","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8052667&lon=-47.8601917
+MSG: mapResponse: {"place_id":14827017,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":773795642,"lat":"-15.8053217","lon":"-47.8602515","class":"highway","type":"secondary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"S2 Leste","display_name":"S2 Leste, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70160-900, Brasil","address":{"road":"S2 Leste","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70160-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8056576","-15.8001150","-47.8724594","-47.8599377"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 08:13:10] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste, Tipo de Ação: 2, Data: 2025-06-03T05:04, Descrição: Trstr, Data da Ação: 2025-06-03, Hora da Ação: 05:04
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8601917, -15.8052667, -15.8056576, -15.8001150, -47.8724594, -47.8599377, S2 Leste, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70160-900, Brasil, S2 Leste, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70160-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-06-03, 05:04,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 08:18:56
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"1319","data":"2025-06-03T05:18","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"05:18","longitude":"-47.850776","latitude":"-15.7859885","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7859885&lon=-47.850776
+MSG: mapResponse: {"place_id":14871717,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141481223,"lat":"-15.7860742","lon":"-47.8511527","class":"tourism","type":"hotel","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"tourism","name":"The Sun Hotel Resort","display_name":"The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil","address":{"tourism":"The Sun Hotel Resort","road":"Setor de Hotéis e Turismo Norte Trecho 2","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70800-200","country":"Brasil","country_code":"br"},"boundingbox":["-15.7880724","-15.7841145","-47.8523415","-47.8499437"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 08:18:57] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste, Tipo de Ação: 1319, Data: 2025-06-03T05:18, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 05:18
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.850776, -15.7859885, -15.7880724, -15.7841145, -47.8523415, -47.8499437, The Sun Hotel Resort, Setor de Hotéis e Turismo Norte Trecho 2, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70800-200, Brasil, Setor de Hotéis e Turismo Norte Trecho 2, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70800-200, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-06-03, 05:18,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 16:25:08
+
+MSG: POST Data: {"nome-atividade":"teste gabinete","tipo-atividade":"1324","data":"2025-06-03T13:20","atividade-realizada":"tete","data-acao":"2025-06-03","hora-acao":"13:20","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"wagts2006"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 16:25:09] Pessoa: , Usuário: wagts2006, Atividade: teste gabinete, Tipo de Ação: 1324, Data: 2025-06-03T13:20, Descrição: tete, Data da Ação: 2025-06-03, Hora da Ação: 13:20
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 16:28:32
+
+MSG: POST Data: {"nome-atividade":"teste sergio gabinetee 1","tipo-atividade":"2714","data":"2025-06-03T13:24","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"13:24","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 16:28:33] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: teste sergio gabinetee 1, Tipo de Ação: 2714, Data: 2025-06-03T13:24, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 13:24
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste sergio gabinetee 1,2025-06-03, 13:24,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/18960946683f22b1657290.61156944.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/18960946683f22b1657290.61156944.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 18960946683f22b1657290.61156944.png segura e convertida para JPEG.
+Imagem ../imagem/input/18960946683f22b1657290.61156944.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 18960946683f22b1657290.61156944.png_sanitized.jpg -> 18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg
+A imagem 18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 150ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 169ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 115ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 133ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/7[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 174ms/step[1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step [1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 152ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 171ms/step
+Imagem salva em: ../imagem/pasteur/18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg
+Processamento concluído!
+Imagem '18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.1872 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (18960946683f22b1657290.61156944.png_sanitized_2025_06_03_16_28_37.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 16:30:58
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy gabinete 2","tipo-atividade":"24","data":"2025-06-03T13:26","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"13:26","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 16:30:59] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: teste sergio godoy gabinete 2, Tipo de Ação: 24, Data: 2025-06-03T13:26, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 13:26
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste sergio godoy gabinete 2,2025-06-03, 13:26,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/400124055683f2343474bf8.35749886.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/400124055683f2343474bf8.35749886.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 400124055683f2343474bf8.35749886.png segura e convertida para JPEG.
+Imagem ../imagem/input/400124055683f2343474bf8.35749886.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 400124055683f2343474bf8.35749886.png_sanitized.jpg -> 400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg
+A imagem 400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 154ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 173ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 119ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 137ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/5[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m0s[0m 170ms/step[1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step [1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 192ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 209ms/step
+Imagem salva em: ../imagem/pasteur/400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg
+Processamento concluído!
+Imagem '400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.3568 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (400124055683f2343474bf8.35749886.png_sanitized_2025_06_03_16_31_03.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 16:43:48
+
+MSG: POST Data: {"nome-atividade":"Teste Victor gabinete ","tipo-atividade":"16","data":"2025-06-03T13:43","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"13:43","longitude":"-47.8691245","latitude":"-15.7996778","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996778&lon=-47.8691245
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 16:43:49] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste Victor gabinete , Tipo de Ação: 16, Data: 2025-06-03T13:43, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 13:43
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691245, -15.7996778, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste Victor gabinete ,2025-06-03, 13:43,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 17:31:50
+
+MSG: POST Data: {"nome-atividade":"Testando de novo","tipo-atividade":"2","data":"2025-06-03T14:31","atividade-realizada":"Vai","data-acao":"2025-06-03","hora-acao":"14:31","longitude":"-47.869098","latitude":"-15.7996859","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996859&lon=-47.869098
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 17:31:51] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Testando de novo, Tipo de Ação: 2, Data: 2025-06-03T14:31, Descrição: Vai, Data da Ação: 2025-06-03, Hora da Ação: 14:31
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.869098, -15.7996859, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Testando de novo,2025-06-03, 14:31,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 17:34:03
+
+MSG: POST Data: {"nome-atividade":"Treble","tipo-atividade":"1","data":"2025-06-03T14:33","atividade-realizada":"Teate","data-acao":"2025-06-03","hora-acao":"14:33","longitude":"-47.8691309","latitude":"-15.7996447","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996447&lon=-47.8691309
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 17:34:03] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Treble, Tipo de Ação: 1, Data: 2025-06-03T14:33, Descrição: Teate, Data da Ação: 2025-06-03, Hora da Ação: 14:33
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691309, -15.7996447, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Treble,2025-06-03, 14:33,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 17:34:14
+
+MSG: POST Data: {"nome-atividade":"Treble","tipo-atividade":"1","data":"2025-06-03T14:33","atividade-realizada":"Teate","data-acao":"2025-06-03","hora-acao":"14:33","longitude":"-47.8691309","latitude":"-15.7996447","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996447&lon=-47.8691309
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 17:34:14] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Treble, Tipo de Ação: 1, Data: 2025-06-03T14:33, Descrição: Teate, Data da Ação: 2025-06-03, Hora da Ação: 14:33
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691309, -15.7996447, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Treble,2025-06-03, 14:33,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 17:36:21
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"1324","data":"2025-06-03T14:35","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"14:35","longitude":"-47.8691101","latitude":"-15.7996928","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996928&lon=-47.8691101
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 17:36:22] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste, Tipo de Ação: 1324, Data: 2025-06-03T14:35, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 14:35
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691101, -15.7996928, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-06-03, 14:35,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 17489721602746108389722109754963.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/508901837683f3296541bb5.18781843.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/508901837683f3296541bb5.18781843.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 508901837683f3296541bb5.18781843.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/508901837683f3296541bb5.18781843.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 508901837683f3296541bb5.18781843.jpg_sanitized.jpg -> 508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg
+A imagem 508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg não precisa de redimensionamento (tamanho: 0.76 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 557ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 575ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 233ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 252ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 95ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 113ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 62ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 81ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 62ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/7[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 180ms/step[1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step [1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 143ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 161ms/step
+Imagem salva em: ../imagem/pasteur/508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg
+Processamento concluído!
+Imagem '508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 7.6974 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (508901837683f3296541bb5.18781843.jpg_sanitized_2025_06_03_17_36_26.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 18:57:31
+
+MSG: POST Data: {"nome-atividade":"teste camera do micro","tipo-atividade":"19","data":"2025-06-03T15:52","atividade-realizada":"tet","data-acao":"2025-06-03","hora-acao":"15:52","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"pedro.tourinho","nome-pessoa":"Pedro Tourinho"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 18:57:31] Pessoa: Pedro Tourinho, Usuário: pedro.tourinho, Atividade: teste camera do micro, Tipo de Ação: 19, Data: 2025-06-03T15:52, Descrição: tet, Data da Ação: 2025-06-03, Hora da Ação: 15:52
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Pedro Tourinho'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste camera do micro,2025-06-03, 15:52,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Pedro Tourinho )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/725946661683f459be138d1.25597748.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/725946661683f459be138d1.25597748.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 725946661683f459be138d1.25597748.png segura e convertida para JPEG.
+Imagem ../imagem/input/725946661683f459be138d1.25597748.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 725946661683f459be138d1.25597748.png_sanitized.jpg -> 725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg
+A imagem 725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 157ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 177ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 112ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 130ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/5[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m0s[0m 203ms/step[1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step [1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 148ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 166ms/step
+Imagem salva em: ../imagem/pasteur/725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg
+Processamento concluído!
+Imagem '725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.3260 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (725946661683f459be138d1.25597748.png_sanitized_2025_06_03_18_57_38.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 18:59:18
+
+MSG: POST Data: {"nome-atividade":"teste tamanho de novo","tipo-atividade":"25","data":"2025-06-03T15:54","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"15:54","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 18:59:19] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: teste tamanho de novo, Tipo de Ação: 25, Data: 2025-06-03T15:54, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 15:54
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste tamanho de novo,2025-06-03, 15:54,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/415244729683f46070551c0.38819164.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/415244729683f46070551c0.38819164.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 415244729683f46070551c0.38819164.png segura e convertida para JPEG.
+Imagem ../imagem/input/415244729683f46070551c0.38819164.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 415244729683f46070551c0.38819164.png_sanitized.jpg -> 415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg
+A imagem 415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 150ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 169ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 115ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 132ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/5[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m0s[0m 188ms/step[1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step [1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 156ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 173ms/step
+Imagem salva em: ../imagem/pasteur/415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg
+Processamento concluído!
+Imagem '415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.1891 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (415244729683f46070551c0.38819164.png_sanitized_2025_06_03_18_59_22.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 19:03:12
+
+MSG: POST Data: {"nome-atividade":"Teste alerrt","tipo-atividade":"2","data":"2025-06-03T15:54","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"15:54","longitude":"-47.8691404","latitude":"-15.7996728","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996728&lon=-47.8691404
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 19:03:13] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste alerrt, Tipo de Ação: 2, Data: 2025-06-03T15:54, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 15:54
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691404, -15.7996728, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste alerrt,2025-06-03, 15:54,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 19:06:01
+
+MSG: POST Data: {"nome-atividade":"Teste","tipo-atividade":"1309","data":"2025-06-03T16:03","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"16:03","longitude":"-47.8691052","latitude":"-15.7997011","nome-usuario":"pedro.tourinho","nome-pessoa":"Pedro Tourinho"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7997011&lon=-47.8691052
+MSG: mapResponse: {"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 19:06:01] Pessoa: Pedro Tourinho, Usuário: pedro.tourinho, Atividade: Teste, Tipo de Ação: 1309, Data: 2025-06-03T16:03, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 16:03
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Pedro Tourinho'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691052, -15.7997011, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste,2025-06-03, 16:03,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Pedro Tourinho )))MSG: nome_file: 17489774319651500110420724968098.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/955478873683f4799e3a6c5.96729990.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/955478873683f4799e3a6c5.96729990.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 955478873683f4799e3a6c5.96729990.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/955478873683f4799e3a6c5.96729990.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 955478873683f4799e3a6c5.96729990.jpg_sanitized.jpg -> 955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg
+A imagem 955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg não precisa de redimensionamento (tamanho: 0.30 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 282ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 300ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 173ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 191ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 70ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 59ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/7[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 181ms/step[1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 22ms/step [1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 159ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 178ms/step
+Imagem salva em: ../imagem/pasteur/955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg
+Processamento concluído!
+Imagem '955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.7827 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (955478873683f4799e3a6c5.96729990.jpg_sanitized_2025_06_03_19_06_06.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:19:47
+
+MSG: POST Data: {"nome-atividade":"teste","tipo-atividade":"1316","data":"2025-06-03T17:14","atividade-realizada":"tst","data-acao":"2025-06-03","hora-acao":"17:14","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"eberval.castro","nome-pessoa":"Eberval Castro"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14920828,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:19:48] Pessoa: Eberval Castro, Usuário: eberval.castro, Atividade: teste, Tipo de Ação: 1316, Data: 2025-06-03T17:14, Descrição: tst, Data da Ação: 2025-06-03, Hora da Ação: 17:14
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Eberval Castro'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste,2025-06-03, 17:14,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Eberval Castro )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1497581078683f58e44870e3.64090172.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1497581078683f58e44870e3.64090172.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1497581078683f58e44870e3.64090172.png segura e convertida para JPEG.
+Imagem ../imagem/input/1497581078683f58e44870e3.64090172.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1497581078683f58e44870e3.64090172.png_sanitized.jpg -> 1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg
+A imagem 1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 160ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 179ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 113ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 131ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/6[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m0s[0m 196ms/step[1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step [1m6/6[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 159ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 177ms/step
+Imagem salva em: ../imagem/pasteur/1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg
+Processamento concluído!
+Imagem '1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.2821 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1497581078683f58e44870e3.64090172.png_sanitized_2025_06_03_20_19_52.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:26:40
+
+MSG: POST Data: {"nome-atividade":"Teste compressor ","tipo-atividade":"2714","data":"2025-06-03T17:26","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"17:26","longitude":"-47.8691364","latitude":"-15.7996732","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996732&lon=-47.8691364
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:26:41] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste compressor , Tipo de Ação: 2714, Data: 2025-06-03T17:26, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 17:26
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691364, -15.7996732, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste compressor ,2025-06-03, 17:26,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 17489823754007686277141146607413.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/2070420966683f5a818fd250.13087399.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/2070420966683f5a818fd250.13087399.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 2070420966683f5a818fd250.13087399.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/2070420966683f5a818fd250.13087399.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 2070420966683f5a818fd250.13087399.jpg_sanitized.jpg -> 2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg
+A imagem 2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg não precisa de redimensionamento (tamanho: 1.02 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 583ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 603ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 261ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 279ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 96ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 115ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 62ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 82ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 70ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m 1/57[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m10s[0m 180ms/step[1m10/57[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step   [1m18/57[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step[1m27/57[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 6ms/step[1m35/57[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 6ms/step[1m45/57[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 6ms/step[1m54/57[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 6ms/step[1m57/57[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8ms/step[1m57/57[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 8ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 149ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 167ms/step
+Imagem salva em: ../imagem/pasteur/2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg
+Processamento concluído!
+Imagem '2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 6.8844 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (2070420966683f5a818fd250.13087399.jpg_sanitized_2025_06_03_20_26_45.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:39:25
+
+MSG: POST Data: {"nome-atividade":"Teste compressor bem mais forte","tipo-atividade":"7","data":"2025-06-03T17:38","atividade-realizada":"Teate","data-acao":"2025-06-03","hora-acao":"17:38","longitude":"-47.869106","latitude":"-15.7996984","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996984&lon=-47.869106
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:39:26] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste compressor bem mais forte, Tipo de Ação: 7, Data: 2025-06-03T17:38, Descrição: Teate, Data da Ação: 2025-06-03, Hora da Ação: 17:38
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.869106, -15.7996984, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste compressor bem mais forte,2025-06-03, 17:38,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 17489831501554705188130603546049.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/905601210683f5d7e13b3c1.49406246.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/905601210683f5d7e13b3c1.49406246.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 905601210683f5d7e13b3c1.49406246.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/905601210683f5d7e13b3c1.49406246.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 905601210683f5d7e13b3c1.49406246.jpg_sanitized.jpg -> 905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg
+A imagem 905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg não precisa de redimensionamento (tamanho: 0.07 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 174ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 193ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 124ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 141ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/7[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 179ms/step[1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step [1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 150ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 176ms/step
+Imagem salva em: ../imagem/pasteur/905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg
+Processamento concluído!
+Imagem '905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.4684 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (905601210683f5d7e13b3c1.49406246.jpg_sanitized_2025_06_03_20_39_30.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:42:35
+
+MSG: POST Data: {"nome-atividade":"Teste compressor.sem.alerts","tipo-atividade":"25","data":"2025-06-03T17:42","atividade-realizada":"Teste sem alerr","data-acao":"2025-06-03","hora-acao":"17:42","longitude":"-47.8691519","latitude":"-15.7996503","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996503&lon=-47.8691519
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:42:35] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste compressor.sem.alerts, Tipo de Ação: 25, Data: 2025-06-03T17:42, Descrição: Teste sem alerr, Data da Ação: 2025-06-03, Hora da Ação: 17:42
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691519, -15.7996503, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste compressor.sem.alerts,2025-06-03, 17:42,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 17489833383774598482320169370688.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1419142173683f5e3baaad83.39583012.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1419142173683f5e3baaad83.39583012.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1419142173683f5e3baaad83.39583012.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/1419142173683f5e3baaad83.39583012.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1419142173683f5e3baaad83.39583012.jpg_sanitized.jpg -> 1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg
+A imagem 1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg não precisa de redimensionamento (tamanho: 0.07 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 175ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 196ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 124ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 143ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 65ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 58ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m 1/10[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 174ms/step[1m 8/10[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 8ms/step  [1m10/10[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step[1m10/10[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 200ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 219ms/step
+Imagem salva em: ../imagem/pasteur/1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg
+Processamento concluído!
+Imagem '1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.6896 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1419142173683f5e3baaad83.39583012.jpg_sanitized_2025_06_03_20_42_39.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:44:15
+
+MSG: POST Data: {"nome-atividade":"Teste sem alerr de verdade","tipo-atividade":"1324","data":"2025-06-03T17:43","atividade-realizada":"R","data-acao":"2025-06-03","hora-acao":"17:43","longitude":"-47.8691088","latitude":"-15.7996916","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996916&lon=-47.8691088
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:44:15] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste sem alerr de verdade, Tipo de Ação: 1324, Data: 2025-06-03T17:43, Descrição: R, Data da Ação: 2025-06-03, Hora da Ação: 17:43
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691088, -15.7996916, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste sem alerr de verdade,2025-06-03, 17:43,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 1748983441488459083378963552362.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1900183216683f5e9fcc3809.58232931.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1900183216683f5e9fcc3809.58232931.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1900183216683f5e9fcc3809.58232931.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/1900183216683f5e9fcc3809.58232931.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1900183216683f5e9fcc3809.58232931.jpg_sanitized.jpg -> 1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg
+A imagem 1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg não precisa de redimensionamento (tamanho: 0.06 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 175ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 194ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 139ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 157ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/3[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 182ms/step[1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step [1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 67ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 167ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 188ms/step
+Imagem salva em: ../imagem/pasteur/1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg
+Processamento concluído!
+Imagem '1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.6732 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1900183216683f5e9fcc3809.58232931.jpg_sanitized_2025_06_03_20_44_19.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 20:51:46
+
+MSG: POST Data: {"nome-atividade":"Teste compressor melhor","tipo-atividade":"4","data":"2025-06-03T17:51","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"17:51","longitude":"-47.8691145","latitude":"-15.7996939","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996939&lon=-47.8691145
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 20:51:47] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Teste compressor melhor, Tipo de Ação: 4, Data: 2025-06-03T17:51, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 17:51
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691145, -15.7996939, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste compressor melhor,2025-06-03, 17:51,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 1748983891098842664768145781956.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1748769773683f60635d9ce4.03529749.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1748769773683f60635d9ce4.03529749.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1748769773683f60635d9ce4.03529749.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/1748769773683f60635d9ce4.03529749.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1748769773683f60635d9ce4.03529749.jpg_sanitized.jpg -> 1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg
+A imagem 1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg não precisa de redimensionamento (tamanho: 0.20 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 226ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 245ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 137ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 156ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 54ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 64ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m 1/27[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 182ms/step[1m10/27[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m15/27[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 7ms/step[1m22/27[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 8ms/step[1m27/27[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 12ms/step[1m27/27[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 12ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 157ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 177ms/step
+Imagem salva em: ../imagem/pasteur/1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg
+Processamento concluído!
+Imagem '1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.2960 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1748769773683f60635d9ce4.03529749.jpg_sanitized_2025_06_03_20_51_51.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 21:11:30
+
+MSG: POST Data: {"nome-atividade":"Reuni\u00e3o","tipo-atividade":"206","data":"2025-06-03T18:10","atividade-realizada":"Organizei uma reuni\u00e3o sobre o teste do aplicativo ","data-acao":"2025-06-03","hora-acao":"18:10","longitude":"-47.8692076","latitude":"-15.79971383","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.79971383&lon=-47.8692076
+MSG: mapResponse: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 21:11:31] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Reunião, Tipo de Ação: 206, Data: 2025-06-03T18:10, Descrição: Organizei uma reunião sobre o teste do aplicativo , Data da Ação: 2025-06-03, Hora da Ação: 18:10
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8692076, -15.79971383, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Reunião,2025-06-03, 18:10,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 2025-06-0318.11.11980573713557724534.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1024679588683f65033877f7.81995180.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1024679588683f65033877f7.81995180.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1024679588683f65033877f7.81995180.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/1024679588683f65033877f7.81995180.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1024679588683f65033877f7.81995180.jpg_sanitized.jpg -> 1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg
+A imagem 1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg não precisa de redimensionamento (tamanho: 0.38 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 223ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 244ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 139ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 157ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m 1/13[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m2s[0m 189ms/step[1m10/13[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 6ms/step  [1m13/13[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m13/13[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 29ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 372ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 391ms/step
+Imagem salva em: ../imagem/pasteur/1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg
+Processamento concluído!
+Imagem '1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.5225 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1024679588683f65033877f7.81995180.jpg_sanitized_2025_06_03_21_11_35.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 21:31:40
+
+MSG: POST Data: {"nome-atividade":"Palestra","tipo-atividade":"3057","data":"2025-06-03T18:30","atividade-realizada":"Teste do app","data-acao":"2025-06-03","hora-acao":"18:30","longitude":"-47.2202382","latitude":"-22.831526","nome-usuario":"pedro.tourinho","nome-pessoa":"Pedro Tourinho"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.831526&lon=-47.2202382
+MSG: mapResponse: {"place_id":8835393,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":5284986621,"lat":"-22.8322104","lon":"-47.2202735","class":"building","type":"yes","place_rank":30,"importance":6.070878156705604e-05,"addresstype":"building","name":"Casa 177","display_name":"Casa 177, 177, Avenida Cabo Pedro Hoffman, Loteamento Residencial Viver, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13178-574, Brasil","address":{"building":"Casa 177","house_number":"177","road":"Avenida Cabo Pedro Hoffman","neighbourhood":"Loteamento Residencial Viver","city_district":"Nova Veneza","city":"Sumaré","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13178-574","country":"Brasil","country_code":"br"},"boundingbox":["-22.8322604","-22.8321604","-47.2203235","-47.2202235"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 21:31:41] Pessoa: Pedro Tourinho, Usuário: pedro.tourinho, Atividade: Palestra, Tipo de Ação: 3057, Data: 2025-06-03T18:30, Descrição: Teste do app, Data da Ação: 2025-06-03, Hora da Ação: 18:30
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Pedro Tourinho'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = Sumaré
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.2202382, -22.831526, -22.8322604, -22.8321604, -47.2203235, -47.2202235, Casa 177, 177, Avenida Cabo Pedro Hoffman, Loteamento Residencial Viver, Nova Veneza, Sumaré, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13178-574, Brasil, Avenida Cabo Pedro Hoffman, Região Imediata de Campinas, , Sumaré, São Paulo, 13178-574, Brasil, BR, 3853, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Palestra,2025-06-03, 18:30,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Pedro Tourinho )))MSG: nome_file: 17489862744244959044444672915746.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/347040645683f69bda5e881.16343487.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/347040645683f69bda5e881.16343487.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 347040645683f69bda5e881.16343487.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/347040645683f69bda5e881.16343487.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 347040645683f69bda5e881.16343487.jpg_sanitized.jpg -> 347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg
+A imagem 347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg não precisa de redimensionamento (tamanho: 0.17 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 209ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 228ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 132ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 151ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 68ms/step
+[1m 1/13[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m2s[0m 176ms/step[1m 9/13[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 6ms/step  [1m13/13[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 15ms/step[1m13/13[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 16ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 375ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 393ms/step
+Imagem salva em: ../imagem/pasteur/347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg
+Processamento concluído!
+Imagem '347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.3600 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (347040645683f69bda5e881.16343487.jpg_sanitized_2025_06_03_21_31_45.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 21:36:01
+
+MSG: POST Data: {"nome-atividade":"Reuniao","tipo-atividade":"330","data":"2025-06-03T18:34","atividade-realizada":"Levantei uma ta\u00e7a de vinho","data-acao":"2025-06-03","hora-acao":"18:34","longitude":"-46.6758822","latitude":"-23.5589819","nome-usuario":"eberval.castro","nome-pessoa":"Eberval Castro"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5589819&lon=-46.6758822
+MSG: mapResponse: {"place_id":8428880,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":5741577267,"lat":"-23.5589511","lon":"-46.6758802","class":"place","type":"house","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"place","name":"","display_name":"364, Rua Alves Guimarães, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05410-000, Brasil","address":{"house_number":"364","road":"Rua Alves Guimarães","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05410-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.5590011","-23.5589011","-46.6759302","-46.6758302"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 21:36:02] Pessoa: Eberval Castro, Usuário: eberval.castro, Atividade: Reuniao, Tipo de Ação: 330, Data: 2025-06-03T18:34, Descrição: Levantei uma taça de vinho, Data da Ação: 2025-06-03, Hora da Ação: 18:34
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Eberval Castro'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = São Paulo
+SQL: SELECT * FROM cidades WHERE id_estado =  26 AND nome_cidade = São Paulo
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-46.6758822, -23.5589819, -23.5590011, -23.5589011, -46.6759302, -46.6758302, 364, Rua Alves Guimarães, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05410-000, Brasil, Rua Alves Guimarães, Região Imediata de São Paulo, Jardim Paulista, São Paulo, São Paulo, 05410-000, Brasil, BR, 3832, 26, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Reuniao,2025-06-03, 18:34,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Eberval Castro )))MSG: nome_file: 17489865256591435069537075820581.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1414393067683f6ac25751f4.97106464.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1414393067683f6ac25751f4.97106464.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1414393067683f6ac25751f4.97106464.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/1414393067683f6ac25751f4.97106464.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1414393067683f6ac25751f4.97106464.jpg_sanitized.jpg -> 1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg
+A imagem 1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg não precisa de redimensionamento (tamanho: 0.18 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 228ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 248ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 134ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 152ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 58ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m 1/29[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m5s[0m 179ms/step[1m10/29[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m19/29[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 6ms/step[1m28/29[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 6ms/step[1m29/29[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 11ms/step[1m29/29[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 12ms/step
+[1m1/3[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 394ms/step[1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 74ms/step [1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 83ms/step
+Imagem salva em: ../imagem/pasteur/1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg
+Processamento concluído!
+Imagem '1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.8196 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1414393067683f6ac25751f4.97106464.jpg_sanitized_2025_06_03_21_36_06.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 22:23:28
+
+MSG: POST Data: {"nome-atividade":"Visita aos Banc\u00e1rios de Bras\u00edlia","tipo-atividade":"2222","data":"2025-06-03T03:19","atividade-realizada":"Estive no Sindicato dos Banc\u00e1rios de Bras\u00edlia para participar de evento sobre urbanismo social","data-acao":"2025-06-03","hora-acao":"03:19","longitude":"-47.8692043","latitude":"-15.7997141","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7997141&lon=-47.8692043
+MSG: mapResponse: {"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 22:23:29] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: Visita aos Bancários de Brasília, Tipo de Ação: 2222, Data: 2025-06-03T03:19, Descrição: Estive no Sindicato dos Bancários de Brasília para participar de evento sobre urbanismo social, Data da Ação: 2025-06-03, Hora da Ação: 03:19
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8692043, -15.7997141, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Visita aos Bancários de Brasília,2025-06-03, 03:19,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: 2025-06-0319.22.241225508464984260204.jpg
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/613689534683f75e193c0c0.68561109.jpg
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/613689534683f75e193c0c0.68561109.jpg'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 613689534683f75e193c0c0.68561109.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/613689534683f75e193c0c0.68561109.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 613689534683f75e193c0c0.68561109.jpg_sanitized.jpg -> 613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg
+A imagem 613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg não precisa de redimensionamento (tamanho: 0.21 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 193ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 213ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 128ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 145ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 54ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m 1/18[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m3s[0m 198ms/step[1m10/18[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 6ms/step  [1m18/18[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 12ms/step[1m18/18[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 13ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 446ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 465ms/step
+Imagem salva em: ../imagem/pasteur/613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg
+Processamento concluído!
+Imagem '613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.2612 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 

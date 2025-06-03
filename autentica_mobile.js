@@ -178,7 +178,7 @@ try {
 
 // 3.5 antes de apagar os dados do usuario atual no dispositivo atual, tem que liberar no backend 
 const oldHash = localStorage.getItem('auth_hash');
-		alert('paradinha vou liberar esse: '+ oldHash);
+		//alert('paradinha vou liberar esse: '+ oldHash);
 if (oldHash) {
     try {
         await fetch('libera_dispositivo.php', {
@@ -193,7 +193,7 @@ if (oldHash) {
         console.warn('⚠️ Falha ao liberar dispositivo anterior:', e);
     }
 }
-alert('paradinha veja o console');
+//alert('paradinha veja o console');
 
             // 4. Armazena dados localmente
             localStorage.setItem('auth_hash', hash);
