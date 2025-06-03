@@ -1,54 +1,50 @@
 <?php
 ob_start();
-header('Content-Type: application/json;');
+header('Content-Type: application/json');
 ini_set('display_errors', 0);
 error_reporting(0);
 
 include "database.php";
 
 try {
-    $termo_lgpd = $_POST['accept'];
-    // Insersão de dados de acoes
-    $stmt = $conn->prepare("UPDATE pessoas SET termo_lgpd = (?) WHERE id_chave_pessoa = 1");
-
-    if ($stmt === false) {
-        throw new Exception('Prepare failed: ' . $conn->error);
+    // Verifica se os parâmetros necessários estão presentes
+    if (!isset($_POST['accept']) || !isset($_POST['id_pessoa'])) {
+        throw new Exception('Parâmetros "accept" e "id_pessoa" são obrigatórios.');
     }
 
-    $stmt->bind_param('s', $termo_lgpd);
+    $termo_lgpd = $_POST['accept'];
+    $id_pessoa = intval($_POST['id_pessoa']); // Garante que seja um número inteiro
+
+    // Prepara a query de atualização
+    $stmt = $conn->prepare("UPDATE pessoas SET termo_lgpd = ? WHERE id_chave_pessoa = ?");
+
+    if ($stmt === false) {
+        throw new Exception('Erro no prepare: ' . $conn->error);
+    }
+
+    $stmt->bind_param('si', $termo_lgpd, $id_pessoa);
 
     if ($stmt->execute()) {
-        $terms = 'true';
-        if ($termo_lgpd === 'false') {
-            $terms = false;
-        }
+        $terms = ($termo_lgpd === 'true');
         echo json_encode([
             'success' => true,
-            'message' => 'Data received successfully.',
+            'message' => 'Dados atualizados com sucesso.',
             'terms' => $terms
         ]);
     } else {
-        http_response_code(500); // Set HTTP response code for error
-        echo json_encode([
-            'success' => false,
-            'message' => 'Tenta novamente3'
-        ]);
-        exit;
-        header("HTTP/1.1 500 Internal Server Error");
+        throw new Exception('Erro ao executar a atualização.');
     }
 } catch (Exception $e) {
-    $response['message'] = $e->getMessage();
-
-    http_response_code(500); // Set HTTP response code for error
+    http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => $response['message']
+        'message' => $e->getMessage()
     ]);
-    exit;
-    header("HTTP/1.1 500 Internal Server Error");
 }
 
-$stmt->close();
+if (isset($stmt) && $stmt !== false) {
+    $stmt->close();
+}
 $conn->close();
-
 ob_end_flush();
+

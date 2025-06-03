@@ -1,0 +1,33 @@
+<?php
+include 'identifica.cripto.php'; // define: $servername, $username, $password, $dbname
+
+$hash = $_GET['hash'] ?? '';
+
+if (!$hash) {
+    http_response_code(400);
+    echo json_encode(['erro' => 'Hash não fornecido.']);
+    exit;
+}
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    http_response_code(500);
+    echo json_encode(['erro' => 'Erro de conexão com o banco de dados.']);
+    exit;
+}
+
+$stmt = $conn->prepare("UPDATE usuarios SET tem_local_storage = 'sim' WHERE hash = ?");
+$stmt->bind_param("s", $hash);
+
+if ($stmt->execute()) {
+    echo json_encode(['sucesso' => true]);
+} else {
+    http_response_code(500);
+    echo json_encode(['erro' => 'Falha ao atualizar.']);
+}
+
+$stmt->close();
+$conn->close();
+?>
+

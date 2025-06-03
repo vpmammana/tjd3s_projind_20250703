@@ -1,3 +1,33 @@
+VPM 20250603
+
+Alterei page-auth_hash_deepseek.php
+
+para autentica_mobile.php, colocando um sistema mais robusto de marcação do mobile com time stamp, de forma que não seja possível dois usuários usarem o mesmo aplicativo em mobiles diferentes. O sistema ainda aceita uso em desktop, mas eu acho que deveria ser retirado.
+
+Por enquanto o método de verificação se o dispositivo é mobile é bem ruim (largura da tela), mas podemos melhorar. 
+
+Para funcionar eu tive que colocar um campo hash_mobile na tabela usuarios, de forma a guardar o time_stamp junto, como identificador parcial do mobile, junto com o hash
+
+VPM 20250602
+
+Arquivo termos.php está atualizando o aceite do termo apanas para id_chave_pessoa = 1? está hardcoded!!!!
+
+VPM 20250602
+
+O uso de service worker pode estar mantendo o JS das várias páginas
+
+Tem que evitar uso de const, let e definição de arrow functions.
+
+o page-auth.js precisa ser modularizado para evitar redefinições e perda de funções por redefinição.
+
+Precisaremos de um  IIFE (Immediately Invoked Function Expression)
+
+O index.html pode "piscar" antes de autenticar com hash ou login.html... para evitar isso coloquei body display none.
+
+VPM 20250602
+
+Tive que fazer muitas mudanças em page-auth_hash... criei um sistema de login por hash, e usei um código próprio que depois foi validado no deepseek... por essa razao, passei a chamar de page-auth_hash_deepseek.js
+
 VPM 20250528
 
 Criei o campo tem_local_storage na tabela usuarios. Esse campo marca se o aplicativo já posicionou um local storage em algum celular. Se colocou, ele não vai tentar colocar de novo... Mas o login só é possível se o hash passado na url como parâmentro é igual ao local storage... se não for... não entra... e não tiver não entra... como ele só coloca o local storage na primeira vez, se o usuario tentar colocar em outro celular não conseguirá e terá que pedir para o coordenador "limpar" o marcador tem_local_storage para poder instalar em novo celular. quero também verificar se é um celular... ou se é desktop... o aplicativo não pode ser instalado em desktop... 
@@ -34,6 +64,8 @@ Criados os arquivos
 	php/gera_inserts_agentes_piloto_perfis_regioes.php
 
 para inserir os dados de bolsistas que participarao dos pilotos.
+
+O comando é  php gera_inserts_agentes_piloto_perfis_regioes_usuarios.php agentes_senaes_piloto.csv agentes_senaes_piloto.sql
 
 VPM 20250527
 

@@ -1009,7 +1009,7 @@ function syncDataWithServer() {
                 if (!fetchStatusArr.includes(false)) {
                     hideLoading();
                     alert('Dados enviados com sucesso!');
-                    window.location.href = "/tjd3s-app_fork_20250513/"
+                    window.location.href = "/tjd3s_mobile_20250602/"
                 } else {
                     alert('Erro tente novamente!')
                 }
@@ -1194,11 +1194,15 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
     formData.append('longitude', localStorage.getItem('longitude'));
     formData.append('latitude', localStorage.getItem('latitude'));
     formData.append('nome-usuario', localStorage.getItem('nome_usuario'));
+    formData.append('nome-pessoa', localStorage.getItem('nome_pessoa'));
 
     if (imagesArray.length > 0) {
         formData.append('files[]', imagesArray[0]);
     }
-
+for (let [key, value] of formData.entries()) {
+    console.log(`${key}: ${value}`);
+}
+setTimeout(function () {
     if (navigator.onLine) {
         fetch('./php/CriarEvidencia.php', {
             method: 'POST',
@@ -1239,7 +1243,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
     } else {
         const plainData = Object.fromEntries(formData.entries());
         storeDataOffline(plainData);
-    }
+    }}, 2000);
 });
 
 window.addEventListener('online', () => {

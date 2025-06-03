@@ -197,6 +197,7 @@ CREATE TABLE `usuarios` (
   `nome_usuario` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
   `hash` varchar(128),
+  `hash_mobile` varchar(128),
   `data_inicio_cadastro` date NOT NULL,
   `data_fim_cadastro` date DEFAULT NULL,
   `data_insercao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,

@@ -4,10 +4,11 @@ ob_start(); // Captura a saída, inclusive avisos e erros
 
 // Evita que o erro apareça para quem chamou via navegador/Apache
 ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
+ini_set('display_startup_errors', 1);
 
 // Garante que os erros continuem sendo registrados no log do PHP
 ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/php_error.log'); // Salvar log perto do script
 error_reporting(E_ALL);
 
 // Configura o Content-Type como JSON (opcional)
@@ -96,6 +97,7 @@ try {
  file_put_contents($log__file,  "CHECK: passou json decode\n", FILE_APPEND | LOCK_EX);
 
 
+    $nome_pessoa = $_POST['nome-pessoa'] ?? null;
     $nome_usuario = $_POST['nome-usuario'] ?? null;
     $nomeAtividadeEvento = $_POST['nome-atividade'] ?? null;
     $id_tipo_acao = $_POST['tipo-atividade'] ?? null;
@@ -147,6 +149,7 @@ file_put_contents($log__file, "CHECK: passou atribuições", FILE_APPEND | LOCK_
 
 
     $log_message = "[" . date('Y-m-d H:i:s') . "] "
+    . "Pessoa: $nome_pessoa, "
     . "Usuário: $nome_usuario, "
     . "Atividade: $nomeAtividadeEvento, "
     . "Tipo de Ação: $id_tipo_acao, "
@@ -162,8 +165,8 @@ file_put_contents($log__file, "CHECK: passou atribuições", FILE_APPEND | LOCK_
         throw new Exception('Prepare failed: ' . $conn->error);
     }
 
-    $stmt->bind_param('s', $nome_usuario);
-file_put_contents($log__file, "SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = '$nome_usuario'", FILE_APPEND | LOCK_EX);
+    $stmt->bind_param('s', $nome_pessoa);
+file_put_contents($log__file, "SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = '$nome_pessoa'", FILE_APPEND | LOCK_EX);
 
     if ($stmt->execute()) {
         $result = $stmt->get_result();
@@ -285,13 +288,13 @@ file_put_contents($log__file, "SQL: INSERT INTO enderecos (id_localizacao) VALUE
 
     // insercão de dados atividades_eventos, data_atividade_evento, hora_atividade_evento  para a tabela de atividades_eventos
     $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?,?,?,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa = ?)))");
-file_put_contents($log__file, "SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES ($nomeAtividadeEvento,$dataAcao, $horaAcao,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =$nome_usuario )))" ,  FILE_APPEND | LOCK_EX);
+file_put_contents($log__file, "SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES ($nomeAtividadeEvento,$dataAcao, $horaAcao,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =$nome_pessoa )))" ,  FILE_APPEND | LOCK_EX);
     if ($stmt === false) {
 file_put_contents($log__file, "\nERRO: Prepare failed:$conn->error", FILE_APPEND | LOCK_EX);
         throw new Exception('Prepare failed: ' . $conn->error);
     }
 
-    $stmt->bind_param('ssss', $nomeAtividadeEvento, $dataAcao, $horaAcao, $nome_usuario);
+    $stmt->bind_param('ssss', $nomeAtividadeEvento, $dataAcao, $horaAcao, $nome_pessoa);
 
     if ($stmt->execute()) {
         $id_atividade_evento = $conn->insert_id;

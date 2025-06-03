@@ -4088,3 +4088,572 @@ CHECK: Passou o tratamento de imagens:
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg
 SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .jpg 
 SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (18346900636835eba67aaf37.73174548.jpg_sanitized_2025_05_27_16_43_22.jpg, 4, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 06:05:21
+
+MSG: POST Data: {"nome-atividade":"teste pedro ","tipo-atividade":"1","data":"2025-06-03T03:00","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:00","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"pedro.tourinho"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14920828,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:05:21] Usuário: pedro.tourinho, Atividade: teste pedro , Tipo de Ação: 1, Data: 2025-06-03T03:00, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:00
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'pedro.tourinho'ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 06:22:31
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy","tipo-atividade":"2714","data":"2025-06-03T03:17","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:17","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:22:32] Pessoa: , Usuário: sergio.godoy, Atividade: teste sergio godoy, Tipo de Ação: 2714, Data: 2025-06-03T03:17, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:17
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 06:30:18
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy","tipo-atividade":"2","data":"2025-06-03T03:25","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:25","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:30:19] Pessoa: , Usuário: sergio.godoy, Atividade: teste sergio godoy, Tipo de Ação: 2, Data: 2025-06-03T03:25, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:25
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 06:34:06
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy","tipo-atividade":"1","data":"2025-06-03T03:28","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:28","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:34:06] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: teste sergio godoy, Tipo de Ação: 1, Data: 2025-06-03T03:28, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:28
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste sergio godoy,2025-06-03, 03:28,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/641723136683e975ed9aa58.99039603.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/641723136683e975ed9aa58.99039603.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 641723136683e975ed9aa58.99039603.png segura e convertida para JPEG.
+Imagem ../imagem/input/641723136683e975ed9aa58.99039603.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 641723136683e975ed9aa58.99039603.png_sanitized.jpg -> 641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg
+A imagem 641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg não precisa de redimensionamento (tamanho: 0.03 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 160ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 179ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 123ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 143ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/4[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 184ms/step[1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 39ms/step [1m4/4[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 366ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 385ms/step
+Imagem salva em: ../imagem/pasteur/641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg
+Processamento concluído!
+Imagem '641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.5582 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (641723136683e975ed9aa58.99039603.png_sanitized_2025_06_03_06_34_18.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 06:35:17
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy2","tipo-atividade":"1","data":"2025-06-03T03:30","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:30","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:35:18] Pessoa: , Usuário: sergio.godoy, Atividade: teste sergio godoy2, Tipo de Ação: 1, Data: 2025-06-03T03:30, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:30
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 06:36:35
+
+MSG: POST Data: {"nome-atividade":"para dar tempo","tipo-atividade":"1","data":"2025-06-03T03:31","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:31","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:36:36] Pessoa: , Usuário: sergio.godoy, Atividade: para dar tempo, Tipo de Ação: 1, Data: 2025-06-03T03:31, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:31
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 06:40:54
+
+MSG: POST Data: {"nome-atividade":"teste sergio godoy3","tipo-atividade":"1","data":"2025-06-03T03:34","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"03:34","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:40:54] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: teste sergio godoy3, Tipo de Ação: 1, Data: 2025-06-03T03:34, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 03:34
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (teste sergio godoy3,2025-06-03, 03:34,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1358765298683e98f6ce92d3.28769499.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1358765298683e98f6ce92d3.28769499.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1358765298683e98f6ce92d3.28769499.png segura e convertida para JPEG.
+Imagem ../imagem/input/1358765298683e98f6ce92d3.28769499.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1358765298683e98f6ce92d3.28769499.png_sanitized.jpg -> 1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg
+A imagem 1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg não precisa de redimensionamento (tamanho: 0.03 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 258ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 300ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 121ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 139ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 63ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 61ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 60ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/5[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m0s[0m 184ms/step[1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step [1m5/5[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 316ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step
+Imagem salva em: ../imagem/pasteur/1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg
+Processamento concluído!
+Imagem '1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.7402 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1358765298683e98f6ce92d3.28769499.png_sanitized_2025_06_03_06_40_58.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 06:57:39
+
+MSG: POST Data: {"nome-atividade":"teste timing","tipo-atividade":"1319","data":"2025-06-03T03:52","atividade-realizada":"eesat","data-acao":"2025-06-03","hora-acao":"03:52","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 06:57:40] Pessoa: , Usuário: sergio.godoy, Atividade: teste timing, Tipo de Ação: 1319, Data: 2025-06-03T03:52, Descrição: eesat, Data da Ação: 2025-06-03, Hora da Ação: 03:52
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:00:47
+
+MSG: POST Data: {"nome-atividade":"teste timing","tipo-atividade":"1319","data":"2025-06-03T03:52","atividade-realizada":"eesat","data-acao":"2025-06-03","hora-acao":"03:52","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14445955,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:00:48] Pessoa: , Usuário: sergio.godoy, Atividade: teste timing, Tipo de Ação: 1319, Data: 2025-06-03T03:52, Descrição: eesat, Data da Ação: 2025-06-03, Hora da Ação: 03:52
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:04:17
+
+MSG: POST Data: {"nome-atividade":"eteste","tipo-atividade":"1309","data":"2025-06-03T03:59","atividade-realizada":"tese4","data-acao":"2025-06-03","hora-acao":"03:59","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:04:18] Pessoa: , Usuário: sergio.godoy, Atividade: eteste, Tipo de Ação: 1309, Data: 2025-06-03T03:59, Descrição: tese4, Data da Ação: 2025-06-03, Hora da Ação: 03:59
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:07:07
+
+MSG: POST Data: {"nome-atividade":"err","tipo-atividade":"1316","data":"2025-06-03T04:02","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"04:02","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:07:08] Pessoa: , Usuário: sergio.godoy, Atividade: err, Tipo de Ação: 1316, Data: 2025-06-03T04:02, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 04:02
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:12:59
+
+MSG: POST Data: {"nome-atividade":"teste settimeout","tipo-atividade":"1324","data":"2025-06-03T04:08","atividade-realizada":"teste","data-acao":"2025-06-03","hora-acao":"04:08","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14346631,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:13:00] Pessoa: , Usuário: sergio.godoy, Atividade: teste settimeout, Tipo de Ação: 1324, Data: 2025-06-03T04:08, Descrição: teste, Data da Ação: 2025-06-03, Hora da Ação: 04:08
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:13:45
+
+MSG: POST Data: {"nome-atividade":"yrdyr 2 seg","tipo-atividade":"5","data":"2025-06-03T04:08","atividade-realizada":"dasdas","data-acao":"2025-06-03","hora-acao":"04:08","longitude":"-47.874048","latitude":"-15.8040064","nome-usuario":"sergio.godoy","nome-pessoa":"S\u00e9rgio Godoy"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8040064&lon=-47.874048
+MSG: mapResponse: {"place_id":14920828,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":141450110,"lat":"-15.8043108","lon":"-47.8727795","class":"office","type":"diplomatic","place_rank":30,"importance":0.3699630340426983,"addresstype":"office","name":"Embaixada dos Estados Unidos da América","display_name":"Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil","address":{"office":"Embaixada dos Estados Unidos da América","house_number":"3","road":"SES - Quadra 801","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70403-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8057608","-15.8033376","-47.8742578","-47.8714459"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:13:46] Pessoa: Sérgio Godoy, Usuário: sergio.godoy, Atividade: yrdyr 2 seg, Tipo de Ação: 5, Data: 2025-06-03T04:08, Descrição: dasdas, Data da Ação: 2025-06-03, Hora da Ação: 04:08
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Sérgio Godoy'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.874048, -15.8040064, -15.8057608, -15.8033376, -47.8742578, -47.8714459, Embaixada dos Estados Unidos da América, 3, SES - Quadra 801, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70403-900, Brasil, SES - Quadra 801, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70403-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (yrdyr 2 seg,2025-06-03, 04:08,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Sérgio Godoy )))MSG: nome_file: captured-image.png
+CHECK: UPLOAD_ERR_OK
+MSG: destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/1423461715683ea0aa4105c1.64589271.png
+MSG: Comando: /var/www/html/venv/bin/python /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1423461715683ea0aa4105c1.64589271.png'
+
+Saida de erros do python:  Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 1423461715683ea0aa4105c1.64589271.png segura e convertida para JPEG.
+Imagem ../imagem/input/1423461715683ea0aa4105c1.64589271.png_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 1423461715683ea0aa4105c1.64589271.png_sanitized.jpg -> 1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg
+A imagem 1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg não precisa de redimensionamento (tamanho: 0.04 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 146ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 164ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 110ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 127ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 23ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step
+[1m1/7[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 175ms/step[1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 21ms/step [1m7/7[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 150ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 168ms/step
+Imagem salva em: ../imagem/pasteur/1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg
+Processamento concluído!
+Imagem '1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.1305 segundos
+MSG: output.json:{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg"}
+
+Output nao eh false. Vai tentar encript. 
+CHECK: Python script executed successfully.
+CHECK: Passou o tratamento de imagens: 
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png
+SQL: SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = .png 
+SQL: INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (1423461715683ea0aa4105c1.64589271.png_sanitized_2025_06_03_07_13_50.jpg, 5, dZjh/RyVJ7GuPM72oD1IBA==, 0, )CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 07:31:50
+
+MSG: POST Data: {"nome-atividade":"Teste eberval","tipo-atividade":"2714","data":"2025-06-03T04:31","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"04:31","longitude":"-47.8691902","latitude":"-15.7996716","nome-usuario":"eberval.castro"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996716&lon=-47.8691902
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:31:51] Pessoa: , Usuário: eberval.castro, Atividade: Teste eberval, Tipo de Ação: 2714, Data: 2025-06-03T04:31, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 04:31
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = ''ERRO: Usuário não existe. FIM.
+
+===========================================================================
+Início de transação em 2025-06-03 07:33:02
+
+MSG: POST Data: {"nome-atividade":"Teste de liberacao","tipo-atividade":"1","data":"2025-06-03T04:32","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"04:32","longitude":"-47.8691295","latitude":"-15.7996636","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996636&lon=-47.8691295
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:33:04] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste de liberacao, Tipo de Ação: 1, Data: 2025-06-03T04:32, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 04:32
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691295, -15.7996636, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste de liberacao,2025-06-03, 04:32,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 07:33:13
+
+MSG: POST Data: {"nome-atividade":"Teste de liberacao","tipo-atividade":"1","data":"2025-06-03T04:32","atividade-realizada":"Teste","data-acao":"2025-06-03","hora-acao":"04:32","longitude":"-47.8691295","latitude":"-15.7996636","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996636&lon=-47.8691295
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:33:15] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Teste de liberacao, Tipo de Ação: 1, Data: 2025-06-03T04:32, Descrição: Teste, Data da Ação: 2025-06-03, Hora da Ação: 04:32
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8691295, -15.7996636, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Teste de liberacao,2025-06-03, 04:32,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 
+
+
+===========================================================================
+Início de transação em 2025-06-03 07:35:20
+
+MSG: POST Data: {"nome-atividade":"Face","tipo-atividade":"1309","data":"2025-06-03T04:34","atividade-realizada":"Face","data-acao":"2025-06-03","hora-acao":"04:34","longitude":"-47.8690811","latitude":"-15.7996984","nome-usuario":"vpmammana","nome-pessoa":"Victor Pellegrini Mammana"}
+
+MSG: Consulta ao nominatim: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996984&lon=-47.8690811
+MSG: mapResponse: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+CHECK: Passou exits
+CHECK: passou curl
+CHECK: passou json decode
+CHECK: passou bounding box
+CHECK: passou address
+CHECK: passou id_pais
+CHECK: passou id_estado
+CHECK: passou nome_estado
+CHECK: passou id_cidade
+CHECK: passou codigo_ibge
+CHECK: passou id_localizacao
+CHECK: passou id_endereco
+CHECK: passou id_atividade_evento
+CHECK: passou id_arquivo
+CHECK: passou id_tipo_arquivo
+CHECK: passou atribuiçõesMSG: [2025-06-03 07:35:26] Pessoa: Victor Pellegrini Mammana, Usuário: vpmammana, Atividade: Face, Tipo de Ação: 1309, Data: 2025-06-03T04:34, Descrição: Face, Data da Ação: 2025-06-03, Hora da Ação: 04:34
+SQL: SELECT id_chave_pessoa FROM pessoas WHERE nome_pessoa = 'Victor Pellegrini Mammana'SQL: SELECT id_chave_pais FROM paises where nome_pais = Brasil
+SQL: SELECT id_chave_estado, nome_estado FROM estados WHERE nome_estado = Distrito Federal
+SQL: SELECT * FROM cidades WHERE id_estado =  7 AND nome_cidade = Brasília
+SQL: INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, id_cidade, id_estado, id_pais) VALUES (-47.8690811, -15.7996984, -15.8005057, -15.7995762, -47.8695079, -47.8690579, Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil, S1, Região Geográfica Imediata do Distrito Federal, , Brasília, Distrito Federal, 70046-900, Brasil, BR, 5570, 7, 1)
+SQL: INSERT INTO enderecos (id_localizacao) VALUES ()SQL: INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (Face,2025-06-03, 04:34,(select id_chave_usuario from usuarios where id_pessoa=(select id_chave_pessoa from pessoas where nome_pessoa =Victor Pellegrini Mammana )))CHECK: fechou o conn: 

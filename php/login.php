@@ -18,7 +18,12 @@ try {
         ]);
         exit;
     }
-    $stmt = $conn->prepare("SELECT nome_usuario, senha, nome_pessoa FROM usuarios u INNER JOIN pessoas p on u.id_pessoa = p.id_chave_pessoa WHERE nome_usuario = ?");
+    $stmt = $conn->prepare("
+SELECT u.nome_usuario, u.senha, u.id_chave_usuario, u.id_pessoa, p.nome_pessoa
+    FROM usuarios u
+    INNER JOIN pessoas p ON u.id_pessoa = p.id_chave_pessoa
+    WHERE nome_usuario = ?
+");
 
     if ($stmt === false) {
         throw new Exception('Prepare failed: ' . $conn->error);
@@ -44,10 +49,12 @@ try {
 
 
         echo json_encode([
-            'success' => true,
-            'message' => 'Data received successfully.',
-            'nome_usuario' => $nome_usuario,
-            'nome_pessoa' => $nome_pessoa
+	    'success' => true,
+	    'message' => 'Data received successfully.',
+	    'nome_usuario' => $nome_usuario,
+	    'nome_pessoa' => $nome_pessoa,
+	    'id_usuario' => $data[0]['id_chave_usuario'],
+	    'id_pessoa' => $data[0]['id_pessoa']
         ]);
     } else {
         http_response_code(400); // Set HTTP response code for error

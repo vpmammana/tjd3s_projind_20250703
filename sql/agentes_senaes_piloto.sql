@@ -7,6 +7,9 @@ CREATE TABLE regioes_atuacao (
 
 -- Inserts únicos em regioes_atuacao
 INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('São Paulo - Leste 2');
+INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('DF');
+INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('Sumaré SP');
+INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('Campinas SP');
 INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('São Paulo - ABC');
 INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('São Paulo - Leste 1');
 INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('São Paulo - A confirmar');
@@ -18,6 +21,9 @@ INSERT INTO regioes_atuacao (nome_regiao_atuacao) VALUES ('CE');
 
 -- Inserts em tipos_vinculos (para perfis do CSV)
 INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('Diretoria SENAES', 'Inserido automaticamente a partir do CSV');
+INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('TI', 'Inserido automaticamente a partir do CSV');
+INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('Presidência', 'Inserido automaticamente a partir do CSV');
+INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('Coordenação', 'Inserido automaticamente a partir do CSV');
 INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('Bolsista com Ação Territorial', 'Inserido automaticamente a partir do CSV');
 INSERT IGNORE INTO tipos_vinculos (nome_tipo_vinculo, descricao) VALUES ('Bolsista para a Coordenação Estadual', 'Inserido automaticamente a partir do CSV');
 
@@ -30,6 +36,10 @@ ALTER TABLE pessoas
 
 -- Inserts na tabela pessoas
 INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Sérgio Godoy', 'sergio.godoy@trabalho.gov.br', '(61)', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Diretoria SENAES'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'São Paulo - Leste 2'));
+INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Victor Pellegrini Mammana', 'vpmammana@gmail.com', '(19) 981431010', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'TI'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'DF'));
+INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Wagner Tome', 'wagts2006@gmail.com', '(19) 981431010', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'TI'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'Sumaré SP'));
+INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Pedro Tourinho', 'pedro.tourinho@fundacentro.gov.br', '(19)', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Presidência'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'Campinas SP'));
+INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Eberval Castro', 'eberval.castro@fundacentro.gov.br', '(19)', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Coordenação'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'Campinas SP'));
 INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Aline Mary Vinci da Silva', 'alinemarypt13@gmail.com', '(11) 9 4758.0905', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Bolsista com Ação Territorial'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'São Paulo - Leste 2'));
 INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Elenilson de Melo Silva', 'nilsonlesbc@gmail.com', '(11) 96289. 8316', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Bolsista com Ação Territorial'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'São Paulo - ABC'));
 INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_atuacao) VALUES ('Ivonete Aparecida dos Santos', 'Ivonetedagat@gmail.com', '(11) 97725.6995', (SELECT id_chave_tipo_vinculo FROM tipos_vinculos WHERE nome_tipo_vinculo = 'Bolsista com Ação Territorial'), (SELECT id_chave_regiao_atuacao FROM regioes_atuacao WHERE nome_regiao_atuacao = 'São Paulo - Leste 1'));
@@ -52,6 +62,10 @@ INSERT INTO pessoas (nome_pessoa, email, telefone, id_tipo_vinculo, id_regiao_at
 
 -- Inserts na tabela usuarios
 INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('sergio.godoy', '', '933e5fa5911e0718f77cd080e716ab05209367c1a6aaf389952e7c70db4d2d53', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'sergio.godoy@trabalho.gov.br'), 'sim');
+INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('vpmammana', '', 'd346cfb5189369e67bd4a103e497921ec8abcb175ee76b8a8885265f433eae03', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'vpmammana@gmail.com'), 'sim');
+INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('wagts2006', '', '68beff0c4730f3d7ebc2cae0b98d7bb79a3247dfd800156bc5f0f2bc481b38af', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'wagts2006@gmail.com'), 'sim');
+INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('pedro.tourinho', '', 'a15fbbb0607022ceb4d2dbde06ca83000cd1e6b7a6ba7429294c492afd6e2923', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'pedro.tourinho@fundacentro.gov.br'), 'sim');
+INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('eberval.castro', '', '06a0ef498dbc02fc6dc262ddd95903771f7ee8773d14a11cc83368b0b6ff70eb', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'eberval.castro@fundacentro.gov.br'), 'sim');
 INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('alinemarypt13', '', 'e9e8cd35063d2f043812cbe113dfe229e487f76db66af6988d01be9edd5cdd5c', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'alinemarypt13@gmail.com'), 'nao');
 INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('nilsonlesbc', '', 'dc29d361a6723dc64f3ee248d5552a2e5a25e557a1feb5e3b25478237ccfdff5', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'nilsonlesbc@gmail.com'), 'nao');
 INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES ('Ivonetedagat', '', 'dc85c72d809b3380e5bcab966b50e959017eecd892d8691d5e4b6eb32fd02fd4', CURDATE(), (SELECT id_chave_pessoa FROM pessoas WHERE email = 'Ivonetedagat@gmail.com'), 'nao');
