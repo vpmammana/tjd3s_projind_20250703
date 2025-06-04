@@ -788,6 +788,9 @@ async function compressImage(file) {
       canvas.toBlob(resolve, 'image/webp', 0.75) // Qualidade um pouco maior
     );
   }
+//  alert('Tamanho final:'+ (blob.size / 1024).toFixed(1)+ 'KB'+
+//              'Dimensões:'+ canvas.width+ 'x'+ canvas.height+
+//              'Qualidade:'+ quality + ' filename: '+file.name);
 
   console.log('Tamanho final:', (blob.size / 1024).toFixed(1), 'KB',
               'Dimensões:', canvas.width, 'x', canvas.height,
@@ -946,21 +949,21 @@ function captureImage() {
     video.style.display = 'none';
 
     // Detecta orientação (mobile)
-    const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+//    const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
     // Ajusta dimensões do canvas (inverte se portrait)
-    canvas.width = isPortrait ? video.videoHeight : video.videoWidth;
-    canvas.height = isPortrait ? video.videoWidth : video.videoHeight;
+//    canvas.width = isPortrait ? video.videoHeight : video.videoWidth;
+//    canvas.height = isPortrait ? video.videoWidth : video.videoHeight;
 
     // Rotaciona e desenha a imagem
     context.clearRect(0, 0, canvas.width, canvas.height);
-    if (isPortrait) {
-        context.translate(canvas.width / 2, canvas.height / 2);
-        context.rotate(Math.PI / 2);
-        context.drawImage(video, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
-    } else {
-        context.drawImage(video, 0, 0, canvas.width, canvas.height);
-    }
+ //   if (isPortrait) {
+ //       context.translate(canvas.width / 2, canvas.height / 2);
+ //       context.rotate(Math.PI / 2);
+ //       context.drawImage(video, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
+ //   } else {
+ //       context.drawImage(video, 0, 0, canvas.width, canvas.height);
+ //   }
 
     // Converte canvas para File (PNG) e comprime
     canvas.toBlob(async (blob) => {
@@ -971,6 +974,7 @@ function captureImage() {
             imagesArray = [compressedFile];
             displayImagePreview(compressedFile);
         } catch (error) {
+		alert('paradinha erro ao comprimir imagem')
             console.error("Erro ao comprimir imagem:", error);
             // Fallback: usa a imagem original
             imagesArray = [file];
@@ -1500,6 +1504,7 @@ document.getElementById('criar-evidencia-form').addEventListener('submit', funct
 for (let [key, value] of formData.entries()) {
     console.log(`${key}: ${value}`);
 }
+//alert('paradinha para respirar');
 setTimeout(function () {
     if (navigator.onLine) {
 	    //alert('settimeout');

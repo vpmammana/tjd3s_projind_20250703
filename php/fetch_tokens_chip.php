@@ -68,7 +68,7 @@ try {
     // Preparar e executar a consulta
     $stmt = $conn->prepare($sql);
     $stmt->execute($params);
-    error_log("Executed SQL Query 1:\n" . getExecutedSql($sql, $params) . "\n");
+    error_log("fetch_tokens_chip.php");
     // Buscar resultados
     $tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
 } catch (PDOException $e) {

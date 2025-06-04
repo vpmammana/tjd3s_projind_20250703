@@ -66,3 +66,43 @@
 [03-Jun-2025 22:23:37 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"613689534683f75e193c0c0.68561109.jpg_sanitized_2025_06_03_22_23_33.jpg"}
 [03-Jun-2025 22:23:37 UTC] Python script executed successfully.
 [03-Jun-2025 22:23:37 UTC] id_tipo_arquivo: 4
+[03-Jun-2025 23:38:40 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[03-Jun-2025 23:38:58 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[03-Jun-2025 23:39:42 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[03-Jun-2025 23:40:11 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[03-Jun-2025 23:45:21 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[03-Jun-2025 23:56:22 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:00:46 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:03:54 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:05:26 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:16:40 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/469028937683f9068f26b27.07240846.jpg
+[04-Jun-2025 00:16:50 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"469028937683f9068f26b27.07240846.jpg_sanitized_2025_06_04_00_16_45.jpg"}
+[04-Jun-2025 00:16:50 UTC] Python script executed successfully.
+[04-Jun-2025 00:16:50 UTC] id_tipo_arquivo: 4
+[04-Jun-2025 00:18:26 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:21:03 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:24:52 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:29:01 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:34:51 UTC] PHP Warning:  Undefined array key "city" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 116
+[04-Jun-2025 00:49:40 UTC] PHP Warning:  Undefined array key "longitude" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 46
+[04-Jun-2025 00:49:40 UTC] PHP Warning:  Undefined array key "latitude" in /var/www/html/tjd3s_mobile_20250602/php/CriarEvidencia.php on line 47
+[04-Jun-2025 01:56:05 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/2053797658683fa7b5b858c6.69999773.png
+[04-Jun-2025 01:56:12 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"2053797658683fa7b5b858c6.69999773.png_sanitized_2025_06_04_01_56_09.jpg"}
+[04-Jun-2025 01:56:12 UTC] Python script executed successfully.
+[04-Jun-2025 01:56:12 UTC] id_tipo_arquivo: 5
+[04-Jun-2025 01:58:05 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/801291755683fa82dc6a9e8.80250098.png
+[04-Jun-2025 01:58:12 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"801291755683fa82dc6a9e8.80250098.png_sanitized_2025_06_04_01_58_09.jpg"}
+[04-Jun-2025 01:58:12 UTC] Python script executed successfully.
+[04-Jun-2025 01:58:12 UTC] id_tipo_arquivo: 5
+[04-Jun-2025 13:47:49 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/74270656968404e8567bfe3.72002413.jpg
+[04-Jun-2025 13:47:57 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"74270656968404e8567bfe3.72002413.jpg_sanitized_2025_06_04_13_47_53.jpg"}
+[04-Jun-2025 13:47:57 UTC] Python script executed successfully.
+[04-Jun-2025 13:47:57 UTC] id_tipo_arquivo: 4
+[04-Jun-2025 14:34:51 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/487650056840598b1ee4d8.97971109.png
+[04-Jun-2025 14:34:58 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"487650056840598b1ee4d8.97971109.png_sanitized_2025_06_04_14_34_55.jpg"}
+[04-Jun-2025 14:34:58 UTC] Python script executed successfully.
+[04-Jun-2025 14:34:58 UTC] id_tipo_arquivo: 5
+[04-Jun-2025 14:37:12 UTC] destinationPath: /var/www/html/tjd3s_mobile_20250602/imagem/input/202594526368405a1850a803.24516988.jpg
+[04-Jun-2025 14:37:23 UTC] {"quantidade_pessoas":0,"caminho_arquivo_anonimizado":"","caminho_arquivo_original":"","nome_arquivo":"202594526368405a1850a803.24516988.jpg_sanitized_2025_06_04_14_37_16.jpg"}
+[04-Jun-2025 14:37:23 UTC] Python script executed successfully.
+[04-Jun-2025 14:37:23 UTC] id_tipo_arquivo: 4

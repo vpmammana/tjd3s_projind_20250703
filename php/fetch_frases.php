@@ -61,8 +61,8 @@ try {
 	}
 
 	// Log the final SQL query
-	error_log("Executed SQL: $executedSql");
-
+	//error_log("Executed SQL: $executedSql");
+	error_log("fetch_frases.php");
 	$phrases = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
 	// Capturar e exibir erros de consulta

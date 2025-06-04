@@ -46,14 +46,13 @@ function handleFileUpload(string $log__file): array
         throw new Exception('Arquivo inválido ou não enviado.');
     }
 
-    $uploadDir = __DIR__ . '/../imagem/input/';
+    $uploadDir = __DIR__ . '/../uploads';
     if (!file_exists($uploadDir)) {
         mkdir($uploadDir, 0777, true);
         file_put_contents($log__file, "CRIADO DIRETÓRIO: $uploadDir\n", FILE_APPEND);
     }
 
-    $destino = realpath($uploadDir) . '/' . basename($arquivo);
-//    $destino = $uploadDir . '/' . basename($arquivo);
+    $destino = $uploadDir . '/' . basename($arquivo);
     if (!move_uploaded_file($tmpPath, $destino)) {
         file_put_contents($log__file, "ERRO: Falha ao mover o arquivo para $destino\n", FILE_APPEND);
         throw new Exception('Falha ao mover o arquivo enviado.');
@@ -98,7 +97,6 @@ try {
     curl_close($ch);
     $mapData = json_decode($mapResponse, true);
 
-    $nome_usuario = $_POST['nome-usuario'] ?? null;
     $nome_pessoa = $_POST['nome-pessoa'] ?? null;
     $nomeAtividadeEvento = $_POST['nome-atividade'] ?? null;
     $id_tipo_acao = $_POST['tipo-atividade'] ?? null;
@@ -145,15 +143,16 @@ try {
         exit;
     }
 
-    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?, ?, ?, (SELECT id_chave_usuario FROM usuarios WHERE nome_usuario = ?))");
-    $stmt->bind_param('ssss', $nomeAtividadeEvento, $dataAcao, $horaAcao, $nome_usuario);
+    $stmt = $conn->prepare("INSERT INTO atividades_eventos (nome_atividade_evento, data_atividade_evento, hora_atividade_evento, id_usuario) VALUES (?, ?, ?, (SELECT id_chave_usuario FROM usuarios WHERE id_pessoa = ?))");
+    $stmt->bind_param('sssi', $nomeAtividadeEvento, $dataAcao, $horaAcao, $id_pessoa);
     $stmt->execute();
     $id_atividade_evento = $conn->insert_id;
     $stmt->close();
     file_put_contents($log__file, "INSERT ATIVIDADE_EVENTO ID: $id_atividade_evento\n", FILE_APPEND);
 
-    $stmt = $conn->prepare("INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param('ddddddsssssssss', $lat, $lon, $bounding_box_lat_min, $bounding_box_lat_max, $bounding_box_long_min, $bounding_box_long_max, $display_name, $road, $neighbourhood, $suburb, $city, $state, $postcode, $country, $country_code);
+    $hash_localizacao = hash('sha512', $lat . $lon . $display_name);
+    $stmt = $conn->prepare("INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code, hash_localizacao) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param('ddddddssssssssss', $lat, $lon, $bounding_box_lat_min, $bounding_box_lat_max, $bounding_box_long_min, $bounding_box_long_max, $display_name, $road, $neighbourhood, $suburb, $city, $state, $postcode, $country, $country_code, $hash_localizacao);
     $stmt->execute();
     $id_localizacao = $conn->insert_id;
     $stmt->close();
@@ -180,17 +179,13 @@ try {
     $stmt->close();
     file_put_contents($log__file, "INSERT ARQUIVO ID: $id_arquivo\n", FILE_APPEND);
 
-    $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, (SELECT id_chave_usuario FROM usuarios WHERE nome_usuario = ?))");
-    $stmt->bind_param('iiiiddsssis', $id_atividade_evento, $id_localizacao, $id_tipo_acao, $id_arquivo, $lat, $lon, $dataAcao, $horaAcao, $descricao, $id_pessoa, $nome_usuario);
+    $stmt = $conn->prepare("INSERT INTO acoes (id_atividade_evento, id_localizacao, id_tipo_acao, id_arquivo, latitude, longitude, data_acao, hora_acao, descricao, id_pessoa, id_usuario) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, (SELECT id_chave_usuario FROM usuarios WHERE id_pessoa = ?))");
+    $stmt->bind_param('iiiiddsssii', $id_atividade_evento, $id_localizacao, $id_tipo_acao, $id_arquivo, $lat, $lon, $dataAcao, $horaAcao, $descricao, $id_pessoa, $id_pessoa);
     $stmt->execute();
     $stmt->close();
     file_put_contents($log__file, "INSERT ACAO executado com sucesso\n", FILE_APPEND);
 
-
-    $python_script = realpath(__DIR__ . '/pasteur.py');
-    $python = escapeshellcmd("/var/www/html/venv/bin/python3 " . $python_script . " " . escapeshellarg($caminho_arquivo_original));
-
-    // $python = escapeshellcmd("/var/www/html/venv/bin/python3 /var/www/html/php/pasteur.py " . escapeshellarg($caminho_arquivo_original));
+    $python = escapeshellcmd("/var/www/html/venv/bin/python3 /var/www/html/php/pasteur.py " . escapeshellarg($caminho_arquivo_original));
     $output = shell_exec($python);
     file_put_contents($log__file, "\nPYTHON CMD: $python\nPYTHON OUTPUT:\n$output\n", FILE_APPEND);
 
