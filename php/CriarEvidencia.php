@@ -70,7 +70,8 @@ function handleFileUpload(string $log__file): array
 try {
     $lon = $_POST['longitude'] ?? null;
     $lat = $_POST['latitude'] ?? null;
-    fallbackLocation($lat, $lon);
+    file_put_contents($log__file, "COORDENADAS: lat=$lat, lon=$lon\n", FILE_APPEND);
+//    fallbackLocation($lat, $lon);
     file_put_contents($log__file, "COORDENADAS: lat=$lat, lon=$lon\n", FILE_APPEND);
 
     $url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=$lat&lon=$lon";
@@ -152,7 +153,10 @@ try {
     $stmt->close();
     file_put_contents($log__file, "INSERT ATIVIDADE_EVENTO ID: $id_atividade_evento\n", FILE_APPEND);
 
+    file_put_contents($log__file, "COORDENADAS antes do prepare: lat=$lat, lon=$lon\n", FILE_APPEND);
     $stmt = $conn->prepare("INSERT INTO localizacoes (latitude, longitude, bounding_box_lat_min, bounding_box_lat_max, bounding_box_long_min, bounding_box_long_max, display_name, road, neighbourhood, suburb, city, state, postcode, country, country_code) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    file_put_contents($log__file, "COORDENADAS depois do prepare: lat=$lat, lon=$lon\n", FILE_APPEND);
+
     $stmt->bind_param('ddddddsssssssss', $lat, $lon, $bounding_box_lat_min, $bounding_box_lat_max, $bounding_box_long_min, $bounding_box_long_max, $display_name, $road, $neighbourhood, $suburb, $city, $state, $postcode, $country, $country_code);
     $stmt->execute();
     $id_localizacao = $conn->insert_id;
@@ -165,7 +169,7 @@ try {
     $caminho_arquivo_anonimizado = $caminho_arquivo_original;
     $quantidade_pessoas = 0;
 
-    $extensao = pathinfo($arquivo, PATHINFO_EXTENSION);
+    $extensao = ".". pathinfo($arquivo, PATHINFO_EXTENSION);
     $stmt = $conn->prepare("SELECT id_chave_tipo_arquivo FROM tipos_arquivos WHERE extensao = ?");
     $stmt->bind_param('s', $extensao);
     $stmt->execute();
@@ -173,8 +177,24 @@ try {
     $stmt->close();
     file_put_contents($log__file, "TIPO ARQUIVO ID: $id_tipo_arquivo (ext: $extensao)\n", FILE_APPEND);
 
+
+
+    $python_script = realpath(__DIR__ . '/pasteur.py');
+    $python = escapeshellcmd("/var/www/html/venv/bin/python3 " . $python_script . " " . escapeshellarg($caminho_arquivo_original));
+
+    // $python = escapeshellcmd("/var/www/html/venv/bin/python3 /var/www/html/php/pasteur.py " . escapeshellarg($caminho_arquivo_original));
+    shell_exec($python);
+    $output = file_get_contents('output.json');
+    file_put_contents($log__file, "\nPYTHON CMD: $python\nPYTHON OUTPUT:\n$output\n", FILE_APPEND);
+    $data_pasteur = json_decode($output, true);
+
+$quantidade_pessoas_pasteur = $data_pasteur['quantidade_pessoas'] ?? null;
+$caminho_arquivo_anonimizado_pasteur = $data_pasteur['caminho_arquivo_anonimizado'] ?? null;
+$caminho_arquivo_original_pasteur = $data_pasteur['caminho_arquivo_original'] ?? null;
+$nome_arquivo_pasteur = $data_pasteur['nome_arquivo'] ?? null;
+
     $stmt = $conn->prepare("INSERT INTO arquivos (nome_arquivo, id_tipo_arquivo, caminho_arquivo_original, quantidade_pessoas, caminho_arquivo_anonimizado) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param('sisis', $arquivo, $id_tipo_arquivo, $caminho_arquivo_original, $quantidade_pessoas, $caminho_arquivo_anonimizado);
+    $stmt->bind_param('sisis', $nome_arquivo_pasteur, $id_tipo_arquivo, $caminho_arquivo_original_pasteur, $quantidade_pessoas_pasteur, $caminho_arquivo_anonimizado_pasteur);
     $stmt->execute();
     $id_arquivo = $conn->insert_id;
     $stmt->close();
@@ -186,13 +206,6 @@ try {
     $stmt->close();
     file_put_contents($log__file, "INSERT ACAO executado com sucesso\n", FILE_APPEND);
 
-
-    $python_script = realpath(__DIR__ . '/pasteur.py');
-    $python = escapeshellcmd("/var/www/html/venv/bin/python3 " . $python_script . " " . escapeshellarg($caminho_arquivo_original));
-
-    // $python = escapeshellcmd("/var/www/html/venv/bin/python3 /var/www/html/php/pasteur.py " . escapeshellarg($caminho_arquivo_original));
-    $output = shell_exec($python);
-    file_put_contents($log__file, "\nPYTHON CMD: $python\nPYTHON OUTPUT:\n$output\n", FILE_APPEND);
 
     echo json_encode(['success' => true, 'message' => 'Dados gravados com sucesso.']);
     $conn->close();

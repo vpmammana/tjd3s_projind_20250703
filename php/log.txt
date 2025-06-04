@@ -7976,3 +7976,363 @@ Imagem '17490615763915332313372768014666.jpg_sanitized_2025_06_04_18_26_34.jpg' 
 Todos os arquivos foram movidos com sucesso!
 Tempo de execução: 3.2244 segundos
 
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996886, lon=-47.8692305
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996886&lon=-47.8692305
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 46
+INSERT LOCALIZACAO ID: 91
+UPLOAD: IMG-20250601-WA0016.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/IMG-20250601-WA0016.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 41
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/IMG-20250601-WA0016.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem IMG-20250601-WA0016.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/IMG-20250601-WA0016.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: IMG-20250601-WA0016.jpg_sanitized.jpg -> IMG-20250601-WA0016.jpg_sanitized_2025_06_04_18_41_13.jpg
+A imagem IMG-20250601-WA0016.jpg_sanitized_2025_06_04_18_41_13.jpg não precisa de redimensionamento (tamanho: 0.12 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 252ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 271ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 129ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 148ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 54ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 63ms/step
+[1m1/8[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 229ms/step[1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step [1m8/8[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 393ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 411ms/step
+Imagem salva em: ../imagem/pasteur/IMG-20250601-WA0016.jpg_sanitized_2025_06_04_18_41_13.jpg
+Processamento concluído!
+Imagem 'IMG-20250601-WA0016.jpg_sanitized_2025_06_04_18_41_13.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.1792 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996643, lon=-47.8691413
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996643&lon=-47.8691413
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 47
+INSERT LOCALIZACAO ID: 92
+UPLOAD: 17490681139485059253851175825139.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490681139485059253851175825139.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 42
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490681139485059253851175825139.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17490681139485059253851175825139.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17490681139485059253851175825139.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17490681139485059253851175825139.jpg_sanitized.jpg -> 17490681139485059253851175825139.jpg_sanitized_2025_06_04_20_15_33.jpg
+A imagem 17490681139485059253851175825139.jpg_sanitized_2025_06_04_20_15_33.jpg não precisa de redimensionamento (tamanho: 0.18 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 208ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 227ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 130ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 148ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 40ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 52ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 41ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m 1/14[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m2s[0m 172ms/step[1m11/14[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 5ms/step  [1m14/14[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 13ms/step[1m14/14[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 14ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 326ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 347ms/step
+Imagem salva em: ../imagem/pasteur/17490681139485059253851175825139.jpg_sanitized_2025_06_04_20_15_33.jpg
+Processamento concluído!
+Imagem '17490681139485059253851175825139.jpg_sanitized_2025_06_04_20_15_33.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.1813 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7570421, lon=-38.5156605
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7570421&lon=-38.5156605
+MAP RESPONSE: {"place_id":12733912,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":10656378958,"lat":"-3.7570719","lon":"-38.5155115","class":"place","type":"house","place_rank":30,"importance":6.818722819862695e-05,"addresstype":"place","name":"","display_name":"465, Rua Paulo Firmeza, São João do Tauape, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60130-420, Brasil","address":{"house_number":"465","road":"Rua Paulo Firmeza","suburb":"São João do Tauape","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60130-420","country":"Brasil","country_code":"br"},"boundingbox":["-3.7571219","-3.7570219","-38.5155615","-38.5154615"]}
+BUSCANDO PESSOA: Tamy Barbosa De Sousa
+INSERT ATIVIDADE_EVENTO ID: 48
+INSERT LOCALIZACAO ID: 93
+UPLOAD: 17490687733538187531390197167416.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490687733538187531390197167416.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 43
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490687733538187531390197167416.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17490687733538187531390197167416.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17490687733538187531390197167416.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17490687733538187531390197167416.jpg_sanitized.jpg -> 17490687733538187531390197167416.jpg_sanitized_2025_06_04_20_27_49.jpg
+A imagem 17490687733538187531390197167416.jpg_sanitized_2025_06_04_20_27_49.jpg não precisa de redimensionamento (tamanho: 0.33 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 268ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 285ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 147ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 164ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 64ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 35ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m 1/26[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m4s[0m 171ms/step[1m11/26[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 5ms/step  [1m21/26[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 5ms/step[1m26/26[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 15ms/step[1m26/26[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 16ms/step
+[1m1/3[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 156ms/step[1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 72ms/step [1m3/3[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 81ms/step
+Imagem salva em: ../imagem/pasteur/17490687733538187531390197167416.jpg_sanitized_2025_06_04_20_27_49.jpg
+Processamento concluído!
+Imagem '17490687733538187531390197167416.jpg_sanitized_2025_06_04_20_27_49.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.9533 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996609, lon=-47.8691423
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996609&lon=-47.8691423
+MAP RESPONSE: {"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 49
+INSERT LOCALIZACAO ID: 94
+UPLOAD: 17490691045244625112787955463902.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490691045244625112787955463902.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 44
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490691045244625112787955463902.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17490691045244625112787955463902.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17490691045244625112787955463902.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17490691045244625112787955463902.jpg_sanitized.jpg -> 17490691045244625112787955463902.jpg_sanitized_2025_06_04_20_32_08.jpg
+A imagem 17490691045244625112787955463902.jpg_sanitized_2025_06_04_20_32_08.jpg não precisa de redimensionamento (tamanho: 0.16 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 207ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 226ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 161ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 179ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 57ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 32ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 50ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 180ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 198ms/step
+Imagem salva em: ../imagem/pasteur/17490691045244625112787955463902.jpg_sanitized_2025_06_04_20_32_08.jpg
+Processamento concluído!
+Imagem '17490691045244625112787955463902.jpg_sanitized_2025_06_04_20_32_08.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.5338 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996862, lon=-47.8691013
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996862&lon=-47.8691013
+MAP RESPONSE: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 50
+INSERT LOCALIZACAO ID: 95
+UPLOAD: 17490691612494478924001455658112.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490691612494478924001455658112.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 45
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490691612494478924001455658112.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17490691612494478924001455658112.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17490691612494478924001455658112.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17490691612494478924001455658112.jpg_sanitized.jpg -> 17490691612494478924001455658112.jpg_sanitized_2025_06_04_20_32_58.jpg
+A imagem 17490691612494478924001455658112.jpg_sanitized_2025_06_04_20_32_58.jpg não precisa de redimensionamento (tamanho: 0.10 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 204ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 225ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 141ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 159ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 38ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 58ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 36ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 63ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 75ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 33ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 26ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 43ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 219ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 237ms/step
+Imagem salva em: ../imagem/pasteur/17490691612494478924001455658112.jpg_sanitized_2025_06_04_20_32_58.jpg
+Processamento concluído!
+Imagem '17490691612494478924001455658112.jpg_sanitized_2025_06_04_20_32_58.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 2.6053 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.799714, lon=-47.8690926
+COORDENADAS: lat=-15.799714, lon=-47.8690926
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.799714&lon=-47.8690926
+MAP RESPONSE: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 51
+COORDENADAS antes do prepare: lat=-15.799714, lon=-47.8690926
+COORDENADAS depois do prepare: lat=-15.799714, lon=-47.8690926
+INSERT LOCALIZACAO ID: 96
+UPLOAD: 17490695768563522048591800325647.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490695768563522048591800325647.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 46
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490695768563522048591800325647.jpg'
+PYTHON OUTPUT:
+Pasta '../imagem/crypt' já existe.
+Pasta '../imagem/pasteur' já existe.
+Pasta '../imagem/key' já existe.
+Pasta '../imagem/decrypted' já existe.
+Pasta '../imagem/lixeira' já existe.
+Imagem 17490695768563522048591800325647.jpg segura e convertida para JPEG.
+Imagem ../imagem/input/17490695768563522048591800325647.jpg_sanitized.jpg sanitizada com sucesso!
+Arquivo renomeado: 17490695768563522048591800325647.jpg_sanitized.jpg -> 17490695768563522048591800325647.jpg_sanitized_2025_06_04_20_39_53.jpg
+A imagem 17490695768563522048591800325647.jpg_sanitized_2025_06_04_20_39_53.jpg não precisa de redimensionamento (tamanho: 0.19 MB)
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 255ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 282ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 204ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 233ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 37ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 55ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 34ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 53ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 46ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 49ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 45ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 28ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 48ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 47ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 44ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 25ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 42ms/step
+[1m1/9[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 175ms/step[1m9/9[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 24ms/step [1m9/9[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 27ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 306ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 325ms/step
+Imagem salva em: ../imagem/pasteur/17490695768563522048591800325647.jpg_sanitized_2025_06_04_20_39_53.jpg
+Processamento concluído!
+Imagem '17490695768563522048591800325647.jpg_sanitized_2025_06_04_20_39_53.jpg' criptografada com sucesso!
+Todos os arquivos foram movidos com sucesso!
+Tempo de execução: 3.3905 segundos
+
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.799663, lon=-47.8691147
+COORDENADAS: lat=-15.799663, lon=-47.8691147
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.799663&lon=-47.8691147
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 52
+COORDENADAS antes do prepare: lat=-15.799663, lon=-47.8691147
+COORDENADAS depois do prepare: lat=-15.799663, lon=-47.8691147
+INSERT LOCALIZACAO ID: 97
+UPLOAD: 17490713231702288027920489734053.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490713231702288027920489734053.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ARQUIVO ID: 47
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490713231702288027920489734053.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490713231702288027920489734053.jpg_sanitized_2025_06_04_21_09_01.jpg"}
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996829, lon=-47.8691128
+COORDENADAS: lat=-15.7996829, lon=-47.8691128
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996829&lon=-47.8691128
+MAP RESPONSE: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 53
+COORDENADAS antes do prepare: lat=-15.7996829, lon=-47.8691128
+COORDENADAS depois do prepare: lat=-15.7996829, lon=-47.8691128
+INSERT LOCALIZACAO ID: 98
+UPLOAD: 17490718112994490090721902359033.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490718112994490090721902359033.jpg
+TIPO ARQUIVO ID:  (ext: jpg)
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490718112994490090721902359033.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490718112994490090721902359033.jpg_sanitized_2025_06_04_21_17_11.jpg"}
+INSERT ARQUIVO ID: 48
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7997201, lon=-47.8690768
+COORDENADAS: lat=-15.7997201, lon=-47.8690768
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7997201&lon=-47.8690768
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 54
+COORDENADAS antes do prepare: lat=-15.7997201, lon=-47.8690768
+COORDENADAS depois do prepare: lat=-15.7997201, lon=-47.8690768
+INSERT LOCALIZACAO ID: 99
+UPLOAD: 17490722977875110611892448512326.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490722977875110611892448512326.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+INSERT ACAO executado com sucesso
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490722977875110611892448512326.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490722977875110611892448512326.jpg_sanitized_2025_06_04_21_25_21.jpg"}
+INSERT ARQUIVO ID: 49
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996765, lon=-47.8691229
+COORDENADAS: lat=-15.7996765, lon=-47.8691229
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996765&lon=-47.8691229
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 55
+COORDENADAS antes do prepare: lat=-15.7996765, lon=-47.8691229
+COORDENADAS depois do prepare: lat=-15.7996765, lon=-47.8691229
+INSERT LOCALIZACAO ID: 100
+UPLOAD: 17490724835155252139818166516559.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490724835155252139818166516559.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490724835155252139818166516559.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490724835155252139818166516559.jpg_sanitized_2025_06_04_21_28_31.jpg"}
+INSERT ARQUIVO ID: 50
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996881, lon=-47.8691004
+COORDENADAS: lat=-15.7996881, lon=-47.8691004
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996881&lon=-47.8691004
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 56
+COORDENADAS antes do prepare: lat=-15.7996881, lon=-47.8691004
+COORDENADAS depois do prepare: lat=-15.7996881, lon=-47.8691004
+INSERT LOCALIZACAO ID: 101
+UPLOAD: 17490751509914050478183313543495.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490751509914050478183313543495.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490751509914050478183313543495.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490751509914050478183313543495.jpg_sanitized_2025_06_04_22_12_47.jpg"}
+INSERT ARQUIVO ID: 51
+INSERT ACAO executado com sucesso

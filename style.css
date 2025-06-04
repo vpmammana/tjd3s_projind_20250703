@@ -1144,3 +1144,53 @@ button {
         line-height: 1.4;
     }
 }
+
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0px;
+    margin: 0px;
+    height: 50vh;
+    width: 50vw;
+}
+
+.hamburger-btn {
+    font-size: 50px;
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 4px;
+    min-width: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+

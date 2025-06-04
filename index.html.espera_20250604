@@ -21,18 +21,6 @@
 
 
 <body id="index-page">
-        <div class="hamburger-menu">
-            <button class="hamburger-btn" onclick="toggleMenu()">
-                &#9776;
-            </button>
-            <div class="dropdown-menu" id="dropdownMenu">
-                <a href="php/mapa3.php">🗺️ Mapa</a>
-                <a href="php/mostra_frases5.php">💬 Frases</a>
-                <a href="php/exibir_cards.php">📝 Atividades</a>
-                <a href="php/painel_resultados_mobile.php">📊 Resultados</a>
-            </div>
-        </div>
-
     <div id="loading">
         <div class="loader-container">
             <div class="loader" id="loader"></div>
@@ -158,25 +146,11 @@
     </div>
     <script src="./shared.js"></script>
     <script src="./main.js">
+	    alert('alo');
     </script>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./map-script.js"></script>
-    <script>
-function toggleMenu() {
-    const menu = document.getElementById('dropdownMenu');
-    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-}
-
-// Fecha o menu ao clicar fora
-window.addEventListener('click', function(event) {
-    const menu = document.getElementById('dropdownMenu');
-    const button = document.querySelector('.hamburger-btn');
-    if (!menu.contains(event.target) && !button.contains(event.target)) {
-        menu.style.display = 'none';
-    }
-});
-    </script>	    
 </body>
 
 </html>

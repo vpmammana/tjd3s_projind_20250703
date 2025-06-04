@@ -15,8 +15,8 @@ while ($row = $result->fetch_assoc()) {
     // Corrigir inversão de latitude/longitude se necessário
     $localizacoes[] = [
         'id_chave_localizacao' => $row['id_chave_localizacao'],
-        'latitude' => $row['longitude'],   // <-- corrigido
-        'longitude' => $row['latitude'],   // <-- corrigido
+        'latitude' => $row['latitude'], 
+        'longitude' => $row['longitude'], 
         'display_name' => $row['display_name']
     ];
 }
