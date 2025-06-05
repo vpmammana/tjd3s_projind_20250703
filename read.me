@@ -1,3 +1,38 @@
+VPM 20250604
+
+Quando a pessoa registra o aplicativo no celular, o campo hash_mobile é marcado com um hash+time+stamp. Se alguém tentar entrar com o mesmo hash em outro celular, não vai conseguir. Se a pessoa limpar o cache do celular, não conseguirá mais entrar em nenhum dispositivo. 
+
+Então é preciso limpar hash_mobile e tem_local_storage.
+
+Para limpar, rode limpa_atribuicoes_de_dispositivos.bash.
+
+
+VPM 20250604
+
+Criei gera_lista_urls.bash que gera a lista de urls de autenticação para os usuários.
+
+VPM 20250604
+
+Inclui mais pessoas no aplicativo.
+
+VPM 20250604
+
+
+
+VPM 20250604
+
+CriarEvidencia.php foi integralmente refeito. Estava com muitos erros, inclusive inversao entre latitude e longitude. 
+
+VPM 20250604
+
+Inserido menu "sanduíche" do lado esquerdo do aplicativo com 4 oções:
+
+mapas - mapas3.php
+frases - mostra_frases5.php
+resultados - painel_resultados_mobile.php
+atividades - exibir_cards.php
+
+
 VMP 20250603
 
 Adicionei no frontend (android e IOS) uma camada de compressão para as imagens, de forma a sobrecarregar menos o envio. Usei a função compressImage, compressImageToSize, etc... A versão anterior dos bolsistas usava fetch(dataURL), convertendo canvas para base64 e depois para Blob. Agora a conversão é direta de canvas para Blob para File... Tem muitas outras vantagens em reduzir o tamanho. Estou tentando focalizar em imagens com 500kb, partindo de 3Mb

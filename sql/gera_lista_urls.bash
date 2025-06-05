@@ -1,0 +1,1 @@
+sudo mysql -u root papedins_mvp_db -e "select nome_pessoa, nome_usuario, concat('https://h5g37o62z.specchio.info/tjd3s_mobile_20250602/index.html?hash=',hash) from usuarios join pessoas on id_pessoa = id_chave_pessoa;"

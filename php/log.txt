@@ -8336,3 +8336,60 @@ PYTHON OUTPUT:
 {"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490751509914050478183313543495.jpg_sanitized_2025_06_04_22_12_47.jpg"}
 INSERT ARQUIVO ID: 51
 INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8382315, lon=-47.8021205
+COORDENADAS: lat=-15.8382315, lon=-47.8021205
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8382315&lon=-47.8021205
+MAP RESPONSE: {"place_id":14449142,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":94483567,"lat":"-15.8382281","lon":"-47.8021100","class":"highway","type":"residential","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Ville de Montagne - Q 12","display_name":"Ville de Montagne - Q 12, Condomínio Ville de Montagne, Condomínio Solar de Brasília, Jardim Botânico, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71680-357, Brasil","address":{"road":"Ville de Montagne - Q 12","residential":"Condomínio Ville de Montagne","suburb":"Condomínio Solar de Brasília","town":"Jardim Botânico","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71680-357","country":"Brasil","country_code":"br"},"boundingbox":["-15.8409177","-15.8375200","-47.8023358","-47.8012522"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 57
+COORDENADAS antes do prepare: lat=-15.8382315, lon=-47.8021205
+COORDENADAS depois do prepare: lat=-15.8382315, lon=-47.8021205
+INSERT LOCALIZACAO ID: 102
+UPLOAD: 17490772256558055717362140868940.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490772256558055717362140868940.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490772256558055717362140868940.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490772256558055717362140868940.jpg_sanitized_2025_06_04_22_47_28.jpg"}
+INSERT ARQUIVO ID: 52
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8383549, lon=-47.8022037
+COORDENADAS: lat=-15.8383549, lon=-47.8022037
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8383549&lon=-47.8022037
+MAP RESPONSE: {"place_id":14449142,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":94483567,"lat":"-15.8383161","lon":"-47.8020819","class":"highway","type":"residential","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Ville de Montagne - Q 12","display_name":"Ville de Montagne - Q 12, Condomínio Ville de Montagne, Condomínio Solar de Brasília, Jardim Botânico, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71680-357, Brasil","address":{"road":"Ville de Montagne - Q 12","residential":"Condomínio Ville de Montagne","suburb":"Condomínio Solar de Brasília","town":"Jardim Botânico","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71680-357","country":"Brasil","country_code":"br"},"boundingbox":["-15.8409177","-15.8375200","-47.8023358","-47.8012522"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 58
+COORDENADAS antes do prepare: lat=-15.8383549, lon=-47.8022037
+COORDENADAS depois do prepare: lat=-15.8383549, lon=-47.8022037
+INSERT LOCALIZACAO ID: 103
+UPLOAD: 1000883841.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1000883841.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1000883841.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1000883841.jpg_sanitized_2025_06_04_22_50_46.jpg"}
+INSERT ARQUIVO ID: 53
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996795, lon=-47.8690934
+COORDENADAS: lat=-15.7996795, lon=-47.8690934
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996795&lon=-47.8690934
+MAP RESPONSE: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 1
+COORDENADAS antes do prepare: lat=-15.7996795, lon=-47.8690934
+COORDENADAS depois do prepare: lat=-15.7996795, lon=-47.8690934
+INSERT LOCALIZACAO ID: 1
+UPLOAD: 17490815743626810252908426531350.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17490815743626810252908426531350.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17490815743626810252908426531350.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490815743626810252908426531350.jpg_sanitized_2025_06_04_23_59_51.jpg"}
+INSERT ARQUIVO ID: 1
+INSERT ACAO executado com sucesso

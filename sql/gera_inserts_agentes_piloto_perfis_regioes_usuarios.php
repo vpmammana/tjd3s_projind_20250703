@@ -71,7 +71,7 @@ while (($row = fgetcsv($handle, 0, '|')) !== false) {
     // Geração do nome de usuário e hash
     $nome_usuario = explode('@', $email)[0];
     $nome_usuario = addslashes($nome_usuario);
-    $hash = hash('sha256', 'usuarios_de_fato_no_ato' . $nome_usuario);
+    $hash = hash('sha256', 'agora_vai' . $nome_usuario);
 
     $usuarios_sql[] = "INSERT INTO usuarios (nome_usuario, senha, hash, data_inicio_cadastro, id_pessoa, pode_msg) VALUES "
         . "('$nome_usuario', '', '$hash', CURDATE(), "
