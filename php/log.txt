@@ -8393,3 +8393,497 @@ PYTHON OUTPUT:
 {"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17490815743626810252908426531350.jpg_sanitized_2025_06_04_23_59_51.jpg"}
 INSERT ARQUIVO ID: 1
 INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8382761, lon=-47.802304
+COORDENADAS: lat=-15.8382761, lon=-47.802304
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8382761&lon=-47.802304
+MAP RESPONSE: {"place_id":14479849,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":94483567,"lat":"-15.8382155","lon":"-47.8021140","class":"highway","type":"residential","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Ville de Montagne - Q 12","display_name":"Ville de Montagne - Q 12, Condomínio Ville de Montagne, Condomínio Solar de Brasília, Jardim Botânico, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71680-357, Brasil","address":{"road":"Ville de Montagne - Q 12","residential":"Condomínio Ville de Montagne","suburb":"Condomínio Solar de Brasília","town":"Jardim Botânico","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71680-357","country":"Brasil","country_code":"br"},"boundingbox":["-15.8409177","-15.8375200","-47.8023358","-47.8012522"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 2
+COORDENADAS antes do prepare: lat=-15.8382761, lon=-47.802304
+COORDENADAS depois do prepare: lat=-15.8382761, lon=-47.802304
+INSERT LOCALIZACAO ID: 2
+UPLOAD: 1000883860.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1000883860.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1000883860.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1000883860.jpg_sanitized_2025_06_05_00_48_21.jpg"}
+INSERT ARQUIVO ID: 2
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8074466, lon=-47.86859
+COORDENADAS: lat=-15.8074466, lon=-47.86859
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8074466&lon=-47.86859
+MAP RESPONSE: {"place_id":14356793,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":183474581,"lat":"-15.8074412","lon":"-47.8686063","class":"highway","type":"tertiary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Setor de Administração Federal Sul","display_name":"Setor de Administração Federal Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70070-600, Brasil","address":{"road":"Setor de Administração Federal Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70070-600","country":"Brasil","country_code":"br"},"boundingbox":["-15.8093115","-15.8052354","-47.8692500","-47.8679038"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 3
+COORDENADAS antes do prepare: lat=-15.8074466, lon=-47.86859
+COORDENADAS depois do prepare: lat=-15.8074466, lon=-47.86859
+INSERT LOCALIZACAO ID: 3
+UPLOAD: 17491358116577571637482882403078.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491358116577571637482882403078.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491358116577571637482882403078.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491358116577571637482882403078.jpg_sanitized_2025_06_05_15_03_55.jpg"}
+INSERT ARQUIVO ID: 3
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.834665, lon=-47.89759
+COORDENADAS: lat=-15.834665, lon=-47.89759
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.834665&lon=-47.89759
+MAP RESPONSE: {"place_id":14821113,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":44076572,"lat":"-15.8346687","lon":"-47.8975884","class":"highway","type":"trunk","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Estrada Parque das Nações","display_name":"Estrada Parque das Nações, Asa Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70425-900, Brasil","address":{"road":"Estrada Parque das Nações","suburb":"Asa Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70425-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8355379","-15.8251774","-47.8996473","-47.8874310"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 4
+COORDENADAS antes do prepare: lat=-15.834665, lon=-47.89759
+COORDENADAS depois do prepare: lat=-15.834665, lon=-47.89759
+INSERT LOCALIZACAO ID: 4
+UPLOAD: 17491361111287379120773416149941.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491361111287379120773416149941.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491361111287379120773416149941.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491361111287379120773416149941.jpg_sanitized_2025_06_05_15_09_05.jpg"}
+INSERT ARQUIVO ID: 4
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8453583, lon=-47.9235833
+COORDENADAS: lat=-15.8453583, lon=-47.9235833
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8453583&lon=-47.9235833
+MAP RESPONSE: {"place_id":14953882,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":14473499,"lat":"-15.8453371","lon":"-47.9235857","class":"highway","type":"trunk","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Estrada Parque das Nações","display_name":"Estrada Parque das Nações, Vila da Telebrasília, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70430-900, Brasil","address":{"road":"Estrada Parque das Nações","neighbourhood":"Vila da Telebrasília","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70430-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8454114","-15.8431162","-47.9301635","-47.9172507"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 5
+COORDENADAS antes do prepare: lat=-15.8453583, lon=-47.9235833
+COORDENADAS depois do prepare: lat=-15.8453583, lon=-47.9235833
+INSERT LOCALIZACAO ID: 5
+UPLOAD: 17491363152093815596946634492039.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491363152093815596946634492039.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491363152093815596946634492039.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491363152093815596946634492039.jpg_sanitized_2025_06_05_15_12_14.jpg"}
+INSERT ARQUIVO ID: 5
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8401766, lon=-47.95402
+COORDENADAS: lat=-15.8401766, lon=-47.95402
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8401766&lon=-47.95402
+MAP RESPONSE: {"place_id":14441941,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":160414615,"lat":"-15.8402503","lon":"-47.9540427","class":"highway","type":"secondary","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Estrada Parque Guará","display_name":"Estrada Parque Guará, Guará, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71219-900, Brasil","address":{"road":"Estrada Parque Guará","city":"Guará","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71219-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8402631","-15.8396785","-47.9558963","-47.9540013"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 6
+COORDENADAS antes do prepare: lat=-15.8401766, lon=-47.95402
+COORDENADAS depois do prepare: lat=-15.8401766, lon=-47.95402
+INSERT LOCALIZACAO ID: 6
+UPLOAD: 17491364860561995699701777455636.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491364860561995699701777455636.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491364860561995699701777455636.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491364860561995699701777455636.jpg_sanitized_2025_06_05_15_15_03.jpg"}
+INSERT ARQUIVO ID: 6
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.1783286, lon=-47.3053163
+COORDENADAS: lat=-23.1783286, lon=-47.3053163
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.1783286&lon=-47.3053163
+MAP RESPONSE: {"place_id":8140310,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":163581876,"lat":"-23.1782951","lon":"-47.3053585","class":"highway","type":"residential","place_rank":26,"importance":0.05339340276188293,"addresstype":"road","name":"Rua São Pedro","display_name":"Rua São Pedro, Jardim São Gabrile II, Salto, Região Imediata de Sorocaba, Região Metropolitana de Sorocaba, Região Geográfica Intermediária de Sorocaba, São Paulo, Região Sudeste, 13326-090, Brasil","address":{"road":"Rua São Pedro","quarter":"Jardim São Gabrile II","city_district":"Salto","city":"Salto","municipality":"Região Imediata de Sorocaba","county":"Região Metropolitana de Sorocaba","state_district":"Região Geográfica Intermediária de Sorocaba","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13326-090","country":"Brasil","country_code":"br"},"boundingbox":["-23.1795102","-23.1747310","-47.3114976","-47.3024904"]}
+BUSCANDO PESSOA: Eberval Castro
+INSERT ATIVIDADE_EVENTO ID: 7
+COORDENADAS antes do prepare: lat=-23.1783286, lon=-47.3053163
+COORDENADAS depois do prepare: lat=-23.1783286, lon=-47.3053163
+INSERT LOCALIZACAO ID: 7
+UPLOAD: 17491369139526132521650341280107.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491369139526132521650341280107.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491369139526132521650341280107.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491369139526132521650341280107.jpg_sanitized_2025_06_05_15_26_04.jpg"}
+INSERT ARQUIVO ID: 7
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.8737483, lon=-47.9586783
+COORDENADAS: lat=-15.8737483, lon=-47.9586783
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.8737483&lon=-47.9586783
+MAP RESPONSE: {"place_id":14889835,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":481460281,"lat":"-15.8737425","lon":"-47.9587098","class":"highway","type":"trunk","place_rank":26,"importance":0.053411383993285995,"addresstype":"road","name":"Estrada Parque Indústria e Abastecimento","display_name":"Estrada Parque Indústria e Abastecimento, Vila Cauhy, Núcleo Bandeirante, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 71705-521, Brasil","address":{"road":"Estrada Parque Indústria e Abastecimento","suburb":"Vila Cauhy","town":"Núcleo Bandeirante","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"71705-521","country":"Brasil","country_code":"br"},"boundingbox":["-15.8744020","-15.8656752","-47.9588507","-47.9573983"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 8
+COORDENADAS antes do prepare: lat=-15.8737483, lon=-47.9586783
+COORDENADAS depois do prepare: lat=-15.8737483, lon=-47.9586783
+INSERT LOCALIZACAO ID: 8
+UPLOAD: 17491381755253050491089487992705.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491381755253050491089487992705.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491381755253050491089487992705.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491381755253050491089487992705.jpg_sanitized_2025_06_05_15_43_13.jpg"}
+INSERT ARQUIVO ID: 8
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.0073, lon=-47.9833316
+COORDENADAS: lat=-16.0073, lon=-47.9833316
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.0073&lon=-47.9833316
+MAP RESPONSE: {"place_id":10394423,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":311048777,"lat":"-16.0072952","lon":"-47.9833069","class":"highway","type":"trunk","place_rank":26,"importance":0.053383334859235486,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Residencial Santos Dummont, Santa Maria, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 72593-000, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","suburb":"Residencial Santos Dummont","city":"Santa Maria","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"72593-000","country":"Brasil","country_code":"br"},"boundingbox":["-16.0171005","-16.0044206","-47.9838740","-47.9813456"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 9
+COORDENADAS antes do prepare: lat=-16.0073, lon=-47.9833316
+COORDENADAS depois do prepare: lat=-16.0073, lon=-47.9833316
+INSERT LOCALIZACAO ID: 9
+UPLOAD: 17491392022108382181332286579122.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491392022108382181332286579122.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491392022108382181332286579122.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491392022108382181332286579122.jpg_sanitized_2025_06_05_16_00_21.jpg"}
+INSERT ARQUIVO ID: 9
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.088935, lon=-47.9849683
+COORDENADAS: lat=-16.088935, lon=-47.9849683
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.088935&lon=-47.9849683
+MAP RESPONSE: {"place_id":10377600,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":158690041,"lat":"-16.0889310","lon":"-47.9849618","class":"highway","type":"trunk","place_rank":26,"importance":0.05338971618219269,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Jardim dos Ipês, Valparaíso de Goiás, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, 72876-501, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","suburb":"Jardim dos Ipês","city":"Valparaíso de Goiás","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","postcode":"72876-501","country":"Brasil","country_code":"br"},"boundingbox":["-16.1027881","-16.0823048","-47.9868637","-47.9761097"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 10
+COORDENADAS antes do prepare: lat=-16.088935, lon=-47.9849683
+COORDENADAS depois do prepare: lat=-16.088935, lon=-47.9849683
+INSERT LOCALIZACAO ID: 10
+UPLOAD: 17491398089025861968508784307304.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491398089025861968508784307304.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491398089025861968508784307304.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491398089025861968508784307304.jpg_sanitized_2025_06_05_16_10_27.jpg"}
+INSERT ARQUIVO ID: 10
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.1683516, lon=-47.9301466
+COORDENADAS: lat=-16.1683516, lon=-47.9301466
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.1683516&lon=-47.9301466
+MAP RESPONSE: {"place_id":10458608,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":158690035,"lat":"-16.1683507","lon":"-47.9301285","class":"highway","type":"trunk","place_rank":26,"importance":0.05339168917372393,"addresstype":"road","name":"Rodovia Juscelino Kubitschek","display_name":"Rodovia Juscelino Kubitschek, Jardim Ingá, Luziânia, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, 72850-160, Brasil","address":{"road":"Rodovia Juscelino Kubitschek","suburb":"Jardim Ingá","city":"Luziânia","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","postcode":"72850-160","country":"Brasil","country_code":"br"},"boundingbox":["-16.1694807","-16.1296939","-47.9589955","-47.9300746"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 11
+COORDENADAS antes do prepare: lat=-16.1683516, lon=-47.9301466
+COORDENADAS depois do prepare: lat=-16.1683516, lon=-47.9301466
+INSERT LOCALIZACAO ID: 11
+UPLOAD: 17491402502621327537422037645767.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491402502621327537422037645767.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491402502621327537422037645767.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491402502621327537422037645767.jpg_sanitized_2025_06_05_16_17_52.jpg"}
+INSERT ARQUIVO ID: 11
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5553911, lon=-46.6767085
+COORDENADAS: lat=-23.5553911, lon=-46.6767085
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5553911&lon=-46.6767085
+MAP RESPONSE: {"place_id":389633886,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":2887292156,"lat":"-23.5554640","lon":"-46.6769543","class":"office","type":"foundation","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"office","name":"FUNDACENTRO","display_name":"FUNDACENTRO, 710, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil","address":{"office":"FUNDACENTRO","house_number":"710","road":"Rua Capote Valente","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-002","country":"Brasil","country_code":"br"},"boundingbox":["-23.5555140","-23.5554140","-46.6770043","-46.6769043"]}
+BUSCANDO PESSOA: Rafael Monico
+INSERT ATIVIDADE_EVENTO ID: 12
+COORDENADAS antes do prepare: lat=-23.5553911, lon=-46.6767085
+COORDENADAS depois do prepare: lat=-23.5553911, lon=-46.6767085
+INSERT LOCALIZACAO ID: 12
+UPLOAD: 17491415129736885939486024815364.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491415129736885939486024815364.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491415129736885939486024815364.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491415129736885939486024815364.jpg_sanitized_2025_06_05_16_38_54.jpg"}
+INSERT ARQUIVO ID: 12
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.2501383, lon=-47.9025366
+COORDENADAS: lat=-16.2501383, lon=-47.9025366
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.2501383&lon=-47.9025366
+MAP RESPONSE: {"place_id":10838319,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1251775417,"lat":"-16.2501485","lon":"-47.9025493","class":"highway","type":"trunk","place_rank":26,"importance":0.05339168917372393,"addresstype":"road","name":"Rodovia Juscelino Kubitschek","display_name":"Rodovia Juscelino Kubitschek, Parque Estrela Dalva 3, Luziânia, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, 72800-220, Brasil","address":{"road":"Rodovia Juscelino Kubitschek","suburb":"Parque Estrela Dalva 3","city":"Luziânia","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","postcode":"72800-220","country":"Brasil","country_code":"br"},"boundingbox":["-16.2508495","-16.2498530","-47.9027970","-47.9019356"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 13
+COORDENADAS antes do prepare: lat=-16.2501383, lon=-47.9025366
+COORDENADAS depois do prepare: lat=-16.2501383, lon=-47.9025366
+INSERT LOCALIZACAO ID: 13
+UPLOAD: 17491415964801926019422325156362.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491415964801926019422325156362.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491415964801926019422325156362.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491415964801926019422325156362.jpg_sanitized_2025_06_05_16_40_15.jpg"}
+INSERT ARQUIVO ID: 13
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.4836016, lon=-47.8127033
+COORDENADAS: lat=-16.4836016, lon=-47.8127033
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.4836016&lon=-47.8127033
+MAP RESPONSE: {"place_id":10419232,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":429980886,"lat":"-16.4835975","lon":"-47.8127221","class":"highway","type":"trunk","place_rank":26,"importance":0.05339168917372393,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Luziânia, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","city":"Luziânia","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","country":"Brasil","country_code":"br"},"boundingbox":["-16.5110777","-16.4565789","-47.8140140","-47.8068558"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 14
+COORDENADAS antes do prepare: lat=-16.4836016, lon=-47.8127033
+COORDENADAS depois do prepare: lat=-16.4836016, lon=-47.8127033
+INSERT LOCALIZACAO ID: 14
+UPLOAD: 17491419680844541106324036318195.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491419680844541106324036318195.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491419680844541106324036318195.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491419680844541106324036318195.jpg_sanitized_2025_06_05_16_46_30.jpg"}
+INSERT ARQUIVO ID: 14
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.7171566, lon=-47.6603066
+COORDENADAS: lat=-16.7171566, lon=-47.6603066
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.7171566&lon=-47.6603066
+MAP RESPONSE: {"place_id":10655320,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":892517478,"lat":"-16.7171473","lon":"-47.6603029","class":"highway","type":"trunk","place_rank":26,"importance":0.053388577859159195,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Cristalina, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","town":"Cristalina","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","country":"Brasil","country_code":"br"},"boundingbox":["-16.7194153","-16.7143555","-47.6671955","-47.6546963"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 15
+COORDENADAS antes do prepare: lat=-16.7171566, lon=-47.6603066
+COORDENADAS depois do prepare: lat=-16.7171566, lon=-47.6603066
+INSERT LOCALIZACAO ID: 15
+UPLOAD: 1749143091426204523344913122646.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749143091426204523344913122646.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749143091426204523344913122646.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749143091426204523344913122646.jpg_sanitized_2025_06_05_17_05_10.jpg"}
+INSERT ARQUIVO ID: 15
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.7311649, lon=-47.6254916
+COORDENADAS: lat=-16.7311649, lon=-47.6254916
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.7311649&lon=-47.6254916
+MAP RESPONSE: {"place_id":10834850,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":431034557,"lat":"-16.7311891","lon":"-47.6255010","class":"highway","type":"trunk","place_rank":26,"importance":0.053388577859159195,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Cristalina, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","town":"Cristalina","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","country":"Brasil","country_code":"br"},"boundingbox":["-16.7320223","-16.7196484","-47.6541183","-47.6237005"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 16
+COORDENADAS antes do prepare: lat=-16.7311649, lon=-47.6254916
+COORDENADAS depois do prepare: lat=-16.7311649, lon=-47.6254916
+INSERT LOCALIZACAO ID: 16
+UPLOAD: 17491432170116168506901641980130.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491432170116168506901641980130.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491432170116168506901641980130.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491432170116168506901641980130.jpg_sanitized_2025_06_05_17_07_16.jpg"}
+INSERT ARQUIVO ID: 16
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-16.751705, lon=-47.60665
+COORDENADAS: lat=-16.751705, lon=-47.60665
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-16.751705&lon=-47.60665
+MAP RESPONSE: {"place_id":10383779,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":375313891,"lat":"-16.7516775","lon":"-47.6066177","class":"highway","type":"trunk","place_rank":26,"importance":0.053388577859159195,"addresstype":"road","name":"Rodovia Presidente Juscelino Kubitschek","display_name":"Rodovia Presidente Juscelino Kubitschek, Cristalina, Região Geográfica Imediata de Luziânia, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás, Goiás, Região Centro-Oeste, 73850-000, Brasil","address":{"road":"Rodovia Presidente Juscelino Kubitschek","town":"Cristalina","municipality":"Região Geográfica Imediata de Luziânia","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária de Luziânia-Águas Lindas de Goiás","state":"Goiás","ISO3166-2-lvl4":"BR-GO","region":"Região Centro-Oeste","postcode":"73850-000","country":"Brasil","country_code":"br"},"boundingbox":["-16.7522232","-16.7509367","-47.6072489","-47.6061527"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 17
+COORDENADAS antes do prepare: lat=-16.751705, lon=-47.60665
+COORDENADAS depois do prepare: lat=-16.751705, lon=-47.60665
+INSERT LOCALIZACAO ID: 17
+UPLOAD: 17491434335404888607503947471051.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491434335404888607503947471051.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491434335404888607503947471051.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491434335404888607503947471051.jpg_sanitized_2025_06_05_17_10_50.jpg"}
+INSERT ARQUIVO ID: 17
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7996893, lon=-47.8692153
+COORDENADAS: lat=-15.7996893, lon=-47.8692153
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7996893&lon=-47.8692153
+MAP RESPONSE: {"place_id":14760104,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 18
+COORDENADAS antes do prepare: lat=-15.7996893, lon=-47.8692153
+COORDENADAS depois do prepare: lat=-15.7996893, lon=-47.8692153
+INSERT LOCALIZACAO ID: 18
+UPLOAD: 17491583428608526166864955105583.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491583428608526166864955105583.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491583428608526166864955105583.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491583428608526166864955105583.jpg_sanitized_2025_06_05_21_19_27.jpg"}
+INSERT ARQUIVO ID: 18
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-20.18442, lon=-47.7863533
+COORDENADAS: lat=-20.18442, lon=-47.7863533
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-20.18442&lon=-47.7863533
+MAP RESPONSE: {"place_id":9320930,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":353544740,"lat":"-20.1844244","lon":"-47.7863983","class":"highway","type":"motorway","place_rank":26,"importance":0.43174571195519396,"addresstype":"road","name":"Rodovia Anhanguera","display_name":"Rodovia Anhanguera, Aramina, Região Imediata de Ituverava, Região Geográfica Intermediária de Ribeirão Preto, São Paulo, Região Sudeste, Brasil","address":{"road":"Rodovia Anhanguera","city_district":"Aramina","village":"Aramina","municipality":"Região Imediata de Ituverava","state_district":"Região Geográfica Intermediária de Ribeirão Preto","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","country":"Brasil","country_code":"br"},"boundingbox":["-20.1887514","-20.1696421","-47.7878355","-47.7859592"]}
+BUSCANDO PESSOA: Testador5
+INSERT ATIVIDADE_EVENTO ID: 19
+COORDENADAS antes do prepare: lat=-20.18442, lon=-47.7863533
+COORDENADAS depois do prepare: lat=-20.18442, lon=-47.7863533
+INSERT LOCALIZACAO ID: 19
+UPLOAD: 17491620339287137474338978499740.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17491620339287137474338978499740.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17491620339287137474338978499740.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17491620339287137474338978499740.jpg_sanitized_2025_06_05_22_20_51.jpg"}
+INSERT ARQUIVO ID: 19
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-20.3412116, lon=-47.8082633
+COORDENADAS: lat=-20.3412116, lon=-47.8082633
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-20.3412116&lon=-47.8082633
+MAP RESPONSE: {"place_id":9243718,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":160015162,"lat":"-20.3411833","lon":"-47.8083135","class":"highway","type":"motorway","place_rank":26,"importance":0.43174571195519396,"addresstype":"road","name":"Rodovia Anhanguera","display_name":"Rodovia Anhanguera, Ituverava, Região Imediata de Ituverava, Região Geográfica Intermediária de Ribeirão Preto, São Paulo, Região Sudeste, 14500-000, Brasil","address":{"road":"Rodovia Anhanguera","city_district":"Ituverava","town":"Ituverava","municipality":"Região Imediata de Ituverava","state_district":"Região Geográfica Intermediária de Ribeirão Preto","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"14500-000","country":"Brasil","country_code":"br"},"boundingbox":["-20.3563490","-20.3407690","-47.8162021","-47.8080802"]}
+BUSCANDO PESSOA: Testador5
+INSERT ATIVIDADE_EVENTO ID: 20
+COORDENADAS antes do prepare: lat=-20.3412116, lon=-47.8082633
+COORDENADAS depois do prepare: lat=-20.3412116, lon=-47.8082633
+INSERT LOCALIZACAO ID: 20
+UPLOAD: 1749162791075961191510935591307.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749162791075961191510935591307.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749162791075961191510935591307.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749162791075961191510935591307.jpg_sanitized_2025_06_05_22_33_30.jpg"}
+INSERT ARQUIVO ID: 20
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-20.3534433, lon=-47.8151649
+COORDENADAS: lat=-20.3534433, lon=-47.8151649
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-20.3534433&lon=-47.8151649
+MAP RESPONSE: {"place_id":8908468,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":160015162,"lat":"-20.3534391","lon":"-47.8151737","class":"highway","type":"motorway","place_rank":26,"importance":0.43174571195519396,"addresstype":"road","name":"Rodovia Anhanguera","display_name":"Rodovia Anhanguera, Ituverava, Região Imediata de Ituverava, Região Geográfica Intermediária de Ribeirão Preto, São Paulo, Região Sudeste, 14500-000, Brasil","address":{"road":"Rodovia Anhanguera","city_district":"Ituverava","town":"Ituverava","municipality":"Região Imediata de Ituverava","state_district":"Região Geográfica Intermediária de Ribeirão Preto","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"14500-000","country":"Brasil","country_code":"br"},"boundingbox":["-20.3563490","-20.3407690","-47.8162021","-47.8080802"]}
+BUSCANDO PESSOA: Testador5
+INSERT ATIVIDADE_EVENTO ID: 21
+COORDENADAS antes do prepare: lat=-20.3534433, lon=-47.8151649
+COORDENADAS depois do prepare: lat=-20.3534433, lon=-47.8151649
+INSERT LOCALIZACAO ID: 21
+UPLOAD: 174916495596966616334476630358.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/174916495596966616334476630358.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/174916495596966616334476630358.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "174916495596966616334476630358.jpg_sanitized_2025_06_05_23_09_35.jpg"}
+INSERT ARQUIVO ID: 21
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7990081, lon=-47.8609784
+COORDENADAS: lat=-15.7990081, lon=-47.8609784
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7990081&lon=-47.8609784
+MAP RESPONSE: {"place_id":15279801,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":45817748,"lat":"-15.7989983","lon":"-47.8607657","class":"office","type":"government","place_rank":30,"importance":0.46408040046101373,"addresstype":"office","name":"Palácio do Planalto","display_name":"Palácio do Planalto, N1 Leste, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70000-000, Brasil","address":{"office":"Palácio do Planalto","road":"N1 Leste","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70000-000","country":"Brasil","country_code":"br"},"boundingbox":["-15.7994037","-15.7985478","-47.8613917","-47.8601221"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 22
+COORDENADAS antes do prepare: lat=-15.7990081, lon=-47.8609784
+COORDENADAS depois do prepare: lat=-15.7990081, lon=-47.8609784
+INSERT LOCALIZACAO ID: 22
+UPLOAD: 17492136877996204500248560393640.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17492136877996204500248560393640.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17492136877996204500248560393640.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17492136877996204500248560393640.jpg_sanitized_2025_06_06_12_41_46.jpg"}
+INSERT ARQUIVO ID: 22
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.9163882, lon=-47.0342574
+COORDENADAS: lat=-22.9163882, lon=-47.0342574
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.9163882&lon=-47.0342574
+MAP RESPONSE: {"place_id":9024028,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":150430744,"lat":"-22.9163027","lon":"-47.0342428","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Serra do Navio","display_name":"Rua Serra do Navio, Nova Campinas, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13100-239, Brasil","address":{"road":"Rua Serra do Navio","suburb":"Nova Campinas","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13100-239","country":"Brasil","country_code":"br"},"boundingbox":["-22.9163435","-22.9159499","-47.0347676","-47.0329241"]}
+BUSCANDO PESSOA: Testador1
+INSERT ATIVIDADE_EVENTO ID: 23
+COORDENADAS antes do prepare: lat=-22.9163882, lon=-47.0342574
+COORDENADAS depois do prepare: lat=-22.9163882, lon=-47.0342574
+INSERT LOCALIZACAO ID: 23
+UPLOAD: 1749221325865393193086076778415.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749221325865393193086076778415.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749221325865393193086076778415.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749221325865393193086076778415.jpg_sanitized_2025_06_06_14_49_27.jpg"}
+INSERT ARQUIVO ID: 23
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.9163788, lon=-47.0342584
+COORDENADAS: lat=-22.9163788, lon=-47.0342584
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.9163788&lon=-47.0342584
+MAP RESPONSE: {"place_id":9024028,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":150430744,"lat":"-22.9163022","lon":"-47.0342453","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Serra do Navio","display_name":"Rua Serra do Navio, Nova Campinas, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13100-239, Brasil","address":{"road":"Rua Serra do Navio","suburb":"Nova Campinas","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13100-239","country":"Brasil","country_code":"br"},"boundingbox":["-22.9163435","-22.9159499","-47.0347676","-47.0329241"]}
+BUSCANDO PESSOA: Testador1
+INSERT ATIVIDADE_EVENTO ID: 24
+COORDENADAS antes do prepare: lat=-22.9163788, lon=-47.0342584
+COORDENADAS depois do prepare: lat=-22.9163788, lon=-47.0342584
+INSERT LOCALIZACAO ID: 24
+UPLOAD: 17492215922238937631242309682510.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17492215922238937631242309682510.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17492215922238937631242309682510.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17492215922238937631242309682510.jpg_sanitized_2025_06_06_14_53_31.jpg"}
+INSERT ARQUIVO ID: 24
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.8990092, lon=-47.0704616
+COORDENADAS: lat=-22.8990092, lon=-47.0704616
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8990092&lon=-47.0704616
+MAP RESPONSE: {"place_id":9068167,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":89763487,"lat":"-22.8991620","lon":"-47.0704315","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Marcelino Velez","display_name":"Rua Marcelino Velez, Vila Itapura, Botafogo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13020-430, Brasil","address":{"road":"Rua Marcelino Velez","quarter":"Vila Itapura","suburb":"Botafogo","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13020-430","country":"Brasil","country_code":"br"},"boundingbox":["-22.8992093","-22.8989923","-47.0707968","-47.0697886"]}
+BUSCANDO PESSOA: Pedro Tourinho
+INSERT ATIVIDADE_EVENTO ID: 25
+COORDENADAS antes do prepare: lat=-22.8990092, lon=-47.0704616
+COORDENADAS depois do prepare: lat=-22.8990092, lon=-47.0704616
+INSERT LOCALIZACAO ID: 25
+UPLOAD: 17492228693467734225373243524310.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17492228693467734225373243524310.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17492228693467734225373243524310.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17492228693467734225373243524310.jpg_sanitized_2025_06_06_15_14_51.jpg"}
+INSERT ARQUIVO ID: 25
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7440039, lon=-38.5373539
+COORDENADAS: lat=-3.7440039, lon=-38.5373539
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7440039&lon=-38.5373539
+MAP RESPONSE: {"place_id":12692076,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1161349110,"lat":"-3.7444071","lon":"-38.5374417","class":"building","type":"yes","place_rank":30,"importance":6.818722819862695e-05,"addresstype":"building","name":"","display_name":"39, Rua Paulino Nogueira, Benfica, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60020-270, Brasil","address":{"house_number":"39","road":"Rua Paulino Nogueira","suburb":"Benfica","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60020-270","country":"Brasil","country_code":"br"},"boundingbox":["-3.7445095","-3.7443022","-38.5375547","-38.5373142"]}
+BUSCANDO PESSOA: Tamy Barbosa De Sousa
+INSERT ATIVIDADE_EVENTO ID: 26
+COORDENADAS antes do prepare: lat=-3.7440039, lon=-38.5373539
+COORDENADAS depois do prepare: lat=-3.7440039, lon=-38.5373539
+INSERT LOCALIZACAO ID: 26
+UPLOAD: 1000194954.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1000194954.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1000194954.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1000194954.jpg_sanitized_2025_06_07_21_43_26.jpg"}
+INSERT ARQUIVO ID: 26
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.8005148, lon=-47.0414606
+COORDENADAS: lat=-22.8005148, lon=-47.0414606
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8005148&lon=-47.0414606
+MAP RESPONSE: {"place_id":8638421,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":149002710,"lat":"-22.8006837","lon":"-47.0413448","class":"highway","type":"living_street","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"","display_name":"Condomínio Estância Paraíso, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13086-530, Brasil","address":{"residential":"Condomínio Estância Paraíso","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13086-530","country":"Brasil","country_code":"br"},"boundingbox":["-22.8010357","-22.7971602","-47.0423661","-47.0362254"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 27
+COORDENADAS antes do prepare: lat=-22.8005148, lon=-47.0414606
+COORDENADAS depois do prepare: lat=-22.8005148, lon=-47.0414606
+INSERT LOCALIZACAO ID: 27
+UPLOAD: 17495385767332509999165960170250.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17495385767332509999165960170250.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17495385767332509999165960170250.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17495385767332509999165960170250.jpg_sanitized_2025_06_10_06_56_40.jpg"}
+INSERT ARQUIVO ID: 27
+INSERT ACAO executado com sucesso
