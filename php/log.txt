@@ -8887,3 +8887,713 @@ PYTHON OUTPUT:
 {"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17495385767332509999165960170250.jpg_sanitized_2025_06_10_06_56_40.jpg"}
 INSERT ARQUIVO ID: 27
 INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5553822, lon=-46.6766944
+COORDENADAS: lat=-23.5553822, lon=-46.6766944
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5553822&lon=-46.6766944
+MAP RESPONSE: {"place_id":389633886,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":2887292156,"lat":"-23.5554640","lon":"-46.6769543","class":"office","type":"foundation","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"office","name":"FUNDACENTRO","display_name":"FUNDACENTRO, 710, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil","address":{"office":"FUNDACENTRO","house_number":"710","road":"Rua Capote Valente","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-002","country":"Brasil","country_code":"br"},"boundingbox":["-23.5555140","-23.5554140","-46.6770043","-46.6769043"]}
+BUSCANDO PESSOA: Rafael Monico
+INSERT ATIVIDADE_EVENTO ID: 28
+COORDENADAS antes do prepare: lat=-23.5553822, lon=-46.6766944
+COORDENADAS depois do prepare: lat=-23.5553822, lon=-46.6766944
+INSERT LOCALIZACAO ID: 28
+UPLOAD: 17495805965021654941643971981943.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17495805965021654941643971981943.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17495805965021654941643971981943.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17495805965021654941643971981943.jpg_sanitized_2025_06_10_18_37_00.jpg"}
+INSERT ARQUIVO ID: 28
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7265389, lon=-38.5673651
+COORDENADAS: lat=-3.7265389, lon=-38.5673651
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7265389&lon=-38.5673651
+MAP RESPONSE: {"place_id":12642997,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"relation","osm_id":15771487,"lat":"-3.7264470","lon":"-38.5669777","class":"shop","type":"mall","place_rank":30,"importance":6.818722819862695e-05,"addresstype":"shop","name":"RioMar Kennedy","display_name":"RioMar Kennedy, 3100, Avenida Sargento Hermínio Sampaio, Presidente Kennedy, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60320-504, Brasil","address":{"shop":"RioMar Kennedy","house_number":"3100","road":"Avenida Sargento Hermínio Sampaio","suburb":"Presidente Kennedy","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60320-504","country":"Brasil","country_code":"br"},"boundingbox":["-3.7276830","-3.7251801","-38.5690058","-38.5652500"]}
+BUSCANDO PESSOA: Ana Celia Vital Batista
+INSERT ATIVIDADE_EVENTO ID: 29
+COORDENADAS antes do prepare: lat=-3.7265389, lon=-38.5673651
+COORDENADAS depois do prepare: lat=-3.7265389, lon=-38.5673651
+INSERT LOCALIZACAO ID: 29
+UPLOAD: 17495823802943697898868986135792.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17495823802943697898868986135792.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17495823802943697898868986135792.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17495823802943697898868986135792.jpg_sanitized_2025_06_10_19_07_47.jpg"}
+INSERT ARQUIVO ID: 29
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.740477, lon=-38.5694875
+COORDENADAS: lat=-3.740477, lon=-38.5694875
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.740477&lon=-38.5694875
+MAP RESPONSE: {"place_id":12601750,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":372545518,"lat":"-3.7404811","lon":"-38.5697604","class":"building","type":"university","place_rank":30,"importance":6.818722819862695e-05,"addresstype":"building","name":"Unidade de Laticínios","display_name":"Unidade de Laticínios, Campus do Pici Professor Prisco Bezerra, Pici, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60440-614, Brasil","address":{"building":"Unidade de Laticínios","locality":"Campus do Pici Professor Prisco Bezerra","suburb":"Pici","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60440-614","country":"Brasil","country_code":"br"},"boundingbox":["-3.7405174","-3.7403932","-38.5698663","-38.5696544"]}
+BUSCANDO PESSOA: Ana Celia Vital Batista
+INSERT ATIVIDADE_EVENTO ID: 30
+COORDENADAS antes do prepare: lat=-3.740477, lon=-38.5694875
+COORDENADAS depois do prepare: lat=-3.740477, lon=-38.5694875
+INSERT LOCALIZACAO ID: 30
+UPLOAD: 17496467612115589548033525272347.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496467612115589548033525272347.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496467612115589548033525272347.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496467612115589548033525272347.jpg_sanitized_2025_06_11_13_00_28.jpg"}
+INSERT ARQUIVO ID: 30
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=, lon=
+COORDENADAS: lat=, lon=
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=&lon=
+MAP RESPONSE: {"error":{"code":400,"message":"Parameter 'lon' must be a number."}}
+ERRO: Falha ao obter localização
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.6048581, lon=-46.6247906
+COORDENADAS: lat=-23.6048581, lon=-46.6247906
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.6048581&lon=-46.6247906
+MAP RESPONSE: {"place_id":394705507,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":12434907568,"lat":"-23.6046378","lon":"-46.6247250","class":"place","type":"house","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"place","name":"","display_name":"287, Rua Vigário Albernaz, Vila Gumercindo, Cursino, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 04134-020, Brasil","address":{"house_number":"287","road":"Rua Vigário Albernaz","suburb":"Vila Gumercindo","city_district":"Cursino","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"04134-020","country":"Brasil","country_code":"br"},"boundingbox":["-23.6046878","-23.6045878","-46.6247750","-46.6246750"]}
+BUSCANDO PESSOA: Julia Leite Cassa
+INSERT ATIVIDADE_EVENTO ID: 31
+COORDENADAS antes do prepare: lat=-23.6048581, lon=-46.6247906
+COORDENADAS depois do prepare: lat=-23.6048581, lon=-46.6247906
+INSERT LOCALIZACAO ID: 31
+UPLOAD: 17496564267183757670530827808284.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496564267183757670530827808284.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496564267183757670530827808284.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496564267183757670530827808284.jpg_sanitized_2025_06_11_15_42_23.jpg"}
+INSERT ARQUIVO ID: 31
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7389933, lon=-46.5317767
+COORDENADAS: lat=-23.7389933, lon=-46.5317767
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7389933&lon=-46.5317767
+MAP RESPONSE: {"place_id":8655777,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":366511055,"lat":"-23.7388918","lon":"-46.5319306","class":"amenity","type":"place_of_worship","place_rank":30,"importance":6.474021515216324e-05,"addresstype":"amenity","name":"Congregação Cristã do Brasil","display_name":"Congregação Cristã do Brasil, 970, Avenida General Barreto de Menezes, Jardim Silvina, Ferrazópolis, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 09791-260, Brasil","address":{"amenity":"Congregação Cristã do Brasil","house_number":"970","road":"Avenida General Barreto de Menezes","neighbourhood":"Jardim Silvina","suburb":"Ferrazópolis","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state_district":"Região Geográfica Intermediária de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09791-260","country":"Brasil","country_code":"br"},"boundingbox":["-23.7390010","-23.7387956","-46.5320326","-46.5318219"]}
+BUSCANDO PESSOA: Luciana Mena Bellato
+INSERT ATIVIDADE_EVENTO ID: 32
+COORDENADAS antes do prepare: lat=-23.7389933, lon=-46.5317767
+COORDENADAS depois do prepare: lat=-23.7389933, lon=-46.5317767
+INSERT LOCALIZACAO ID: 32
+UPLOAD: 17496567834077335856703742150091.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496567834077335856703742150091.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496567834077335856703742150091.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496567834077335856703742150091.jpg_sanitized_2025_06_11_15_47_21.jpg"}
+INSERT ARQUIVO ID: 32
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7389502, lon=-46.5316925
+COORDENADAS: lat=-23.7389502, lon=-46.5316925
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7389502&lon=-46.5316925
+MAP RESPONSE: {"place_id":8558777,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":738695195,"lat":"-23.7389177","lon":"-46.5316603","class":"highway","type":"secondary","place_rank":26,"importance":0.053398073548485504,"addresstype":"road","name":"Estrada do Montanhão","display_name":"Estrada do Montanhão, Jardim Silvina, Ferrazópolis, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 09791-260, Brasil","address":{"road":"Estrada do Montanhão","neighbourhood":"Jardim Silvina","suburb":"Ferrazópolis","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state_district":"Região Geográfica Intermediária de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09791-260","country":"Brasil","country_code":"br"},"boundingbox":["-23.7389788","-23.7388309","-46.5317421","-46.5315753"]}
+BUSCANDO PESSOA: Elenilson de Melo Silva
+INSERT ATIVIDADE_EVENTO ID: 33
+COORDENADAS antes do prepare: lat=-23.7389502, lon=-46.5316925
+COORDENADAS depois do prepare: lat=-23.7389502, lon=-46.5316925
+INSERT LOCALIZACAO ID: 33
+UPLOAD: 1749656784740895927663689465052.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749656784740895927663689465052.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749656784740895927663689465052.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749656784740895927663689465052.jpg_sanitized_2025_06_11_15_47_46.jpg"}
+INSERT ARQUIVO ID: 33
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.190835, lon=-46.9312933
+COORDENADAS: lat=-23.190835, lon=-46.9312933
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.190835&lon=-46.9312933
+MAP RESPONSE: {"place_id":7915433,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":870744198,"lat":"-23.1908899","lon":"-46.9314545","class":"highway","type":"motorway","place_rank":26,"importance":0.05339746318760964,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Condomínio Residencial dos Metalúrgicos, Gramadão, Jundiaí, Região Imediata de Jundiaí, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13211-771, Brasil","address":{"road":"Rodovia dos Bandeirantes","neighbourhood":"Condomínio Residencial dos Metalúrgicos","suburb":"Gramadão","city_district":"Jundiaí","city":"Jundiaí","municipality":"Região Imediata de Jundiaí","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13211-771","country":"Brasil","country_code":"br"},"boundingbox":["-23.1980052","-23.1862849","-46.9330241","-46.9290537"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 34
+COORDENADAS antes do prepare: lat=-23.190835, lon=-46.9312933
+COORDENADAS depois do prepare: lat=-23.190835, lon=-46.9312933
+INSERT LOCALIZACAO ID: 34
+UPLOAD: 17496574520756532597100616453322.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496574520756532597100616453322.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496574520756532597100616453322.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496574520756532597100616453322.jpg_sanitized_2025_06_11_15_57_51.jpg"}
+INSERT ARQUIVO ID: 34
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.2975247, lon=-46.8415364
+COORDENADAS: lat=-23.2975247, lon=-46.8415364
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.2975247&lon=-46.8415364
+MAP RESPONSE: {"place_id":7901334,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1005433628,"lat":"-23.2975092","lon":"-46.8413937","class":"highway","type":"motorway","place_rank":26,"importance":0.053394724193179186,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Franco da Rocha, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 07778-750, Brasil","address":{"road":"Rodovia dos Bandeirantes","city_district":"Franco da Rocha","city":"Franco da Rocha","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"07778-750","country":"Brasil","country_code":"br"},"boundingbox":["-23.2992591","-23.2938413","-46.8428971","-46.8412037"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 35
+COORDENADAS antes do prepare: lat=-23.2975247, lon=-46.8415364
+COORDENADAS depois do prepare: lat=-23.2975247, lon=-46.8415364
+INSERT LOCALIZACAO ID: 35
+UPLOAD: 17496579918093766928659572195232.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496579918093766928659572195232.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496579918093766928659572195232.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496579918093766928659572195232.jpg_sanitized_2025_06_11_16_06_54.jpg"}
+INSERT ARQUIVO ID: 35
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7264508, lon=-38.5674028
+COORDENADAS: lat=-3.7264508, lon=-38.5674028
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7264508&lon=-38.5674028
+MAP RESPONSE: {"place_id":12642997,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"relation","osm_id":15771487,"lat":"-3.7264470","lon":"-38.5669777","class":"shop","type":"mall","place_rank":30,"importance":6.818722819862695e-05,"addresstype":"shop","name":"RioMar Kennedy","display_name":"RioMar Kennedy, 3100, Avenida Sargento Hermínio Sampaio, Presidente Kennedy, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60320-504, Brasil","address":{"shop":"RioMar Kennedy","house_number":"3100","road":"Avenida Sargento Hermínio Sampaio","suburb":"Presidente Kennedy","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60320-504","country":"Brasil","country_code":"br"},"boundingbox":["-3.7276830","-3.7251801","-38.5690058","-38.5652500"]}
+BUSCANDO PESSOA: Ana Celia Vital Batista
+INSERT ATIVIDADE_EVENTO ID: 36
+COORDENADAS antes do prepare: lat=-3.7264508, lon=-38.5674028
+COORDENADAS depois do prepare: lat=-3.7264508, lon=-38.5674028
+INSERT LOCALIZACAO ID: 36
+UPLOAD: 17496646999374465651940877725816.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496646999374465651940877725816.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496646999374465651940877725816.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496646999374465651940877725816.jpg_sanitized_2025_06_11_17_58_53.jpg"}
+INSERT ARQUIVO ID: 36
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-11.814753, lon=-39.9100496
+COORDENADAS: lat=-11.814753, lon=-39.9100496
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-11.814753&lon=-39.9100496
+MAP RESPONSE: {"place_id":13892560,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":821368100,"lat":"-11.8147497","lon":"-39.9100472","class":"highway","type":"secondary","place_rank":26,"importance":0.05339025635156783,"addresstype":"road","name":"Rua Almeida Lima","display_name":"Rua Almeida Lima, Pintadas, Região Geográfica Imediata de Feira de Santana, Região Geográfica Intermediária de Feira de Santana, Bahia, Região Nordeste, Brasil","address":{"road":"Rua Almeida Lima","city_district":"Pintadas","town":"Pintadas","municipality":"Região Geográfica Imediata de Feira de Santana","state_district":"Região Geográfica Intermediária de Feira de Santana","state":"Bahia","ISO3166-2-lvl4":"BR-BA","region":"Região Nordeste","country":"Brasil","country_code":"br"},"boundingbox":["-11.8147728","-11.8147052","-39.9100725","-39.9088991"]}
+BUSCANDO PESSOA: Josélia Cerqueira Paixão
+INSERT ATIVIDADE_EVENTO ID: 37
+COORDENADAS antes do prepare: lat=-11.814753, lon=-39.9100496
+COORDENADAS depois do prepare: lat=-11.814753, lon=-39.9100496
+INSERT LOCALIZACAO ID: 37
+UPLOAD: 17496671755557213503171894215837.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496671755557213503171894215837.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496671755557213503171894215837.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496671755557213503171894215837.jpg_sanitized_2025_06_11_18_40_15.jpg"}
+INSERT ARQUIVO ID: 37
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.7997073, lon=-47.8691793
+COORDENADAS: lat=-15.7997073, lon=-47.8691793
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.7997073&lon=-47.8691793
+MAP RESPONSE: {"place_id":14482178,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Sérgio Godoy
+INSERT ATIVIDADE_EVENTO ID: 38
+COORDENADAS antes do prepare: lat=-15.7997073, lon=-47.8691793
+COORDENADAS depois do prepare: lat=-15.7997073, lon=-47.8691793
+INSERT LOCALIZACAO ID: 38
+UPLOAD: 17496741234925103225778329986853.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496741234925103225778329986853.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496741234925103225778329986853.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496741234925103225778329986853.jpg_sanitized_2025_06_11_20_35_45.jpg"}
+INSERT ARQUIVO ID: 38
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5626623, lon=-46.7427231
+COORDENADAS: lat=-23.5626623, lon=-46.7427231
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5626623&lon=-46.7427231
+MAP RESPONSE: {"place_id":8484261,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":149888633,"lat":"-23.5625643","lon":"-46.7426242","class":"highway","type":"service","place_rank":27,"importance":0.04007861829556724,"addresstype":"road","name":"Rua Aquianés","display_name":"Rua Aquianés, Vila Jardim São Remo, Rio Pequeno, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05360-170, Brasil","address":{"road":"Rua Aquianés","residential":"Vila Jardim São Remo","suburb":"Rio Pequeno","city_district":"Rio Pequeno","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05360-170","country":"Brasil","country_code":"br"},"boundingbox":["-23.5628759","-23.5611230","-46.7450566","-46.7424689"]}
+BUSCANDO PESSOA: Robson Souza Dutra
+INSERT ATIVIDADE_EVENTO ID: 39
+COORDENADAS antes do prepare: lat=-23.5626623, lon=-46.7427231
+COORDENADAS depois do prepare: lat=-23.5626623, lon=-46.7427231
+INSERT LOCALIZACAO ID: 39
+UPLOAD: 17496767203692681303788234302598.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496767203692681303788234302598.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496767203692681303788234302598.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496767203692681303788234302598.jpg_sanitized_2025_06_11_21_21_08.jpg"}
+INSERT ARQUIVO ID: 39
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.31023, lon=-46.8321717
+COORDENADAS: lat=-23.31023, lon=-46.8321717
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.31023&lon=-46.8321717
+MAP RESPONSE: {"place_id":7880767,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1005433625,"lat":"-23.3100859","lon":"-46.8321047","class":"highway","type":"motorway","place_rank":26,"importance":0.053394724193179186,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Franco da Rocha, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 07786-450, Brasil","address":{"road":"Rodovia dos Bandeirantes","city_district":"Franco da Rocha","city":"Franco da Rocha","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"07786-450","country":"Brasil","country_code":"br"},"boundingbox":["-23.3104622","-23.3069187","-46.8362099","-46.8311013"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 40
+COORDENADAS antes do prepare: lat=-23.31023, lon=-46.8321717
+COORDENADAS depois do prepare: lat=-23.31023, lon=-46.8321717
+INSERT LOCALIZACAO ID: 40
+UPLOAD: 17496769729045942522574032724444.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17496769729045942522574032724444.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17496769729045942522574032724444.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17496769729045942522574032724444.jpg_sanitized_2025_06_11_21_23_21.jpg"}
+INSERT ARQUIVO ID: 40
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.6702651, lon=-46.6203792
+COORDENADAS: lat=-23.6702651, lon=-46.6203792
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.6702651&lon=-46.6203792
+MAP RESPONSE: {"place_id":8411086,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":94687464,"lat":"-23.6700866","lon":"-46.6203298","class":"highway","type":"residential","place_rank":26,"importance":0.05341195162890055,"addresstype":"road","name":"Rua Paraíbuna","display_name":"Rua Paraíbuna, Vila São Judas Tadeu, Campanário, Diadema, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09925-000, Brasil","address":{"road":"Rua Paraíbuna","quarter":"Vila São Judas Tadeu","suburb":"Campanário","city_district":"Diadema","city":"Diadema","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09925-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.6705969","-23.6699847","-46.6207530","-46.6194722"]}
+BUSCANDO PESSOA: Luciana Mena Bellato
+INSERT ATIVIDADE_EVENTO ID: 41
+COORDENADAS antes do prepare: lat=-23.6702651, lon=-46.6203792
+COORDENADAS depois do prepare: lat=-23.6702651, lon=-46.6203792
+INSERT LOCALIZACAO ID: 41
+UPLOAD: 1749734311457869739739822566935.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749734311457869739739822566935.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749734311457869739739822566935.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749734311457869739739822566935.jpg_sanitized_2025_06_12_13_19_34.jpg"}
+INSERT ARQUIVO ID: 41
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.6703117, lon=-46.6203847
+COORDENADAS: lat=-23.6703117, lon=-46.6203847
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.6703117&lon=-46.6203847
+MAP RESPONSE: {"place_id":8668495,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":94687464,"lat":"-23.6700885","lon":"-46.6203229","class":"highway","type":"residential","place_rank":26,"importance":0.05341195162890055,"addresstype":"road","name":"Rua Paraíbuna","display_name":"Rua Paraíbuna, Vila São Judas Tadeu, Campanário, Diadema, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09925-000, Brasil","address":{"road":"Rua Paraíbuna","quarter":"Vila São Judas Tadeu","suburb":"Campanário","city_district":"Diadema","city":"Diadema","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09925-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.6705969","-23.6699847","-46.6207530","-46.6194722"]}
+BUSCANDO PESSOA: Marcia Elena Nascimento Fachini
+INSERT ATIVIDADE_EVENTO ID: 42
+COORDENADAS antes do prepare: lat=-23.6703117, lon=-46.6203847
+COORDENADAS depois do prepare: lat=-23.6703117, lon=-46.6203847
+INSERT LOCALIZACAO ID: 42
+UPLOAD: 17497346402127470005111622421490.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17497346402127470005111622421490.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17497346402127470005111622421490.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17497346402127470005111622421490.jpg_sanitized_2025_06_12_13_25_03.jpg"}
+INSERT ARQUIVO ID: 42
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.6703625, lon=-46.6204367
+COORDENADAS: lat=-23.6703625, lon=-46.6204367
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.6703625&lon=-46.6204367
+MAP RESPONSE: {"place_id":8448302,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":414710002,"lat":"-23.6705426","lon":"-46.6204207","class":"highway","type":"footway","place_rank":27,"importance":0.04007861829556724,"addresstype":"road","name":"Viela Manoel da Nobrega","display_name":"Viela Manoel da Nobrega, Vila São Judas Tadeu, Campanário, Diadema, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09925-000, Brasil","address":{"road":"Viela Manoel da Nobrega","quarter":"Vila São Judas Tadeu","suburb":"Campanário","city_district":"Diadema","city":"Diadema","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09925-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.6706628","-23.6705426","-46.6207186","-46.6200974"]}
+BUSCANDO PESSOA: Rute Ferreira Menezes
+INSERT ATIVIDADE_EVENTO ID: 43
+COORDENADAS antes do prepare: lat=-23.6703625, lon=-46.6204367
+COORDENADAS depois do prepare: lat=-23.6703625, lon=-46.6204367
+INSERT LOCALIZACAO ID: 43
+UPLOAD: 17497355667521461632763042888812.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17497355667521461632763042888812.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17497355667521461632763042888812.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17497355667521461632763042888812.jpg_sanitized_2025_06_12_13_40_50.jpg"}
+INSERT ARQUIVO ID: 43
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-11.8120444, lon=-39.9132075
+COORDENADAS: lat=-11.8120444, lon=-39.9132075
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-11.8120444&lon=-39.9132075
+MAP RESPONSE: {"place_id":14420759,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":238393625,"lat":"-11.8122016","lon":"-39.9134741","class":"highway","type":"residential","place_rank":26,"importance":0.05339025635156783,"addresstype":"road","name":"Rua São Bento","display_name":"Rua São Bento, Pintadas, Região Geográfica Imediata de Feira de Santana, Região Geográfica Intermediária de Feira de Santana, Bahia, Região Nordeste, Brasil","address":{"road":"Rua São Bento","city_district":"Pintadas","town":"Pintadas","municipality":"Região Geográfica Imediata de Feira de Santana","state_district":"Região Geográfica Intermediária de Feira de Santana","state":"Bahia","ISO3166-2-lvl4":"BR-BA","region":"Região Nordeste","country":"Brasil","country_code":"br"},"boundingbox":["-11.8163306","-11.8103904","-39.9142822","-39.9116743"]}
+BUSCANDO PESSOA: Josélia Cerqueira Paixão
+INSERT ATIVIDADE_EVENTO ID: 44
+COORDENADAS antes do prepare: lat=-11.8120444, lon=-39.9132075
+COORDENADAS depois do prepare: lat=-11.8120444, lon=-39.9132075
+INSERT LOCALIZACAO ID: 44
+UPLOAD: IMG-20250612-WA0051.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/IMG-20250612-WA0051.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/IMG-20250612-WA0051.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "IMG-20250612-WA0051.jpg_sanitized_2025_06_12_14_05_54.jpg"}
+INSERT ARQUIVO ID: 44
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7259793, lon=-46.6051969
+COORDENADAS: lat=-23.7259793, lon=-46.6051969
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7259793&lon=-46.6051969
+MAP RESPONSE: {"place_id":400440841,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":125822943,"lat":"-23.7259799","lon":"-46.6049926","class":"highway","type":"service","place_rank":27,"importance":0.04006174334325169,"addresstype":"road","name":"Estrada Yae Massumoto","display_name":"Estrada Yae Massumoto, Fazendinha, Cooperativa, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09842-160, Brasil","address":{"road":"Estrada Yae Massumoto","quarter":"Fazendinha","suburb":"Cooperativa","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09842-160","country":"Brasil","country_code":"br"},"boundingbox":["-23.7268444","-23.7230414","-46.6049988","-46.6042268"]}
+BUSCANDO PESSOA: Rute Ferreira Menezes
+INSERT ATIVIDADE_EVENTO ID: 45
+COORDENADAS antes do prepare: lat=-23.7259793, lon=-46.6051969
+COORDENADAS depois do prepare: lat=-23.7259793, lon=-46.6051969
+INSERT LOCALIZACAO ID: 45
+UPLOAD: 1000233210.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1000233210.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1000233210.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1000233210.jpg_sanitized_2025_06_12_15_51_40.jpg"}
+INSERT ARQUIVO ID: 45
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.726006, lon=-46.6052528
+COORDENADAS: lat=-23.726006, lon=-46.6052528
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.726006&lon=-46.6052528
+MAP RESPONSE: {"place_id":400440841,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":125822943,"lat":"-23.7260067","lon":"-46.6049927","class":"highway","type":"service","place_rank":27,"importance":0.04006174334325169,"addresstype":"road","name":"Estrada Yae Massumoto","display_name":"Estrada Yae Massumoto, Fazendinha, Cooperativa, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09842-160, Brasil","address":{"road":"Estrada Yae Massumoto","quarter":"Fazendinha","suburb":"Cooperativa","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09842-160","country":"Brasil","country_code":"br"},"boundingbox":["-23.7268444","-23.7230414","-46.6049988","-46.6042268"]}
+BUSCANDO PESSOA: Marcia Elena Nascimento Fachini
+INSERT ATIVIDADE_EVENTO ID: 46
+COORDENADAS antes do prepare: lat=-23.726006, lon=-46.6052528
+COORDENADAS depois do prepare: lat=-23.726006, lon=-46.6052528
+INSERT LOCALIZACAO ID: 46
+UPLOAD: 17497436381427626036843727994437.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17497436381427626036843727994437.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17497436381427626036843727994437.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17497436381427626036843727994437.jpg_sanitized_2025_06_12_15_54_54.jpg"}
+INSERT ARQUIVO ID: 46
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7259945, lon=-46.6051925
+COORDENADAS: lat=-23.7259945, lon=-46.6051925
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7259945&lon=-46.6051925
+MAP RESPONSE: {"place_id":400274237,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":125822943,"lat":"-23.7259951","lon":"-46.6049927","class":"highway","type":"service","place_rank":27,"importance":0.04006174334325169,"addresstype":"road","name":"Estrada Yae Massumoto","display_name":"Estrada Yae Massumoto, Fazendinha, Cooperativa, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09842-160, Brasil","address":{"road":"Estrada Yae Massumoto","quarter":"Fazendinha","suburb":"Cooperativa","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09842-160","country":"Brasil","country_code":"br"},"boundingbox":["-23.7268444","-23.7230414","-46.6049988","-46.6042268"]}
+BUSCANDO PESSOA: Luciana Mena Bellato
+INSERT ATIVIDADE_EVENTO ID: 47
+COORDENADAS antes do prepare: lat=-23.7259945, lon=-46.6051925
+COORDENADAS depois do prepare: lat=-23.7259945, lon=-46.6051925
+INSERT LOCALIZACAO ID: 47
+UPLOAD: 17497421740697652126128787903463.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17497421740697652126128787903463.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17497421740697652126128787903463.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17497421740697652126128787903463.jpg_sanitized_2025_06_12_15_56_40.jpg"}
+INSERT ARQUIVO ID: 47
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7259798, lon=-46.6051975
+COORDENADAS: lat=-23.7259798, lon=-46.6051975
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7259798&lon=-46.6051975
+MAP RESPONSE: {"place_id":400262777,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":125822943,"lat":"-23.7259804","lon":"-46.6049926","class":"highway","type":"service","place_rank":27,"importance":0.04006174334325169,"addresstype":"road","name":"Estrada Yae Massumoto","display_name":"Estrada Yae Massumoto, Fazendinha, Cooperativa, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09842-160, Brasil","address":{"road":"Estrada Yae Massumoto","quarter":"Fazendinha","suburb":"Cooperativa","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09842-160","country":"Brasil","country_code":"br"},"boundingbox":["-23.7268444","-23.7230414","-46.6049988","-46.6042268"]}
+BUSCANDO PESSOA: Elenilson de Melo Silva
+INSERT ATIVIDADE_EVENTO ID: 48
+COORDENADAS antes do prepare: lat=-23.7259798, lon=-46.6051975
+COORDENADAS depois do prepare: lat=-23.7259798, lon=-46.6051975
+INSERT LOCALIZACAO ID: 48
+UPLOAD: IMG_20250612_125913.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/IMG_20250612_125913.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/IMG_20250612_125913.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "IMG_20250612_125913.jpg_sanitized_2025_06_12_16_07_16.jpg"}
+INSERT ARQUIVO ID: 48
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5701088, lon=-46.7179909
+COORDENADAS: lat=-23.5701088, lon=-46.7179909
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5701088&lon=-46.7179909
+MAP RESPONSE: {"place_id":397846759,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":12536178890,"lat":"-23.5700944","lon":"-46.7179046","class":"amenity","type":"community_centre","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Ponto de Economia Solidária","display_name":"Ponto de Economia Solidária, Avenida Corifeu de Azevedo Marques, Butantã, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05582-000, Brasil","address":{"amenity":"Ponto de Economia Solidária","road":"Avenida Corifeu de Azevedo Marques","suburb":"Butantã","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05582-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.5701444","-23.5700444","-46.7179546","-46.7178546"]}
+BUSCANDO PESSOA: Julia Pedote Lourenção
+INSERT ATIVIDADE_EVENTO ID: 49
+COORDENADAS antes do prepare: lat=-23.5701088, lon=-46.7179909
+COORDENADAS depois do prepare: lat=-23.5701088, lon=-46.7179909
+INSERT LOCALIZACAO ID: 49
+UPLOAD: 20250612_133901.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/20250612_133901.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/20250612_133901.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "20250612_133901.jpg_sanitized_2025_06_12_16_48_30.jpg"}
+INSERT ARQUIVO ID: 49
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5701639, lon=-46.7179595
+COORDENADAS: lat=-23.5701639, lon=-46.7179595
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5701639&lon=-46.7179595
+MAP RESPONSE: {"place_id":397846759,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":12536178890,"lat":"-23.5700944","lon":"-46.7179046","class":"amenity","type":"community_centre","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Ponto de Economia Solidária","display_name":"Ponto de Economia Solidária, Avenida Corifeu de Azevedo Marques, Butantã, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05582-000, Brasil","address":{"amenity":"Ponto de Economia Solidária","road":"Avenida Corifeu de Azevedo Marques","suburb":"Butantã","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05582-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.5701444","-23.5700444","-46.7179546","-46.7178546"]}
+BUSCANDO PESSOA: Julia Pedote Lourenção
+INSERT ATIVIDADE_EVENTO ID: 50
+COORDENADAS antes do prepare: lat=-23.5701639, lon=-46.7179595
+COORDENADAS depois do prepare: lat=-23.5701639, lon=-46.7179595
+INSERT LOCALIZACAO ID: 50
+UPLOAD: 17497470552633399631810719600999.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17497470552633399631810719600999.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17497470552633399631810719600999.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17497470552633399631810719600999.jpg_sanitized_2025_06_12_16_52_24.jpg"}
+INSERT ARQUIVO ID: 50
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.570135, lon=-46.7179907
+COORDENADAS: lat=-23.570135, lon=-46.7179907
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.570135&lon=-46.7179907
+MAP RESPONSE: {"place_id":397846759,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":12536178890,"lat":"-23.5700944","lon":"-46.7179046","class":"amenity","type":"community_centre","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Ponto de Economia Solidária","display_name":"Ponto de Economia Solidária, Avenida Corifeu de Azevedo Marques, Butantã, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05582-000, Brasil","address":{"amenity":"Ponto de Economia Solidária","road":"Avenida Corifeu de Azevedo Marques","suburb":"Butantã","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05582-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.5701444","-23.5700444","-46.7179546","-46.7178546"]}
+BUSCANDO PESSOA: Robson Souza Dutra
+INSERT ATIVIDADE_EVENTO ID: 51
+COORDENADAS antes do prepare: lat=-23.570135, lon=-46.7179907
+COORDENADAS depois do prepare: lat=-23.570135, lon=-46.7179907
+INSERT LOCALIZACAO ID: 51
+UPLOAD: 1749750404373298431324344042643.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/1749750404373298431324344042643.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/1749750404373298431324344042643.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "1749750404373298431324344042643.jpg_sanitized_2025_06_12_17_47_35.jpg"}
+INSERT ARQUIVO ID: 51
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5701267, lon=-46.7180105
+COORDENADAS: lat=-23.5701267, lon=-46.7180105
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5701267&lon=-46.7180105
+MAP RESPONSE: {"place_id":397846759,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":12536178890,"lat":"-23.5700944","lon":"-46.7179046","class":"amenity","type":"community_centre","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Ponto de Economia Solidária","display_name":"Ponto de Economia Solidária, Avenida Corifeu de Azevedo Marques, Butantã, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05582-000, Brasil","address":{"amenity":"Ponto de Economia Solidária","road":"Avenida Corifeu de Azevedo Marques","suburb":"Butantã","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05582-000","country":"Brasil","country_code":"br"},"boundingbox":["-23.5701444","-23.5700444","-46.7179546","-46.7178546"]}
+BUSCANDO PESSOA: Julia Pedote Lourenção
+INSERT ATIVIDADE_EVENTO ID: 52
+COORDENADAS antes do prepare: lat=-23.5701267, lon=-46.7180105
+COORDENADAS depois do prepare: lat=-23.5701267, lon=-46.7180105
+INSERT LOCALIZACAO ID: 52
+UPLOAD: 20250612_144403.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/20250612_144403.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/20250612_144403.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "20250612_144403.jpg_sanitized_2025_06_12_17_54_26.jpg"}
+INSERT ARQUIVO ID: 52
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.7274832, lon=-46.5773775
+COORDENADAS: lat=-23.7274832, lon=-46.5773775
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.7274832&lon=-46.5773775
+MAP RESPONSE: {"place_id":8335046,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":126452605,"lat":"-23.7274893","lon":"-46.5772720","class":"highway","type":"residential","place_rank":26,"importance":0.053398073548485504,"addresstype":"road","name":"Rua Artuélia","display_name":"Rua Artuélia, Vila Artuelia, Assunção, São Bernardo do Campo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 09850-260, Brasil","address":{"road":"Rua Artuélia","neighbourhood":"Vila Artuelia","suburb":"Assunção","city_district":"São Bernardo do Campo","city":"São Bernardo do Campo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"09850-260","country":"Brasil","country_code":"br"},"boundingbox":["-23.7279650","-23.7272493","-46.5772950","-46.5772580"]}
+BUSCANDO PESSOA: Marcia Elena Nascimento Fachini
+INSERT ATIVIDADE_EVENTO ID: 53
+COORDENADAS antes do prepare: lat=-23.7274832, lon=-46.5773775
+COORDENADAS depois do prepare: lat=-23.7274832, lon=-46.5773775
+INSERT LOCALIZACAO ID: 53
+UPLOAD: 17498214258301680023022660585342.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17498214258301680023022660585342.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17498214258301680023022660585342.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17498214258301680023022660585342.jpg_sanitized_2025_06_13_13_31_18.jpg"}
+INSERT ARQUIVO ID: 53
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.8149837, lon=-47.0655702
+COORDENADAS: lat=-22.8149837, lon=-47.0655702
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8149837&lon=-47.0655702
+MAP RESPONSE: {"place_id":8666810,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1230654543,"lat":"-22.8149659","lon":"-47.0657313","class":"building","type":"university","place_rank":30,"importance":6.852597848473361e-05,"addresstype":"building","name":"Instituto de Economia (Pavilhão administrativo)","display_name":"Instituto de Economia (Pavilhão administrativo), 353, Rua Pitágoras, Cidade Universitária, Barão Geraldo, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13083-857, Brasil","address":{"building":"Instituto de Economia (Pavilhão administrativo)","house_number":"353","road":"Rua Pitágoras","suburb":"Cidade Universitária","city_district":"Barão Geraldo","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13083-857","country":"Brasil","country_code":"br"},"boundingbox":["-22.8152890","-22.8144917","-47.0660948","-47.0654407"]}
+BUSCANDO PESSOA: Testador5
+INSERT ATIVIDADE_EVENTO ID: 54
+COORDENADAS antes do prepare: lat=-22.8149837, lon=-47.0655702
+COORDENADAS depois do prepare: lat=-22.8149837, lon=-47.0655702
+INSERT LOCALIZACAO ID: 54
+UPLOAD: WhatsApp-Image-2025-05-12-at-15.23.44-768x960.jpeg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/WhatsApp-Image-2025-05-12-at-15.23.44-768x960.jpeg
+TIPO ARQUIVO ID:  (ext: .jpeg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/WhatsApp-Image-2025-05-12-at-15.23.44-768x960.jpeg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "WhatsApp-Image-2025-05-12-at-15.23.44-768x960.jpeg_sanitized_2025_06_13_17_46_26.jpg"}
+INSERT ARQUIVO ID: 54
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7436037, lon=-38.5682026
+COORDENADAS: lat=-3.7436037, lon=-38.5682026
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7436037&lon=-38.5682026
+MAP RESPONSE: {"place_id":12827879,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":774510686,"lat":"-3.7435558","lon":"-38.5682223","class":"highway","type":"service","place_rank":27,"importance":0.04006818722819866,"addresstype":"road","name":"Rua das Rendeiras","display_name":"Rua das Rendeiras, Pici, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60440-594, Brasil","address":{"road":"Rua das Rendeiras","suburb":"Pici","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60440-594","country":"Brasil","country_code":"br"},"boundingbox":["-3.7435558","-3.7431217","-38.5683047","-38.5678867"]}
+BUSCANDO PESSOA: Ana Celia Vital Batista
+INSERT ATIVIDADE_EVENTO ID: 55
+COORDENADAS antes do prepare: lat=-3.7436037, lon=-38.5682026
+COORDENADAS depois do prepare: lat=-3.7436037, lon=-38.5682026
+INSERT LOCALIZACAO ID: 55
+UPLOAD: 17498423319072531118055723742619.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17498423319072531118055723742619.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17498423319072531118055723742619.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17498423319072531118055723742619.jpg_sanitized_2025_06_13_19_20_11.jpg"}
+INSERT ARQUIVO ID: 55
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-3.7214483, lon=-38.530285
+COORDENADAS: lat=-3.7214483, lon=-38.530285
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-3.7214483&lon=-38.530285
+MAP RESPONSE: {"place_id":13283447,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":10649814847,"lat":"-3.7214610","lon":"-38.5302847","class":"amenity","type":"toilets","place_rank":30,"importance":2.8699931334355954e-05,"addresstype":"amenity","name":"","display_name":"540, Rua Doutor João Moreira, Centro, Fortaleza, Região Geográfica Imediata de Fortaleza, Região Geográfica Intermediária de Fortaleza, Ceará, Região Nordeste, 60030-000, Brasil","address":{"house_number":"540","road":"Rua Doutor João Moreira","suburb":"Centro","city":"Fortaleza","municipality":"Região Geográfica Imediata de Fortaleza","state_district":"Região Geográfica Intermediária de Fortaleza","state":"Ceará","ISO3166-2-lvl4":"BR-CE","region":"Região Nordeste","postcode":"60030-000","country":"Brasil","country_code":"br"},"boundingbox":["-3.7215110","-3.7214110","-38.5303347","-38.5302347"]}
+BUSCANDO PESSOA: Ana Celia Vital Batista
+INSERT ATIVIDADE_EVENTO ID: 56
+COORDENADAS antes do prepare: lat=-3.7214483, lon=-38.530285
+COORDENADAS depois do prepare: lat=-3.7214483, lon=-38.530285
+INSERT LOCALIZACAO ID: 56
+UPLOAD: 17499250021356617450729689086370.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17499250021356617450729689086370.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17499250021356617450729689086370.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17499250021356617450729689086370.jpg_sanitized_2025_06_14_18_17_14.jpg"}
+INSERT ARQUIVO ID: 56
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.31023, lon=-46.8321717
+COORDENADAS: lat=-23.31023, lon=-46.8321717
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.31023&lon=-46.8321717
+MAP RESPONSE: {"place_id":8192458,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1005433625,"lat":"-23.3100859","lon":"-46.8321047","class":"highway","type":"motorway","place_rank":26,"importance":0.053394724193179186,"addresstype":"road","name":"Rodovia dos Bandeirantes","display_name":"Rodovia dos Bandeirantes, Franco da Rocha, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 07786-450, Brasil","address":{"road":"Rodovia dos Bandeirantes","city_district":"Franco da Rocha","city":"Franco da Rocha","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"07786-450","country":"Brasil","country_code":"br"},"boundingbox":["-23.3104622","-23.3069187","-46.8362099","-46.8311013"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 57
+COORDENADAS antes do prepare: lat=-23.31023, lon=-46.8321717
+COORDENADAS depois do prepare: lat=-23.31023, lon=-46.8321717
+INSERT LOCALIZACAO ID: 57
+UPLOAD: 17501806475438804990782711032553.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17501806475438804990782711032553.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17501806475438804990782711032553.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17501806475438804990782711032553.jpg_sanitized_2025_06_17_17_17_51.jpg"}
+INSERT ARQUIVO ID: 57
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=38.1101217, lon=13.3689919
+COORDENADAS: lat=38.1101217, lon=13.3689919
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=38.1101217&lon=13.3689919
+MAP RESPONSE: {"place_id":48819641,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":25184931,"lat":"38.1099719","lon":"13.3690637","class":"highway","type":"residential","place_rank":26,"importance":0.053408945601586905,"addresstype":"road","name":"Via Rocco Pirri","display_name":"Via Rocco Pirri, II Circoscrizione, Palermo, Sicília, 90140, Itália","address":{"road":"Via Rocco Pirri","suburb":"II Circoscrizione","city":"Palermo","county":"Palermo","ISO3166-2-lvl6":"IT-PA","state":"Sicília","ISO3166-2-lvl4":"IT-82","postcode":"90140","country":"Itália","country_code":"it"},"boundingbox":["38.1095578","38.1101366","13.3681989","13.3694075"]}
+BUSCANDO PESSOA: Pedro Tourinho
+INSERT ATIVIDADE_EVENTO ID: 58
+COORDENADAS antes do prepare: lat=38.1101217, lon=13.3689919
+COORDENADAS depois do prepare: lat=38.1101217, lon=13.3689919
+INSERT LOCALIZACAO ID: 58
+UPLOAD: 17501807791325287537659372864717.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17501807791325287537659372864717.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17501807791325287537659372864717.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17501807791325287537659372864717.jpg_sanitized_2025_06_17_17_20_08.jpg"}
+INSERT ARQUIVO ID: 58
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5421854, lon=-46.6408386
+COORDENADAS: lat=-23.5421854, lon=-46.6408386
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5421854&lon=-46.6408386
+MAP RESPONSE: {"place_id":8539031,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":421146627,"lat":"-23.5422265","lon":"-46.6409394","class":"amenity","type":"restaurant","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"Salada Record","display_name":"Salada Record, 719, Avenida São João, República, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 01035-100, Brasil","address":{"amenity":"Salada Record","house_number":"719","road":"Avenida São João","suburb":"República","city_district":"República","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"01035-100","country":"Brasil","country_code":"br"},"boundingbox":["-23.5423920","-23.5421362","-46.6410763","-46.6408566"]}
+BUSCANDO PESSOA: Pedro Tourinho
+INSERT ATIVIDADE_EVENTO ID: 59
+COORDENADAS antes do prepare: lat=-23.5421854, lon=-46.6408386
+COORDENADAS depois do prepare: lat=-23.5421854, lon=-46.6408386
+INSERT LOCALIZACAO ID: 59
+UPLOAD: 17501809477831433406165751812673.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17501809477831433406165751812673.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17501809477831433406165751812673.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17501809477831433406165751812673.jpg_sanitized_2025_06_17_17_22_57.jpg"}
+INSERT ARQUIVO ID: 59
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.9457234, lon=-47.1864995
+COORDENADAS: lat=-22.9457234, lon=-47.1864995
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.9457234&lon=-47.1864995
+MAP RESPONSE: {"place_id":8678032,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":147271682,"lat":"-22.9457933","lon":"-47.1865026","class":"highway","type":"residential","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"Rua Brigida Chinaglia Costa","display_name":"Rua Brigida Chinaglia Costa, Campo Grande, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13058-510, Brasil","address":{"road":"Rua Brigida Chinaglia Costa","village":"Campo Grande","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13058-510","country":"Brasil","country_code":"br"},"boundingbox":["-22.9458052","-22.9455576","-47.1915819","-47.1862336"]}
+BUSCANDO PESSOA: Pedro Tourinho
+INSERT ATIVIDADE_EVENTO ID: 60
+COORDENADAS antes do prepare: lat=-22.9457234, lon=-47.1864995
+COORDENADAS depois do prepare: lat=-22.9457234, lon=-47.1864995
+INSERT LOCALIZACAO ID: 60
+UPLOAD: 17509768046657728533521377150771.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17509768046657728533521377150771.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17509768046657728533521377150771.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17509768046657728533521377150771.jpg_sanitized_2025_06_26_22_27_29.jpg"}
+INSERT ARQUIVO ID: 60
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5553283, lon=-46.676635
+COORDENADAS: lat=-23.5553283, lon=-46.676635
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5553283&lon=-46.676635
+MAP RESPONSE: {"place_id":8534761,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":419602366,"lat":"-23.5549823","lon":"-46.6763123","class":"amenity","type":"parking","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"amenity","name":"","display_name":"Rua Oscar Freire, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-011, Brasil","address":{"road":"Rua Oscar Freire","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-011","country":"Brasil","country_code":"br"},"boundingbox":["-23.5552035","-23.5547369","-46.6765805","-46.6760440"]}
+BUSCANDO PESSOA: Eberval Castro
+INSERT ATIVIDADE_EVENTO ID: 61
+COORDENADAS antes do prepare: lat=-23.5553283, lon=-46.676635
+COORDENADAS depois do prepare: lat=-23.5553283, lon=-46.676635
+INSERT LOCALIZACAO ID: 61
+UPLOAD: 17513810146413247790638804849786.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17513810146413247790638804849786.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17513810146413247790638804849786.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17513810146413247790638804849786.jpg_sanitized_2025_07_01_14_44_16.jpg"}
+INSERT ARQUIVO ID: 61
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5553882, lon=-46.6766772
+COORDENADAS: lat=-23.5553882, lon=-46.6766772
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5553882&lon=-46.6766772
+MAP RESPONSE: {"place_id":389619752,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":2887292156,"lat":"-23.5554640","lon":"-46.6769543","class":"office","type":"foundation","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"office","name":"FUNDACENTRO","display_name":"FUNDACENTRO, 710, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil","address":{"office":"FUNDACENTRO","house_number":"710","road":"Rua Capote Valente","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-002","country":"Brasil","country_code":"br"},"boundingbox":["-23.5555140","-23.5554140","-46.6770043","-46.6769043"]}
+BUSCANDO PESSOA: Eberval Castro
+INSERT ATIVIDADE_EVENTO ID: 62
+COORDENADAS antes do prepare: lat=-23.5553882, lon=-46.6766772
+COORDENADAS depois do prepare: lat=-23.5553882, lon=-46.6766772
+INSERT LOCALIZACAO ID: 62
+UPLOAD: 17513813091947809584991967346355.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17513813091947809584991967346355.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17513813091947809584991967346355.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17513813091947809584991967346355.jpg_sanitized_2025_07_01_14_49_16.jpg"}
+INSERT ARQUIVO ID: 62
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5555026, lon=-46.6766417
+COORDENADAS: lat=-23.5555026, lon=-46.6766417
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5555026&lon=-46.6766417
+MAP RESPONSE: {"place_id":8206412,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":5700093412,"lat":"-23.5556137","lon":"-46.6764601","class":"place","type":"house","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"place","name":"","display_name":"694 C4, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil","address":{"house_number":"694 C4","road":"Rua Capote Valente","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-002","country":"Brasil","country_code":"br"},"boundingbox":["-23.5556637","-23.5555637","-46.6765101","-46.6764101"]}
+BUSCANDO PESSOA: Eberval Castro
+INSERT ATIVIDADE_EVENTO ID: 63
+COORDENADAS antes do prepare: lat=-23.5555026, lon=-46.6766417
+COORDENADAS depois do prepare: lat=-23.5555026, lon=-46.6766417
+INSERT LOCALIZACAO ID: 63
+UPLOAD: 17513935869431735453803985034980.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17513935869431735453803985034980.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17513935869431735453803985034980.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17513935869431735453803985034980.jpg_sanitized_2025_07_01_18_14_00.jpg"}
+INSERT ARQUIVO ID: 63
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-23.5555045, lon=-46.6766056
+COORDENADAS: lat=-23.5555045, lon=-46.6766056
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-23.5555045&lon=-46.6766056
+MAP RESPONSE: {"place_id":8564713,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":5700093412,"lat":"-23.5556137","lon":"-46.6764601","class":"place","type":"house","place_rank":30,"importance":7.861829556720863e-05,"addresstype":"place","name":"","display_name":"694 C4, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil","address":{"house_number":"694 C4","road":"Rua Capote Valente","suburb":"Jardim Paulista","city":"São Paulo","municipality":"Região Imediata de São Paulo","county":"Região Metropolitana de São Paulo","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"05409-002","country":"Brasil","country_code":"br"},"boundingbox":["-23.5556637","-23.5555637","-46.6765101","-46.6764101"]}
+BUSCANDO PESSOA: Eberval Castro
+INSERT ATIVIDADE_EVENTO ID: 64
+COORDENADAS antes do prepare: lat=-23.5555045, lon=-46.6766056
+COORDENADAS depois do prepare: lat=-23.5555045, lon=-46.6766056
+INSERT LOCALIZACAO ID: 64
+UPLOAD: 17513938099757286454639282126512.jpg salvo em /var/www/html/tjd3s_mobile_20250602/imagem/input/17513938099757286454639282126512.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_mobile_20250602/php/pasteur.py '/var/www/html/tjd3s_mobile_20250602/imagem/input/17513938099757286454639282126512.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17513938099757286454639282126512.jpg_sanitized_2025_07_01_18_17_12.jpg"}
+INSERT ARQUIVO ID: 64
+INSERT ACAO executado com sucesso
