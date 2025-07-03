@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 $sql = "
 SELECT nome_pessoa, nome_usuario, 
-  CONCAT('https://h5g37o62z.specchio.info/tjd3s_mobile_20250602/index.html?hash=', hash) AS link
+  CONCAT('https://h5g37o62z.specchio.info/tjd3s_projind_20250703/index.html?hash=', hash) AS link
 FROM usuarios
 JOIN pessoas ON id_pessoa = id_chave_pessoa
 ";

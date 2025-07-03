@@ -1311,7 +1311,7 @@ function syncDataWithServer() {
                 if (!fetchStatusArr.includes(false)) {
                     hideLoading();
                     alert('Dados enviados com sucesso!');
-                    window.location.href = "/tjd3s_mobile_20250602/"
+                    window.location.href = "/tjd3s_projind_20250703/"
                 } else {
                     alert('Erro tente novamente!')
                 }

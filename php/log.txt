@@ -9597,3 +9597,60 @@ PYTHON OUTPUT:
 {"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17513938099757286454639282126512.jpg_sanitized_2025_07_01_18_17_12.jpg"}
 INSERT ARQUIVO ID: 64
 INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.8005181, lon=-47.0414873
+COORDENADAS: lat=-22.8005181, lon=-47.0414873
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8005181&lon=-47.0414873
+MAP RESPONSE: {"place_id":8638421,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":149002710,"lat":"-22.8006972","lon":"-47.0413645","class":"highway","type":"living_street","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"","display_name":"Condomínio Estância Paraíso, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13086-530, Brasil","address":{"residential":"Condomínio Estância Paraíso","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13086-530","country":"Brasil","country_code":"br"},"boundingbox":["-22.8010357","-22.7971602","-47.0423661","-47.0362254"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 1
+COORDENADAS antes do prepare: lat=-22.8005181, lon=-47.0414873
+COORDENADAS depois do prepare: lat=-22.8005181, lon=-47.0414873
+INSERT LOCALIZACAO ID: 1
+UPLOAD: 17515652257045097578208481082948.jpg salvo em /var/www/html/tjd3s_projind_20250703/imagem/input/17515652257045097578208481082948.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_projind_20250703/php/pasteur.py '/var/www/html/tjd3s_projind_20250703/imagem/input/17515652257045097578208481082948.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17515652257045097578208481082948.jpg_sanitized_2025_07_03_17_54_16.jpg"}
+INSERT ARQUIVO ID: 1
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-22.8005184, lon=-47.0414907
+COORDENADAS: lat=-22.8005184, lon=-47.0414907
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-22.8005184&lon=-47.0414907
+MAP RESPONSE: {"place_id":8672462,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":149002710,"lat":"-22.8006988","lon":"-47.0413669","class":"highway","type":"living_street","place_rank":26,"importance":0.053401859311818074,"addresstype":"road","name":"","display_name":"Condomínio Estância Paraíso, Campinas, Região Imediata de Campinas, Região Metropolitana de Campinas, Região Geográfica Intermediária de Campinas, São Paulo, Região Sudeste, 13086-530, Brasil","address":{"residential":"Condomínio Estância Paraíso","city_district":"Campinas","city":"Campinas","municipality":"Região Imediata de Campinas","county":"Região Metropolitana de Campinas","state_district":"Região Geográfica Intermediária de Campinas","state":"São Paulo","ISO3166-2-lvl4":"BR-SP","region":"Região Sudeste","postcode":"13086-530","country":"Brasil","country_code":"br"},"boundingbox":["-22.8010357","-22.7971602","-47.0423661","-47.0362254"]}
+BUSCANDO PESSOA: Victor Pellegrini Mammana
+INSERT ATIVIDADE_EVENTO ID: 1
+COORDENADAS antes do prepare: lat=-22.8005184, lon=-47.0414907
+COORDENADAS depois do prepare: lat=-22.8005184, lon=-47.0414907
+INSERT LOCALIZACAO ID: 1
+UPLOAD: 17515658400266851985122172762159.jpg salvo em /var/www/html/tjd3s_projind_20250703/imagem/input/17515658400266851985122172762159.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_projind_20250703/php/pasteur.py '/var/www/html/tjd3s_projind_20250703/imagem/input/17515658400266851985122172762159.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "17515658400266851985122172762159.jpg_sanitized_2025_07_03_18_04_29.jpg"}
+INSERT ARQUIVO ID: 1
+INSERT ACAO executado com sucesso
+
+==================== NOVA EXECUCAO ====================
+COORDENADAS: lat=-15.800184624421671, lon=-47.8693410217617
+COORDENADAS: lat=-15.800184624421671, lon=-47.8693410217617
+URL MAPA: https://nominatim.openstreetmap.org/reverse?format=json&lat=-15.800184624421671&lon=-47.8693410217617
+MAP RESPONSE: {"place_id":14438669,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":46114588,"lat":"-15.7999457","lon":"-47.8692513","class":"office","type":"government","place_rank":30,"importance":7.805065995265153e-05,"addresstype":"office","name":"Ministério da Economia","display_name":"Ministério da Economia, S1, Setor de Autarquias Sul, Brasília, Plano Piloto, Região Geográfica Imediata do Distrito Federal, Região Integrada de Desenvolvimento do Distrito Federal e Entorno, Região Geográfica Intermediária do Distrito Federal, Distrito Federal, Região Centro-Oeste, 70046-900, Brasil","address":{"office":"Ministério da Economia","road":"S1","neighbourhood":"Setor de Autarquias Sul","city":"Brasília","municipality":"Região Geográfica Imediata do Distrito Federal","county":"Região Integrada de Desenvolvimento do Distrito Federal e Entorno","state_district":"Região Geográfica Intermediária do Distrito Federal","state":"Distrito Federal","ISO3166-2-lvl4":"BR-DF","region":"Região Centro-Oeste","postcode":"70046-900","country":"Brasil","country_code":"br"},"boundingbox":["-15.8005057","-15.7995762","-47.8695079","-47.8690579"]}
+BUSCANDO PESSOA: Luisa Alves
+INSERT ATIVIDADE_EVENTO ID: 2
+COORDENADAS antes do prepare: lat=-15.800184624421671, lon=-47.8693410217617
+COORDENADAS depois do prepare: lat=-15.800184624421671, lon=-47.8693410217617
+INSERT LOCALIZACAO ID: 2
+UPLOAD: image.jpg salvo em /var/www/html/tjd3s_projind_20250703/imagem/input/image.jpg
+TIPO ARQUIVO ID: 4 (ext: .jpg)
+
+PYTHON CMD: /var/www/html/venv/bin/python3 /var/www/html/tjd3s_projind_20250703/php/pasteur.py '/var/www/html/tjd3s_projind_20250703/imagem/input/image.jpg'
+PYTHON OUTPUT:
+{"quantidade_pessoas": 0, "caminho_arquivo_anonimizado": "", "caminho_arquivo_original": "", "nome_arquivo": "image.jpg_sanitized_2025_07_03_19_05_29.jpg"}
+INSERT ARQUIVO ID: 2
+INSERT ACAO executado com sucesso
